@@ -2,12 +2,12 @@
 CREATE TABLE Words
 (
     id               SERIAL PRIMARY KEY,
-    word             VARCHAR(255) NOT NULL,
-    pos              VARCHAR(255) NOT NULL,
-    source           VARCHAR(255),
-    lang_code        VARCHAR(255) NOT NULL,
-    lang             VARCHAR(255) NOT NULL,
-    original_title   VARCHAR(255),
+    word             TEXT NOT NULL,
+    pos              TEXT NOT NULL,
+    source           TEXT,
+    lang_code        TEXT NOT NULL,
+    lang             TEXT NOT NULL,
+    original_title   TEXT,
     etymology_number INT,
     etymology_text   TEXT
 );
@@ -15,22 +15,22 @@ CREATE TABLE Words
 CREATE TABLE Related
 (
     id        SERIAL PRIMARY KEY,
-    roman     VARCHAR(255),
-    alt       VARCHAR(255),
-    english   VARCHAR(255),
-    sense     VARCHAR(255),
-    word      VARCHAR(255),
-    source    VARCHAR(255),
-    taxonomic VARCHAR(255),
-    qualifier VARCHAR(255),
-    extra     VARCHAR(255)
+    roman     TEXT,
+    alt       TEXT,
+    english   TEXT,
+    sense     TEXT,
+    word      TEXT,
+    source    TEXT,
+    taxonomic TEXT,
+    qualifier TEXT,
+    extra     TEXT
 );
 
 CREATE TABLE RelatedUrls
 (
     id         SERIAL PRIMARY KEY,
     related_id INT,
-    url        VARCHAR(255),
+    url        TEXT,
     FOREIGN KEY (related_id) REFERENCES Related (id)
 );
 
@@ -38,7 +38,7 @@ CREATE TABLE RelatedTopics
 (
     id         SERIAL PRIMARY KEY,
     related_id INT,
-    topic      VARCHAR(255),
+    topic      TEXT,
     FOREIGN KEY (related_id) REFERENCES Related (id)
 );
 
@@ -46,7 +46,7 @@ CREATE TABLE RelatedTags
 (
     id         SERIAL PRIMARY KEY,
     related_id INT,
-    tag        VARCHAR(255),
+    tag        TEXT,
     FOREIGN KEY (related_id) REFERENCES Related (id)
 );
 
@@ -63,8 +63,8 @@ CREATE TABLE Templates
     id        SERIAL PRIMARY KEY,
     word_id   INT,
     args      TEXT,
-    name      VARCHAR(255),
-    expansion VARCHAR(255),
+    name      TEXT,
+    expansion TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
 );
 
@@ -72,15 +72,15 @@ CREATE TABLE Translations
 (
     id        SERIAL PRIMARY KEY,
     word_id   INT,
-    note      VARCHAR(255),
-    code      VARCHAR(255),
-    roman     VARCHAR(255),
-    alt       VARCHAR(255),
-    english   VARCHAR(255),
-    sense     VARCHAR(255),
-    lang      VARCHAR(255),
-    word      VARCHAR(255),
-    taxonomic VARCHAR(255),
+    note      TEXT,
+    code      TEXT,
+    roman     TEXT,
+    alt       TEXT,
+    english   TEXT,
+    sense     TEXT,
+    lang      TEXT,
+    word      TEXT,
+    taxonomic TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
 );
 
@@ -88,7 +88,7 @@ CREATE TABLE TranslationTopics
 (
     id             SERIAL PRIMARY KEY,
     translation_id INT,
-    topic          VARCHAR(255),
+    topic          TEXT,
     FOREIGN KEY (translation_id) REFERENCES Translations (id)
 );
 
@@ -96,7 +96,7 @@ CREATE TABLE TranslationTags
 (
     id             SERIAL PRIMARY KEY,
     translation_id INT,
-    tag            VARCHAR(255),
+    tag            TEXT,
     FOREIGN KEY (translation_id) REFERENCES Translations (id)
 );
 
@@ -104,19 +104,19 @@ CREATE TABLE Sounds
 (
     id        SERIAL PRIMARY KEY,
     word_id   INT,
-    mp3_url   VARCHAR(255),
-    note      VARCHAR(255),
-    rhymes    VARCHAR(255),
-    other     VARCHAR(255),
-    enpr      VARCHAR(255),
-    audio_ipa VARCHAR(255),
-    ogg_url   VARCHAR(255),
-    form      VARCHAR(255),
-    ipa       VARCHAR(255),
-    audio     VARCHAR(255),
-    text      VARCHAR(255),
-    homophone VARCHAR(255),
-    zh_pron   VARCHAR(255),
+    mp3_url   TEXT,
+    note      TEXT,
+    rhymes    TEXT,
+    other     TEXT,
+    enpr      TEXT,
+    audio_ipa TEXT,
+    ogg_url   TEXT,
+    form      TEXT,
+    ipa       TEXT,
+    audio     TEXT,
+    text      TEXT,
+    homophone TEXT,
+    zh_pron   TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
 );
 
@@ -124,25 +124,25 @@ CREATE TABLE Hyphenations
 (
     id          SERIAL PRIMARY KEY,
     word_id     INT,
-    hyphenation VARCHAR(255),
+    hyphenation TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
 );
 
 CREATE TABLE Categories
 (
     id       SERIAL PRIMARY KEY,
-    langcode VARCHAR(255),
-    orig     VARCHAR(255),
-    kind     VARCHAR(255),
-    name     VARCHAR(255),
-    source   VARCHAR(255)
+    langcode TEXT,
+    orig     TEXT,
+    kind     TEXT,
+    name     TEXT,
+    source   TEXT
 );
 
 CREATE TABLE Wikipedia
 (
     id             SERIAL PRIMARY KEY,
     word_id        INT,
-    wikipedia_link VARCHAR(255),
+    wikipedia_link TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
 );
 
@@ -150,7 +150,7 @@ CREATE TABLE Wikidata
 (
     id            SERIAL PRIMARY KEY,
     word_id       INT,
-    wikidata_link VARCHAR(255),
+    wikidata_link TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
 );
 
@@ -158,7 +158,7 @@ CREATE TABLE Topics
 (
     id      SERIAL PRIMARY KEY,
     word_id INT,
-    topic   VARCHAR(255),
+    topic   TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
 );
 
@@ -166,11 +166,11 @@ CREATE TABLE Forms
 (
     id      SERIAL PRIMARY KEY,
     word_id INT,
-    form    VARCHAR(255),
+    form    TEXT,
     head_nr INT,
-    roman   VARCHAR(255),
-    source  VARCHAR(255),
-    ipa     VARCHAR(255),
+    roman   TEXT,
+    source  TEXT,
+    ipa     TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
 );
 
@@ -186,7 +186,7 @@ CREATE TABLE FormsTags
 (
     id       SERIAL PRIMARY KEY,
     forms_id INT,
-    tag      VARCHAR(255),
+    tag      TEXT,
     FOREIGN KEY (forms_id) REFERENCES Forms (id)
 );
 
@@ -195,7 +195,7 @@ CREATE TABLE InflectionTemplate
     id      SERIAL PRIMARY KEY,
     word_id INT,
     args    TEXT,
-    name    VARCHAR(255),
+    name    TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
 );
 
@@ -203,9 +203,9 @@ CREATE TABLE Instance
 (
     id      SERIAL PRIMARY KEY,
     word_id INT,
-    sense   VARCHAR(255),
-    source  VARCHAR(255),
-    word    VARCHAR(255),
+    sense   TEXT,
+    source  TEXT,
+    word    TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
 );
 
@@ -213,7 +213,7 @@ CREATE TABLE InstanceTags
 (
     id          SERIAL PRIMARY KEY,
     instance_id INT,
-    tag         VARCHAR(255),
+    tag         TEXT,
     FOREIGN KEY (instance_id) REFERENCES Instance (id)
 );
 
@@ -221,7 +221,7 @@ CREATE TABLE InstanceTopics
 (
     id          SERIAL PRIMARY KEY,
     instance_id INT,
-    topic       VARCHAR(255),
+    topic       TEXT,
     FOREIGN KEY (instance_id) REFERENCES Instance (id)
 );
 
@@ -229,7 +229,7 @@ CREATE TABLE SoundTopics
 (
     id       SERIAL PRIMARY KEY,
     sound_id INT,
-    topic    VARCHAR(255),
+    topic    TEXT,
     FOREIGN KEY (sound_id) REFERENCES Sounds (id)
 );
 
@@ -237,7 +237,7 @@ CREATE TABLE SoundTags
 (
     id       SERIAL PRIMARY KEY,
     sound_id INT,
-    tag      VARCHAR(255),
+    tag      TEXT,
     FOREIGN KEY (sound_id) REFERENCES Sounds (id)
 );
 
@@ -246,7 +246,7 @@ CREATE TABLE Descendants
     id      SERIAL PRIMARY KEY,
     word_id INT,
     depth   INT,
-    text    VARCHAR(255),
+    text    TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
 );
 
@@ -254,7 +254,7 @@ CREATE TABLE DescendantsTags
 (
     id            SERIAL PRIMARY KEY,
     descendant_id INT,
-    tag           VARCHAR(255),
+    tag           TEXT,
     FOREIGN KEY (descendant_id) REFERENCES Descendants (id)
 );
 
@@ -282,8 +282,8 @@ CREATE TABLE Senses
     word_id   INT,
     sense_id  TEXT,
     head_nr   INT,
-    taxonomic VARCHAR(255),
-    qualifier VARCHAR(255),
+    taxonomic TEXT,
+    qualifier TEXT,
     glosses          TEXT,
     raw_glosses      TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
@@ -293,7 +293,7 @@ CREATE TABLE SensesTags
 (
     id       SERIAL PRIMARY KEY,
     sense_id INT,
-    tag      VARCHAR(255),
+    tag      TEXT,
     FOREIGN KEY (sense_id) REFERENCES Senses (id)
 );
 
@@ -301,7 +301,7 @@ CREATE TABLE SensesTopics
 (
     id       SERIAL PRIMARY KEY,
     sense_id INT,
-    topic    VARCHAR(255),
+    topic    TEXT,
     FOREIGN KEY (sense_id) REFERENCES Senses (id)
 );
 
@@ -309,7 +309,7 @@ CREATE TABLE SensesLinks
 (
     id       SERIAL PRIMARY KEY,
     sense_id INT,
-    links    VARCHAR(255),
+    links    TEXT,
     FOREIGN KEY (sense_id) REFERENCES Senses (id)
 );
 
@@ -317,12 +317,12 @@ CREATE TABLE Examples
 (
     id           SERIAL PRIMARY KEY,
     sense_id     INT,
-    note         VARCHAR(255),
-    example_ref  VARCHAR(255),
-    roman        VARCHAR(255),
-    english      VARCHAR(255),
+    note         TEXT,
+    example_ref  TEXT,
+    roman        TEXT,
+    english      TEXT,
     text         TEXT,
-    example_type VARCHAR(255),
+    example_type TEXT,
     FOREIGN KEY (sense_id) REFERENCES Senses (id)
 );
 
@@ -338,8 +338,18 @@ CREATE TABLE GenericVectorField
 (
     id          SERIAL PRIMARY KEY,
     word_id     INT,
-    field_value VARCHAR(255),
+    field_value TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
+);
+
+CREATE TABLE WordFormOfLink
+(
+    id         SERIAL PRIMARY KEY,
+    word_id    INT,
+    related_id INT,
+    FOREIGN KEY (word_id) REFERENCES Words (id),
+    FOREIGN KEY (related_id) REFERENCES Related (id),
+    UNIQUE (word_id, related_id)
 );
 
 CREATE TABLE WordAltOfLink
@@ -552,6 +562,16 @@ CREATE TABLE SenseTroponymsLink
     UNIQUE (sense_id, related_id)
 );
 
+CREATE TABLE SenseFormOfLink
+(
+    id         SERIAL PRIMARY KEY,
+    sense_id    INT,
+    related_id INT,
+    FOREIGN KEY (sense_id) REFERENCES Senses (id),
+    FOREIGN KEY (related_id) REFERENCES Related (id),
+    UNIQUE (sense_id, related_id)
+);
+
 CREATE TABLE SenseHyponymsLink
 (
     id         SERIAL PRIMARY KEY,
@@ -719,11 +739,11 @@ CREATE INDEX idx_word_abbreviations_link_abbreviations_id ON WordAbbreviationsLi
 CREATE TABLE SenseAbbreviationsLink
 (
     id         SERIAL PRIMARY KEY,
-    word_id    INT,
+    sense_id    INT,
     related_id INT,
-    FOREIGN KEY (word_id) REFERENCES Senses (id),
+    FOREIGN KEY (sense_id) REFERENCES Senses (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (word_id, related_id)
+    UNIQUE (sense_id, related_id)
 );
 
 CREATE INDEX idx_sense_abbreviations_link_sense_id ON SenseAbbreviationsLink (sense_id);

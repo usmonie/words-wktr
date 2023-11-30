@@ -1,6 +1,23 @@
 use std::collections::HashMap;
 use serde::{Serialize, Deserialize};
 
+pub trait Relation {
+    fn abbreviations(&self) -> Vec<Related>;
+    fn alt_of(&self) -> Vec<Related>;
+    fn antonyms(&self) -> Vec<Related>;
+    fn derived(&self) -> Vec<Related>;
+    fn coordinate_terms(&self) -> Vec<Related>;
+    fn synonyms(&self) -> Vec<Related>;
+    fn troponyms(&self) -> Vec<Related>;
+    fn proverbs(&self) -> Vec<Related>;
+    fn related(&self) -> Vec<Related>;
+    fn form_of(&self) -> Vec<Related>;
+    fn meronyms(&self) -> Vec<Related>;
+    fn holonyms(&self) -> Vec<Related>;
+    fn hyponyms(&self) -> Vec<Related>;
+    fn hypernyms(&self) -> Vec<Related>;
+}
+
 #[derive(Serialize, Deserialize)]
 pub struct Word {
     #[serde(rename = "word")]
@@ -22,27 +39,22 @@ pub struct Word {
     pub original_title: Option<String>,
 
     #[serde(rename = "etymology_number")]
-    pub etymology_number: Option<i64>,
-
-    #[serde(rename = "related")]
-    #[serde(default)]
-    pub related: Vec<Abbreviation>,
+    pub etymology_number: Option<i32>,
 
     #[serde(rename = "etymology_templates")]
     #[serde(default)]
     pub etymology_templates: Vec<Template>,
 
-    #[serde(rename = "hypernyms")]
+    #[serde(rename = "etymology_text")]
+    pub etymology_text: Option<String>,
+
+    #[serde(rename = "inflection_templates")]
     #[serde(default)]
-    pub hypernyms: Vec<Abbreviation>,
+    pub inflection_templates: Vec<InflectionTemplate>,
 
     #[serde(rename = "translations")]
     #[serde(default)]
     pub translations: Vec<Translation>,
-
-    #[serde(rename = "antonyms")]
-    #[serde(default)]
-    pub antonyms: Vec<Abbreviation>,
 
     #[serde(rename = "categories")]
     #[serde(default)]
@@ -52,56 +64,73 @@ pub struct Word {
     #[serde(default)]
     pub wikipedia: Vec<String>,
 
-    #[serde(rename = "derived")]
-    #[serde(default)]
-    pub derived: Vec<Abbreviation>,
-
-    #[serde(rename = "abbreviations")]
-    #[serde(default)]
-    pub abbreviations: Vec<Abbreviation>,
-
     #[serde(rename = "hyphenation")]
     #[serde(default)]
     pub hyphenation: Vec<String>,
-
-    #[serde(rename = "synonyms")]
-    #[serde(default)]
-    pub synonyms: Vec<Abbreviation>,
 
     #[serde(rename = "topics")]
     #[serde(default)]
     pub topics: Vec<String>,
 
+    #[serde(rename = "antonyms")]
+    #[serde(default)]
+    pub antonyms: Vec<Related>,
+
+    #[serde(rename = "hypernyms")]
+    #[serde(default)]
+    pub hypernyms: Vec<Related>,
+
+    #[serde(rename = "related")]
+    #[serde(default)]
+    pub related: Vec<Related>,
+
+    #[serde(rename = "derived")]
+    #[serde(default)]
+    pub derived: Vec<Related>,
+
+    #[serde(rename = "abbreviations")]
+    #[serde(default)]
+    pub abbreviations: Vec<Related>,
+
+    #[serde(rename = "synonyms")]
+    #[serde(default)]
+    pub synonyms: Vec<Related>,
+
     #[serde(rename = "troponyms")]
     #[serde(default)]
-    pub troponyms: Vec<Abbreviation>,
+    pub troponyms: Vec<Related>,
 
     #[serde(rename = "form_of")]
     #[serde(default)]
-    pub form_of: Vec<FormOf>,
-
-    #[serde(rename = "etymology_text")]
-    pub etymology_text: Option<String>,
-
-    #[serde(rename = "inflection_templates")]
-    #[serde(default)]
-    pub inflection_templates: Vec<InflectionTemplate>,
+    pub form_of: Vec<Related>,
 
     #[serde(rename = "hyponyms")]
     #[serde(default)]
-    pub hyponyms: Vec<Abbreviation>,
+    pub hyponyms: Vec<Related>,
 
-    #[serde(rename = "wikidata")]
+    #[serde(rename = "alt_of")]
     #[serde(default)]
-    pub wikidata: Vec<String>,
+    pub alt_of: Vec<Related>,
+
+    #[serde(rename = "holonyms")]
+    #[serde(default)]
+    pub holonyms: Vec<Related>,
+
+    #[serde(rename = "coordinate_terms")]
+    #[serde(default)]
+    pub coordinate_terms: Vec<Related>,
+
+    #[serde(rename = "meronyms")]
+    #[serde(default)]
+    pub meronyms: Vec<Related>,
+
+    #[serde(rename = "proverbs")]
+    #[serde(default)]
+    pub proverbs: Vec<Related>,
 
     #[serde(rename = "forms")]
     #[serde(default)]
     pub forms: Vec<Form>,
-
-    #[serde(rename = "alt_of")]
-    #[serde(default)]
-    pub alt_of: Vec<Of>,
 
     #[serde(rename = "senses")]
     #[serde(default)]
@@ -111,37 +140,29 @@ pub struct Word {
     #[serde(default)]
     pub instances: Vec<Instance>,
 
-    #[serde(rename = "proverbs")]
-    #[serde(default)]
-    pub proverbs: Vec<Proverb>,
-
     #[serde(rename = "head_templates")]
     #[serde(default)]
     pub head_templates: Vec<Template>,
-
-    #[serde(rename = "coordinate_terms")]
-    #[serde(default)]
-    pub coordinate_terms: Vec<Abbreviation>,
-
-    #[serde(rename = "meronyms")]
-    #[serde(default)]
-    pub meronyms: Vec<Abbreviation>,
 
     #[serde(rename = "descendants")]
     #[serde(default)]
     pub descendants: Vec<Descendant>,
 
-    #[serde(rename = "holonyms")]
-    #[serde(default)]
-    pub holonyms: Vec<Abbreviation>,
-
     #[serde(rename = "sounds")]
     #[serde(default)]
     pub sounds: Vec<Sound>,
+
+    #[serde(rename = "glosses")]
+    #[serde(default)]
+    pub glosses: Vec<String>,
+
+    #[serde(rename = "raw_glosses")]
+    #[serde(default)]
+    pub raw_glosses: Vec<String>,
 }
 
-#[derive(Serialize, Deserialize)]
-pub struct Abbreviation {
+#[derive(Serialize, Deserialize, Clone)]
+pub struct Related {
     #[serde(rename = "urls")]
     #[serde(default)]
     pub urls: Vec<String>,
@@ -187,15 +208,6 @@ pub struct Abbreviation {
 }
 
 #[derive(Serialize, Deserialize)]
-pub struct Of {
-    #[serde(rename = "extra")]
-    pub extra: Option<String>,
-
-    #[serde(rename = "word")]
-    pub word: Option<String>,
-}
-
-#[derive(Serialize, Deserialize)]
 pub struct Category {
     #[serde(rename = "langcode")]
     pub langcode: Option<String>,
@@ -220,7 +232,7 @@ pub struct Category {
 #[derive(Serialize, Deserialize)]
 pub struct Descendant {
     #[serde(rename = "depth")]
-    pub depth: Option<i64>,
+    pub depth: Option<i32>,
 
     #[serde(rename = "templates")]
     #[serde(default)]
@@ -237,6 +249,7 @@ pub struct Descendant {
 #[derive(Serialize, Deserialize)]
 pub struct Template {
     #[serde(rename = "args")]
+    #[serde(default)]
     pub args: HashMap<String, String>,
 
     #[serde(rename = "name")]
@@ -247,21 +260,12 @@ pub struct Template {
 }
 
 #[derive(Serialize, Deserialize)]
-pub struct FormOf {
-    #[serde(rename = "roman")]
-    pub roman: Option<String>,
-
-    #[serde(rename = "word")]
-    pub word: Option<String>,
-}
-
-#[derive(Serialize, Deserialize)]
 pub struct Form {
     #[serde(rename = "form")]
     pub form: Option<String>,
 
     #[serde(rename = "head_nr")]
-    pub head_nr: Option<i64>,
+    pub head_nr: Option<i32>,
 
     #[serde(rename = "topics")]
     #[serde(default)]
@@ -288,6 +292,7 @@ pub struct Form {
 #[derive(Serialize, Deserialize)]
 pub struct InflectionTemplate {
     #[serde(rename = "args")]
+    #[serde(default)]
     pub args: HashMap<String, String>,
 
     #[serde(rename = "name")]
@@ -315,40 +320,18 @@ pub struct Instance {
 }
 
 #[derive(Serialize, Deserialize)]
-pub struct Proverb {
-    #[serde(rename = "roman")]
-    pub roman: Option<String>,
-
-    #[serde(rename = "english")]
-    pub english: Option<String>,
-
-    #[serde(rename = "alt")]
-    pub alt: Option<String>,
-
-    #[serde(rename = "word")]
-    pub word: Option<String>,
-
-    #[serde(rename = "ruby")]
-    #[serde(default)]
-    pub ruby: Vec<Vec<String>>,
-
-    #[serde(rename = "tags")]
-    #[serde(default)]
-    pub tags: Vec<String>,
-
-    #[serde(rename = "sense")]
-    pub sense: Option<String>,
-}
-
-#[derive(Serialize, Deserialize)]
 pub struct Sense {
     #[serde(rename = "senseid")]
     #[serde(default)]
     pub senseid: Vec<String>,
 
+    #[serde(rename = "proverbs")]
+    #[serde(default)]
+    pub proverbs: Vec<Related>,
+
     #[serde(rename = "alt_of")]
     #[serde(default)]
-    pub alt_of: Vec<Of>,
+    pub alt_of: Vec<Related>,
 
     #[serde(rename = "instances")]
     #[serde(default)]
@@ -360,27 +343,31 @@ pub struct Sense {
 
     #[serde(rename = "coordinate_terms")]
     #[serde(default)]
-    pub coordinate_terms: Vec<Abbreviation>,
+    pub coordinate_terms: Vec<Related>,
 
     #[serde(rename = "meronyms")]
     #[serde(default)]
-    pub meronyms: Vec<Abbreviation>,
+    pub meronyms: Vec<Related>,
 
     #[serde(rename = "compound_of")]
     #[serde(default)]
-    pub compound_of: Vec<Of>,
+    pub compound_of: Vec<Related>,
 
     #[serde(rename = "holonyms")]
     #[serde(default)]
-    pub holonyms: Vec<Abbreviation>,
+    pub holonyms: Vec<Related>,
 
     #[serde(rename = "related")]
     #[serde(default)]
-    pub related: Vec<Abbreviation>,
+    pub related: Vec<Related>,
+
+    #[serde(rename = "abbreviations")]
+    #[serde(default)]
+    pub abbreviations: Vec<Related>,
 
     #[serde(rename = "hypernyms")]
     #[serde(default)]
-    pub hypernyms: Vec<Abbreviation>,
+    pub hypernyms: Vec<Related>,
 
     #[serde(rename = "translations")]
     #[serde(default)]
@@ -388,7 +375,7 @@ pub struct Sense {
 
     #[serde(rename = "antonyms")]
     #[serde(default)]
-    pub antonyms: Vec<Abbreviation>,
+    pub antonyms: Vec<Related>,
 
     #[serde(rename = "links")]
     #[serde(default)]
@@ -407,14 +394,14 @@ pub struct Sense {
 
     #[serde(rename = "derived")]
     #[serde(default)]
-    pub derived: Vec<Abbreviation>,
+    pub derived: Vec<Related>,
 
     #[serde(rename = "head_nr")]
-    pub head_nr: Option<i64>,
+    pub head_nr: Option<i32>,
 
     #[serde(rename = "synonyms")]
     #[serde(default)]
-    pub synonyms: Vec<Abbreviation>,
+    pub synonyms: Vec<Related>,
 
     #[serde(rename = "topics")]
     #[serde(default)]
@@ -426,11 +413,11 @@ pub struct Sense {
 
     #[serde(rename = "troponyms")]
     #[serde(default)]
-    pub troponyms: Vec<Proverb>,
+    pub troponyms: Vec<Related>,
 
     #[serde(rename = "form_of")]
     #[serde(default)]
-    pub form_of: Vec<Of>,
+    pub form_of: Vec<Related>,
 
     #[serde(rename = "taxonomic")]
     pub taxonomic: Option<String>,
@@ -448,7 +435,7 @@ pub struct Sense {
 
     #[serde(rename = "hyponyms")]
     #[serde(default)]
-    pub hyponyms: Vec<Abbreviation>,
+    pub hyponyms: Vec<Related>,
 
     #[serde(rename = "wikidata")]
     #[serde(default)]
@@ -539,11 +526,12 @@ pub struct Sound {
     pub audio_ipa: Option<String>,
 
     #[serde(rename = "topics")]
-    pub topics: Option<Vec<String>>,
+    #[serde(default)]
+    pub topics: Vec<String>,
 
     #[serde(rename = "tags")]
     #[serde(default)]
-    pub tags: Vec<Option<String>>,
+    pub tags: Vec<String>,
 
     #[serde(rename = "ogg_url")]
     pub ogg_url: Option<String>,
@@ -565,4 +553,119 @@ pub struct Sound {
 
     #[serde(rename = "zh-pron")]
     pub zh_pron: Option<String>,
+}
+
+impl Relation for Word {
+    fn abbreviations(&self) -> Vec<Related> {
+        return self.abbreviations.clone();
+    }
+
+    fn alt_of(&self) -> Vec<Related> {
+        return self.alt_of.clone();
+    }
+
+    fn antonyms(&self) -> Vec<Related> {
+        return self.antonyms.clone();
+    }
+
+    fn derived(&self) -> Vec<Related> {
+        return self.derived.clone();
+    }
+
+    fn coordinate_terms(&self) -> Vec<Related> {
+        return self.coordinate_terms.clone();
+    }
+
+    fn synonyms(&self) -> Vec<Related> {
+        return self.synonyms.clone();
+    }
+
+    fn troponyms(&self) -> Vec<Related> {
+        return self.troponyms.clone();
+    }
+
+    fn proverbs(&self) -> Vec<Related> {
+        return self.proverbs.clone();
+    }
+
+    fn related(&self) -> Vec<Related> {
+        return self.related.clone();
+    }
+
+    fn form_of(&self) -> Vec<Related> {
+        return self.form_of.clone();
+    }
+
+    fn meronyms(&self) -> Vec<Related> {
+        return self.meronyms.clone();
+    }
+
+    fn holonyms(&self) -> Vec<Related> {
+        return self.holonyms.clone();
+    }
+
+    fn hyponyms(&self) -> Vec<Related> {
+        return self.hyponyms.clone();
+    }
+
+    fn hypernyms(&self) -> Vec<Related> {
+        return self.hypernyms.clone();
+    }
+}
+impl Relation for Sense {
+    fn abbreviations(&self) -> Vec<Related> {
+        return self.abbreviations.clone();
+    }
+
+    fn alt_of(&self) -> Vec<Related> {
+        return self.alt_of.clone();
+    }
+
+    fn antonyms(&self) -> Vec<Related> {
+        return self.antonyms.clone();
+    }
+
+    fn derived(&self) -> Vec<Related> {
+        return self.derived.clone();
+    }
+
+    fn coordinate_terms(&self) -> Vec<Related> {
+        return self.coordinate_terms.clone();
+    }
+
+    fn synonyms(&self) -> Vec<Related> {
+        return self.synonyms.clone();
+    }
+
+    fn troponyms(&self) -> Vec<Related> {
+        return self.troponyms.clone();
+    }
+
+    fn proverbs(&self) -> Vec<Related> {
+        return self.proverbs.clone();
+    }
+
+    fn related(&self) -> Vec<Related> {
+        return self.related.clone();
+    }
+
+    fn form_of(&self) -> Vec<Related> {
+        return self.form_of.clone();
+    }
+
+    fn meronyms(&self) -> Vec<Related> {
+        return self.meronyms.clone();
+    }
+
+    fn holonyms(&self) -> Vec<Related> {
+        return self.holonyms.clone();
+    }
+
+    fn hyponyms(&self) -> Vec<Related> {
+        return self.hyponyms.clone();
+    }
+
+    fn hypernyms(&self) -> Vec<Related> {
+        return self.hypernyms.clone();
+    }
 }

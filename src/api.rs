@@ -3,7 +3,8 @@ use std::{path::Path, time::Instant};
 use actix_web::{App, get, HttpServer, Responder, web};
 use serde::Deserialize;
 
-use crate::{domain::use_cases::{ImportJsonDictionary, SearchWords}, data::DieselDictionaryRepository};
+use crate::{domain::use_cases::{ImportJsonDictionary, SearchWords}, };
+use crate::data::dictionary_repository::DieselDictionaryRepository;
 
 #[get("/dictionary/search")]
 async fn search_word(info: web::Query<Info>) -> impl Responder {
@@ -48,12 +49,13 @@ pub async fn launch_server() -> std::io::Result<()> {
  * Parsing wiktionary json
  */
 async fn start_parsing() {
+    println!("started");
     let file_path = Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/wiktionary.json");
-    let mut dictionary_repo = DieselDictionaryRepository::new("postgres://admin:admin@localhost:5433/all_words");
+    let mut dictionary_repo = DieselDictionaryRepository::new("postgres://admin:admin@localhost:5433/word");
     let mut importer = ImportJsonDictionary::new(&mut dictionary_repo, file_path);
 
     match importer.execute().await {
         Ok(_) => println!("Successfully parsed the JSON file."),
-        Err(e) => eprintln!("Error"),
+        Err(e) => eprintln!("Error {:?}", e),
     }
 }

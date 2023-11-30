@@ -1,5 +1,4 @@
 pub mod models;
-mod import_json_use_case;
 
 pub mod use_cases {
     use std::io::BufReader;
@@ -7,11 +6,8 @@ pub mod use_cases {
     use std::path::Path;
     use std::sync::Arc;
     use async_trait::async_trait;
-    use futures::{stream, StreamExt};
-    use serde_json::Value;
     use tokio::sync::Mutex;
-    use crate::domain::Error;
-    use crate::domain::models::Word;
+    use crate::domain::{models::Word, Error};
 
     #[async_trait]
     pub trait DictionaryRepository {
@@ -42,36 +38,24 @@ pub mod use_cases {
             let mut count = 0;
 
             let repo = Arc::clone(&self.repository);
-            // stream::iter(deserializer)
-            //     .chunks(10_000)
-            //     .for_each_concurrent(20, |words_chunk| {
-            //         let mut repo = Arc::clone(&repo);
-            //         // async move {
-            //         //     match repo.lock().await.bulk_insert(words_chunk).await {
-            //         //         Ok(_) => println!("INSERTED"),
-            //         //         Err(e) => eprintln!("Failed to insert chunks: {:?}", e),
-            //         //     }
-            //         // }
-            //         count += 10_000;
-            //         println!("INSERTED {}", count);
-            //
-            //         async move {}
-            //     })
-            //     .await;
+
+            let mut repo = repo.lock().await;
             for entry in deserializer {
                 let entry = entry.expect("Invalid JSON");
                 items.push(entry);
 
-                if items.len() == 1000 {
-                    // self.repository.bulk_insert(std::mem::take(&mut items))?;
-                    count += 1;
-                    println!("INSERTED {}", count * 1000);
+                if items.len() == 100_000 {
+                    count += items.len();
+                    repo.bulk_insert(std::mem::take(&mut items)).await.unwrap();
+                    println!("INSERTED {}", count);
                     items.clear()
                 }
             }
 
             if !items.is_empty() {
-                // self.repository.bulk_insert(items)?;
+                count += items.len();
+                repo.bulk_insert(std::mem::take(&mut items)).await.unwrap();
+                println!("INSERTED {}", count);
             }
 
             Ok(())
