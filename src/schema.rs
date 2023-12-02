@@ -7,39 +7,43 @@ diesel::table! {
         orig -> Nullable<Text>,
         kind -> Nullable<Text>,
         name -> Nullable<Text>,
-        source -> Nullable<Text>,
     }
 }
 
 diesel::table! {
     descendants (id) {
         id -> Int4,
-        word_id -> Nullable<Int4>,
+        word_id -> Int4,
         depth -> Nullable<Int4>,
         text -> Nullable<Text>,
     }
 }
 
 diesel::table! {
-    descendantstags (id) {
-        id -> Int4,
-        descendant_id -> Nullable<Int4>,
-        tag -> Nullable<Text>,
+    descendants_tags (descendant_id, tag) {
+        descendant_id -> Int4,
+        tag -> Text,
     }
 }
 
 diesel::table! {
-    descendantstemplates (id) {
-        id -> Int4,
-        descendant_id -> Nullable<Int4>,
-        template_id -> Nullable<Int4>,
+    descendants_templates (descendant_id, template_id) {
+        descendant_id -> Int4,
+        template_id -> Int4,
+    }
+}
+
+diesel::table! {
+    example_ruby (example_id, ruby) {
+        example_id -> Int4,
+        ruby -> Text,
     }
 }
 
 diesel::table! {
     examples (id) {
         id -> Int4,
-        sense_id -> Nullable<Int4>,
+        sense_id -> Int4,
         note -> Nullable<Text>,
         example_ref -> Nullable<Text>,
         roman -> Nullable<Text>,
@@ -50,61 +54,34 @@ diesel::table! {
 }
 
 diesel::table! {
-    examplesruby (id) {
-        id -> Int4,
-        example_id -> Nullable<Int4>,
-        ruby -> Nullable<Text>,
-    }
-}
-
-diesel::table! {
     forms (id) {
         id -> Int4,
-        word_id -> Nullable<Int4>,
+        word_id -> Int4,
         form -> Nullable<Text>,
         head_nr -> Nullable<Int4>,
         roman -> Nullable<Text>,
-        source -> Nullable<Text>,
         ipa -> Nullable<Text>,
     }
 }
 
 diesel::table! {
-    formsruby (id) {
-        id -> Int4,
-        forms_id -> Nullable<Int4>,
-        ruby -> Nullable<Text>,
+    forms_ruby (forms_id, ruby) {
+        forms_id -> Int4,
+        ruby -> Text,
     }
 }
 
 diesel::table! {
-    formstags (id) {
-        id -> Int4,
-        forms_id -> Nullable<Int4>,
-        tag -> Nullable<Text>,
-    }
-}
-
-diesel::table! {
-    genericvectorfield (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        field_value -> Nullable<Text>,
-    }
-}
-
-diesel::table! {
-    headtemplates (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        template_id -> Nullable<Int4>,
+    forms_tags (forms_id, tag) {
+        forms_id -> Int4,
+        tag -> Text,
     }
 }
 
 diesel::table! {
     hyphenations (id) {
         id -> Int4,
-        word_id -> Nullable<Int4>,
+        word_id -> Int4,
         hyphenation -> Nullable<Text>,
     }
 }
@@ -112,35 +89,38 @@ diesel::table! {
 diesel::table! {
     inflectiontemplate (id) {
         id -> Int4,
-        word_id -> Nullable<Int4>,
+        word_id -> Int4,
         args -> Nullable<Text>,
-        name -> Nullable<Text>,
+        name -> Text,
     }
 }
 
 diesel::table! {
     instance (id) {
         id -> Int4,
-        word_id -> Nullable<Int4>,
+        word_id -> Int4,
         sense -> Nullable<Text>,
-        source -> Nullable<Text>,
         word -> Nullable<Text>,
     }
 }
 
 diesel::table! {
-    instancetags (id) {
-        id -> Int4,
-        instance_id -> Nullable<Int4>,
-        tag -> Nullable<Text>,
+    instance_tags (instance_id, tag) {
+        instance_id -> Int4,
+        tag -> Text,
     }
 }
 
 diesel::table! {
-    instancetopics (id) {
-        id -> Int4,
-        instance_id -> Nullable<Int4>,
-        topic -> Nullable<Text>,
+    instance_topics (instance_id, topic) {
+        instance_id -> Int4,
+        topic -> Text,
+    }
+}
+
+diesel::table! {
+    links (link) {
+        link -> Text,
     }
 }
 
@@ -151,8 +131,7 @@ diesel::table! {
         alt -> Nullable<Text>,
         english -> Nullable<Text>,
         sense -> Nullable<Text>,
-        word -> Nullable<Text>,
-        source -> Nullable<Text>,
+        word -> Text,
         taxonomic -> Nullable<Text>,
         qualifier -> Nullable<Text>,
         extra -> Nullable<Text>,
@@ -160,153 +139,162 @@ diesel::table! {
 }
 
 diesel::table! {
-    relatedruby (id) {
-        id -> Int4,
-        related_id -> Nullable<Int4>,
-        ruby -> Nullable<Text>,
+    related_ruby (related_id, ruby) {
+        related_id -> Int4,
+        ruby -> Text,
     }
 }
 
 diesel::table! {
-    relatedtags (id) {
-        id -> Int4,
-        related_id -> Nullable<Int4>,
-        tag -> Nullable<Text>,
+    related_tags (related_id, tag) {
+        related_id -> Int4,
+        tag -> Text,
     }
 }
 
 diesel::table! {
-    relatedtopics (id) {
-        id -> Int4,
-        related_id -> Nullable<Int4>,
-        topic -> Nullable<Text>,
+    related_topics (related_id, topic) {
+        related_id -> Int4,
+        topic -> Text,
     }
 }
 
 diesel::table! {
-    relatedurls (id) {
-        id -> Int4,
-        related_id -> Nullable<Int4>,
-        url -> Nullable<Text>,
+    related_urls (related_id, url) {
+        related_id -> Int4,
+        url -> Text,
     }
 }
 
 diesel::table! {
-    senseabbreviationslink (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    rubies (ruby) {
+        ruby -> Text,
     }
 }
 
 diesel::table! {
-    sensealtoflink (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    sense_links (sense_id, link) {
+        sense_id -> Int4,
+        link -> Text,
     }
 }
 
 diesel::table! {
-    senseantonymslink (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    sense_tags (sense_id, tag) {
+        sense_id -> Int4,
+        tag -> Text,
     }
 }
 
 diesel::table! {
-    sensecategorieslink (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        category_id -> Nullable<Int4>,
+    sense_topics (sense_id, topic) {
+        sense_id -> Int4,
+        topic -> Text,
     }
 }
 
 diesel::table! {
-    sensecompoundoflink (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    senseabbreviationslink (sense_id, related_id) {
+        sense_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    sensecoordinatetermslink (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    sensealtoflink (sense_id, related_id) {
+        sense_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    sensederivedlink (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    senseantonymslink (sense_id, related_id) {
+        sense_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    senseformoflink (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    sensecategorieslink (sense_id, category_id) {
+        sense_id -> Int4,
+        category_id -> Int4,
     }
 }
 
 diesel::table! {
-    senseholonymslink (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    sensecompoundoflink (sense_id, related_id) {
+        sense_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    sensehypernymslink (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    sensecoordinatetermslink (sense_id, related_id) {
+        sense_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    sensehyponymslink (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    sensederivedlink (sense_id, related_id) {
+        sense_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    sensemeronymslink (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    senseformoflink (sense_id, related_id) {
+        sense_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    senseproverbslink (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    senseholonymslink (sense_id, related_id) {
+        sense_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    senserelatedlink (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    sensehypernymslink (sense_id, related_id) {
+        sense_id -> Int4,
+        related_id -> Int4,
+    }
+}
+
+diesel::table! {
+    sensehyponymslink (sense_id, related_id) {
+        sense_id -> Int4,
+        related_id -> Int4,
+    }
+}
+
+diesel::table! {
+    sensemeronymslink (sense_id, related_id) {
+        sense_id -> Int4,
+        related_id -> Int4,
+    }
+}
+
+diesel::table! {
+    senseproverbslink (sense_id, related_id) {
+        sense_id -> Int4,
+        related_id -> Int4,
+    }
+}
+
+diesel::table! {
+    senserelatedlink (sense_id, related_id) {
+        sense_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
     senses (id) {
         id -> Int4,
-        word_id -> Nullable<Int4>,
+        word_id -> Int4,
         sense_id -> Nullable<Text>,
         head_nr -> Nullable<Int4>,
         taxonomic -> Nullable<Text>,
@@ -317,49 +305,37 @@ diesel::table! {
 }
 
 diesel::table! {
-    senseslinks (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        links -> Nullable<Text>,
+    sensesynonymlink (sense_id, related_id) {
+        sense_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    sensestags (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        tag -> Nullable<Text>,
+    sensetroponymslink (sense_id, related_id) {
+        sense_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    sensestopics (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        topic -> Nullable<Text>,
+    sound_tags (sound_id, tag) {
+        sound_id -> Int4,
+        tag -> Text,
     }
 }
 
 diesel::table! {
-    sensesynonymlink (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
-    }
-}
-
-diesel::table! {
-    sensetroponymslink (id) {
-        id -> Int4,
-        sense_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    sound_topics (sound_id, topic) {
+        sound_id -> Int4,
+        topic -> Text,
     }
 }
 
 diesel::table! {
     sounds (id) {
         id -> Int4,
-        word_id -> Nullable<Int4>,
+        word_id -> Int4,
         mp3_url -> Nullable<Text>,
         note -> Nullable<Text>,
         rhymes -> Nullable<Text>,
@@ -377,25 +353,15 @@ diesel::table! {
 }
 
 diesel::table! {
-    soundtags (id) {
-        id -> Int4,
-        sound_id -> Nullable<Int4>,
-        tag -> Nullable<Text>,
-    }
-}
-
-diesel::table! {
-    soundtopics (id) {
-        id -> Int4,
-        sound_id -> Nullable<Int4>,
-        topic -> Nullable<Text>,
+    tags (tag) {
+        tag -> Text,
     }
 }
 
 diesel::table! {
     templates (id) {
         id -> Int4,
-        word_id -> Nullable<Int4>,
+        word_id -> Int4,
         args -> Nullable<Text>,
         name -> Nullable<Text>,
         expansion -> Nullable<Text>,
@@ -403,17 +369,28 @@ diesel::table! {
 }
 
 diesel::table! {
-    topics (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        topic -> Nullable<Text>,
+    topics (topic) {
+        topic -> Text,
+    }
+}
+
+diesel::table! {
+    translation_tags (translation_id, tag) {
+        translation_id -> Int4,
+        tag -> Text,
+    }
+}
+
+diesel::table! {
+    translation_topics (translation_id, topic) {
+        translation_id -> Int4,
+        topic -> Text,
     }
 }
 
 diesel::table! {
     translations (id) {
         id -> Int4,
-        word_id -> Nullable<Int4>,
         note -> Nullable<Text>,
         code -> Nullable<Text>,
         roman -> Nullable<Text>,
@@ -427,146 +404,129 @@ diesel::table! {
 }
 
 diesel::table! {
-    translationtags (id) {
-        id -> Int4,
-        translation_id -> Nullable<Int4>,
-        tag -> Nullable<Text>,
+    translations_words_link (translation_id, word_id) {
+        translation_id -> Int4,
+        word_id -> Int4,
     }
 }
 
 diesel::table! {
-    translationtopics (id) {
-        id -> Int4,
-        translation_id -> Nullable<Int4>,
-        topic -> Nullable<Text>,
+    urls (url) {
+        url -> Text,
     }
 }
 
 diesel::table! {
     wikidata (id) {
         id -> Int4,
-        word_id -> Nullable<Int4>,
-        wikidata_link -> Nullable<Text>,
+        word_id -> Int4,
+        wikidata_link -> Text,
     }
 }
 
 diesel::table! {
     wikipedia (id) {
         id -> Int4,
-        word_id -> Nullable<Int4>,
-        wikipedia_link -> Nullable<Text>,
+        word_id -> Int4,
+        wikipedia_link -> Text,
     }
 }
 
 diesel::table! {
-    wordabbreviationslink (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    wordabbreviationslink (word_id, related_id) {
+        word_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    wordaltoflink (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    wordaltoflink (word_id, related_id) {
+        word_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    wordantonymslink (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    wordantonymslink (word_id, related_id) {
+        word_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    wordcategorieslink (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        category_id -> Nullable<Int4>,
+    wordcategorieslink (word_id, category_id) {
+        word_id -> Int4,
+        category_id -> Int4,
     }
 }
 
 diesel::table! {
-    wordcompoundoflink (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    wordcompoundoflink (word_id, related_id) {
+        word_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    wordcoordinatetermslink (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    wordcoordinatetermslink (word_id, related_id) {
+        word_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    wordderivedlink (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    wordderivedlink (word_id, related_id) {
+        word_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    wordformoflink (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    wordformoflink (word_id, related_id) {
+        word_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    wordholonymslink (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    wordholonymslink (word_id, related_id) {
+        word_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    wordhypernymslink (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    wordhypernymslink (word_id, related_id) {
+        word_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    wordhyponymslink (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    wordhyponymslink (word_id, related_id) {
+        word_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    wordmeronymslink (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    wordmeronymslink (word_id, related_id) {
+        word_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    wordproverbslink (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    wordproverbslink (word_id, related_id) {
+        word_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    wordrelatedlink (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    wordrelatedlink (word_id, related_id) {
+        word_id -> Int4,
+        related_id -> Int4,
     }
 }
 
@@ -575,52 +535,61 @@ diesel::table! {
         id -> Int4,
         word -> Text,
         pos -> Text,
-        source -> Nullable<Text>,
         lang_code -> Text,
         lang -> Text,
-        original_title -> Nullable<Text>,
         etymology_number -> Nullable<Int4>,
         etymology_text -> Nullable<Text>,
     }
 }
 
 diesel::table! {
-    wordsynonymlink (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    wordsynonymlink (word_id, related_id) {
+        word_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::table! {
-    wordtroponymslink (id) {
-        id -> Int4,
-        word_id -> Nullable<Int4>,
-        related_id -> Nullable<Int4>,
+    wordtroponymslink (word_id, related_id) {
+        word_id -> Int4,
+        related_id -> Int4,
     }
 }
 
 diesel::joinable!(descendants -> words (word_id));
-diesel::joinable!(descendantstags -> descendants (descendant_id));
-diesel::joinable!(descendantstemplates -> descendants (descendant_id));
-diesel::joinable!(descendantstemplates -> templates (template_id));
+diesel::joinable!(descendants_tags -> descendants (descendant_id));
+diesel::joinable!(descendants_tags -> tags (tag));
+diesel::joinable!(descendants_templates -> descendants (descendant_id));
+diesel::joinable!(descendants_templates -> templates (template_id));
+diesel::joinable!(example_ruby -> examples (example_id));
+diesel::joinable!(example_ruby -> rubies (ruby));
 diesel::joinable!(examples -> senses (sense_id));
-diesel::joinable!(examplesruby -> examples (example_id));
 diesel::joinable!(forms -> words (word_id));
-diesel::joinable!(formsruby -> forms (forms_id));
-diesel::joinable!(formstags -> forms (forms_id));
-diesel::joinable!(genericvectorfield -> words (word_id));
-diesel::joinable!(headtemplates -> templates (template_id));
-diesel::joinable!(headtemplates -> words (word_id));
+diesel::joinable!(forms_ruby -> forms (forms_id));
+diesel::joinable!(forms_ruby -> rubies (ruby));
+diesel::joinable!(forms_tags -> forms (forms_id));
+diesel::joinable!(forms_tags -> tags (tag));
 diesel::joinable!(hyphenations -> words (word_id));
 diesel::joinable!(inflectiontemplate -> words (word_id));
 diesel::joinable!(instance -> words (word_id));
-diesel::joinable!(instancetags -> instance (instance_id));
-diesel::joinable!(instancetopics -> instance (instance_id));
-diesel::joinable!(relatedruby -> related (related_id));
-diesel::joinable!(relatedtags -> related (related_id));
-diesel::joinable!(relatedtopics -> related (related_id));
-diesel::joinable!(relatedurls -> related (related_id));
+diesel::joinable!(instance_tags -> instance (instance_id));
+diesel::joinable!(instance_tags -> tags (tag));
+diesel::joinable!(instance_topics -> instance (instance_id));
+diesel::joinable!(instance_topics -> topics (topic));
+diesel::joinable!(related_ruby -> related (related_id));
+diesel::joinable!(related_ruby -> rubies (ruby));
+diesel::joinable!(related_tags -> related (related_id));
+diesel::joinable!(related_tags -> tags (tag));
+diesel::joinable!(related_topics -> related (related_id));
+diesel::joinable!(related_topics -> topics (topic));
+diesel::joinable!(related_urls -> related (related_id));
+diesel::joinable!(related_urls -> urls (url));
+diesel::joinable!(sense_links -> links (link));
+diesel::joinable!(sense_links -> senses (sense_id));
+diesel::joinable!(sense_tags -> senses (sense_id));
+diesel::joinable!(sense_tags -> tags (tag));
+diesel::joinable!(sense_topics -> senses (sense_id));
+diesel::joinable!(sense_topics -> topics (topic));
 diesel::joinable!(senseabbreviationslink -> related (related_id));
 diesel::joinable!(senseabbreviationslink -> senses (sense_id));
 diesel::joinable!(sensealtoflink -> related (related_id));
@@ -650,21 +619,22 @@ diesel::joinable!(senseproverbslink -> senses (sense_id));
 diesel::joinable!(senserelatedlink -> related (related_id));
 diesel::joinable!(senserelatedlink -> senses (sense_id));
 diesel::joinable!(senses -> words (word_id));
-diesel::joinable!(senseslinks -> senses (sense_id));
-diesel::joinable!(sensestags -> senses (sense_id));
-diesel::joinable!(sensestopics -> senses (sense_id));
 diesel::joinable!(sensesynonymlink -> related (related_id));
 diesel::joinable!(sensesynonymlink -> senses (sense_id));
 diesel::joinable!(sensetroponymslink -> related (related_id));
 diesel::joinable!(sensetroponymslink -> senses (sense_id));
+diesel::joinable!(sound_tags -> sounds (sound_id));
+diesel::joinable!(sound_tags -> tags (tag));
+diesel::joinable!(sound_topics -> sounds (sound_id));
+diesel::joinable!(sound_topics -> topics (topic));
 diesel::joinable!(sounds -> words (word_id));
-diesel::joinable!(soundtags -> sounds (sound_id));
-diesel::joinable!(soundtopics -> sounds (sound_id));
 diesel::joinable!(templates -> words (word_id));
-diesel::joinable!(topics -> words (word_id));
-diesel::joinable!(translations -> words (word_id));
-diesel::joinable!(translationtags -> translations (translation_id));
-diesel::joinable!(translationtopics -> translations (translation_id));
+diesel::joinable!(translation_tags -> tags (tag));
+diesel::joinable!(translation_tags -> translations (translation_id));
+diesel::joinable!(translation_topics -> topics (topic));
+diesel::joinable!(translation_topics -> translations (translation_id));
+diesel::joinable!(translations_words_link -> translations (translation_id));
+diesel::joinable!(translations_words_link -> words (word_id));
 diesel::joinable!(wikidata -> words (word_id));
 diesel::joinable!(wikipedia -> words (word_id));
 diesel::joinable!(wordabbreviationslink -> related (related_id));
@@ -703,25 +673,28 @@ diesel::joinable!(wordtroponymslink -> words (word_id));
 diesel::allow_tables_to_appear_in_same_query!(
     categories,
     descendants,
-    descendantstags,
-    descendantstemplates,
+    descendants_tags,
+    descendants_templates,
+    example_ruby,
     examples,
-    examplesruby,
     forms,
-    formsruby,
-    formstags,
-    genericvectorfield,
-    headtemplates,
+    forms_ruby,
+    forms_tags,
     hyphenations,
     inflectiontemplate,
     instance,
-    instancetags,
-    instancetopics,
+    instance_tags,
+    instance_topics,
+    links,
     related,
-    relatedruby,
-    relatedtags,
-    relatedtopics,
-    relatedurls,
+    related_ruby,
+    related_tags,
+    related_topics,
+    related_urls,
+    rubies,
+    sense_links,
+    sense_tags,
+    sense_topics,
     senseabbreviationslink,
     sensealtoflink,
     senseantonymslink,
@@ -737,19 +710,19 @@ diesel::allow_tables_to_appear_in_same_query!(
     senseproverbslink,
     senserelatedlink,
     senses,
-    senseslinks,
-    sensestags,
-    sensestopics,
     sensesynonymlink,
     sensetroponymslink,
+    sound_tags,
+    sound_topics,
     sounds,
-    soundtags,
-    soundtopics,
+    tags,
     templates,
     topics,
+    translation_tags,
+    translation_topics,
     translations,
-    translationtags,
-    translationtopics,
+    translations_words_link,
+    urls,
     wikidata,
     wikipedia,
     wordabbreviationslink,

@@ -4,10 +4,8 @@ CREATE TABLE Words
     id               SERIAL PRIMARY KEY,
     word             TEXT NOT NULL,
     pos              TEXT NOT NULL,
-    source           TEXT,
     lang_code        TEXT NOT NULL,
     lang             TEXT NOT NULL,
-    original_title   TEXT,
     etymology_number INT,
     etymology_text   TEXT
 );
@@ -19,49 +17,51 @@ CREATE TABLE Related
     alt       TEXT,
     english   TEXT,
     sense     TEXT,
-    word      TEXT,
-    source    TEXT,
+    word      TEXT NOT NULL,
     taxonomic TEXT,
     qualifier TEXT,
     extra     TEXT
 );
 
-CREATE TABLE RelatedUrls
+-- Add related tags, urls, topics, ruby
+-- Add forms tags, ruby
+-- Add translation tags, topics
+-- Add instance tags, topics
+-- Add sound tags, topics
+-- Add example ruby
+-- Add Descendants tags, templates
+-- Add head templates
+-- Add sense tags, topics, links
+
+CREATE TABLE Urls
 (
-    id         SERIAL PRIMARY KEY,
-    related_id INT,
-    url        TEXT,
-    FOREIGN KEY (related_id) REFERENCES Related (id)
+    url TEXT NOT NULL PRIMARY KEY
 );
 
-CREATE TABLE RelatedTopics
+CREATE TABLE Tags
 (
-    id         SERIAL PRIMARY KEY,
-    related_id INT,
-    topic      TEXT,
-    FOREIGN KEY (related_id) REFERENCES Related (id)
+    tag TEXT NOT NULL PRIMARY KEY
 );
 
-CREATE TABLE RelatedTags
+CREATE TABLE Topics
 (
-    id         SERIAL PRIMARY KEY,
-    related_id INT,
-    tag        TEXT,
-    FOREIGN KEY (related_id) REFERENCES Related (id)
+    topic TEXT NOT NULL PRIMARY KEY
 );
 
-CREATE TABLE RelatedRuby
+CREATE TABLE Rubies
 (
-    id         SERIAL PRIMARY KEY,
-    related_id INT,
-    ruby       TEXT,
-    FOREIGN KEY (related_id) REFERENCES Related (id)
+    ruby TEXT NOT NULL PRIMARY KEY
+);
+
+CREATE TABLE Links
+(
+    link TEXT NOT NULL PRIMARY KEY
 );
 
 CREATE TABLE Templates
 (
     id        SERIAL PRIMARY KEY,
-    word_id   INT,
+    word_id   INT NOT NULL,
     args      TEXT,
     name      TEXT,
     expansion TEXT,
@@ -71,7 +71,6 @@ CREATE TABLE Templates
 CREATE TABLE Translations
 (
     id        SERIAL PRIMARY KEY,
-    word_id   INT,
     note      TEXT,
     code      TEXT,
     roman     TEXT,
@@ -80,30 +79,13 @@ CREATE TABLE Translations
     sense     TEXT,
     lang      TEXT,
     word      TEXT,
-    taxonomic TEXT,
-    FOREIGN KEY (word_id) REFERENCES Words (id)
-);
-
-CREATE TABLE TranslationTopics
-(
-    id             SERIAL PRIMARY KEY,
-    translation_id INT,
-    topic          TEXT,
-    FOREIGN KEY (translation_id) REFERENCES Translations (id)
-);
-
-CREATE TABLE TranslationTags
-(
-    id             SERIAL PRIMARY KEY,
-    translation_id INT,
-    tag            TEXT,
-    FOREIGN KEY (translation_id) REFERENCES Translations (id)
+    taxonomic TEXT
 );
 
 CREATE TABLE Sounds
 (
     id        SERIAL PRIMARY KEY,
-    word_id   INT,
+    word_id   INT NOT NULL,
     mp3_url   TEXT,
     note      TEXT,
     rhymes    TEXT,
@@ -123,7 +105,7 @@ CREATE TABLE Sounds
 CREATE TABLE Hyphenations
 (
     id          SERIAL PRIMARY KEY,
-    word_id     INT,
+    word_id     INT NOT NULL,
     hyphenation TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
 );
@@ -135,188 +117,80 @@ CREATE TABLE Categories
     orig     TEXT,
     kind     TEXT,
     name     TEXT,
-    source   TEXT
+    UNIQUE (name, kind)
 );
 
 CREATE TABLE Wikipedia
 (
     id             SERIAL PRIMARY KEY,
-    word_id        INT,
-    wikipedia_link TEXT,
+    word_id        INT NOT NULL,
+    wikipedia_link TEXT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id)
 );
 
 CREATE TABLE Wikidata
 (
     id            SERIAL PRIMARY KEY,
-    word_id       INT,
-    wikidata_link TEXT,
-    FOREIGN KEY (word_id) REFERENCES Words (id)
-);
-
-CREATE TABLE Topics
-(
-    id      SERIAL PRIMARY KEY,
-    word_id INT,
-    topic   TEXT,
+    word_id       INT NOT NULL,
+    wikidata_link TEXT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id)
 );
 
 CREATE TABLE Forms
 (
     id      SERIAL PRIMARY KEY,
-    word_id INT,
+    word_id INT NOT NULL,
     form    TEXT,
     head_nr INT,
     roman   TEXT,
-    source  TEXT,
     ipa     TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
-);
-
-CREATE TABLE FormsRuby
-(
-    id       SERIAL PRIMARY KEY,
-    forms_id INT,
-    ruby     TEXT,
-    FOREIGN KEY (forms_id) REFERENCES Forms (id)
-);
-
-CREATE TABLE FormsTags
-(
-    id       SERIAL PRIMARY KEY,
-    forms_id INT,
-    tag      TEXT,
-    FOREIGN KEY (forms_id) REFERENCES Forms (id)
 );
 
 CREATE TABLE InflectionTemplate
 (
     id      SERIAL PRIMARY KEY,
-    word_id INT,
+    word_id INT  NOT NULL,
     args    TEXT,
-    name    TEXT,
+    name    TEXT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id)
 );
 
 CREATE TABLE Instance
 (
     id      SERIAL PRIMARY KEY,
-    word_id INT,
+    word_id INT NOT NULL,
     sense   TEXT,
-    source  TEXT,
     word    TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
-);
-
-CREATE TABLE InstanceTags
-(
-    id          SERIAL PRIMARY KEY,
-    instance_id INT,
-    tag         TEXT,
-    FOREIGN KEY (instance_id) REFERENCES Instance (id)
-);
-
-CREATE TABLE InstanceTopics
-(
-    id          SERIAL PRIMARY KEY,
-    instance_id INT,
-    topic       TEXT,
-    FOREIGN KEY (instance_id) REFERENCES Instance (id)
-);
-
-CREATE TABLE SoundTopics
-(
-    id       SERIAL PRIMARY KEY,
-    sound_id INT,
-    topic    TEXT,
-    FOREIGN KEY (sound_id) REFERENCES Sounds (id)
-);
-
-CREATE TABLE SoundTags
-(
-    id       SERIAL PRIMARY KEY,
-    sound_id INT,
-    tag      TEXT,
-    FOREIGN KEY (sound_id) REFERENCES Sounds (id)
 );
 
 CREATE TABLE Descendants
 (
     id      SERIAL PRIMARY KEY,
-    word_id INT,
+    word_id INT NOT NULL,
     depth   INT,
     text    TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
 );
 
-CREATE TABLE DescendantsTags
-(
-    id            SERIAL PRIMARY KEY,
-    descendant_id INT,
-    tag           TEXT,
-    FOREIGN KEY (descendant_id) REFERENCES Descendants (id)
-);
-
-CREATE TABLE DescendantsTemplates
-(
-    id            SERIAL PRIMARY KEY,
-    descendant_id INT,
-    template_id   INT,
-    FOREIGN KEY (descendant_id) REFERENCES Descendants (id),
-    FOREIGN KEY (template_id) REFERENCES Templates (id)
-);
-
-CREATE TABLE HeadTemplates
-(
-    id          SERIAL PRIMARY KEY,
-    word_id     INT,
-    template_id INT,
-    FOREIGN KEY (word_id) REFERENCES Words (id),
-    FOREIGN KEY (template_id) REFERENCES Templates (id)
-);
-
 CREATE TABLE Senses
 (
-    id        SERIAL PRIMARY KEY,
-    word_id   INT,
-    sense_id  TEXT,
-    head_nr   INT,
-    taxonomic TEXT,
-    qualifier TEXT,
-    glosses          TEXT,
-    raw_glosses      TEXT,
+    id          SERIAL PRIMARY KEY,
+    word_id     INT NOT NULL,
+    sense_id    TEXT,
+    head_nr     INT,
+    taxonomic   TEXT,
+    qualifier   TEXT,
+    glosses     TEXT,
+    raw_glosses TEXT,
     FOREIGN KEY (word_id) REFERENCES Words (id)
-);
-
-CREATE TABLE SensesTags
-(
-    id       SERIAL PRIMARY KEY,
-    sense_id INT,
-    tag      TEXT,
-    FOREIGN KEY (sense_id) REFERENCES Senses (id)
-);
-
-CREATE TABLE SensesTopics
-(
-    id       SERIAL PRIMARY KEY,
-    sense_id INT,
-    topic    TEXT,
-    FOREIGN KEY (sense_id) REFERENCES Senses (id)
-);
-
-CREATE TABLE SensesLinks
-(
-    id       SERIAL PRIMARY KEY,
-    sense_id INT,
-    links    TEXT,
-    FOREIGN KEY (sense_id) REFERENCES Senses (id)
 );
 
 CREATE TABLE Examples
 (
     id           SERIAL PRIMARY KEY,
-    sense_id     INT,
+    sense_id     INT NOT NULL,
     note         TEXT,
     example_ref  TEXT,
     roman        TEXT,
@@ -326,351 +200,305 @@ CREATE TABLE Examples
     FOREIGN KEY (sense_id) REFERENCES Senses (id)
 );
 
-CREATE TABLE ExamplesRuby
-(
-    id         SERIAL PRIMARY KEY,
-    example_id INT,
-    ruby       TEXT,
-    FOREIGN KEY (example_id) REFERENCES Examples (id)
-);
-
-CREATE TABLE GenericVectorField
-(
-    id          SERIAL PRIMARY KEY,
-    word_id     INT,
-    field_value TEXT,
-    FOREIGN KEY (word_id) REFERENCES Words (id)
-);
-
 CREATE TABLE WordFormOfLink
 (
-    id         SERIAL PRIMARY KEY,
-    word_id    INT,
-    related_id INT,
+    word_id    INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (word_id, related_id)
+    PRIMARY KEY (word_id, related_id)
 );
 
 CREATE TABLE WordAltOfLink
 (
-    id         SERIAL PRIMARY KEY,
-    word_id    INT,
-    related_id INT,
+    word_id    INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (word_id, related_id)
+    PRIMARY KEY (word_id, related_id)
 );
 
 CREATE TABLE WordCategoriesLink
 (
-    id         SERIAL PRIMARY KEY,
-    word_id   INT,
-    category_id INT,
+    word_id     INT NOT NULL,
+    category_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
     FOREIGN KEY (category_id) REFERENCES Categories (id),
-    UNIQUE (word_id, category_id)
+    PRIMARY KEY (word_id, category_id)
 );
 
 CREATE TABLE WordSynonymLink
 (
-    id         SERIAL PRIMARY KEY,
-    word_id    INT,
-    related_id INT,
+    word_id    INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (word_id, related_id)
+    PRIMARY KEY (word_id, related_id)
 );
 
 CREATE TABLE WordRelatedLink
 (
-    id         SERIAL PRIMARY KEY,
-    word_id    INT,
-    related_id INT,
+    word_id    INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (word_id, related_id)
+    PRIMARY KEY (word_id, related_id)
 );
 
 CREATE TABLE WordDerivedLink
 (
-    id         SERIAL PRIMARY KEY,
-    word_id    INT,
-    related_id INT,
+    word_id    INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (word_id, related_id)
+    PRIMARY KEY (word_id, related_id)
 );
 
 CREATE TABLE WordAntonymsLink
 (
-    id         SERIAL PRIMARY KEY,
-    word_id    INT,
-    related_id INT,
+    word_id    INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (word_id, related_id)
+    PRIMARY KEY (word_id, related_id)
 );
 
 CREATE TABLE WordHypernymsLink
 (
-    id         SERIAL PRIMARY KEY,
-    word_id    INT,
-    related_id INT,
+    word_id    INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (word_id, related_id)
+    PRIMARY KEY (word_id, related_id)
 );
 
 CREATE TABLE WordTroponymsLink
 (
-    id         SERIAL PRIMARY KEY,
-    word_id    INT,
-    related_id INT,
+    word_id    INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (word_id, related_id)
+    PRIMARY KEY (word_id, related_id)
 );
 
 CREATE TABLE WordHyponymsLink
 (
-    id         SERIAL PRIMARY KEY,
-    word_id    INT,
-    related_id INT,
+    word_id    INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (word_id, related_id)
+    PRIMARY KEY (word_id, related_id)
 );
 
 CREATE TABLE WordMeronymsLink
 (
-    id         SERIAL PRIMARY KEY,
-    word_id    INT,
-    related_id INT,
+    word_id    INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (word_id, related_id)
+    PRIMARY KEY (word_id, related_id)
 );
 
 CREATE TABLE WordHolonymsLink
 (
-    id         SERIAL PRIMARY KEY,
-    word_id    INT,
-    related_id INT,
+    word_id    INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (word_id, related_id)
+    PRIMARY KEY (word_id, related_id)
 );
 
 CREATE TABLE WordCoordinateTermsLink
 (
-    id         SERIAL PRIMARY KEY,
-    word_id    INT,
-    related_id INT,
+    word_id    INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (word_id, related_id)
+    PRIMARY KEY (word_id, related_id)
 );
 
 CREATE TABLE WordProverbsLink
 (
-    id         SERIAL PRIMARY KEY,
-    word_id    INT,
-    related_id INT,
+    word_id    INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (word_id, related_id)
+    PRIMARY KEY (word_id, related_id)
 );
 
 CREATE TABLE WordCompoundOfLink
 (
-    id         SERIAL PRIMARY KEY,
-    word_id    INT,
-    related_id INT,
+    word_id    INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (word_id, related_id)
+    PRIMARY KEY (word_id, related_id)
 );
 
 CREATE TABLE SenseAltOfLink
 (
-    id         SERIAL PRIMARY KEY,
-    sense_id   INT,
-    related_id INT,
+    sense_id   INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (sense_id, related_id)
+    PRIMARY KEY (sense_id, related_id)
 );
 
 CREATE TABLE SenseSynonymLink
 (
-    id         SERIAL PRIMARY KEY,
-    sense_id   INT,
-    related_id INT,
+    sense_id   INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (sense_id, related_id)
+    PRIMARY KEY (sense_id, related_id)
 );
 
 CREATE TABLE SenseRelatedLink
 (
-    id         SERIAL PRIMARY KEY,
-    sense_id   INT,
-    related_id INT,
+    sense_id   INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (sense_id, related_id)
+    PRIMARY KEY (sense_id, related_id)
 );
 
 CREATE TABLE SenseDerivedLink
 (
-    id         SERIAL PRIMARY KEY,
-    sense_id   INT,
-    related_id INT,
+    sense_id   INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (sense_id, related_id)
+    PRIMARY KEY (sense_id, related_id)
 );
 
 CREATE TABLE SenseAntonymsLink
 (
-    id         SERIAL PRIMARY KEY,
-    sense_id   INT,
-    related_id INT,
+    sense_id   INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (sense_id, related_id)
+    PRIMARY KEY (sense_id, related_id)
 );
 
 CREATE TABLE SenseHypernymsLink
 (
-    id         SERIAL PRIMARY KEY,
-    sense_id   INT,
-    related_id INT,
+    sense_id   INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (sense_id, related_id)
+    PRIMARY KEY (sense_id, related_id)
 );
 
 CREATE TABLE SenseTroponymsLink
 (
-    id         SERIAL PRIMARY KEY,
-    sense_id   INT,
-    related_id INT,
+    sense_id   INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (sense_id, related_id)
+    PRIMARY KEY (sense_id, related_id)
 );
 
 CREATE TABLE SenseFormOfLink
 (
-    id         SERIAL PRIMARY KEY,
-    sense_id    INT,
-    related_id INT,
+    sense_id   INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (sense_id, related_id)
+    PRIMARY KEY (sense_id, related_id)
 );
 
 CREATE TABLE SenseHyponymsLink
 (
-    id         SERIAL PRIMARY KEY,
-    sense_id   INT,
-    related_id INT,
+    sense_id   INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (sense_id, related_id)
+    PRIMARY KEY (sense_id, related_id)
 );
 
 CREATE TABLE SenseMeronymsLink
 (
-    id         SERIAL PRIMARY KEY,
-    sense_id   INT,
-    related_id INT,
+    sense_id   INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (sense_id, related_id)
+    PRIMARY KEY (sense_id, related_id)
 );
 
 CREATE TABLE SenseHolonymsLink
 (
-    id         SERIAL PRIMARY KEY,
-    sense_id   INT,
-    related_id INT,
+    sense_id   INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (sense_id, related_id)
+    PRIMARY KEY (sense_id, related_id)
 );
 
 CREATE TABLE SenseCoordinateTermsLink
 (
-    id         SERIAL PRIMARY KEY,
-    sense_id   INT,
-    related_id INT,
+    sense_id   INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (sense_id, related_id)
+    PRIMARY KEY (sense_id, related_id)
 );
 
 CREATE TABLE SenseProverbsLink
 (
-    id         SERIAL PRIMARY KEY,
-    sense_id   INT,
-    related_id INT,
+    sense_id   INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (sense_id, related_id)
+    PRIMARY KEY (sense_id, related_id)
 );
 
 CREATE TABLE SenseCompoundOfLink
 (
-    id         SERIAL PRIMARY KEY,
-    sense_id   INT,
-    related_id INT,
+    sense_id   INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (sense_id, related_id)
+    PRIMARY KEY (sense_id, related_id)
 );
 
 CREATE TABLE SenseCategoriesLink
 (
-    id         SERIAL PRIMARY KEY,
-    sense_id   INT,
-    category_id INT,
+    sense_id    INT NOT NULL,
+    category_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
     FOREIGN KEY (category_id) REFERENCES Categories (id),
-    UNIQUE (sense_id, category_id)
+    PRIMARY KEY (sense_id, category_id)
 );
 
 CREATE INDEX idx_word ON Words (word);
 CREATE INDEX idx_lang_code ON Words (lang_code);
 CREATE INDEX idx_pos ON Words (pos);
-CREATE INDEX idx_translation_word_id ON Translations (word_id);
+-- CREATE INDEX idx_translation_word_id ON Translations (word_id);
 CREATE INDEX idx_sound_word_id ON Sounds (word_id);
 CREATE INDEX idx_template_word_id ON Templates (word_id);
 CREATE INDEX idx_forms_word_id ON Forms (word_id);
 CREATE INDEX idx_senses_word_id ON Senses (word_id);
 CREATE INDEX idx_instances_word_id ON Instance (word_id);
-CREATE INDEX idx_forms_ruby_forms_id ON FormsRuby (forms_id);
+-- CREATE INDEX idx_forms_ruby_forms_id ON FormsRuby (forms_id);
 CREATE INDEX idx_descendants_word_id ON Descendants (word_id);
 CREATE INDEX idx_inflection_template_word_id ON InflectionTemplate (word_id);
-CREATE INDEX idx_instance_tags_instance_id ON InstanceTags (instance_id);
-CREATE INDEX idx_instance_topics_instance_id ON InstanceTopics (instance_id);
+-- CREATE INDEX idx_instance_tags_instance_id ON InstanceTags (instance_id);
+-- CREATE INDEX idx_instance_topics_instance_id ON InstanceTopics (instance_id);
 CREATE INDEX idx_wikipedia_word_id ON Wikipedia (word_id);
 CREATE INDEX idx_wikidata_word_id ON Wikidata (word_id);
-CREATE INDEX idx_descendants_tags_descendant_id ON DescendantsTags (descendant_id);
-CREATE INDEX idx_descendants_templates_descendant_id ON DescendantsTemplates (descendant_id);
-CREATE INDEX idx_senses_tags_sense_id ON SensesTags (sense_id);
-CREATE INDEX idx_senses_topics_sense_id ON SensesTopics (sense_id);
+-- CREATE INDEX idx_descendants_tags_descendant_id ON DescendantsTags (descendant_id);
+-- CREATE INDEX idx_descendants_templates_descendant_id ON DescendantsTemplates (descendant_id);
+-- CREATE INDEX idx_senses_tags_sense_id ON SensesTags (sense_id);
+-- CREATE INDEX idx_senses_topics_sense_id ON SensesTopics (sense_id);
 CREATE INDEX idx_examples_sense_id ON Examples (sense_id);
-CREATE INDEX idx_examples_ruby_example_id ON ExamplesRuby (example_id);
-CREATE INDEX idx_head_templates_word_id ON HeadTemplates (word_id);
-CREATE INDEX idx_head_templates_template_id ON HeadTemplates (template_id);
+-- CREATE INDEX idx_examples_ruby_example_id ON ExamplesRuby (example_id);
+-- CREATE INDEX idx_head_templates_word_id ON HeadTemplates (word_id);
+-- CREATE INDEX idx_head_templates_template_id ON HeadTemplates (template_id);
 CREATE INDEX idx_hyphenation_word_id ON Hyphenations (word_id);
 CREATE INDEX idx_categories_word_id_word_id ON WordCategoriesLink (word_id);
-CREATE INDEX idx_categories_word_id_category_id ON WordCategoriesLink  (word_id);
+CREATE INDEX idx_categories_word_id_category_id ON WordCategoriesLink (word_id);
 CREATE INDEX idx_categories_sense_id_sense_id ON SenseCategoriesLink (sense_id);
-CREATE INDEX idx_categories_sense_id_category_id ON SenseCategoriesLink  (sense_id);
+CREATE INDEX idx_categories_sense_id_category_id ON SenseCategoriesLink (sense_id);
 
 CREATE INDEX idx_word_derived_link_word_id ON WordDerivedLink (word_id);
 CREATE INDEX idx_word_derived_link_derived_id ON WordDerivedLink (related_id);
@@ -722,15 +550,13 @@ CREATE INDEX idx_sense_proverbs_link_proverbs_id ON SenseProverbsLink (related_i
 CREATE INDEX idx_sense_compound_of_link_sense_id ON SenseCompoundofLink (sense_id);
 CREATE INDEX idx_sense_compound_of_link_compound_of_id ON SenseCompoundofLink (related_id);
 
-
 CREATE TABLE WordAbbreviationsLink
 (
-    id         SERIAL PRIMARY KEY,
-    word_id    INT,
-    related_id INT,
+    word_id    INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (word_id, related_id)
+    PRIMARY KEY (word_id, related_id)
 );
 
 CREATE INDEX idx_word_abbreviations_link_word_id ON WordAbbreviationsLink (word_id);
@@ -738,13 +564,218 @@ CREATE INDEX idx_word_abbreviations_link_abbreviations_id ON WordAbbreviationsLi
 
 CREATE TABLE SenseAbbreviationsLink
 (
-    id         SERIAL PRIMARY KEY,
-    sense_id    INT,
-    related_id INT,
+    sense_id   INT NOT NULL,
+    related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
     FOREIGN KEY (related_id) REFERENCES Related (id),
-    UNIQUE (sense_id, related_id)
+    PRIMARY KEY (sense_id, related_id)
 );
 
 CREATE INDEX idx_sense_abbreviations_link_sense_id ON SenseAbbreviationsLink (sense_id);
 CREATE INDEX idx_sense_abbreviations_link_abbreviations_id ON SenseAbbreviationsLink (related_id);
+
+-- Создание таблиц связей many-to-many
+CREATE TABLE related_tags
+(
+    related_id INT,
+    tag        TEXT,
+    PRIMARY KEY (related_id, tag),
+    FOREIGN KEY (related_id) REFERENCES Related (id),
+    FOREIGN KEY (tag) REFERENCES Tags (tag)
+);
+
+CREATE TABLE related_urls
+(
+    related_id INT,
+    url        TEXT,
+    PRIMARY KEY (related_id, url),
+    FOREIGN KEY (related_id) REFERENCES Related (id),
+    FOREIGN KEY (url) REFERENCES Urls (url)
+);
+
+CREATE TABLE related_topics
+(
+    related_id INT,
+    topic      TEXT,
+    PRIMARY KEY (related_id, topic),
+    FOREIGN KEY (related_id) REFERENCES Related (id),
+    FOREIGN KEY (topic) REFERENCES Topics (topic)
+);
+
+CREATE TABLE related_ruby
+(
+    related_id INT,
+    ruby       TEXT,
+    PRIMARY KEY (related_id, ruby),
+    FOREIGN KEY (related_id) REFERENCES Related (id),
+    FOREIGN KEY (ruby) REFERENCES Rubies (ruby)
+);
+
+CREATE TABLE forms_tags
+(
+    forms_id INT,
+    tag      TEXT,
+    PRIMARY KEY (forms_id, tag),
+    FOREIGN KEY (forms_id) REFERENCES Forms (id),
+    FOREIGN KEY (tag) REFERENCES Tags (tag)
+);
+
+CREATE TABLE forms_ruby
+(
+    forms_id INT,
+    ruby     TEXT,
+    PRIMARY KEY (forms_id, ruby),
+    FOREIGN KEY (forms_id) REFERENCES Forms (id),
+    FOREIGN KEY (ruby) REFERENCES Rubies (ruby)
+);
+
+CREATE TABLE translation_tags
+(
+    translation_id INT,
+    tag            TEXT,
+    PRIMARY KEY (translation_id, tag),
+    FOREIGN KEY (translation_id) REFERENCES Translations (id),
+    FOREIGN KEY (tag) REFERENCES Tags (tag)
+);
+
+CREATE TABLE translation_topics
+(
+    translation_id INT,
+    topic          TEXT,
+    PRIMARY KEY (translation_id, topic),
+    FOREIGN KEY (translation_id) REFERENCES Translations (id),
+    FOREIGN KEY (topic) REFERENCES Topics (topic)
+);
+
+-- Создание индексов
+CREATE INDEX idx_related_tags_related_id ON related_tags (related_id);
+CREATE INDEX idx_related_tags_tag ON related_tags (tag);
+
+CREATE INDEX idx_related_urls_related_id ON related_urls (related_id);
+CREATE INDEX idx_related_urls_url ON related_urls (url);
+
+CREATE INDEX idx_related_topics_related_id ON related_topics (related_id);
+CREATE INDEX idx_related_topics_topic ON related_topics (topic);
+
+CREATE TABLE instance_tags
+(
+    instance_id INT NOT NULL,
+    tag         TEXT,
+    PRIMARY KEY (instance_id, tag),
+    FOREIGN KEY (instance_id) REFERENCES Instance (id),
+    FOREIGN KEY (tag) REFERENCES Tags (tag)
+);
+
+CREATE TABLE instance_topics
+(
+    instance_id INT NOT NULL,
+    topic       TEXT NOT NULL,
+    PRIMARY KEY (instance_id, topic),
+    FOREIGN KEY (instance_id) REFERENCES Instance (id),
+    FOREIGN KEY (topic) REFERENCES Topics (topic)
+);
+
+CREATE TABLE sound_tags
+(
+    sound_id INT NOT NULL,
+    tag      TEXT NOT NULL,
+    PRIMARY KEY (sound_id, tag),
+    FOREIGN KEY (sound_id) REFERENCES Sounds (id),
+    FOREIGN KEY (tag) REFERENCES Tags (tag)
+);
+
+CREATE TABLE sound_topics
+(
+    sound_id INT NOT NULL,
+    topic    TEXT NOT NULL,
+    PRIMARY KEY (sound_id, topic),
+    FOREIGN KEY (sound_id) REFERENCES Sounds (id),
+    FOREIGN KEY (topic) REFERENCES Topics (topic)
+);
+
+CREATE TABLE example_ruby
+(
+    example_id INT NOT NULL,
+    ruby       TEXT NOT NULL,
+    PRIMARY KEY (example_id, ruby),
+    FOREIGN KEY (example_id) REFERENCES Examples (id),
+    FOREIGN KEY (ruby) REFERENCES Rubies (ruby)
+);
+
+CREATE TABLE descendants_tags
+(
+    descendant_id INT NOT NULL,
+    tag           TEXT NOT NULL,
+    PRIMARY KEY (descendant_id, tag),
+    FOREIGN KEY (descendant_id) REFERENCES Descendants (id),
+    FOREIGN KEY (tag) REFERENCES Tags (tag)
+);
+
+CREATE TABLE descendants_templates
+(
+    descendant_id INT NOT NULL,
+    template_id   INT NOT NULL,
+    PRIMARY KEY (descendant_id, template_id),
+    FOREIGN KEY (descendant_id) REFERENCES Descendants (id),
+    FOREIGN KEY (template_id) REFERENCES Templates (id)
+);
+
+-- CREATE TABLE head_templates
+-- (
+--     head_id     INT NOT NULL,
+--     template_id INT NOT NULL,
+--     PRIMARY KEY (head_id, template_id),
+--     FOREIGN KEY (head_id) REFERENCES Head (id),
+--     FOREIGN KEY (template_id) REFERENCES Templates (id)
+-- );
+
+CREATE TABLE sense_tags
+(
+    sense_id INT NOT NULL,
+    tag      TEXT NOT NULL,
+    PRIMARY KEY (sense_id, tag),
+    FOREIGN KEY (sense_id) REFERENCES Senses (id),
+    FOREIGN KEY (tag) REFERENCES Tags (tag)
+);
+
+CREATE TABLE sense_topics
+(
+    sense_id INT NOT NULL,
+    topic    TEXT NOT NULL,
+    PRIMARY KEY (sense_id, topic),
+    FOREIGN KEY (sense_id) REFERENCES Senses (id),
+    FOREIGN KEY (topic) REFERENCES Topics (topic)
+);
+
+CREATE TABLE sense_links
+(
+    sense_id INT NOT NULL,
+    link     TEXT NOT NULL,
+    PRIMARY KEY (sense_id, link),
+    FOREIGN KEY (sense_id) REFERENCES Senses (id),
+    FOREIGN KEY (link) REFERENCES Links (link)
+);
+
+CREATE INDEX idx_instance_tags_instance_id ON instance_tags (instance_id);
+CREATE INDEX idx_instance_tags_tag ON instance_tags (tag);
+
+CREATE INDEX idx_instance_topics_instance_id ON instance_topics (instance_id);
+CREATE INDEX idx_instance_topics_topic ON instance_topics (topic);
+
+CREATE INDEX idx_sound_tags_sound_id ON sound_tags (sound_id);
+CREATE INDEX idx_sound_tags_tag ON sound_tags (tag);
+
+CREATE INDEX idx_sound_topics_sound_id ON sound_topics (sound_id);
+CREATE INDEX idx_sound_topics_topic ON sound_topics (topic);
+
+CREATE TABLE translations_words_link
+(
+    translation_id INTEGER NOT NULL,
+    word_id INTEGER NOT NULL,
+    PRIMARY KEY (translation_id, word_id),
+    FOREIGN KEY (translation_id) REFERENCES translations (id),
+    FOREIGN KEY (word_id) REFERENCES words (id)
+);
+
+CREATE INDEX idx_translations_words_link_translation_id ON translations_words_link (translation_id);
+CREATE INDEX idx_translations_words_link_word_id ON translations_words_link (word_id);

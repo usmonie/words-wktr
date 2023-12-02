@@ -1,0 +1,768 @@
+{
+    "pos": "noun",
+    "forms": [
+        {
+            "form": "würden appropriiert haben",
+            "tags": [
+                "third-person"
+            ],
+            "source": "conjugation",
+            "ipa": "/e.kli.se/",
+            "roman": "âğâz",
+            "ruby": [
+                [
+                    "しろ"
+                ]
+            ],
+            "head_nr": 1,
+            "topics": [
+                "media"
+            ]
+        }
+    ],
+    "etymology_text": "Borrowed from Late Latin appropriāre. In modern usage influenced by English appropriate, in the sense of cultural appropriation.",
+    "etymology_templates": [
+        {
+            "name": "m",
+            "args": {
+                "1": "en"
+            },
+            "expansion": "cultural appropriation"
+        }
+    ],
+    "sounds": [
+        {
+            "ipa": "/apʁopʁiˈiːʁən/",
+            "rhymes": "-utːɑː",
+            "audio": "De-appropriieren.ogg",
+            "text": "Audio",
+            "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/De-appropriieren.ogg",
+            "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/ae/De-appropriieren.ogg/De-appropriieren.ogg.mp3",
+            "tags": [
+                "formal"
+            ],
+            "homophone": "Prowent",
+            "note": "Hazaragi",
+            "enpr": "hou mī",
+            "other": "[Phonetic: láohuǒtāng]",
+            "audio-ipa": "/ɡuˈ(w)ɛ/",
+            "zh-pron": "tshee-iōng",
+            "topics": [
+                "sciences"
+            ],
+            "form": "-ніца"
+        }
+    ],
+    "hyphenation": [
+        "ap‧pro‧p‧ri‧ie‧ren"
+    ],
+    "word": "incorrect argument",
+    "lang": "English",
+    "lang_code": "en",
+    "senses": [
+        {
+            "links": [
+                [
+                    "appropriate"
+                ]
+            ],
+            "glosses": [
+                "incorrect argument"
+            ],
+            "id": "incorrect_argument-en-noun-XkckZAJe",
+            "categories": [
+                {
+                    "name": "German verbs using haben as auxiliary",
+                    "kind": "other",
+                    "parents": [
+                        "Fundamental"
+                    ],
+                    "source": "w",
+                    "orig": "fi:Algebra",
+                    "langcode": "fi",
+                    "_dis": "50 50"
+                }
+            ],
+            "tags": [
+                "weak"
+            ],
+            "alt_of": [
+                {
+                    "word": "Թյուլպենտճյան",
+                    "extra": "Tʿyulpentčyan"
+                }
+            ],
+            "synonyms": [
+                {
+                    "word": "pseudoargument",
+                    "tags": [
+                        "Brazil"
+                    ],
+                    "sense": "Siddham script",
+                    "alt": "假令",
+                    "source": "Thesaurus:incorrect argument",
+                    "roman": "chāiqiǎn",
+                    "english": "Pre-reform orthography (1945)",
+                    "ruby": [
+                        [
+                            "だいきょうきん"
+                        ]
+                    ],
+                    "extra": "reduced row echelon form",
+                    "topics": [
+                        "lifestyle"
+                    ],
+                    "taxonomic": "English derivative",
+                    "qualifier": "Bhaiksuki script",
+                    "urls": [
+                        "http://www.nayiri.com/imagedDictionaryBrowser.jsp?dictionaryId&#61;35&printPage&#61;270&volume&#61;1"
+                    ]
+                }
+            ],
+            "raw_glosses": [
+                "(transitive, higher register, uncommon) to appropriate"
+            ],
+            "examples": [
+                {
+                    "text": "Auf moralische Zurechtweisungen wie „Du sollst nicht kulturell appropriieren!“ oder „Du sollst der Geschlechtergerechtmachung der Sprache nicht spotten!“ oder „Du sollst keine Minderheiten verhöhnen!“ reagiert der Narr, wie er schon immer auf Einwände einer Obrigkeit reagierte – mit dem störrischen Schulterzucken, das er übrigens auch schon immer für akademische Fragen übrig hatte.",
+                    "ref": "2023-02-13, Arno Frank, “Essay zum Karneval: Einfach, narrisch”, in Die Tageszeitung: taz, →ISSN",
+                    "type": "quotation",
+                    "english": "(please add an English translation of this quotation)",
+                    "roman": "Jakby ty ne bazáryv tak baháto, voný b ničóho j ne znály.",
+                    "ruby": [
+                        [
+                            "ぞくぐん"
+                        ]
+                    ],
+                    "note": "slightly formal use"
+                }
+            ],
+            "topics": [
+                "sciences"
+            ],
+            "form_of": [
+                {
+                    "word": "avtrappa",
+                    "extra": "rozihnáty"
+                }
+            ],
+            "qualifier": "higher register",
+            "antonyms": [
+                {
+                    "word": "îmbolnăvi",
+                    "english": "ugly",
+                    "tags": [
+                        "archaic"
+                    ],
+                    "source": "Thesaurus:se însănătoși",
+                    "alt": "滿潮",
+                    "topics": [
+                        "LGBT"
+                    ]
+                }
+            ],
+            "derived": [
+                {
+                    "word": "appropriiert",
+                    "english": "in the temescal",
+                    "roman": "militarystýčnyj",
+                    "alt": "𫌑子",
+                    "sense": "っまつぃもれ (mmacïmore)",
+                    "ruby": [
+                        [
+                            "ひき"
+                        ]
+                    ],
+                    "tags": [
+                        "feminine"
+                    ],
+                    "taxonomic": "Fagus japonica",
+                    "topics": [
+                        "business"
+                    ],
+                    "urls": [
+                        "http://www.organismnames.com/query.htm?q=Pithecus&Submit.x=0&Submit.y=0&searchType=simple&so=a0"
+                    ],
+                    "source": "Thesaurus:sociology",
+                    "qualifier": "Sogdian script"
+                }
+            ],
+            "related": [
+                {
+                    "word": "Appendix:Moby Thesaurus II/29 § fallacy",
+                    "english": "star",
+                    "source": "Thesaurus:incorrect argument",
+                    "sense": "see",
+                    "tags": [
+                        "verb"
+                    ],
+                    "roman": "Hovhannisyan",
+                    "ruby": [
+                        [
+                            "あお"
+                        ]
+                    ],
+                    "alt": "肉食動物",
+                    "topics": [
+                        "sciences"
+                    ],
+                    "urls": [
+                        "https://www.studmed.ru/view/moll-ta-inenlikey-pi-chukotsko-russkiy-slovar_464a9e92cb2.html?page&#61;1"
+                    ],
+                    "taxonomic": "Asindulum nigrum",
+                    "qualifier": "The Armenian script"
+                }
+            ],
+            "translations": [
+                {
+                    "lang": "French",
+                    "code": "fr",
+                    "sense": "abbreviation of (the equivalent of) Aeschines",
+                    "word": "Eschn.",
+                    "tags": [
+                        "masculine"
+                    ],
+                    "roman": "Xiāngdōng",
+                    "alt": "京畿道",
+                    "note": "逆バニー (gyaku-banī, literally “reverse bunny”)",
+                    "english": "soeng¹ dung¹",
+                    "topics": [
+                        "politics"
+                    ],
+                    "taxonomic": "Anobium punctatum"
+                }
+            ],
+            "senseid": [
+                "en:instance of a load on a dray"
+            ],
+            "hypernyms": [
+                {
+                    "sense": "genus",
+                    "english": "family",
+                    "word": "argument",
+                    "tags": [
+                        "class"
+                    ],
+                    "source": "Thesaurus:incorrect argument",
+                    "topics": [
+                        "natural-sciences"
+                    ],
+                    "roman": "kuttā",
+                    "ruby": [
+                        [
+                            "ざけ"
+                        ]
+                    ],
+                    "alt": "refrigerant",
+                    "taxonomic": "Khasia cherry",
+                    "urls": [
+                        "http://www.marinespecies.org/"
+                    ]
+                }
+            ],
+            "hyponyms": [
+                {
+                    "sense": "genus",
+                    "english": "semolina dumpling",
+                    "word": "wishful thinking",
+                    "alt": "Chilean plum yew",
+                    "tags": [
+                        "slang"
+                    ],
+                    "source": "Thesaurus:incorrect argument",
+                    "topics": [
+                        "business"
+                    ],
+                    "qualifier": "omitting several letters",
+                    "taxonomic": "California flannelbush",
+                    "urls": [
+                        "http://www.marinespecies.org/"
+                    ],
+                    "roman": "magnetár",
+                    "ruby": [
+                        [
+                            "がた"
+                        ]
+                    ]
+                }
+            ],
+            "wikipedia": [
+                "uk:Мельничук Олександр Савич"
+            ],
+            "coordinate_terms": [
+                {
+                    "word": "keep inexistent",
+                    "tags": [
+                        "feminine"
+                    ],
+                    "english": "December",
+                    "topics": [
+                        "lifestyle"
+                    ],
+                    "roman": "mǔluó",
+                    "alt": "Максимова",
+                    "sense": "age",
+                    "source": "Thesaurus:make inexistent",
+                    "urls": [
+                        "//dummy.host/index.php?title=Template%3Alist%3Areligions%2Fsyc&action=edit"
+                    ],
+                    "ruby": [
+                        [
+                            "あかもじけい"
+                        ]
+                    ],
+                    "qualifier": "Assyrian letter names",
+                    "taxonomic": "Salsola tragus"
+                }
+            ],
+            "wikidata": [
+                "Q174728"
+            ],
+            "holonyms": [
+                {
+                    "word": "country",
+                    "source": "Thesaurus:government minister",
+                    "sense": "any of range of units of language defined by hyponymy",
+                    "topics": [
+                        "transport"
+                    ],
+                    "english": "Punjabi ghagra suit",
+                    "tags": [
+                        "Brazil"
+                    ],
+                    "alt": "微積分",
+                    "qualifier": "word clued by successive letters",
+                    "roman": "ṭiora",
+                    "ruby": [
+                        [
+                            "あんこう"
+                        ]
+                    ]
+                }
+            ],
+            "meronyms": [
+                {
+                    "word": "éster",
+                    "source": "Thesaurus:bebida alcoólica",
+                    "sense": "organs that produce, store, and eliminate urine",
+                    "topics": [
+                        "lifestyle"
+                    ],
+                    "tags": [
+                        "slang"
+                    ],
+                    "english": "gizzard",
+                    "roman": "narak",
+                    "alt": "Calabresisch",
+                    "urls": [
+                        "//dummy.host/index.php?title=Template%3Alist%3Astates+of+the+United+States%2Feo&action=edit"
+                    ],
+                    "ruby": [
+                        [
+                            "はやお"
+                        ]
+                    ],
+                    "taxonomic": "Rhus microphylla"
+                }
+            ],
+            "taxonomic": "Wikimedia jargon",
+            "head_nr": 1,
+            "troponyms": [
+                {
+                    "sense": "to recover",
+                    "word": "laughably",
+                    "english": "to surf (on waves, wind, ice, etc.)",
+                    "tags": [
+                        "inchoative"
+                    ],
+                    "roman": "otljóživatʹsja",
+                    "ruby": [
+                        [
+                            "れい"
+                        ]
+                    ]
+                }
+            ],
+            "compound_of": [
+                {
+                    "word": "cuntar and the pronoun me",
+                    "extra": "(bi)+ 𐌰𐌽𐌳𐌹𐌶𐌿𐌷 (andizuh)+ 𐌸𐌰𐌽 (þan)"
+                }
+            ],
+            "instances": [
+                {
+                    "word": "immaturity",
+                    "source": "Thesaurus:personal quality",
+                    "tags": [
+                        "dated"
+                    ],
+                    "topics": [
+                        "sciences"
+                    ]
+                }
+            ]
+        }
+    ],
+    "head_templates": [
+        {
+            "name": "head",
+            "args": {
+                "1": "fi"
+            },
+            "expansion": "supistettu porrasmuoto"
+        }
+    ],
+    "categories": [
+        {
+            "name": "Chinese 形容詞s",
+            "kind": "other",
+            "parents": [
+                "Fundamental"
+            ],
+            "source": "w+disamb",
+            "_dis": "0 0",
+            "orig": "th:Marriage",
+            "langcode": "th"
+        }
+    ],
+    "related": [
+        {
+            "word": "menosprezo",
+            "roman": "indeksuváty",
+            "english": "to support",
+            "tags": [
+                "perfective"
+            ],
+            "ruby": [
+                [
+                    "あお"
+                ]
+            ],
+            "sense": "see",
+            "alt": "falsifikazzjoni",
+            "topics": [
+                "lifestyle"
+            ],
+            "urls": [
+                "https://archive.org/details/modernenglishyid00wein_0/page/512"
+            ],
+            "source": "Thesaurus:law of nature",
+            "taxonomic": "Arctocebus aureus",
+            "qualifier": "The Armenian script"
+        }
+    ],
+    "antonyms": [
+        {
+            "word": "venerar",
+            "sense": "host",
+            "english": "others, someone other than oneself",
+            "source": "Thesaurus:low-quality",
+            "roman": "hṭaw",
+            "ruby": [
+                [
+                    "まえ"
+                ]
+            ],
+            "tags": [
+                "natural"
+            ],
+            "topics": [
+                "law"
+            ],
+            "alt": "下流"
+        }
+    ],
+    "descendants": [
+        {
+            "depth": 1,
+            "templates": [
+                {
+                    "name": "desc",
+                    "args": {
+                        "1": "es"
+                    },
+                    "expansion": "→ Spanish: Pafnucio"
+                }
+            ],
+            "text": "→ Spanish: Pafnucio",
+            "tags": [
+                "derived"
+            ]
+        }
+    ],
+    "synonyms": [
+        {
+            "word": "vexar",
+            "tags": [
+                "masculine"
+            ],
+            "english": "Pre-reform orthography (1945)",
+            "roman": "astírichtos",
+            "topics": [
+                "media"
+            ],
+            "ruby": [
+                [
+                    "ばんごうづ"
+                ]
+            ],
+            "sense": "Siddham script",
+            "alt": "bedbug",
+            "source": "Thesaurus:maślak",
+            "taxonomic": "Psilocybe coprophila",
+            "qualifier": "Siddham script",
+            "urls": [
+                "https://www.retsinformation.dk/eli/lta/1948/128"
+            ]
+        }
+    ],
+    "inflection_templates": [
+        {
+            "name": "de-conj",
+            "args": {
+                "1": "supiste"
+            }
+        }
+    ],
+    "derived": [
+        {
+            "word": "desconfranger",
+            "roman": "zhládžuvatysja",
+            "ruby": [
+                [
+                    "らく"
+                ]
+            ],
+            "tags": [
+                "imperfective"
+            ],
+            "english": "feast of the Transfiguration",
+            "sense": "Swedish: spräkla, spräckla",
+            "taxonomic": "Spicara maena",
+            "alt": "防風‒",
+            "topics": [
+                "property"
+            ],
+            "qualifier": "Old Sogdian script",
+            "urls": [
+                "https://dsal.uchicago.edu/cgi-bin/app/mcgregor_query.py?qs&#61;किरच&searchhws&#61;yes&matchtype&#61;exact"
+            ]
+        }
+    ],
+    "etymology_number": 6,
+    "hypernyms": [
+        {
+            "english": "gentalia",
+            "word": "Wärter",
+            "sense": "genus",
+            "topics": [
+                "lifestyle"
+            ],
+            "tags": [
+                "class"
+            ],
+            "source": "Thesaurus:incel",
+            "alt": "Guobiao",
+            "roman": "prāz’nehk’",
+            "ruby": [
+                [
+                    "たか"
+                ]
+            ],
+            "urls": [
+                "http://www.marinespecies.org/aphia.php?p=taxdetails&id=446049",
+                "http://www.marinespecies.org/"
+            ]
+        }
+    ],
+    "original_title": "Reconstruction:Proto-Slavic/rykati",
+    "translations": [
+        {
+            "lang": "French",
+            "code": "fr",
+            "sense": "plain",
+            "roman": "pākpattan",
+            "word": "Plaines d’Abraham",
+            "tags": [
+                "feminine"
+            ],
+            "note": "not used in Polish",
+            "english": "dung¹ cung¹",
+            "alt": "bok⁶⁻³ fu⁴⁻⁶ lam⁴",
+            "topics": [
+                "transport"
+            ],
+            "taxonomic": "Liga čempionov"
+        }
+    ],
+    "wikipedia": [
+        "uk:Мельничук Олександр Савич"
+    ],
+    "coordinate_terms": [
+        {
+            "word": "tiekti",
+            "english": "becoming green",
+            "roman": "nacizm",
+            "sense": "inflection of Einjährige",
+            "topics": [
+                "lifestyle"
+            ],
+            "alt": "foreignisms",
+            "tags": [
+                "name"
+            ],
+            "source": "Thesaurus:dog",
+            "urls": [
+                "//dummy.host/index.php?title=Template%3Alist%3Areligionists%2Fen&action=edit"
+            ],
+            "ruby": [
+                [
+                    "あきな"
+                ]
+            ],
+            "taxonomic": "PVC window"
+        }
+    ],
+    "hyponyms": [
+        {
+            "sense": "genus (current)",
+            "word": "ܩܵܛܹܠ",
+            "english": "to kill",
+            "topics": [
+                "sciences"
+            ],
+            "tags": [
+                "feminine"
+            ],
+            "alt": "VMC",
+            "roman": "qāṭēl",
+            "source": "Thesaurus:law of nature",
+            "taxonomic": "Columba oenas",
+            "ruby": [
+                [
+                    "まきゅう"
+                ]
+            ],
+            "urls": [
+                "http://www.theplantlist.org/"
+            ]
+        }
+    ],
+    "instances": [
+        {
+            "word": "common",
+            "source": "Thesaurus:grammatical gender",
+            "sense": "a feature of words arbitrarily associated to biological genders",
+            "tags": [
+                "humorous"
+            ]
+        }
+    ],
+    "holonyms": [
+        {
+            "word": "сурааһын",
+            "source": "Thesaurus:summate",
+            "sense": "[2]: Louvigné",
+            "english": "line",
+            "tags": [
+                "feminine"
+            ],
+            "topics": [
+                "sciences"
+            ],
+            "roman": "suraahın"
+        }
+    ],
+    "abbreviations": [
+        {
+            "sense": "aerario",
+            "word": "BAKWATA",
+            "alt": "in Cicero's Tusculanae Disputationes",
+            "urls": [
+                "https://iso639-3.sil.org/code/uga"
+            ],
+            "english": "MOB",
+            "topics": [
+                "politics"
+            ],
+            "tags": [
+                "acronym"
+            ],
+            "roman": "MFA"
+        }
+    ],
+    "source": "thesaurus",
+    "meronyms": [
+        {
+            "word": "Abschnitt",
+            "source": "Thesaurus:dog",
+            "sense": "njara",
+            "topics": [
+                "publishing"
+            ],
+            "english": "banknote unit",
+            "tags": [
+                "vulgar"
+            ],
+            "roman": "jeomut",
+            "alt": "Beiersch"
+        }
+    ],
+    "proverbs": [
+        {
+            "roman": "aka de shinda mono wa nai, said of one who dislikes bathing",
+            "ruby": [
+                [
+                    "もの"
+                ]
+            ],
+            "english": "none died in dirt",
+            "word": "垢で死んだ者はない",
+            "tags": [
+                "literally"
+            ],
+            "alt": "rakka eda ni kaerazu hakyō futatabi terasazu, →"
+        }
+    ],
+    "form_of": [
+        {
+            "word": "the ku class",
+            "roman": "ʾanä"
+        }
+    ],
+    "troponyms": [
+        {
+            "word": "humidificar",
+            "source": "Thesaurus:look",
+            "sense": "lie down and take repose",
+            "roman": "kōtō suru",
+            "ruby": [
+                [
+                    "さいけいれい"
+                ]
+            ],
+            "english": "a respectful bow, a low bow",
+            "topics": [
+                "science",
+                "sciences",
+                "computer",
+                "computing",
+                "engineering",
+                "mathematics",
+                "physical-sciences",
+                "natural-sciences"
+            ]
+        }
+    ],
+    "topics": [
+        "spiritualism"
+    ],
+    "alt_of": [
+        {
+            "word": "tag-teamed"
+        }
+    ],
+    "wikidata": [
+        "Q115206842"
+    ]
+}

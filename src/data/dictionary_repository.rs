@@ -1,58 +1,165 @@
-use diesel::{pg::PgConnection, r2d2::{ConnectionManager, Pool}, RunQueryDsl};
-use diesel::associations::HasTable;
-use diesel::r2d2::PooledConnection;
-use crate::data::models::*;
-use crate::domain::Error;
-use crate::domain::models::{Category, Related, Relation, Word};
+use std::collections::HashMap;
 use crate::domain::use_cases::DictionaryRepository;
-use crate::schema::categories::dsl::categories;
-use crate::schema::forms::dsl::forms;
-use crate::schema::formstags::dsl::formstags;
-use crate::schema::hyphenations::dsl::hyphenations;
-use crate::schema::related::dsl::related;
-use crate::schema::relatedruby::dsl::relatedruby;
-use crate::schema::relatedtags::dsl::relatedtags;
-use crate::schema::relatedtopics::dsl::relatedtopics;
-use crate::schema::relatedurls::dsl::relatedurls;
-use crate::schema::senseabbreviationslink::dsl::senseabbreviationslink;
-use crate::schema::sensealtoflink::dsl::sensealtoflink;
-use crate::schema::senseantonymslink::dsl::senseantonymslink;
-use crate::schema::sensecategorieslink::dsl::sensecategorieslink;
-use crate::schema::sensecoordinatetermslink::dsl::sensecoordinatetermslink;
-use crate::schema::sensederivedlink::dsl::sensederivedlink;
-use crate::schema::senseformoflink::dsl::senseformoflink;
-use crate::schema::senseholonymslink::dsl::senseholonymslink;
-use crate::schema::sensehypernymslink::dsl::sensehypernymslink;
-use crate::schema::sensehyponymslink::dsl::sensehyponymslink;
-use crate::schema::sensemeronymslink::dsl::sensemeronymslink;
-use crate::schema::senseproverbslink::dsl::senseproverbslink;
-use crate::schema::senserelatedlink::dsl::senserelatedlink;
-use crate::schema::senses::dsl::senses;
-use crate::schema::senseslinks::dsl::senseslinks;
-use crate::schema::sensestags::dsl::sensestags;
-use crate::schema::sensesynonymlink::dsl::sensesynonymlink;
-use crate::schema::sensetroponymslink::dsl::sensetroponymslink;
-use crate::schema::sounds::dsl::sounds;
-use crate::schema::soundtags::dsl::soundtags;
-use crate::schema::templates::dsl::templates;
-use crate::schema::wordabbreviationslink::dsl::wordabbreviationslink;
-use crate::schema::wordaltoflink::dsl::wordaltoflink;
-use crate::schema::wordantonymslink::dsl::wordantonymslink;
-use crate::schema::wordcoordinatetermslink::dsl::wordcoordinatetermslink;
-use crate::schema::wordderivedlink::dsl::wordderivedlink;
-use crate::schema::wordformoflink::dsl::wordformoflink;
-use crate::schema::wordholonymslink::dsl::wordholonymslink;
-use crate::schema::wordhypernymslink::dsl::wordhypernymslink;
-use crate::schema::wordhyponymslink::dsl::wordhyponymslink;
-use crate::schema::wordmeronymslink::dsl::wordmeronymslink;
-use crate::schema::wordproverbslink::dsl::wordproverbslink;
-use crate::schema::wordrelatedlink::dsl::wordrelatedlink;
-use crate::schema::words::dsl::words;
-use crate::schema::wordsynonymlink::dsl::wordsynonymlink;
-use crate::schema::wordtroponymslink::dsl::wordtroponymslink;
+use crate::domain::Error;
+use diesel::associations::HasTable;
+use diesel::{BelongingToDsl, ExpressionMethods, Identifiable, PgConnection, PgTextExpressionMethods, QueryDsl, RunQueryDsl};
+use diesel::r2d2::{ConnectionManager, Pool, PooledConnection};
+use crate::data::db::links::*;
+use crate::data::db::models::*;
+use crate::domain::models::{Category, Relation};
+use crate::schema::words::word;
+use std::iter::Iterator;
+use crate::schema::translations::id;
 
 pub struct DieselDictionaryRepository {
     pool: Pool<ConnectionManager<PgConnection>>,
+}
+
+impl DieselDictionaryRepository {
+    fn map_words(pool: &Pool<ConnectionManager<PgConnection>>, words_db: Vec<Word>) -> Vec<crate::domain::models::Word> {
+        let mut conn: PooledConnection<ConnectionManager<PgConnection>> = pool.get().unwrap();
+
+        let mut results = Vec::new();
+        for word_db in words_db {
+            let templates = Template::belonging_to(&word_db)
+                .load::<Template>(&mut conn)
+                .unwrap_or_default();
+            let templates: Vec<crate::domain::models::Template> = templates.into_iter().map(|template| {
+                let args: HashMap<String, String> = match template.args {
+                    None => { Default::default() }
+                    Some(arg) => { serde_json::from_str(&arg).unwrap() }
+                };
+
+                crate::domain::models::Template {
+                    args,
+                    name: template.name,
+                    expansion: template.expansion,
+                }
+            }).collect();
+            // QueryDsl::filter(TranslationWordLink::table(), TranslationWordLink::foreign_key_column().eq(word_db.id()));
+            // FilterDsl::filter(TranslationWordLink::table(), TranslationWordLink::foreign_key_column().eq(word_db::))
+            let translations_links = crate::schema::translations_words_link::dsl::translations_words_link::table()
+                .filter(crate::schema::translations_words_link::word_id.eq(&word_db.id()))
+                .load::<TranslationWordLink>(&mut conn)
+                .unwrap_or_default();
+            let translations_links = translations_links.into_iter().map(|relation| {
+                relation.translation_id
+            });
+
+            let translations = crate::schema::translations::dsl::translations::table()
+                .filter(id.eq_any(translations_links))
+                .load::<Translation>(&mut conn)
+                .expect("");
+
+            let translations = translations.into_iter().map(|translation| {
+                crate::domain::models::Translation {
+                    note: translation.note,
+                    code: translation.code,
+                    topics: vec![],
+                    roman: translation.roman,
+                    alt: translation.alt,
+                    english: translation.english,
+                    sense: translation.sense,
+                    lang: translation.lang,
+                    word: translation.word,
+                    taxonomic: translation.taxonomic,
+                    tags: vec![],
+                }
+            }).collect();
+
+            let sounds = Sound::belonging_to(&word_db)
+                .load::<Sound>(&mut conn)
+                .unwrap_or_default();
+            let sounds = sounds.into_iter().map(|sound| {
+                crate::domain::models::Sound {
+                    mp3_url: sound.mp3_url,
+                    note: sound.note,
+                    rhymes: sound.rhymes,
+                    other: sound.other,
+                    enpr: sound.enpr,
+                    audio_ipa: sound.audio_ipa,
+                    topics: vec![],
+                    tags: vec![],
+                    ogg_url: sound.ogg_url,
+                    form: sound.form,
+                    ipa: sound.ipa,
+                    audio: sound.audio,
+                    text: sound.text,
+                    homophone: sound.homophone,
+                    zh_pron: sound.zh_pron,
+                }
+            }).collect();
+
+            let categories_links = crate::schema::wordcategorieslink::dsl::wordcategorieslink::table()
+                .filter(crate::schema::wordcategorieslink::word_id.eq(&word_db.id()))
+                .load::<WordCategoriesLink>(&mut conn)
+                .unwrap_or_default();
+            let categories_links = categories_links.into_iter().map(|relation| {
+                relation.category_id
+            });
+
+            let categories = crate::schema::categories::dsl::categories::table()
+                .filter(crate::schema::categories::id.eq_any(categories_links))
+                .load::<Categorie>(&mut conn)
+                .unwrap_or_default();
+
+            let categories = categories.into_iter().map(|category| {
+                Category {
+                    langcode: category.langcode,
+                    orig: category.orig,
+                    kind: category.kind,
+                    name: category.name,
+                    parents: vec![],
+                }
+            }).collect();
+
+            let wikipedia = Wikipedia::belonging_to(&word_db)
+                .load::<Wikipedia>(&mut conn)
+                .unwrap_or_default();
+            let wikipedia: Vec<String> = wikipedia.into_iter().map(|wiki| {
+                wiki.wikipedia_link
+            }).collect();
+
+            results.push(crate::domain::models::Word {
+                word: word_db.word,
+                pos: word_db.pos,
+                lang_code: word_db.lang_code,
+                lang: word_db.lang,
+                etymology_number: word_db.etymology_number,
+                etymology_templates: templates,
+                etymology_text: word_db.etymology_text,
+                inflection_templates: vec![],
+                translations,
+                categories,
+                wikipedia,
+                hyphenation: vec![],
+                topics: vec![],
+                glosses: vec![],
+                raw_glosses: vec![],
+                forms: vec![],
+                senses: vec![],
+                instances: vec![],
+                head_templates: vec![],
+                descendants: vec![],
+                sounds,
+                antonyms: vec![],
+                hypernyms: vec![],
+                related: vec![],
+                derived: vec![],
+                abbreviations: vec![],
+                synonyms: vec![],
+                troponyms: vec![],
+                form_of: vec![],
+                hyponyms: vec![],
+                alt_of: vec![],
+                holonyms: vec![],
+                coordinate_terms: vec![],
+                meronyms: vec![],
+                proverbs: vec![],
+            });
+        }
+        results
+    }
 }
 
 impl DieselDictionaryRepository {
@@ -65,415 +172,600 @@ impl DieselDictionaryRepository {
         Self { pool }
     }
 
-    fn store_related<F>(&self, items: Vec<Related>, mut add_link: F)
+    fn insert_related<F>(&self, items: Vec<crate::domain::models::Related>, mut add_link: F)
         where
-            F: FnMut(i32)
+            F: FnMut(i32),
     {
         let mut conn: PooledConnection<ConnectionManager<PgConnection>> = self.pool.get().unwrap();
 
         for item in items {
-            let insertable = NewRelated {
+            let related = NewRelated {
                 roman: item.roman,
                 alt: item.alt,
                 english: item.english,
                 sense: item.sense,
                 word: item.word,
-                source: item.source,
                 taxonomic: item.taxonomic,
                 qualifier: item.qualifier,
                 extra: item.extra,
             };
 
-            let inserted: i32 = diesel::insert_into(related::table())
-                .values(insertable)
+            let related_id: i32 = diesel::insert_into(crate::schema::related::dsl::related::table())
+                .values(related)
                 .returning(crate::schema::related::id)
+                .on_conflict_do_nothing()
                 .get_result::<i32>(&mut conn)
                 .expect("error while storing relations");
 
-            add_link(inserted);
-            let insertable_tags: Vec<NewRelatedTags> = item.tags.into_iter().map(|tag| {
-                NewRelatedTags { related_id: inserted, tag }
-            }).collect();
+            add_link(related_id);
 
-            let insertable_topics: Vec<NewRelatedTopics> = item.topics.into_iter().map(|topic| {
-                NewRelatedTopics { related_id: inserted, topic }
-            }).collect();
-
-            let insertable_urls: Vec<NewRelatedUrls> = item.urls.into_iter().map(|url| {
-                NewRelatedUrls { related_id: inserted, url }
-            }).collect();
-
-            let insertable_ruby: Vec<NewRelatedRuby> = item.ruby.into_iter().map(|rubies| {
-                NewRelatedRuby { related_id: inserted, ruby: serde_json::to_string(&rubies).expect("") }
-            }).collect();
-
-            diesel::insert_into(relatedtags)
-                .values(insertable_tags)
+            let mut items = vec![];
+            self.insert_tags(&item.tags, |tag| {
+                items.push(RelatedTagLink {
+                    related_id,
+                    tag: tag.to_owned(),
+                })
+            });
+            diesel::insert_into(crate::schema::related_tags::dsl::related_tags::table())
+                .values(items)
+                .on_conflict_do_nothing()
                 .execute(&mut conn)
-                .expect("error while storing relations tags");
+                .expect("");
 
-            diesel::insert_into(relatedtopics)
-                .values(insertable_topics)
+            let mut items = vec![];
+            self.insert_topics(&item.topics, |topic| {
+                items.push(RelatedTopicLink {
+                    related_id,
+                    topic: topic.to_owned(),
+                })
+            });
+            diesel::insert_into(crate::schema::related_topics::dsl::related_topics::table())
+                .values(items)
+                .on_conflict_do_nothing()
                 .execute(&mut conn)
-                .expect("error while storing relations topics");
+                .expect("");
 
-            diesel::insert_into(relatedurls)
-                .values(insertable_urls)
+            let mut items = vec![];
+            self.insert_rubies(&item.ruby, |ruby| {
+                items.push(RelatedRubyLink {
+                    related_id,
+                    ruby: ruby.to_owned(),
+                })
+            });
+            diesel::insert_into(crate::schema::related_ruby::dsl::related_ruby::table())
+                .values(items)
+                .on_conflict_do_nothing()
                 .execute(&mut conn)
-                .expect("error while storing relations urls");
+                .expect("");
 
-            diesel::insert_into(relatedruby)
-                .values(insertable_ruby)
+            let mut items = vec![];
+            self.insert_urls(&item.urls, |ur| {
+                items.push(RelatedUrlLink {
+                    related_id,
+                    url: ur.to_owned(),
+                })
+            });
+            diesel::insert_into(crate::schema::related_urls::dsl::related_urls::table())
+                .values(items)
+                .on_conflict_do_nothing()
                 .execute(&mut conn)
-                .expect("error while storing relations rubies");
-        }
+                .expect("");
+        };
     }
 
-    fn store_categories<F>(&self, categories_dom: Vec<Category>, mut add_link: F)
+    fn insert_categories<F>(&self, categories_dom: Vec<Category>, mut add_link: F)
         where
-            F: FnMut(i32) {
+            F: FnMut(i32),
+    {
         let mut conn: PooledConnection<ConnectionManager<PgConnection>> = self.pool.get().unwrap();
 
         for item in categories_dom {
-            let new_category = NewCategories {
+            let new_category = NewCategorie {
                 langcode: item.langcode,
                 orig: item.orig,
                 kind: item.kind,
                 name: item.name,
-                source: item.source,
             };
 
-            let inserted: i32 = diesel::insert_into(categories::table())
-                .values(new_category)
+            let inserted: i32 = diesel::insert_into(crate::schema::categories::dsl::categories::table())
+                .values(&new_category)
+                .on_conflict((crate::schema::categories::name, crate::schema::categories::kind)) // замените `name` и `kind` на соответствующие поля, участвующие в уникальном ограничении
+                .do_update()
+                .set(&new_category)
                 .returning(crate::schema::categories::id)
                 .get_result(&mut conn)
-                .expect("error while storing relations");
+                .expect("error while storing categories");
 
             add_link(inserted)
         }
     }
 
-    fn store_word_relations(
-        &mut self,
-        item: &dyn Relation,
-        word_id: i32,
-    ) {
+    fn insert_word_relations(&mut self, item: &dyn Relation, word_id: i32) {
         let mut conn: PooledConnection<ConnectionManager<PgConnection>> = self.pool.get().unwrap();
 
-        self.store_related(item.derived(), |related_id| {
-            diesel::insert_into(wordderivedlink)
-                .values(NewWordDerivedLink {
-                    word_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.derived(), |related_id| {
+            items.push(NewWordDerivedLink {
+                word_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::wordderivedlink::dsl::wordderivedlink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.abbreviations(), |related_id| {
-            diesel::insert_into(wordabbreviationslink)
-                .values(NewWordAbbreviationsLink {
-                    word_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.abbreviations(), |related_id| {
+            items.push(NewWordAbbreviationsLink {
+                word_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::wordabbreviationslink::dsl::wordabbreviationslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.alt_of(), |related_id| {
-            diesel::insert_into(wordaltoflink)
-                .values(NewWordAltOfLink {
-                    word_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.alt_of(), |related_id| {
+            items.push(NewWordAltOfLink {
+                word_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::wordaltoflink::dsl::wordaltoflink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.related(), |related_id| {
-            diesel::insert_into(wordrelatedlink)
-                .values(NewWordRelatedLink {
-                    word_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.related(), |related_id| {
+            items.push(NewWordRelatedLink {
+                word_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::wordrelatedlink::dsl::wordrelatedlink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.antonyms(), |related_id| {
-            diesel::insert_into(wordantonymslink)
-                .values(NewWordAntonymsLink {
-                    word_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.antonyms(), |related_id| {
+            items.push(NewWordAntonymsLink {
+                word_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::wordantonymslink::dsl::wordantonymslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.coordinate_terms(), |related_id| {
-            diesel::insert_into(wordcoordinatetermslink)
-                .values(NewWordCoordinateTermsLink {
-                    word_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.coordinate_terms(), |related_id| {
+            items.push(NewWordCoordinateTermsLink {
+                word_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::wordcoordinatetermslink::dsl::wordcoordinatetermslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.synonyms(), |related_id| {
-            diesel::insert_into(wordsynonymlink)
-                .values(NewWordSynonymLink {
-                    word_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.synonyms(), |related_id| {
+            items.push(NewWordSynonymLink {
+                word_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::wordsynonymlink::dsl::wordsynonymlink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.form_of(), |related_id| {
-            diesel::insert_into(wordformoflink)
-                .values(NewWordFormOfLink {
-                    word_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.form_of(), |related_id| {
+            items.push(NewWordFormOfLink {
+                word_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::wordformoflink::dsl::wordformoflink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.proverbs(), |related_id| {
-            diesel::insert_into(wordproverbslink)
-                .values(NewWordProverbLink {
+        let mut items = vec![];
+        self.insert_related(item.proverbs(), |related_id| {
+            items.push(
+                NewWordProverbLink {
                     word_id,
                     related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+                }
+            );
         });
+        diesel::insert_into(crate::schema::wordproverbslink::dsl::wordproverbslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.hyponyms(), |related_id| {
-            diesel::insert_into(wordhyponymslink)
-                .values(NewWordHyponymsLink {
-                    word_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.hyponyms(), |related_id| {
+            items.push(NewWordHyponymsLink {
+                word_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::wordhyponymslink::dsl::wordhyponymslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.hypernyms(), |related_id| {
-            diesel::insert_into(wordhypernymslink)
-                .values(NewWordHypernymsLink {
-                    word_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.hypernyms(), |related_id| {
+            items.push(NewWordHypernymsLink {
+                word_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::wordhypernymslink::dsl::wordhypernymslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.holonyms(), |related_id| {
-            diesel::insert_into(wordholonymslink)
-                .values(NewWordHolonymsLink {
-                    word_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.holonyms(), |related_id| {
+            items.push(NewWordHolonymsLink {
+                word_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::wordholonymslink::dsl::wordholonymslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.meronyms(), |related_id| {
-            diesel::insert_into(wordmeronymslink)
-                .values(NewWordMeronymsLink {
-                    word_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.meronyms(), |related_id| {
+            items.push(NewWordMeronymsLink {
+                word_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::wordmeronymslink::dsl::wordmeronymslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.troponyms(), |related_id| {
-            diesel::insert_into(wordtroponymslink)
-                .values(NewWordTroponymsLink {
-                    word_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.troponyms(), |related_id| {
+            items.push(NewWordTroponymsLink {
+                word_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::wordtroponymslink::dsl::wordtroponymslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
     }
 
-    fn store_sense_relations(
-        &mut self,
-        item: &dyn Relation,
-        sense_id: i32,
-    ) {
+    fn insert_sense_relations(&mut self, item: &dyn Relation, sense_id: i32) {
         let mut conn: PooledConnection<ConnectionManager<PgConnection>> = self.pool.get().unwrap();
 
-        self.store_related(item.derived(), |related_id| {
-            diesel::insert_into(sensederivedlink)
-                .values(NewSenseDerivedLink {
-                    sense_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.derived(), |related_id| {
+            items.push(NewSenseDerivedLink {
+                sense_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::sensederivedlink::dsl::sensederivedlink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.abbreviations(), |related_id| {
-            diesel::insert_into(senseabbreviationslink)
-                .values(NewSenseAbbreviationsLink {
-                    sense_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.abbreviations(), |related_id| {
+            items.push(NewSenseAbbreviationsLink {
+                sense_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::senseabbreviationslink::dsl::senseabbreviationslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.alt_of(), |related_id| {
-            diesel::insert_into(sensealtoflink)
-                .values(NewSenseAltOfLink {
-                    sense_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.alt_of(), |related_id| {
+            items.push(NewSenseAltOfLink {
+                sense_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::sensealtoflink::dsl::sensealtoflink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.related(), |related_id| {
-            diesel::insert_into(senserelatedlink)
-                .values(NewSenseRelatedLink {
-                    sense_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.related(), |related_id| {
+            items.push(NewSenseRelatedLink {
+                sense_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::senserelatedlink::dsl::senserelatedlink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.antonyms(), |related_id| {
-            diesel::insert_into(senseantonymslink)
-                .values(NewSenseAntonymsLink {
-                    sense_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.antonyms(), |related_id| {
+            items.push(NewSenseAntonymsLink {
+                sense_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::senseantonymslink::dsl::senseantonymslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.coordinate_terms(), |related_id| {
-            diesel::insert_into(sensecoordinatetermslink)
-                .values(NewSenseCoordinateTermsLink {
-                    sense_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.coordinate_terms(), |related_id| {
+            items.push(NewSenseCoordinateTermsLink {
+                sense_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::sensecoordinatetermslink::dsl::sensecoordinatetermslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.synonyms(), |related_id| {
-            diesel::insert_into(sensesynonymlink)
-                .values(NewSenseSynonymLink {
-                    sense_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.synonyms(), |related_id| {
+            items.push(NewSenseSynonymLink {
+                sense_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::sensesynonymlink::dsl::sensesynonymlink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.form_of(), |related_id| {
-            diesel::insert_into(senseformoflink)
-                .values(NewSenseFormOfLink {
-                    sense_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.form_of(), |related_id| {
+            items.push(NewSenseFormOfLink {
+                sense_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::senseformoflink::dsl::senseformoflink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.proverbs(), |related_id| {
-            diesel::insert_into(senseproverbslink)
-                .values(NewSenseProverbLink {
+        let mut items = vec![];
+        self.insert_related(item.proverbs(), |related_id| {
+            items.push(
+                NewSenseProverbLink {
                     sense_id,
                     related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+                }
+            );
         });
+        diesel::insert_into(crate::schema::senseproverbslink::dsl::senseproverbslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.hyponyms(), |related_id| {
-            diesel::insert_into(sensehyponymslink)
-                .values(NewSenseHyponymsLink {
-                    sense_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.hyponyms(), |related_id| {
+            items.push(NewSenseHyponymsLink {
+                sense_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::sensehyponymslink::dsl::sensehyponymslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.hypernyms(), |related_id| {
-            diesel::insert_into(sensehypernymslink)
-                .values(NewSenseHypernymsLink {
-                    sense_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.hypernyms(), |related_id| {
+            items.push(NewSenseHypernymsLink {
+                sense_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::sensehypernymslink::dsl::sensehypernymslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.holonyms(), |related_id| {
-            diesel::insert_into(senseholonymslink)
-                .values(NewSenseHolonymsLink {
-                    sense_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.holonyms(), |related_id| {
+            items.push(NewSenseHolonymsLink {
+                sense_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::senseholonymslink::dsl::senseholonymslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.meronyms(), |related_id| {
-            diesel::insert_into(sensemeronymslink)
-                .values(NewSenseMeronymsLink {
-                    sense_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.meronyms(), |related_id| {
+            items.push(NewSenseMeronymsLink {
+                sense_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::sensemeronymslink::dsl::sensemeronymslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
 
-        self.store_related(item.troponyms(), |related_id| {
-            diesel::insert_into(sensetroponymslink::table())
-                .values(NewSenseTroponymsLink {
-                    sense_id,
-                    related_id,
-                })
-                .execute(&mut conn)
-                .expect("");
+        let mut items = vec![];
+        self.insert_related(item.troponyms(), |related_id| {
+            items.push(NewSenseTroponymsLink {
+                sense_id,
+                related_id,
+            });
         });
+        diesel::insert_into(crate::schema::sensetroponymslink::dsl::sensetroponymslink::table())
+            .values(items)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
+    }
+
+    fn insert_tags<F>(&self, tags: &Vec<String>, mut add_link: F)
+        where
+            F: FnMut(&str) {
+        let mut conn: PooledConnection<ConnectionManager<PgConnection>> = self.pool.get().unwrap();
+
+        let tags: Vec<Tag> = tags.into_iter().map(|tag| {
+            add_link(tag);
+            Tag { tag: tag.to_owned() }
+        }).collect();
+
+        diesel::insert_into(crate::schema::tags::dsl::tags::table())
+            .values(tags)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("Something went wrong while inserting tags");
+    }
+
+    fn insert_topics<F>(&self, topics: &Vec<String>, mut add_link: F)
+        where
+            F: FnMut(&str) {
+        let mut conn: PooledConnection<ConnectionManager<PgConnection>> = self.pool.get().unwrap();
+
+        let topics: Vec<Topic> = topics.into_iter().map(|topic| {
+            add_link(topic);
+            Topic { topic: topic.to_owned() }
+        }).collect();
+        diesel::insert_into(crate::schema::topics::dsl::topics::table())
+            .values(topics)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
+    }
+
+    fn insert_rubies<F>(&self, rubies: &Vec<Vec<String>>, mut add_link: F)
+        where
+            F: FnMut(&str) {
+        let mut conn: PooledConnection<ConnectionManager<PgConnection>> = self.pool.get().unwrap();
+
+        let rubies: Vec<Ruby> = rubies.into_iter().map(|ruby| {
+            let json = serde_json::to_string(&rubies).expect("");
+            add_link(&json);
+            Ruby {
+                ruby: json
+            }
+        }).collect();
+
+        diesel::insert_into(crate::schema::rubies::dsl::rubies::table())
+            .values(rubies)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
+    }
+
+    fn insert_urls<F>(&self, urls: &Vec<String>, mut add_link: F)
+        where
+            F: FnMut(&str) {
+        let mut conn: PooledConnection<ConnectionManager<PgConnection>> = self.pool.get().unwrap();
+
+        let urls: Vec<Url> = urls.into_iter().map(|ur| {
+            add_link(ur);
+            Url { url: ur.to_owned() }
+        }).collect();
+
+        diesel::insert_into(crate::schema::urls::dsl::urls::table())
+            .values(urls)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
+    }
+
+    fn insert_links<F>(&self, links: &Vec<String>, mut add_link: F)
+        where
+            F: FnMut(&str) {
+        let mut conn: PooledConnection<ConnectionManager<PgConnection>> = self.pool.get().unwrap();
+
+        let links: Vec<Link> = links.into_iter().map(|link| {
+            add_link(link);
+            Link { link: link.to_owned() }
+        }).collect();
+
+        diesel::insert_into(crate::schema::links::dsl::links::table())
+            .values(links)
+            .on_conflict_do_nothing()
+            .execute(&mut conn)
+            .expect("");
     }
 }
 
 #[async_trait::async_trait]
 impl DictionaryRepository for DieselDictionaryRepository {
-    async fn bulk_insert(&mut self, items: Vec<Word>) -> Result<(), Error> {
+    async fn bulk_insert(&mut self, items: Vec<crate::domain::models::Word>) -> Result<(), Error> {
         let mut conn: PooledConnection<ConnectionManager<PgConnection>> = self.pool.get().unwrap();
 
         for item in items {
             let new_word = NewWord {
                 word: item.word.clone(),
                 pos: item.pos.clone(),
-                source: item.source.clone(),
                 lang_code: item.lang_code.clone(),
                 lang: item.lang.clone(),
-                original_title: item.original_title.clone(),
                 etymology_number: item.etymology_number.clone(),
                 etymology_text: item.etymology_text.clone(),
             };
 
-            let word_id = diesel::insert_into(words::table())
+            let word_id = diesel::insert_into(crate::schema::words::dsl::words::table())
                 .values(new_word)
                 .returning(crate::schema::words::id)
                 .get_result(&mut conn)
                 .expect("");
 
-            self.store_word_relations(&item, word_id);
+            self.insert_word_relations(&item, word_id);
 
             for f in item.forms {
                 let new_form = NewForm {
@@ -481,36 +773,52 @@ impl DictionaryRepository for DieselDictionaryRepository {
                     form: f.form,
                     head_nr: f.head_nr,
                     roman: f.roman,
-                    source: f.source,
                     ipa: f.ipa,
                 };
 
-                let form_id = diesel::insert_into(forms::table())
+                let form_id: i32 = diesel::insert_into(crate::schema::forms::dsl::forms::table())
                     .values(new_form)
                     .returning(crate::schema::forms::id)
                     .get_result(&mut conn)
                     .expect("");
 
-                for tag in f.tags {
-                    let new_tag = NewFormsTags { forms_id: form_id, tag };
-                    diesel::insert_into(formstags::table())
-                        .values(new_tag)
-                        .execute(&mut conn)
-                        .expect("");
-                }
+                let mut items = vec![];
+                self.insert_tags(&f.tags, |tag| {
+                    items.push(FormTagLink {
+                        forms_id: form_id,
+                        tag: tag.to_owned(),
+                    })
+                });
+                diesel::insert_into(crate::schema::forms_tags::dsl::forms_tags::table())
+                    .values(items)
+                    .execute(&mut conn)
+                    .expect("");
+
+                let mut items = vec![];
+                self.insert_rubies(&f.ruby, |ruby| {
+                    items.push(FormRubyLink {
+                        forms_id: form_id,
+                        ruby: ruby.to_owned(),
+                    })
+                });
+                diesel::insert_into(crate::schema::forms_ruby::dsl::forms_ruby::table())
+                    .values(items)
+                    .execute(&mut conn)
+                    .expect("");
             }
-            for template in item.etymology_templates {
-                let new_template = NewTemplate {
+            let templates: Vec<NewTemplate> = item.etymology_templates.into_iter().map(|template| {
+                NewTemplate {
                     word_id,
                     args: serde_json::to_string(&template.args).unwrap(),
                     name: template.name,
                     expansion: template.expansion,
-                };
-                diesel::insert_into(templates::table())
-                    .values(new_template)
-                    .execute(&mut conn)
-                    .expect("");
-            }
+                }
+            }).collect();
+
+            diesel::insert_into(crate::schema::templates::dsl::templates::table())
+                .values(templates)
+                .execute(&mut conn)
+                .expect("");
 
             for sound in item.sounds {
                 let new_sound = NewSound {
@@ -529,30 +837,39 @@ impl DictionaryRepository for DieselDictionaryRepository {
                     form: sound.form,
                     zh_pron: sound.zh_pron,
                 };
-                let sound_id = diesel::insert_into(sounds::table())
+                let sound_id: i32 = diesel::insert_into(crate::schema::sounds::dsl::sounds::table())
                     .values(new_sound)
                     .returning(crate::schema::sounds::id)
                     .get_result(&mut conn)
                     .expect("");
 
-                for tag in sound.tags {
-                    let new_sound_tag = NewSoundTags {
-                        sound_id,
-                        tag,
-                    };
+                let mut tags = vec![];
+                self.insert_tags(&sound.tags, |tag| {
+                    tags.push(SoundTagLink { sound_id, tag: tag.to_owned() });
+                });
 
-                    diesel::insert_into(soundtags::table())
-                        .values(new_sound_tag)
-                        .execute(&mut conn)
-                        .expect("");
-                }
+                let mut topics = vec![];
+                self.insert_topics(&sound.topics, |topic| {
+                    topics.push(SoundTopicLink { sound_id, topic: topic.to_owned() });
+                });
+
+                diesel::insert_into(crate::schema::sound_tags::dsl::sound_tags::table())
+                    .values(tags)
+                    .execute(&mut conn)
+                    .expect("");
+
+                diesel::insert_into(crate::schema::sound_topics::dsl::sound_topics::table())
+                    .values(topics)
+                    .execute(&mut conn)
+                    .expect("");
             }
+
             for hyphenation_item in item.hyphenation {
                 let new_hyphen = NewHyphenation {
                     word_id,
                     hyphenation: hyphenation_item,
                 };
-                diesel::insert_into(hyphenations::table())
+                diesel::insert_into(crate::schema::hyphenations::dsl::hyphenations::table())
                     .values(new_hyphen)
                     .execute(&mut conn)
                     .expect("");
@@ -569,54 +886,112 @@ impl DictionaryRepository for DieselDictionaryRepository {
                     raw_glosses: Some(serde_json::to_string(&sense.raw_glosses).expect("")),
                 };
 
-                let sense_id = diesel::insert_into(senses::table())
+                let sense_id = diesel::insert_into(crate::schema::senses::dsl::senses::table())
                     .values(new_sense)
                     .returning(crate::schema::senses::id)
                     .get_result(&mut conn)
                     .expect("");
 
-                self.store_sense_relations(&sense, sense_id);
+                self.insert_sense_relations(&sense, sense_id);
 
-                for link in sense.links {
-                    let new_link = NewSensesLinks {
+                // TODO: как сделать сохранение информации следующего типа: [[
+                //   {
+                //     "links": "[\"computing\",\"computing#Noun\"]"
+                //   },
+                //   {
+                //     "links": "[\"copyright\",\"copyright\"]"
+                //   }
+                // ]]
+                // let mut items = vec![];
+                // self.insert_links(&sense.links, |link| {
+                //     items.push(SenseLinksLink {
+                //         sense_id,
+                //         link: link.to_owned(),
+                //     })
+                // });
+                // diesel::insert_into(crate::schema::sense_links::dsl::sense_links::table())
+                //     .values(items)
+                //     .execute(&mut conn)
+                //     .expect("");
+
+                let mut items = vec![];
+                self.insert_tags(&sense.tags, |tag| {
+                    items.push(SenseTagLink {
                         sense_id,
-                        links: serde_json::to_string(&link).expect(""),
-                    };
+                        tag: tag.to_owned(),
+                    })
+                });
+                diesel::insert_into(crate::schema::sense_tags::dsl::sense_tags::table())
+                    .values(items)
+                    .execute(&mut conn)
+                    .expect("");
 
-                    diesel::insert_into(senseslinks)
-                        .values(new_link)
-                        .execute(&mut conn)
-                        .expect("");
-                }
-
-                for sense_tag in sense.tags {
-                    let new_sense_tag = NewSenseTags {
+                let mut items = vec![];
+                self.insert_topics(&sense.topics, |topic| {
+                    items.push(SenseTopicLink {
                         sense_id,
-                        tag: sense_tag,
-                    };
-                    diesel::insert_into(sensestags)
-                        .values(new_sense_tag)
-                        .execute(&mut conn)
-                        .expect("");
-                }
+                        topic: topic.to_owned(),
+                    })
+                });
+                diesel::insert_into(crate::schema::sense_topics::dsl::sense_topics::table())
+                    .values(items)
+                    .execute(&mut conn)
+                    .expect("");
 
-                self.store_categories(sense.categories, |category_id| {
-                    diesel::insert_into(sensecategorieslink::table())
+                self.insert_categories(sense.categories, |category_id| {
+                    diesel::insert_into(crate::schema::sensecategorieslink::dsl::sensecategorieslink::table())
                         .values(NewSenseCategoriesLink {
                             sense_id,
                             category_id,
                         })
+                        .on_conflict_do_nothing()
                         .execute(&mut conn)
                         .expect("");
                 });
 
+                let examples: Vec<NewExample> = sense.examples.into_iter().map(|example| {
+                    NewExample {
+                        sense_id,
+                        note: example.note,
+                        example_ref: example.example_ref,
+                        roman: example.roman,
+                        english: example.english,
+                        text: example.text,
+                        example_type: example.example_type,
+                    }
+                }).collect();
+
+                diesel::insert_into(crate::schema::examples::dsl::examples::table())
+                    .values(examples)
+                    .execute(&mut conn)
+                    .expect("");
             }
         }
         Ok(())
     }
 
-    async fn find(&self, query: &str) -> Result<Option<Vec<Word>>, Error> {
+    async fn find_exactly(&self, query: &str) -> Result<Option<Vec<crate::domain::models::Word>>, Error> {
+        let mut conn: PooledConnection<ConnectionManager<PgConnection>> = self.pool.get().unwrap();
 
-        Ok(Some(vec![]))
+        let words_db = crate::schema::words::dsl::words::table()
+            .filter(word.eq(query))
+            .load::<Word>(&mut conn)
+            .expect("Error loading words");
+
+        let results = Self::map_words(&self.pool, words_db);
+        return Ok(Some(results));
+    }
+
+    async fn find(&self, query: &str) -> Result<Option<Vec<crate::domain::models::Word>>, Error> {
+        let pattern = format!("%{}%", query);
+        let mut conn: PooledConnection<ConnectionManager<PgConnection>> = self.pool.get().unwrap();
+
+        let words_db = crate::schema::words::dsl::words::table()
+            .filter(word.ilike(pattern))
+            .load::<Word>(&mut conn)
+            .expect("Error loading words");
+
+        let results = Self::map_words(&self.pool, words_db);
+        return Ok(Some(results));
     }
 }

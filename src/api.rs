@@ -49,9 +49,9 @@ pub async fn launch_server() -> std::io::Result<()> {
  * Parsing wiktionary json
  */
 async fn start_parsing() {
-    println!("started");
+    println!("parsing started");
     let file_path = Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/wiktionary.json");
-    let mut dictionary_repo = DieselDictionaryRepository::new("postgres://admin:admin@localhost:5433/word");
+    let mut dictionary_repo = DieselDictionaryRepository::new("postgres://admin:admin@localhost:5433/words");
     let mut importer = ImportJsonDictionary::new(&mut dictionary_repo, file_path);
 
     match importer.execute().await {

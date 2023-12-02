@@ -12,6 +12,7 @@ pub mod use_cases {
     #[async_trait]
     pub trait DictionaryRepository {
         async fn bulk_insert(&mut self, items: Vec<Word>) -> Result<(), Error>;
+        async fn find_exactly(&self, word: &str) -> Result<Option<Vec<Word>>, Error>;
         async fn find(&self, word: &str) -> Result<Option<Vec<Word>>, Error>;
     }
 
@@ -74,7 +75,9 @@ pub mod use_cases {
         }
 
         pub async fn execute(&self, word: String) -> Result<Option<Vec<Word>>, Error> {
-            self.repository.find(&word).await
+            println!("started finding ");
+
+            self.repository.find_exactly(&word).await
         }
     }
 }

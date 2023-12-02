@@ -26,17 +26,11 @@ pub struct Word {
     #[serde(rename = "pos")]
     pub pos: String,
 
-    #[serde(rename = "source")]
-    pub source: Option<String>,
-
     #[serde(rename = "lang_code")]
     pub lang_code: String,
 
     #[serde(rename = "lang")]
     pub lang: String,
-
-    #[serde(rename = "original_title")]
-    pub original_title: Option<String>,
 
     #[serde(rename = "etymology_number")]
     pub etymology_number: Option<i32>,
@@ -71,6 +65,38 @@ pub struct Word {
     #[serde(rename = "topics")]
     #[serde(default)]
     pub topics: Vec<String>,
+
+    #[serde(rename = "glosses")]
+    #[serde(default)]
+    pub glosses: Vec<String>,
+
+    #[serde(rename = "raw_glosses")]
+    #[serde(default)]
+    pub raw_glosses: Vec<String>,
+
+    #[serde(rename = "forms")]
+    #[serde(default)]
+    pub forms: Vec<Form>,
+
+    #[serde(rename = "senses")]
+    #[serde(default)]
+    pub senses: Vec<Sense>,
+
+    #[serde(rename = "instances")]
+    #[serde(default)]
+    pub instances: Vec<Instance>,
+
+    #[serde(rename = "head_templates")]
+    #[serde(default)]
+    pub head_templates: Vec<Template>,
+
+    #[serde(rename = "descendants")]
+    #[serde(default)]
+    pub descendants: Vec<Descendant>,
+
+    #[serde(rename = "sounds")]
+    #[serde(default)]
+    pub sounds: Vec<Sound>,
 
     #[serde(rename = "antonyms")]
     #[serde(default)]
@@ -127,38 +153,6 @@ pub struct Word {
     #[serde(rename = "proverbs")]
     #[serde(default)]
     pub proverbs: Vec<Related>,
-
-    #[serde(rename = "forms")]
-    #[serde(default)]
-    pub forms: Vec<Form>,
-
-    #[serde(rename = "senses")]
-    #[serde(default)]
-    pub senses: Vec<Sense>,
-
-    #[serde(rename = "instances")]
-    #[serde(default)]
-    pub instances: Vec<Instance>,
-
-    #[serde(rename = "head_templates")]
-    #[serde(default)]
-    pub head_templates: Vec<Template>,
-
-    #[serde(rename = "descendants")]
-    #[serde(default)]
-    pub descendants: Vec<Descendant>,
-
-    #[serde(rename = "sounds")]
-    #[serde(default)]
-    pub sounds: Vec<Sound>,
-
-    #[serde(rename = "glosses")]
-    #[serde(default)]
-    pub glosses: Vec<String>,
-
-    #[serde(rename = "raw_glosses")]
-    #[serde(default)]
-    pub raw_glosses: Vec<String>,
 }
 
 #[derive(Serialize, Deserialize, Clone)]
@@ -190,9 +184,6 @@ pub struct Related {
     #[serde(default)]
     pub tags: Vec<String>,
 
-    #[serde(rename = "source")]
-    pub source: Option<String>,
-
     #[serde(rename = "ruby")]
     #[serde(default)]
     pub ruby: Vec<Vec<String>>,
@@ -220,9 +211,6 @@ pub struct Category {
 
     #[serde(rename = "name")]
     pub name: Option<String>,
-
-    #[serde(rename = "source")]
-    pub source: Option<String>,
 
     #[serde(rename = "parents")]
     #[serde(default)]
@@ -274,9 +262,6 @@ pub struct Form {
     #[serde(rename = "roman")]
     pub roman: Option<String>,
 
-    #[serde(rename = "source")]
-    pub source: Option<String>,
-
     #[serde(rename = "ipa")]
     pub ipa: Option<String>,
 
@@ -303,9 +288,6 @@ pub struct InflectionTemplate {
 pub struct Instance {
     #[serde(rename = "sense")]
     pub sense: Option<String>,
-
-    #[serde(rename = "source")]
-    pub source: Option<String>,
 
     #[serde(rename = "word")]
     pub word: Option<String>,
