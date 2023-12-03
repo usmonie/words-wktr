@@ -18,7 +18,7 @@ pub trait Relation {
     fn hypernyms(&self) -> Vec<Related>;
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Clone)]
 pub struct Word {
     #[serde(rename = "word")]
     pub word: String,
@@ -198,7 +198,7 @@ pub struct Related {
     pub extra: Option<String>,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Clone)]
 pub struct Category {
     #[serde(rename = "langcode")]
     pub langcode: Option<String>,
@@ -217,7 +217,7 @@ pub struct Category {
     pub parents: Vec<String>,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Clone)]
 pub struct Descendant {
     #[serde(rename = "depth")]
     pub depth: Option<i32>,
@@ -234,7 +234,7 @@ pub struct Descendant {
     pub tags: Vec<String>,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Clone)]
 pub struct Template {
     #[serde(rename = "args")]
     #[serde(default)]
@@ -247,7 +247,7 @@ pub struct Template {
     pub expansion: Option<String>,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Clone)]
 pub struct Form {
     #[serde(rename = "form")]
     pub form: Option<String>,
@@ -274,7 +274,7 @@ pub struct Form {
     pub ruby: Vec<Vec<String>>,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Clone)]
 pub struct InflectionTemplate {
     #[serde(rename = "args")]
     #[serde(default)]
@@ -284,7 +284,7 @@ pub struct InflectionTemplate {
     pub name: Option<String>,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Clone)]
 pub struct Instance {
     #[serde(rename = "sense")]
     pub sense: Option<String>,
@@ -301,7 +301,7 @@ pub struct Instance {
     pub topics: Vec<String>,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Clone)]
 pub struct Sense {
     #[serde(rename = "senseid")]
     #[serde(default)]
@@ -424,7 +424,7 @@ pub struct Sense {
     pub wikidata: Vec<String>,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Clone)]
 pub struct Example {
     #[serde(rename = "note")]
     pub note: Option<String>,
@@ -449,7 +449,7 @@ pub struct Example {
     pub ruby: Vec<Vec<String>>,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Clone)]
 pub struct Translation {
     #[serde(rename = "note")]
     pub note: Option<String>,
@@ -487,7 +487,7 @@ pub struct Translation {
     pub tags: Vec<String>,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Clone)]
 pub struct Sound {
     #[serde(rename = "mp3_url")]
     pub mp3_url: Option<String>,

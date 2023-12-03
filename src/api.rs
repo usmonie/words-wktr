@@ -5,6 +5,7 @@ use serde::Deserialize;
 
 use crate::{domain::use_cases::{ImportJsonDictionary, SearchWords}, };
 use crate::data::dictionary_repository::DieselDictionaryRepository;
+use crate::domain::use_cases::RandomWord;
 
 #[get("/dictionary/search")]
 async fn search_word(info: web::Query<Info>) -> impl Responder {
@@ -26,6 +27,20 @@ async fn search_word(info: web::Query<Info>) -> impl Responder {
     web::Json(words)
 }
 
+#[get("/dictionary/random_word")]
+async fn random_word() -> impl Responder {
+    let start = Instant::now();
+    let dictionary_repo = DieselDictionaryRepository::new("postgres://admin:admin@localhost:5433/words");
+    let random_word = RandomWord::new(&dictionary_repo);
+
+    let word = random_word.execute().await;
+
+    let duration = start.elapsed();
+    println!("Time elapsed in expensive_function() is: {:?}", duration);
+
+    web::Json(word)
+}
+
 
 #[derive(Deserialize)]
 pub struct Info {
@@ -33,10 +48,10 @@ pub struct Info {
 }
 
 pub async fn launch_server() -> std::io::Result<()> {
-    start_parsing().await;
     HttpServer::new(|| {
         App::new()
             .service(search_word)
+            .service(random_word)
     })
         .bind("127.0.0.1:8000")?
         .run()
@@ -52,7 +67,7 @@ async fn start_parsing() {
     println!("parsing started");
     let file_path = Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/wiktionary.json");
     let mut dictionary_repo = DieselDictionaryRepository::new("postgres://admin:admin@localhost:5433/words");
-    let mut importer = ImportJsonDictionary::new(&mut dictionary_repo, file_path);
+    let mut importer = ImportJsonDictionary::new(dictionary_repo, file_path);
 
     match importer.execute().await {
         Ok(_) => println!("Successfully parsed the JSON file."),

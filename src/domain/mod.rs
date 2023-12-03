@@ -6,23 +6,26 @@ pub mod use_cases {
     use std::path::Path;
     use std::sync::Arc;
     use async_trait::async_trait;
+    use futures::future::join_all;
     use tokio::sync::Mutex;
+    use tokio::task;
     use crate::domain::{models::Word, Error};
 
     #[async_trait]
-    pub trait DictionaryRepository {
+    pub trait DictionaryRepository: Send + Sync + 'static {
         async fn bulk_insert(&mut self, items: Vec<Word>) -> Result<(), Error>;
         async fn find_exactly(&self, word: &str) -> Result<Option<Vec<Word>>, Error>;
         async fn find(&self, word: &str) -> Result<Option<Vec<Word>>, Error>;
+        async fn random_word(&self) -> Word;
     }
 
     pub struct ImportJsonDictionary<'a, T: DictionaryRepository> {
-        repository: Arc<Mutex<&'a mut T>>,
+        repository: Arc<Mutex<T>>,
         file_path: &'a Path,
     }
 
     impl<'a, T: DictionaryRepository> ImportJsonDictionary<'a, T> {
-        pub fn new(repository: &'a mut T, file_path: &'a Path) -> Self {
+        pub fn new(repository: T, file_path: &'a Path) -> Self {
             Self {
                 repository: Arc::new(Mutex::new(repository)),
                 file_path,
@@ -32,33 +35,37 @@ pub mod use_cases {
             let file = File::open(self.file_path).expect("Failed to open a file.");
             let reader = BufReader::new(file);
 
-            let mut items: Vec<Word> = Vec::new();
-
             let deserializer = serde_json::Deserializer::from_reader(reader).into_iter::<Word>();
 
-            let mut count = 0;
+            let mut bulk_insert_jobs = vec![];
 
-            let repo = Arc::clone(&self.repository);
+            let mut items: Vec<Word> = Vec::with_capacity(10_000);
 
-            let mut repo = repo.lock().await;
             for entry in deserializer {
                 let entry = entry.expect("Invalid JSON");
                 items.push(entry);
 
-                if items.len() == 100_000 {
-                    count += items.len();
-                    repo.bulk_insert(std::mem::take(&mut items)).await.unwrap();
-                    println!("INSERTED {}", count);
-                    items.clear()
+                if items.len() == 50_000 {
+                    let repo = Arc::clone(&self.repository);
+                    let items = std::mem::replace(&mut items, Vec::with_capacity(10_000));
+                    let insert_job = task::spawn(async move {
+                        let mut repo = repo.lock().await;
+                        repo.bulk_insert(items).await.unwrap_or(());
+                    });
+                    bulk_insert_jobs.push(insert_job);
                 }
             }
 
             if !items.is_empty() {
-                count += items.len();
-                repo.bulk_insert(std::mem::take(&mut items)).await.unwrap();
-                println!("INSERTED {}", count);
+                let repo = Arc::clone(&self.repository);
+                let insert_job = task::spawn(async move {
+                    let mut repo = repo.lock().await;
+                    repo.bulk_insert(items).await.unwrap_or(());
+                });
+                bulk_insert_jobs.push(insert_job);
             }
 
+            join_all(bulk_insert_jobs).await;
             Ok(())
         }
     }
@@ -77,7 +84,37 @@ pub mod use_cases {
         pub async fn execute(&self, word: String) -> Result<Option<Vec<Word>>, Error> {
             println!("started finding ");
 
-            self.repository.find_exactly(&word).await
+            let exact_result = self.repository.find_exactly(&word).await;
+            match exact_result {
+                Ok(words) => {
+                    match words {
+                        None => { self.repository.find(&word).await }
+                        Some(words) => {
+                            Ok(Some(words))
+                        }
+                    }
+                }
+                Err(err) => {
+                    self.repository.find(&word).await
+                }
+            }
+        }
+    }
+
+    pub struct RandomWord<'a, T: DictionaryRepository> {
+        repository: &'a T,
+    }
+
+    impl<'a, T: DictionaryRepository> RandomWord<'a, T> {
+        pub fn new(repository: &'a T) -> Self {
+            Self {
+                repository,
+            }
+        }
+
+        pub async fn execute(&self) -> Word {
+            let exact_result = self.repository.random_word().await;
+            return exact_result
         }
     }
 }

@@ -23,16 +23,6 @@ CREATE TABLE Related
     extra     TEXT
 );
 
--- Add related tags, urls, topics, ruby
--- Add forms tags, ruby
--- Add translation tags, topics
--- Add instance tags, topics
--- Add sound tags, topics
--- Add example ruby
--- Add Descendants tags, templates
--- Add head templates
--- Add sense tags, topics, links
-
 CREATE TABLE Urls
 (
     url TEXT NOT NULL PRIMARY KEY
