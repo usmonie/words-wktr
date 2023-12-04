@@ -2,14 +2,13 @@ use std::collections::HashMap;
 use crate::domain::use_cases::DictionaryRepository;
 use crate::domain::Error;
 use diesel::associations::HasTable;
-use diesel::{BelongingToDsl, ExpressionMethods, Identifiable, PgConnection, PgTextExpressionMethods, QueryDsl, RunQueryDsl};
+use diesel::{BelongingToDsl, ExpressionMethods, Identifiable, PgConnection, PgTextExpressionMethods, QueryDsl, RunQueryDsl, SelectableHelper};
 use diesel::r2d2::{ConnectionManager, Pool, PooledConnection};
 use crate::data::db::links::*;
 use crate::data::db::models::*;
 use crate::domain::models::{Category, Relation};
 use crate::schema::words::word;
 use std::iter::Iterator;
-use diesel::sql_types::Text;
 use crate::schema::translations::id;
 
 pub struct DieselDictionaryRepository {
@@ -44,6 +43,7 @@ impl DieselDictionaryRepository {
                 expansion: template.expansion,
             }
         }).collect();
+
         let translations_links = crate::schema::translations_words_link::dsl::translations_words_link::table()
             .filter(crate::schema::translations_words_link::word_id.eq(&word_db.id()))
             .load::<TranslationWordLink>(&mut conn)
@@ -77,6 +77,24 @@ impl DieselDictionaryRepository {
             .load::<Sound>(&mut conn)
             .unwrap_or_default();
         let sounds = sounds.into_iter().map(|sound| {
+            // let topics: Vec<SoundTopicLink> = crate::schema::sound_topics::dsl::sound_topics::b
+            // let topics: Vec<SoundTopicLink> = SoundTopicLink::belonging_to(&sound)
+            //     .select(SoundTopicLink::as_select())
+            //     .load(&mut conn)
+            //     .unwrap();
+            //
+            // let topics = topics.into_iter().map(|topic| {
+            //     topic.topic
+            // }).collect();
+            // let tags: Vec<SoundTagLink> = SoundTagLink::belonging_to(&sound)
+            //     .select(SoundTagLink::as_select())
+            //     .load(&mut conn)
+            //     .unwrap();
+            //
+            // let tags = tags.into_iter().map(|tag| {
+            //     tag.tag
+            // }).collect();
+
             crate::domain::models::Sound {
                 mp3_url: sound.mp3_url,
                 note: sound.note,
@@ -126,6 +144,57 @@ impl DieselDictionaryRepository {
             wiki.wikipedia_link
         }).collect();
 
+        // let hyphenations: Vec<Hyphenation> = Hyphenation::belonging_to(&word_db)
+        //     .select(Hyphenation::as_select())
+        //     .load(&mut conn)
+        //     .unwrap();
+        //
+        // let hyphenations = hyphenations.into_iter().map(|hyphenation| {
+        //     hyphenation.hyphenation
+        // }).collect();
+
+        let senses: Vec<Sense> = Sense::belonging_to(&word_db)
+            .select(Sense::as_select())
+            .load(&mut conn)
+            .unwrap();
+
+        let senses = senses.into_iter().map(|sense| {
+            crate::domain::models::Sense {
+                senseid: vec![],
+                proverbs: vec![],
+                alt_of: vec![],
+                instances: vec![],
+                glosses: vec![],
+                coordinate_terms: vec![],
+                meronyms: vec![],
+                compound_of: vec![],
+                holonyms: vec![],
+                related: vec![],
+                abbreviations: vec![],
+                hypernyms: vec![],
+                translations: vec![],
+                antonyms: vec![],
+                links: vec![],
+                id: sense.sense_id,
+                categories: vec![],
+                wikipedia: vec![],
+                derived: vec![],
+                head_nr: sense.head_nr,
+                synonyms: vec![],
+                topics: vec![],
+                raw_glosses: vec![],
+                troponyms: vec![],
+                form_of: vec![],
+                taxonomic: sense.taxonomic,
+                tags: vec![],
+                examples: vec![],
+                qualifier: sense.qualifier,
+                hyponyms: vec![],
+                wikidata: vec![],
+            }
+        }).collect();
+
+        // let forms = Form::belonging
         return crate::domain::models::Word {
             word: word_db.word,
             pos: word_db.pos,
@@ -143,7 +212,7 @@ impl DieselDictionaryRepository {
             glosses: vec![],
             raw_glosses: vec![],
             forms: vec![],
-            senses: vec![],
+            senses,
             instances: vec![],
             head_templates: vec![],
             descendants: vec![],
@@ -870,16 +939,16 @@ impl DictionaryRepository for DieselDictionaryRepository {
                     .expect("");
             }
 
-            for hyphenation_item in item.hyphenation {
-                let new_hyphen = NewHyphenation {
+            let hyphenations: Vec<NewHyphenation> = item.hyphenation.into_iter().map(|hyphenation| {
+                NewHyphenation {
                     word_id,
-                    hyphenation: hyphenation_item,
-                };
-                diesel::insert_into(crate::schema::hyphenations::dsl::hyphenations::table())
-                    .values(new_hyphen)
-                    .execute(&mut conn)
-                    .expect("");
-            }
+                    hyphenation,
+                }
+            }).collect();
+            diesel::insert_into(crate::schema::hyphenations::dsl::hyphenations::table())
+                .values(hyphenations)
+                .execute(&mut conn)
+                .expect("");
 
             for sense in item.senses {
                 let new_sense = NewSense {

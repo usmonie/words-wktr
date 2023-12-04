@@ -25,6 +25,7 @@ regex = "1.10.2"
 
 has_fields = { path = "./has_fields/has_fields"}
 rand = "0.8.5"
+mime = { version = "0.3.17", features = [] }
 
 [dev-dependencies]
 diesel_cli = { version = "2.1.1", features = ["postgres"] }

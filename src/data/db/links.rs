@@ -1,8 +1,8 @@
-use diesel::{Associations, Insertable, Queryable, Selectable};
-use crate::schema::*;
-use crate::data::db::models::*;
+use diesel::{Insertable, Selectable};
+use diesel::Queryable;
 use crate::schema::*;
 use diesel::prelude::*;
+use crate::data::db::models::*;
 
 #[derive(Queryable, Associations, Debug, PartialEq, Insertable, AsChangeset)]
 #[table_name = "related_tags"]
@@ -102,7 +102,7 @@ pub struct SenseTopicLink {
 }
 
 // #[derive(Queryable, Associations, Debug, PartialEq, Insertable, AsChangeset)]
-// #[table_name = "sound_links"]
+// #[table_name = "soundlinks]
 // pub struct SoundLinksLink {
 //     pub sound_id: i32,
 //     pub link: String,

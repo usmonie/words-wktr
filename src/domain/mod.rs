@@ -70,12 +70,12 @@ pub mod use_cases {
         }
     }
 
-    pub struct SearchWords<'a, T: DictionaryRepository> {
-        repository: &'a T,
+    pub struct SearchWords<T: DictionaryRepository> {
+        repository: Arc<Mutex<T>>,
     }
 
-    impl<'a, T: DictionaryRepository> SearchWords<'a, T> {
-        pub fn new(repository: &'a T) -> Self {
+    impl<T: DictionaryRepository> SearchWords<T> {
+        pub fn new(repository: Arc<Mutex<T>>) -> Self {
             Self {
                 repository,
             }
@@ -84,36 +84,39 @@ pub mod use_cases {
         pub async fn execute(&self, word: String) -> Result<Option<Vec<Word>>, Error> {
             println!("started finding ");
 
-            let exact_result = self.repository.find_exactly(&word).await;
+            let repository = self.repository.lock().await;
+            let exact_result = repository.find_exactly(&word).await;
             match exact_result {
                 Ok(words) => {
                     match words {
-                        None => { self.repository.find(&word).await }
+                        None => { repository.find(&word).await }
                         Some(words) => {
                             Ok(Some(words))
                         }
                     }
                 }
-                Err(err) => {
-                    self.repository.find(&word).await
+                Err(_) => {
+                    repository.find(&word).await
                 }
             }
         }
     }
 
-    pub struct RandomWord<'a, T: DictionaryRepository> {
-        repository: &'a T,
+    pub struct RandomWord<T: DictionaryRepository> {
+        repository: Arc<Mutex<T>>,
     }
 
-    impl<'a, T: DictionaryRepository> RandomWord<'a, T> {
-        pub fn new(repository: &'a T) -> Self {
+    impl<'a, T: DictionaryRepository> RandomWord<T> {
+        pub fn new(repository: Arc<Mutex<T>>) -> Self {
             Self {
                 repository,
             }
         }
 
         pub async fn execute(&self) -> Word {
-            let exact_result = self.repository.random_word().await;
+            let repository = self.repository.lock().await;
+
+            let exact_result = repository.random_word().await;
             return exact_result
         }
     }

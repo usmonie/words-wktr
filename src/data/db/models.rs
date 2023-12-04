@@ -60,7 +60,6 @@ pub struct Template {
     pub id: i32,
     pub word_id: i32,
     pub args: Option<String>,
-    // Assuming args is stored as serialized text
     pub name: Option<String>,
     pub expansion: Option<String>,
 }
@@ -70,7 +69,6 @@ pub struct Template {
 pub struct NewTemplate {
     pub word_id: i32,
     pub args: String,
-    // Assuming args is provided as serialized text
     pub name: Option<String>,
     pub expansion: Option<String>,
 }
@@ -213,7 +211,7 @@ pub struct NewWikidata {
     pub wikidata_link: String,
 }
 
-#[derive(Queryable, Serialize, Selectable, Associations, Debug, PartialEq)]
+#[derive(Queryable, Serialize, Selectable, Associations, Identifiable, Debug, PartialEq)]
 #[diesel(belongs_to(Word))]
 pub struct Hyphenation {
     pub id: i32,
@@ -228,7 +226,7 @@ pub struct NewHyphenation {
     pub hyphenation: String,
 }
 
-#[derive(Queryable, Serialize, Selectable, Associations, Debug, PartialEq)]
+#[derive(Queryable, Serialize, Identifiable, Selectable, Associations, Debug, PartialEq)]
 #[diesel(belongs_to(Word))]
 pub struct Sense {
     pub id: i32,
