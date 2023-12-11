@@ -57,21 +57,21 @@ impl DieselDictionaryRepository {
             .load::<Translation>(&mut conn)
             .expect("");
 
-        let translations = translations.into_iter().map(|translation| {
-            crate::domain::models::Translation {
-                note: translation.note,
-                code: translation.code,
-                topics: vec![],
-                roman: translation.roman,
-                alt: translation.alt,
-                english: translation.english,
-                sense: translation.sense,
-                lang: translation.lang,
-                word: translation.word,
-                taxonomic: translation.taxonomic,
-                tags: vec![],
-            }
-        }).collect();
+        // let translations = translations.into_iter().map(|translation| {
+        //     crate::domain::models::Translation {
+        //         note: translation.note,
+        //         code: translation.code,
+        //         topics: vec![],
+        //         roman: translation.roman,
+        //         alt: translation.alt,
+        //         english: translation.english,
+        //         sense: translation.sense,
+        //         lang: translation.lang,
+        //         word: translation.word,
+        //         taxonomic: translation.taxonomic,
+        //         tags: vec![],
+        //     }
+        // }).collect();
 
         let sounds = Sound::belonging_to(&word_db)
             .load::<Sound>(&mut conn)
@@ -160,11 +160,18 @@ impl DieselDictionaryRepository {
 
         let senses = senses.into_iter().map(|sense| {
             crate::domain::models::Sense {
+                id: sense.sense_id,
+                qualifier: sense.qualifier,
+                taxonomic: sense.taxonomic,
+                head_nr: sense.head_nr,
                 senseid: vec![],
                 proverbs: vec![],
                 alt_of: vec![],
                 instances: vec![],
-                glosses: vec![],
+                glosses: match sense.glosses {
+                    None => { vec![] }
+                    Some(glosses) => { serde_json::from_str(&glosses).unwrap() }
+                },
                 coordinate_terms: vec![],
                 meronyms: vec![],
                 compound_of: vec![],
@@ -175,20 +182,19 @@ impl DieselDictionaryRepository {
                 translations: vec![],
                 antonyms: vec![],
                 links: vec![],
-                id: sense.sense_id,
                 categories: vec![],
                 wikipedia: vec![],
                 derived: vec![],
-                head_nr: sense.head_nr,
                 synonyms: vec![],
                 topics: vec![],
-                raw_glosses: vec![],
+                raw_glosses: match sense.raw_glosses {
+                    None => { vec![] }
+                    Some(raw_glosses) => { serde_json::from_str(&raw_glosses).unwrap() }
+                },
                 troponyms: vec![],
                 form_of: vec![],
-                taxonomic: sense.taxonomic,
                 tags: vec![],
                 examples: vec![],
-                qualifier: sense.qualifier,
                 hyponyms: vec![],
                 wikidata: vec![],
             }
@@ -204,7 +210,7 @@ impl DieselDictionaryRepository {
             etymology_templates: templates,
             etymology_text: word_db.etymology_text,
             inflection_templates: vec![],
-            translations,
+            translations: vec![],
             categories,
             wikipedia,
             hyphenation: vec![],

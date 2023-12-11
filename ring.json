@@ -1,0 +1,7594 @@
+[
+  {
+    "word": "ring",
+    "pos": "noun",
+    "lang_code": "en",
+    "lang": "English",
+    "etymology_number": 1,
+    "etymology_templates": [
+      {
+        "name": "root",
+        "expansion": ""
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "der-lite/lang",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "ryng"
+      },
+      {
+        "name": "inh-lite",
+        "expansion": "Middle English ryng"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "der-lite/lang",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "h"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "h"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "hring (“ring, circle”)"
+      },
+      {
+        "name": "inh-lite",
+        "expansion": "Old English hring (“ring, circle”)"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "der-lite/lang",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "6"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "6"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "h"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "i"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "i"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "g"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "g"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "hring"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "hring"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "6"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "6"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "h"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "i"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "i"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "g"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "g"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "hring"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "hring"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "*hring"
+      },
+      {
+        "name": "inh-lite",
+        "expansion": "Proto-West Germanic *hring"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "der-lite/lang",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "8"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "8"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "h"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "i"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "i"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "g"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "g"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringa"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "a"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "a"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringaz"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringa"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "z"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "z"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "hringaz"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "hringaz"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "8"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "8"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "h"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "i"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "i"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "g"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "g"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringa"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "a"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "a"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringaz"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringa"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "z"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "z"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "hringaz"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "hringaz"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "*hringaz (“ring”)"
+      },
+      {
+        "name": "inh-lite",
+        "expansion": "Proto-Germanic *hringaz (“ring”)"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "der-lite/lang",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "1"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "11"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "11"
+      },
+      {
+        "name": "str left",
+        "expansion": "*("
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "("
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "("
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s"
+      },
+      {
+        "name": "str left",
+        "expansion": "*("
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "s"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "s"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": ")"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": ")"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)k"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "k"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "k"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kr"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)k"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kre"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kr"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "e"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "e"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kren"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kre"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kreng"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kren"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "g"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "g"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)krengʰ"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kreng"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "ʰ"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "ʰ"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)krengʰ-"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)krengʰ"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "-"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "-"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "(s)krengʰ-"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "(s)krengʰ-"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "1"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "11"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "11"
+      },
+      {
+        "name": "str left",
+        "expansion": "*("
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "("
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "("
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s"
+      },
+      {
+        "name": "str left",
+        "expansion": "*("
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "s"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "s"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": ")"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": ")"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)k"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "k"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "k"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kr"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)k"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kre"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kr"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "e"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "e"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kren"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kre"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kreng"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kren"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "g"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "g"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)krengʰ"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kreng"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "ʰ"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "ʰ"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)krengʰ-"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)krengʰ"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "-"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "-"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "(s)krengʰ-"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "(s)krengʰ-"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "*(s)krengʰ-"
+      },
+      {
+        "name": "der-lite",
+        "expansion": "Proto-Indo-European *(s)krengʰ-"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "8"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "8"
+      },
+      {
+        "name": "str left",
+        "expansion": "*("
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "("
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "("
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s"
+      },
+      {
+        "name": "str left",
+        "expansion": "*("
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "s"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "s"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": ")"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": ")"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)k"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "k"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "k"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ke"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)k"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "e"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "e"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ker"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ke"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ker-"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ker"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "-"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "-"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "(s)ker-"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "(s)ker-"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "8"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "8"
+      },
+      {
+        "name": "str left",
+        "expansion": "*("
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "("
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "("
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s"
+      },
+      {
+        "name": "str left",
+        "expansion": "*("
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "s"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "s"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": ")"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": ")"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)k"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "k"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "k"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ke"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)k"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "e"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "e"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ker"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ke"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ker-"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ker"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "-"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "-"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "(s)ker-"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "(s)ker-"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "*(s)ker- (“to turn, bend”)"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "West Frisian"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "West Frisian"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "West Frisian"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "West Frisian"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "West Frisian"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "ring"
+      },
+      {
+        "name": "cog-lite",
+        "expansion": "West Frisian ring"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Low German"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Low German"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Low German"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Low German"
+      },
+      {
+        "name": "str left",
+        "expansion": "R"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Low German"
+      },
+      {
+        "name": "str left",
+        "expansion": "R"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "Ring"
+      },
+      {
+        "name": "cog-lite",
+        "expansion": "Low German Ring"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "ring"
+      },
+      {
+        "name": "cog-lite",
+        "expansion": "Dutch ring"
+      },
+      {
+        "name": "str left",
+        "expansion": "d"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "German"
+      },
+      {
+        "name": "str left",
+        "expansion": "d"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "German"
+      },
+      {
+        "name": "str left",
+        "expansion": "d"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "German"
+      },
+      {
+        "name": "str left",
+        "expansion": "d"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "German"
+      },
+      {
+        "name": "str left",
+        "expansion": "R"
+      },
+      {
+        "name": "str left",
+        "expansion": "d"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "German"
+      },
+      {
+        "name": "str left",
+        "expansion": "R"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "Ring"
+      },
+      {
+        "name": "cog-lite",
+        "expansion": "German Ring"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "ring"
+      },
+      {
+        "name": "cog-lite",
+        "expansion": "Swedish ring"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Finnish"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Finnish"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Finnish"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Finnish"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Finnish"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "rengas"
+      },
+      {
+        "name": "cog-lite",
+        "expansion": "Finnish rengas"
+      },
+      {
+        "name": "doublet",
+        "expansion": "Doublet of rank and rink"
+      }
+    ],
+    "etymology_text": "From Middle English ryng, from Old English hring (“ring, circle”), from Proto-West Germanic *hring, from Proto-Germanic *hringaz (“ring”), from Proto-Indo-European *(s)krengʰ-, extended nasalized form of *(s)ker- (“to turn, bend”).\nCognate with West Frisian ring, Low German Ring, Dutch ring, German Ring, Swedish ring, also Finnish rengas. Doublet of rank and rink.",
+    "wikipedia": [
+      "Dutch language",
+      "Finnish language",
+      "German language",
+      "Low German language",
+      "Middle English language",
+      "Old English language",
+      "Proto-Germanic language",
+      "Proto-Indo-European language",
+      "Proto-West Germanic language",
+      "Swedish language",
+      "West Frisian language"
+    ],
+    "forms": [
+      {
+        "form": "rings",
+        "tags": [
+          "plural"
+        ]
+      }
+    ],
+    "senses": [
+      {
+        "glosses": [
+          "A solid object in the shape of a circle.",
+          "A circumscribing object, (roughly) circular and hollow, looking like an annual ring, earring, finger ring etc."
+        ],
+        "links": [
+          [
+            "circumscribing",
+            "circumscribing"
+          ],
+          [
+            "object",
+            "object"
+          ],
+          [
+            "circular",
+            "circular"
+          ],
+          [
+            "hollow",
+            "hollow"
+          ],
+          [
+            "annual ring",
+            "annual ring"
+          ],
+          [
+            "earring",
+            "earring"
+          ],
+          [
+            "finger ring",
+            "finger ring"
+          ]
+        ],
+        "id": "ring-en-noun-0G~bf-ie",
+        "raw_glosses": [
+          "(physical) A solid object in the shape of a circle.",
+          "A circumscribing object, (roughly) circular and hollow, looking like an annual ring, earring, finger ring etc."
+        ],
+        "tags": [
+          "physical"
+        ]
+      },
+      {
+        "glosses": [
+          "A solid object in the shape of a circle.",
+          "A round piece of (precious) metal worn around the finger or through the ear, nose, etc."
+        ],
+        "links": [
+          [
+            "round",
+            "round"
+          ],
+          [
+            "precious",
+            "precious"
+          ],
+          [
+            "metal",
+            "metal"
+          ],
+          [
+            "worn",
+            "worn"
+          ],
+          [
+            "finger",
+            "finger"
+          ]
+        ],
+        "id": "ring-en-noun-pdamn8M4",
+        "raw_glosses": [
+          "(physical) A solid object in the shape of a circle.",
+          "A round piece of (precious) metal worn around the finger or through the ear, nose, etc."
+        ],
+        "tags": [
+          "physical"
+        ]
+      },
+      {
+        "glosses": [
+          "A solid object in the shape of a circle.",
+          "A bird band, a round piece of metal put around a bird's leg used for identification and studies of migration."
+        ],
+        "links": [
+          [
+            "bird band",
+            "bird band"
+          ],
+          [
+            "round",
+            "round"
+          ],
+          [
+            "metal",
+            "metal"
+          ],
+          [
+            "bird",
+            "bird"
+          ],
+          [
+            "leg",
+            "leg"
+          ],
+          [
+            "migration",
+            "migration"
+          ]
+        ],
+        "id": "ring-en-noun-YKTlSGyW",
+        "categories": [
+          {
+            "kind": "other",
+            "name": "British English"
+          }
+        ],
+        "raw_glosses": [
+          "(physical) A solid object in the shape of a circle.",
+          "(UK) A bird band, a round piece of metal put around a bird's leg used for identification and studies of migration."
+        ],
+        "tags": [
+          "UK",
+          "physical"
+        ]
+      },
+      {
+        "glosses": [
+          "A solid object in the shape of a circle.",
+          "A burner on a kitchen stove."
+        ],
+        "links": [
+          [
+            "burner",
+            "burner"
+          ]
+        ],
+        "id": "ring-en-noun-3GMUfZEa",
+        "categories": [
+          {
+            "kind": "other",
+            "name": "British English"
+          }
+        ],
+        "raw_glosses": [
+          "(physical) A solid object in the shape of a circle.",
+          "(UK) A burner on a kitchen stove."
+        ],
+        "tags": [
+          "UK",
+          "physical"
+        ]
+      },
+      {
+        "glosses": [
+          "A solid object in the shape of a circle.",
+          "In a jack plug, the connector between the tip and the sleeve."
+        ],
+        "links": [
+          [
+            "jack",
+            "jack"
+          ],
+          [
+            "plug",
+            "plug"
+          ],
+          [
+            "tip",
+            "tip"
+          ],
+          [
+            "sleeve",
+            "sleeve"
+          ]
+        ],
+        "id": "ring-en-noun-S-z4XlHK",
+        "raw_glosses": [
+          "(physical) A solid object in the shape of a circle.",
+          "In a jack plug, the connector between the tip and the sleeve."
+        ],
+        "tags": [
+          "physical"
+        ]
+      },
+      {
+        "glosses": [
+          "A solid object in the shape of a circle.",
+          "An instrument, formerly used for taking the sun's altitude, consisting of a brass ring suspended by a swivel, with a hole at one side through which a solar ray entering indicated the altitude on the graduated inner surface opposite."
+        ],
+        "links": [
+          [
+            "instrument",
+            "instrument"
+          ],
+          [
+            "altitude",
+            "altitude"
+          ],
+          [
+            "swivel",
+            "swivel"
+          ]
+        ],
+        "id": "ring-en-noun-NpdMkxFO",
+        "raw_glosses": [
+          "(physical) A solid object in the shape of a circle.",
+          "(historical) An instrument, formerly used for taking the sun's altitude, consisting of a brass ring suspended by a swivel, with a hole at one side through which a solar ray entering indicated the altitude on the graduated inner surface opposite."
+        ],
+        "tags": [
+          "historical",
+          "physical"
+        ]
+      },
+      {
+        "glosses": [
+          "A solid object in the shape of a circle.",
+          "A flexible band partly or wholly encircling the spore cases of ferns."
+        ],
+        "links": [
+          [
+            "botany",
+            "botany"
+          ],
+          [
+            "band",
+            "band"
+          ],
+          [
+            "spore",
+            "spore"
+          ],
+          [
+            "case",
+            "case"
+          ],
+          [
+            "fern",
+            "fern"
+          ]
+        ],
+        "id": "ring-en-noun-9zfKnVMe",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Botany",
+            "kind": "topical",
+            "name": "Botany",
+            "parents": [
+              "Biology",
+              "Sciences",
+              "All topics",
+              "Fundamental"
+            ]
+          }
+        ],
+        "topics": [
+          "biology",
+          "botany",
+          "natural-sciences"
+        ],
+        "raw_glosses": [
+          "(physical) A solid object in the shape of a circle.",
+          "(botany) A flexible band partly or wholly encircling the spore cases of ferns."
+        ],
+        "tags": [
+          "physical"
+        ]
+      },
+      {
+        "glosses": [
+          "A group of objects arranged in a circle.",
+          "A circular group of people or objects."
+        ],
+        "id": "ring-en-noun-q1RarGjV",
+        "raw_glosses": [
+          "(physical) A group of objects arranged in a circle.",
+          "A circular group of people or objects."
+        ],
+        "tags": [
+          "physical"
+        ],
+        "examples": [
+          {
+            "text": "a ring of mushrooms growing in the wood",
+            "type": "example"
+          },
+          {
+            "ref": "1944, Miles Burton, chapter 5, in The Three Corpse Trick",
+            "text": "The hovel stood in the centre of what had once been a vegetable garden, but was now a patch of rank weeds. Surrounding this, almost like a zareba, was an irregular ring of gorse and brambles, an unclaimed vestige of the original common.",
+            "type": "quotation"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "A group of objects arranged in a circle.",
+          "A formation of various pieces of material orbiting around a planet or young star."
+        ],
+        "links": [
+          [
+            "astronomy",
+            "astronomy"
+          ],
+          [
+            "planet",
+            "planet"
+          ],
+          [
+            "star",
+            "star"
+          ]
+        ],
+        "id": "ring-en-noun-kQPf6w3A",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Astronomy",
+            "kind": "topical",
+            "name": "Astronomy",
+            "parents": [
+              "Sciences",
+              "Space",
+              "All topics",
+              "Nature",
+              "Fundamental"
+            ]
+          }
+        ],
+        "topics": [
+          "astronomy",
+          "natural-sciences"
+        ],
+        "raw_glosses": [
+          "(physical) A group of objects arranged in a circle.",
+          "(astronomy) A formation of various pieces of material orbiting around a planet or young star."
+        ],
+        "tags": [
+          "physical"
+        ]
+      },
+      {
+        "glosses": [
+          "A group of objects arranged in a circle.",
+          "A large circular prehistoric stone construction such as Stonehenge."
+        ],
+        "links": [
+          [
+            "prehistoric",
+            "prehistoric"
+          ]
+        ],
+        "id": "ring-en-noun-PlPUlbBz",
+        "categories": [
+          {
+            "kind": "other",
+            "name": "British English"
+          }
+        ],
+        "raw_glosses": [
+          "(physical) A group of objects arranged in a circle.",
+          "(Britain) A large circular prehistoric stone construction such as Stonehenge."
+        ],
+        "tags": [
+          "Britain",
+          "physical"
+        ]
+      },
+      {
+        "glosses": [
+          "A piece of food in the shape of a ring."
+        ],
+        "links": [
+          [
+            "food",
+            "food"
+          ]
+        ],
+        "id": "ring-en-noun-fdBjfymm",
+        "examples": [
+          {
+            "text": "onion rings",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "Short for webring."
+        ],
+        "links": [
+          [
+            "Internet",
+            "Internet"
+          ],
+          [
+            "webring",
+            "webring#English"
+          ]
+        ],
+        "id": "ring-en-noun-eTKeGUDS",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Internet",
+            "kind": "topical",
+            "name": "Internet",
+            "parents": [
+              "Computing",
+              "Networking",
+              "Technology",
+              "All topics",
+              "Fundamental"
+            ]
+          }
+        ],
+        "raw_glosses": [
+          "(Internet) Short for webring."
+        ],
+        "tags": [
+          "Internet",
+          "abbreviation",
+          "alt-of"
+        ],
+        "examples": [
+          {
+            "ref": "2002, Feroz Khan, Information Society in Global Age, page 100",
+            "text": "Individuals looking to add their own homepage to a particular ring are, however, more or less at the mercy of the ringmaster, who often maintains a ring homepage listing its acceptance (or membership) policies and an index of its member sites.",
+            "type": "quotation"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "A place where some sports or exhibitions take place; notably a circular or comparable arena, such as a boxing ring or a circus ring; hence the field of a political contest."
+        ],
+        "links": [
+          [
+            "sports",
+            "sports"
+          ],
+          [
+            "exhibition",
+            "exhibition"
+          ],
+          [
+            "arena",
+            "arena"
+          ],
+          [
+            "boxing ring",
+            "boxing ring"
+          ],
+          [
+            "circus ring",
+            "circus ring"
+          ],
+          [
+            "field",
+            "field"
+          ],
+          [
+            "contest",
+            "contest"
+          ]
+        ],
+        "id": "ring-en-noun-zgaLtQfX",
+        "examples": [
+          {
+            "ref": "1707, Edmund Smith, Phaedra and Hippolitus",
+            "text": "Place me, O, place me in the dusty ring, / Where youthful charioteers contend for glory.",
+            "type": "quotation"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "A place where some sports or exhibitions take place; notably a circular or comparable arena, such as a boxing ring or a circus ring; hence the field of a political contest.",
+          "The open space in front of a racecourse stand, used for betting purposes."
+        ],
+        "links": [
+          [
+            "sports",
+            "sports"
+          ],
+          [
+            "exhibition",
+            "exhibition"
+          ],
+          [
+            "arena",
+            "arena"
+          ],
+          [
+            "boxing ring",
+            "boxing ring"
+          ],
+          [
+            "circus ring",
+            "circus ring"
+          ],
+          [
+            "field",
+            "field"
+          ],
+          [
+            "contest",
+            "contest"
+          ],
+          [
+            "racecourse",
+            "racecourse"
+          ],
+          [
+            "stand",
+            "stand"
+          ]
+        ],
+        "id": "ring-en-noun-mBRXxCVb"
+      },
+      {
+        "senseid": [
+          "en:illegal_group"
+        ],
+        "glosses": [
+          "An exclusive group of people, usually involving some unethical or illegal practices."
+        ],
+        "links": [
+          [
+            "exclusive",
+            "exclusive"
+          ],
+          [
+            "group",
+            "group"
+          ]
+        ],
+        "id": "ring-en-noun-en:illegal_group",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Corruption",
+            "kind": "topical",
+            "name": "Corruption",
+            "parents": [
+              "Crime",
+              "Politics",
+              "Criminal law",
+              "Society",
+              "Law",
+              "All topics",
+              "Justice",
+              "Fundamental"
+            ]
+          }
+        ],
+        "examples": [
+          {
+            "text": "a crime ring; a prostitution ring; a bidding ring (at an auction sale)",
+            "type": "example"
+          },
+          {
+            "ref": "1877, Edward Augustus Freeman, The History of the Norman Conquest of England",
+            "text": "the ruling ring at Constantinople",
+            "type": "quotation"
+          },
+          {
+            "ref": "1928, Upton Sinclair, Boston",
+            "text": "It's a blackmail ring, and the district attorneys get a share of the loot.",
+            "type": "quotation"
+          },
+          {
+            "ref": "31 July 2018, Julia Carrie Wong, “What is QAnon? Explaining the bizarre rightwing conspiracy theory”, in The Guardian",
+            "text": "In a thread called “Calm Before the Storm”, and in subsequent posts, Q established his legend as a government insider with top security clearance who knew the truth about a secret struggle for power involving Donald Trump, the “deep state”, Robert Mueller, the Clintons, pedophile rings, and other stuff.",
+            "type": "quotation"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "A group of atoms linked by bonds to form a closed chain in a molecule."
+        ],
+        "links": [
+          [
+            "chemistry",
+            "chemistry"
+          ],
+          [
+            "atom",
+            "atom"
+          ],
+          [
+            "bond",
+            "bond"
+          ],
+          [
+            "chain",
+            "chain"
+          ],
+          [
+            "molecule",
+            "molecule"
+          ]
+        ],
+        "id": "ring-en-noun-QAb7p91z",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Chemistry",
+            "kind": "topical",
+            "name": "Chemistry",
+            "parents": [
+              "Sciences",
+              "All topics",
+              "Fundamental"
+            ]
+          }
+        ],
+        "topics": [
+          "chemistry",
+          "natural-sciences",
+          "physical-sciences"
+        ],
+        "raw_glosses": [
+          "(chemistry) A group of atoms linked by bonds to form a closed chain in a molecule."
+        ],
+        "examples": [
+          {
+            "text": "a benzene ring",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "A planar geometrical figure included between two concentric circles."
+        ],
+        "links": [
+          [
+            "geometry",
+            "geometry"
+          ],
+          [
+            "planar",
+            "planar"
+          ],
+          [
+            "geometrical",
+            "geometrical"
+          ],
+          [
+            "figure",
+            "figure"
+          ],
+          [
+            "concentric",
+            "concentric"
+          ],
+          [
+            "circle",
+            "circle"
+          ]
+        ],
+        "id": "ring-en-noun-cKAij-~D",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Geometry",
+            "kind": "topical",
+            "name": "Geometry",
+            "parents": [
+              "Mathematics",
+              "Formal sciences",
+              "Sciences",
+              "All topics",
+              "Fundamental"
+            ]
+          }
+        ],
+        "topics": [
+          "geometry",
+          "mathematics",
+          "sciences"
+        ],
+        "raw_glosses": [
+          "(geometry) A planar geometrical figure included between two concentric circles."
+        ]
+      },
+      {
+        "glosses": [
+          "A diacritical mark in the shape of a hollow circle placed above or under the letter; a kroužek."
+        ],
+        "links": [
+          [
+            "typography",
+            "typography"
+          ],
+          [
+            "diacritical mark",
+            "diacritical mark"
+          ],
+          [
+            "hollow",
+            "hollow"
+          ],
+          [
+            "kroužek",
+            "kroužek"
+          ]
+        ],
+        "id": "ring-en-noun-I4mRv536",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Typography",
+            "kind": "topical",
+            "name": "Typography",
+            "parents": [
+              "Printing",
+              "Writing",
+              "Industries",
+              "Human behaviour",
+              "Language",
+              "Business",
+              "Human",
+              "Communication",
+              "Economics",
+              "Society",
+              "All topics",
+              "Social sciences",
+              "Fundamental",
+              "Sciences"
+            ]
+          }
+        ],
+        "topics": [
+          "media",
+          "publishing",
+          "typography"
+        ],
+        "raw_glosses": [
+          "(typography) A diacritical mark in the shape of a hollow circle placed above or under the letter; a kroužek."
+        ]
+      },
+      {
+        "glosses": [
+          "An old English measure of corn equal to the coomb or half a quarter."
+        ],
+        "links": [
+          [
+            "measure",
+            "measure"
+          ],
+          [
+            "corn",
+            "corn"
+          ],
+          [
+            "coomb",
+            "coomb"
+          ],
+          [
+            "quarter",
+            "quarter"
+          ]
+        ],
+        "id": "ring-en-noun-n74is-ld",
+        "raw_glosses": [
+          "(historical) An old English measure of corn equal to the coomb or half a quarter."
+        ],
+        "tags": [
+          "historical"
+        ],
+        "examples": [
+          {
+            "ref": "1866, James Edwin Thorold Rogers, A History of Agriculture and Prices in England, volume 1, page 168",
+            "text": "The ring is common in the Huntingdonshire accounts of Ramsey Abbey. It was equal to half a quarter, i.e., is identical with the coomb of the eastern counties",
+            "type": "quotation"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "A hierarchical level of privilege in a computer system, usually at hardware level, used to protect data and functionality (also protection ring)."
+        ],
+        "links": [
+          [
+            "computing",
+            "computing#Noun"
+          ],
+          [
+            "theory",
+            "theory"
+          ],
+          [
+            "hierarchical",
+            "hierarchical"
+          ],
+          [
+            "privilege",
+            "privilege"
+          ],
+          [
+            "hardware",
+            "hardware"
+          ]
+        ],
+        "id": "ring-en-noun-6jn3jbDB",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Theory of computing",
+            "kind": "topical",
+            "name": "Theory of computing",
+            "parents": [
+              "Computer science",
+              "Computing",
+              "Sciences",
+              "Technology",
+              "All topics",
+              "Fundamental"
+            ]
+          }
+        ],
+        "topics": [
+          "computing",
+          "computing-theory",
+          "engineering",
+          "mathematics",
+          "natural-sciences",
+          "physical-sciences",
+          "sciences"
+        ],
+        "raw_glosses": [
+          "(computing theory) A hierarchical level of privilege in a computer system, usually at hardware level, used to protect data and functionality (also protection ring)."
+        ],
+        "examples": [
+          {
+            "ref": "2007, Steve Anson, Steve Bunting, Mastering Windows Network Forensics and Investigation, page 70",
+            "text": "Kernel Mode processes run in ring 0, and User Mode processes run in ring 3.",
+            "type": "quotation"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "Either of the pair of clamps used to hold a telescopic sight to a rifle."
+        ],
+        "links": [
+          [
+            "firearm",
+            "firearm"
+          ]
+        ],
+        "id": "ring-en-noun-VRl~PkV5",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Firearms",
+            "kind": "topical",
+            "name": "Firearms",
+            "parents": [
+              "Weapons",
+              "Hunting",
+              "Military",
+              "Tools",
+              "Human activity",
+              "Society",
+              "Technology",
+              "Human behaviour",
+              "All topics",
+              "Human",
+              "Fundamental"
+            ]
+          }
+        ],
+        "topics": [
+          "engineering",
+          "firearms",
+          "government",
+          "military",
+          "natural-sciences",
+          "physical-sciences",
+          "politics",
+          "tools",
+          "war",
+          "weaponry"
+        ],
+        "raw_glosses": [
+          "(firearms) Either of the pair of clamps used to hold a telescopic sight to a rifle."
+        ]
+      },
+      {
+        "glosses": [
+          "The twenty-fifth Lenormand card."
+        ],
+        "links": [
+          [
+            "cartomancy",
+            "cartomancy"
+          ],
+          [
+            "Lenormand",
+            "Lenormand"
+          ]
+        ],
+        "id": "ring-en-noun-sSltsyDV",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Cartomancy",
+            "kind": "topical",
+            "name": "Cartomancy",
+            "parents": [
+              "Divination",
+              "Occult",
+              "Forteana",
+              "Paranormal",
+              "Pseudoscience",
+              "Supernatural",
+              "Sciences",
+              "Folklore",
+              "Religion",
+              "All topics",
+              "Culture",
+              "Fundamental",
+              "Society"
+            ]
+          }
+        ],
+        "topics": [
+          "cartomancy",
+          "human-sciences",
+          "mysticism",
+          "philosophy",
+          "sciences"
+        ],
+        "raw_glosses": [
+          "(cartomancy) The twenty-fifth Lenormand card."
+        ]
+      }
+    ],
+    "descendants": [
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "name": "desctree",
+            "expansion": "→ French: ring\n→ Romanian: ring"
+          }
+        ],
+        "text": "→ French: ring\n→ Romanian: ring"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "name": "desc",
+            "expansion": "→ Hungarian: ring"
+          }
+        ],
+        "text": "→ Hungarian: ring"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "name": "desc",
+            "expansion": "→ Italian: ring"
+          }
+        ],
+        "text": "→ Italian: ring"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "name": "desc",
+            "expansion": "→ Polish: ring"
+          }
+        ],
+        "text": "→ Polish: ring"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "name": "desc",
+            "expansion": "→ Serbo-Croatian: ring"
+          }
+        ],
+        "text": "→ Serbo-Croatian: ring"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "name": "desc",
+            "expansion": "→ Spanish: ring"
+          }
+        ],
+        "text": "→ Spanish: ring"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "name": "desc",
+            "expansion": "→ Turkish: ring"
+          }
+        ],
+        "text": "→ Turkish: ring"
+      }
+    ],
+    "sounds": [
+      {
+        "ipa": "/ɹɪŋ/"
+      },
+      {
+        "enpr": "rĭng"
+      },
+      {
+        "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c0/En-us-ring.ogg/En-us-ring.ogg.mp3",
+        "tags": [
+          "US"
+        ],
+        "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/En-us-ring.ogg",
+        "audio": "en-us-ring.ogg",
+        "text": "Audio (US)"
+      },
+      {
+        "rhymes": "-ɪŋ"
+      },
+      {
+        "homophone": "wring"
+      }
+    ]
+  },
+  {
+    "word": "ring",
+    "pos": "verb",
+    "lang_code": "en",
+    "lang": "English",
+    "etymology_number": 1,
+    "etymology_templates": [
+      {
+        "name": "root",
+        "expansion": ""
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "der-lite/lang",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "ryng"
+      },
+      {
+        "name": "inh-lite",
+        "expansion": "Middle English ryng"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "der-lite/lang",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "h"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "h"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "hring (“ring, circle”)"
+      },
+      {
+        "name": "inh-lite",
+        "expansion": "Old English hring (“ring, circle”)"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "der-lite/lang",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "6"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "6"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "h"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "i"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "i"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "g"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "g"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "hring"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "hring"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-West Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "6"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "6"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "h"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "i"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "i"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "g"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "g"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "hring"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "hring"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "*hring"
+      },
+      {
+        "name": "inh-lite",
+        "expansion": "Proto-West Germanic *hring"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "der-lite/lang",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "8"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "8"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "h"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "i"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "i"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "g"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "g"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringa"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "a"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "a"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringaz"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringa"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "z"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "z"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "hringaz"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "hringaz"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "8"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "8"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "h"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "i"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "i"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "g"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "g"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringa"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "a"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "a"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringaz"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringa"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "z"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "z"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "hringaz"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "hringaz"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "*hringaz (“ring”)"
+      },
+      {
+        "name": "inh-lite",
+        "expansion": "Proto-Germanic *hringaz (“ring”)"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "der-lite/lang",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "1"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "11"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "11"
+      },
+      {
+        "name": "str left",
+        "expansion": "*("
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "("
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "("
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s"
+      },
+      {
+        "name": "str left",
+        "expansion": "*("
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "s"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "s"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": ")"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": ")"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)k"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "k"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "k"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kr"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)k"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kre"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kr"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "e"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "e"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kren"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kre"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kreng"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kren"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "g"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "g"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)krengʰ"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kreng"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "ʰ"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "ʰ"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)krengʰ-"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)krengʰ"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "-"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "-"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "(s)krengʰ-"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "(s)krengʰ-"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "1"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "11"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "11"
+      },
+      {
+        "name": "str left",
+        "expansion": "*("
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "("
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "("
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s"
+      },
+      {
+        "name": "str left",
+        "expansion": "*("
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "s"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "s"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": ")"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": ")"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)k"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "k"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "k"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kr"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)k"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kre"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kr"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "e"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "e"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kren"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kre"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kreng"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kren"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "g"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "g"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)krengʰ"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)kreng"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "ʰ"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "ʰ"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)krengʰ-"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)krengʰ"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "-"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "-"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "(s)krengʰ-"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "(s)krengʰ-"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "*(s)krengʰ-"
+      },
+      {
+        "name": "der-lite",
+        "expansion": "Proto-Indo-European *(s)krengʰ-"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "8"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "8"
+      },
+      {
+        "name": "str left",
+        "expansion": "*("
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "("
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "("
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s"
+      },
+      {
+        "name": "str left",
+        "expansion": "*("
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "s"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "s"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": ")"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": ")"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)k"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "k"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "k"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ke"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)k"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "e"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "e"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ker"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ke"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ker-"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ker"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "-"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "-"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "(s)ker-"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "(s)ker-"
+      },
+      {
+        "name": "str left",
+        "expansion": "i"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Indo-European"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "8"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "8"
+      },
+      {
+        "name": "str left",
+        "expansion": "*("
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "("
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "("
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s"
+      },
+      {
+        "name": "str left",
+        "expansion": "*("
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "s"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "s"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": ")"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": ")"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)k"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "k"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "k"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ke"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)k"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "e"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "e"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ker"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ke"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ker-"
+      },
+      {
+        "name": "str left",
+        "expansion": "*(s)ker"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "-"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "-"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "(s)ker-"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "(s)ker-"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "*(s)ker- (“to turn, bend”)"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "West Frisian"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "West Frisian"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "West Frisian"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "West Frisian"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "West Frisian"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "ring"
+      },
+      {
+        "name": "cog-lite",
+        "expansion": "West Frisian ring"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Low German"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Low German"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Low German"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Low German"
+      },
+      {
+        "name": "str left",
+        "expansion": "R"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Low German"
+      },
+      {
+        "name": "str left",
+        "expansion": "R"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "Ring"
+      },
+      {
+        "name": "cog-lite",
+        "expansion": "Low German Ring"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "ring"
+      },
+      {
+        "name": "cog-lite",
+        "expansion": "Dutch ring"
+      },
+      {
+        "name": "str left",
+        "expansion": "d"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "German"
+      },
+      {
+        "name": "str left",
+        "expansion": "d"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "German"
+      },
+      {
+        "name": "str left",
+        "expansion": "d"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "German"
+      },
+      {
+        "name": "str left",
+        "expansion": "d"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "German"
+      },
+      {
+        "name": "str left",
+        "expansion": "R"
+      },
+      {
+        "name": "str left",
+        "expansion": "d"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "German"
+      },
+      {
+        "name": "str left",
+        "expansion": "R"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "Ring"
+      },
+      {
+        "name": "cog-lite",
+        "expansion": "German Ring"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "ring"
+      },
+      {
+        "name": "cog-lite",
+        "expansion": "Swedish ring"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Finnish"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Finnish"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Finnish"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Finnish"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "f"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Finnish"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "rengas"
+      },
+      {
+        "name": "cog-lite",
+        "expansion": "Finnish rengas"
+      },
+      {
+        "name": "doublet",
+        "expansion": "Doublet of rank and rink"
+      }
+    ],
+    "etymology_text": "From Middle English ryng, from Old English hring (“ring, circle”), from Proto-West Germanic *hring, from Proto-Germanic *hringaz (“ring”), from Proto-Indo-European *(s)krengʰ-, extended nasalized form of *(s)ker- (“to turn, bend”).\nCognate with West Frisian ring, Low German Ring, Dutch ring, German Ring, Swedish ring, also Finnish rengas. Doublet of rank and rink.",
+    "wikipedia": [
+      "Dutch language",
+      "Finnish language",
+      "German language",
+      "Low German language",
+      "Middle English language",
+      "Old English language",
+      "Proto-Germanic language",
+      "Proto-Indo-European language",
+      "Proto-West Germanic language",
+      "Swedish language",
+      "West Frisian language"
+    ],
+    "forms": [
+      {
+        "form": "rings",
+        "tags": [
+          "present",
+          "singular",
+          "third-person"
+        ]
+      },
+      {
+        "form": "ringing",
+        "tags": [
+          "participle",
+          "present"
+        ]
+      },
+      {
+        "form": "ringed",
+        "tags": [
+          "participle",
+          "past"
+        ]
+      },
+      {
+        "form": "ringed",
+        "tags": [
+          "past"
+        ]
+      }
+    ],
+    "senses": [
+      {
+        "glosses": [
+          "To enclose or surround."
+        ],
+        "links": [
+          [
+            "enclose",
+            "enclose"
+          ],
+          [
+            "surround",
+            "surround#Verb"
+          ]
+        ],
+        "id": "ring-en-verb-TsAw32pA",
+        "raw_glosses": [
+          "(transitive) To enclose or surround."
+        ],
+        "tags": [
+          "transitive"
+        ],
+        "examples": [
+          {
+            "text": "The inner city was ringed with dingy industrial areas.",
+            "type": "example"
+          },
+          {
+            "ref": "January 12 2022, Paul Bigland, “Fab Four: the nation's finest stations: Eastbourne”, in RAIL, number 948, page 27",
+            "text": "Today, when stepping off the train, you're presented with a bright and airy concourse that's ringed with a variety of facilities.",
+            "type": "quotation"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To make an incision around; to girdle; to cut away a circular tract of bark from a tree in order to kill it."
+        ],
+        "links": [
+          [
+            "incision",
+            "incision"
+          ],
+          [
+            "girdle",
+            "girdle#Verb"
+          ]
+        ],
+        "id": "ring-en-verb-PJAFzfwE",
+        "raw_glosses": [
+          "(transitive, figuratively) To make an incision around; to girdle; to cut away a circular tract of bark from a tree in order to kill it."
+        ],
+        "tags": [
+          "figuratively",
+          "transitive"
+        ],
+        "examples": [
+          {
+            "text": "They ringed the trees to make the clearing easier next year.",
+            "type": "example"
+          },
+          {
+            "ref": "1887, Harriet W. Daly, Digging, Squatting, and Pioneering Life in the Northern Territory of South Australia, page 50",
+            "text": "The ironbark trees are \"rung\" at a certain height top and bottom, and the bark detached in one sheet; it is then wetted, and laid out flat on the ground, huge stones being placed to keep it from rolling up again.",
+            "type": "quotation"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To attach a ring to, especially for identification."
+        ],
+        "links": [
+          [
+            "attach",
+            "attach"
+          ],
+          [
+            "ring",
+            "ring#Noun"
+          ],
+          [
+            "identification",
+            "identification"
+          ]
+        ],
+        "id": "ring-en-verb-Wu0cNpS7",
+        "raw_glosses": [
+          "(transitive) To attach a ring to, especially for identification."
+        ],
+        "tags": [
+          "transitive"
+        ],
+        "examples": [
+          {
+            "text": "We managed to ring 22 birds this morning.",
+            "type": "example"
+          },
+          {
+            "ref": "1919, Popular Science, volume 95, number 4, page 31",
+            "text": "Ringing a pig of ordinary size is easy, but special arrangements must be made for handling the big ones.",
+            "type": "quotation"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To surround or fit with a ring, or as if with a ring."
+        ],
+        "links": [
+          [
+            "fit",
+            "fit#Verb"
+          ]
+        ],
+        "id": "ring-en-verb-j0ywYQig",
+        "raw_glosses": [
+          "(transitive) To surround or fit with a ring, or as if with a ring."
+        ],
+        "tags": [
+          "transitive"
+        ],
+        "examples": [
+          {
+            "text": "to ring a pig’s snout",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To rise in the air spirally."
+        ],
+        "links": [
+          [
+            "falconry",
+            "falconry"
+          ],
+          [
+            "rise",
+            "rise#Verb"
+          ],
+          [
+            "air",
+            "air#Noun"
+          ],
+          [
+            "spirally",
+            "spirally"
+          ]
+        ],
+        "id": "ring-en-verb-2mu-bqBI",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Falconry",
+            "kind": "topical",
+            "name": "Falconry",
+            "parents": [
+              "Sports",
+              "Human activity",
+              "Human behaviour",
+              "Human",
+              "All topics",
+              "Fundamental"
+            ]
+          }
+        ],
+        "topics": [
+          "falconry",
+          "hobbies",
+          "hunting",
+          "lifestyle"
+        ],
+        "raw_glosses": [
+          "(falconry) To rise in the air spirally."
+        ]
+      },
+      {
+        "glosses": [
+          "To steal and change the identity of (cars) in order to resell them."
+        ],
+        "links": [
+          [
+            "steal",
+            "steal"
+          ],
+          [
+            "identity",
+            "identity"
+          ],
+          [
+            "car",
+            "car"
+          ],
+          [
+            "resell",
+            "resell"
+          ]
+        ],
+        "id": "ring-en-verb--SefO1tT",
+        "raw_glosses": [
+          "(transitive) To steal and change the identity of (cars) in order to resell them."
+        ],
+        "tags": [
+          "transitive"
+        ],
+        "examples": [
+          {
+            "text": "A. Woodley, Trio: 3 short stories\nGabe said that as Derry had only caught part of the conversation, it's possible that they were discussing a film, it was bad enough that they'd unwittingly been brought into ringing cars, adding drugs into it was far more than either of them could ever be comfortable with."
+          },
+          {
+            "ref": "2019 (10 December), Ross McCarthy, Digbeth chop shop gang jailed over £2m stolen car racket (in Birmingham Live) https://www.birminghammail.co.uk/news/midlands-news/digbeth-chop-shop-gang-jailed-17393456",
+            "text": "They used two bases in Digbeth to break down luxury motors, some of which were carjacked or stolen after keys were taken in house raids. The parts were then fitted to salvaged cars bought online. […] Jailing the quartet, a judge at Birmingham Crown Court said it was a \"car ringing on a commercial and substantial scale\"."
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To ride around (a group of animals, especially catle) to keep them milling in one place; hence (intransitive), to work as a drover, to muster cattle."
+        ],
+        "links": [
+          [
+            "drover",
+            "drover"
+          ]
+        ],
+        "id": "ring-en-verb-SRv6zTRS",
+        "categories": [
+          {
+            "kind": "other",
+            "name": "Australian English"
+          }
+        ],
+        "raw_glosses": [
+          "(Australia, transitive) To ride around (a group of animals, especially catle) to keep them milling in one place; hence (intransitive), to work as a drover, to muster cattle."
+        ],
+        "tags": [
+          "Australia",
+          "transitive"
+        ],
+        "examples": [
+          {
+            "ref": "2002, Alex Miller, Journey to the Stone Country, Allen & Unwin, published 2003, page 289",
+            "text": "‘I was ringing for your dad out there at Haddon Hill the year you was born. It was a good year for calves.’",
+            "type": "quotation"
+          }
+        ]
+      }
+    ],
+    "sounds": [
+      {
+        "ipa": "/ɹɪŋ/"
+      },
+      {
+        "enpr": "rĭng"
+      },
+      {
+        "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c0/En-us-ring.ogg/En-us-ring.ogg.mp3",
+        "tags": [
+          "US"
+        ],
+        "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/En-us-ring.ogg",
+        "audio": "en-us-ring.ogg",
+        "text": "Audio (US)"
+      },
+      {
+        "rhymes": "-ɪŋ"
+      },
+      {
+        "homophone": "wring"
+      }
+    ]
+  },
+  {
+    "word": "ring",
+    "pos": "noun",
+    "lang_code": "en",
+    "lang": "English",
+    "etymology_number": 2,
+    "etymology_templates": [
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "der-lite/lang",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "ringen"
+      },
+      {
+        "name": "der-lite",
+        "expansion": "Middle English ringen"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "der-lite/lang",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "h"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "h"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "hrinġan (“to ring”)"
+      },
+      {
+        "name": "der-lite",
+        "expansion": "Old English hrinġan (“to ring”)"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "der-lite/lang",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "1"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "11"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "11"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "h"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "i"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "i"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "g"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "g"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringi"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "i"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "i"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringij"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringi"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "j"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "j"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringija"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringij"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "a"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "a"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringijan"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringija"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringijaną"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringijan"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "ą"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "ą"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "hringijaną"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "hringijaną"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "1"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "11"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "11"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "h"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "i"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "i"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "g"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "g"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringi"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "i"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "i"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringij"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringi"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "j"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "j"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringija"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringij"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "a"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "a"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringijan"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringija"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringijaną"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringijan"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "ą"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "ą"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "hringijaną"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "hringijaną"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "*hringijaną"
+      },
+      {
+        "name": "der-lite",
+        "expansion": "Proto-Germanic *hringijaną"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "ringen"
+      },
+      {
+        "name": "cog-lite",
+        "expansion": "Dutch ringen"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "ringa"
+      },
+      {
+        "name": "cog-lite",
+        "expansion": "Swedish ringa"
+      }
+    ],
+    "etymology_text": "From Middle English ringen, from Old English hrinġan (“to ring”), from Proto-Germanic *hringijaną. Cognate with Dutch ringen, Swedish ringa.",
+    "wikipedia": [
+      "Dutch language",
+      "Middle English language",
+      "Old English language",
+      "Proto-Germanic language",
+      "Swedish language"
+    ],
+    "forms": [
+      {
+        "form": "rings",
+        "tags": [
+          "plural"
+        ]
+      }
+    ],
+    "senses": [
+      {
+        "glosses": [
+          "The resonant sound of a bell, or a sound resembling it."
+        ],
+        "links": [
+          [
+            "bell",
+            "bell"
+          ]
+        ],
+        "id": "ring-en-noun-Z54n2kCj",
+        "examples": [
+          {
+            "text": "The church bell's ring could be heard the length of the valley.",
+            "type": "example"
+          },
+          {
+            "text": "The ring of hammer on anvil filled the air.",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "A pleasant or correct sound."
+        ],
+        "links": [
+          [
+            "pleasant",
+            "pleasant"
+          ],
+          [
+            "correct",
+            "correct"
+          ],
+          [
+            "sound",
+            "sound"
+          ]
+        ],
+        "id": "ring-en-noun-Nfq4Rhi5",
+        "raw_glosses": [
+          "(figuratively) A pleasant or correct sound."
+        ],
+        "tags": [
+          "figuratively"
+        ],
+        "examples": [
+          {
+            "text": "The name has a nice ring to it.",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "A sound or appearance that is characteristic of something."
+        ],
+        "id": "ring-en-noun-yimA7DWg",
+        "raw_glosses": [
+          "(figuratively) A sound or appearance that is characteristic of something."
+        ],
+        "tags": [
+          "figuratively"
+        ],
+        "examples": [
+          {
+            "text": "Her statements in court had a ring of falsehood.",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "A telephone call."
+        ],
+        "id": "ring-en-noun-0uf5eWqg",
+        "raw_glosses": [
+          "(colloquial) A telephone call."
+        ],
+        "tags": [
+          "colloquial"
+        ],
+        "examples": [
+          {
+            "text": "I’ll give you a ring when the plane lands.",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "Any loud sound; the sound of numerous voices; a sound continued, repeated, or reverberated."
+        ],
+        "id": "ring-en-noun-ly6Lqtsw"
+      },
+      {
+        "glosses": [
+          "A chime, or set of bells harmonically tuned."
+        ],
+        "links": [
+          [
+            "chime",
+            "chime"
+          ]
+        ],
+        "id": "ring-en-noun-5gsZCLkn",
+        "examples": [
+          {
+            "text": "St Mary's has a ring of eight bells.",
+            "type": "example"
+          }
+        ]
+      }
+    ],
+    "sounds": [
+      {
+        "ipa": "/ɹɪŋ/"
+      },
+      {
+        "enpr": "rĭng"
+      },
+      {
+        "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c0/En-us-ring.ogg/En-us-ring.ogg.mp3",
+        "tags": [
+          "US"
+        ],
+        "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/En-us-ring.ogg",
+        "audio": "en-us-ring.ogg",
+        "text": "Audio (US)"
+      },
+      {
+        "rhymes": "-ɪŋ"
+      },
+      {
+        "homophone": "wring"
+      }
+    ]
+  },
+  {
+    "word": "ring",
+    "pos": "verb",
+    "lang_code": "en",
+    "lang": "English",
+    "etymology_number": 2,
+    "etymology_templates": [
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "der-lite/lang",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Middle English"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "ringen"
+      },
+      {
+        "name": "der-lite",
+        "expansion": "Middle English ringen"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "der-lite/lang",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "h"
+      },
+      {
+        "name": "str left",
+        "expansion": "a"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Old English"
+      },
+      {
+        "name": "str left",
+        "expansion": "h"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "hrinġan (“to ring”)"
+      },
+      {
+        "name": "der-lite",
+        "expansion": "Old English hrinġan (“to ring”)"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "der-lite/lang",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "1"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "11"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "11"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "h"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "i"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "i"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "g"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "g"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringi"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "i"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "i"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringij"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringi"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "j"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "j"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringija"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringij"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "a"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "a"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringijan"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringija"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringijaną"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringijan"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "ą"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "ą"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "hringijaną"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "hringijaną"
+      },
+      {
+        "name": "str left",
+        "expansion": "g"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Proto-Germanic"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "1"
+      },
+      {
+        "name": "str len-lite/core",
+        "expansion": "11"
+      },
+      {
+        "name": "str len-lite",
+        "expansion": "11"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "h"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "h"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str left",
+        "expansion": "*h"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "r"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hr"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "i"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "i"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hri"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hrin"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "g"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "g"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringi"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hring"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "i"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "i"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringij"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringi"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "j"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "j"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringija"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringij"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "a"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "a"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringijan"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringija"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "n"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "n"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringijaną"
+      },
+      {
+        "name": "str left",
+        "expansion": "*hringijan"
+      },
+      {
+        "name": "str index-lite/logic",
+        "expansion": "ą"
+      },
+      {
+        "name": "str_index-lite",
+        "expansion": "ą"
+      },
+      {
+        "name": "str sub-lite/2",
+        "expansion": "hringijaną"
+      },
+      {
+        "name": "str sub-lite",
+        "expansion": "hringijaną"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "*hringijaną"
+      },
+      {
+        "name": "der-lite",
+        "expansion": "Proto-Germanic *hringijaną"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "n"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Dutch"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "ringen"
+      },
+      {
+        "name": "cog-lite",
+        "expansion": "Dutch ringen"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "str left",
+        "expansion": "s"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "Swedish"
+      },
+      {
+        "name": "str left",
+        "expansion": "r"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "ringa"
+      },
+      {
+        "name": "cog-lite",
+        "expansion": "Swedish ringa"
+      }
+    ],
+    "etymology_text": "From Middle English ringen, from Old English hrinġan (“to ring”), from Proto-Germanic *hringijaną. Cognate with Dutch ringen, Swedish ringa.",
+    "wikipedia": [
+      "Dutch language",
+      "Middle English language",
+      "Old English language",
+      "Proto-Germanic language",
+      "Swedish language"
+    ],
+    "forms": [
+      {
+        "form": "rings",
+        "tags": [
+          "present",
+          "singular",
+          "third-person"
+        ]
+      },
+      {
+        "form": "ringing",
+        "tags": [
+          "participle",
+          "present"
+        ]
+      },
+      {
+        "form": "rang",
+        "tags": [
+          "past"
+        ]
+      },
+      {
+        "form": "rung",
+        "tags": [
+          "nonstandard",
+          "past"
+        ]
+      },
+      {
+        "form": "rung",
+        "tags": [
+          "participle",
+          "past"
+        ]
+      }
+    ],
+    "senses": [
+      {
+        "glosses": [
+          "Of a bell, etc., to produce a resonant sound."
+        ],
+        "id": "ring-en-verb-0I7Erogs",
+        "raw_glosses": [
+          "(intransitive) Of a bell, etc., to produce a resonant sound."
+        ],
+        "tags": [
+          "intransitive"
+        ],
+        "examples": [
+          {
+            "text": "The bells were ringing in the town.",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To make (a bell, etc.) produce a resonant sound."
+        ],
+        "links": [
+          [
+            "bell",
+            "bell"
+          ]
+        ],
+        "id": "ring-en-verb-oeIT-pWU",
+        "raw_glosses": [
+          "(transitive) To make (a bell, etc.) produce a resonant sound."
+        ],
+        "tags": [
+          "transitive"
+        ],
+        "examples": [
+          {
+            "text": "The deliveryman rang the doorbell to drop off a parcel.",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To produce (a sound) by ringing."
+        ],
+        "id": "ring-en-verb-4P2BTapd",
+        "raw_glosses": [
+          "(transitive) To produce (a sound) by ringing."
+        ],
+        "tags": [
+          "transitive"
+        ],
+        "examples": [
+          {
+            "text": "They rang a Christmas carol on their handbells."
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To produce the sound of a bell or a similar sound."
+        ],
+        "links": [
+          [
+            "bell",
+            "bell"
+          ]
+        ],
+        "id": "ring-en-verb-qPs10MqP",
+        "raw_glosses": [
+          "(intransitive, figuratively) To produce the sound of a bell or a similar sound."
+        ],
+        "tags": [
+          "figuratively",
+          "intransitive"
+        ],
+        "examples": [
+          {
+            "text": "Whose mobile phone is ringing?",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "Of something spoken or written, to appear to be, to seem, to sound."
+        ],
+        "links": [
+          [
+            "appear",
+            "appear"
+          ],
+          [
+            "seem",
+            "seem"
+          ],
+          [
+            "sound",
+            "sound"
+          ]
+        ],
+        "id": "ring-en-verb-14LACnJD",
+        "raw_glosses": [
+          "(intransitive, figuratively) Of something spoken or written, to appear to be, to seem, to sound."
+        ],
+        "tags": [
+          "figuratively",
+          "intransitive"
+        ],
+        "examples": [
+          {
+            "text": "That does not ring true.",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To telephone (someone)."
+        ],
+        "id": "ring-en-verb-U5qhkvQh",
+        "categories": [
+          {
+            "kind": "other",
+            "name": "Australian English"
+          },
+          {
+            "kind": "other",
+            "name": "British English"
+          },
+          {
+            "kind": "other",
+            "name": "New Zealand English"
+          }
+        ],
+        "raw_glosses": [
+          "(transitive, colloquial, Britain, Australia, New Zealand) To telephone (someone)."
+        ],
+        "tags": [
+          "Australia",
+          "Britain",
+          "New-Zealand",
+          "colloquial",
+          "transitive"
+        ],
+        "examples": [
+          {
+            "text": "I will ring you when we arrive.",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "to resound, reverberate, echo."
+        ],
+        "links": [
+          [
+            "resound",
+            "resound"
+          ],
+          [
+            "reverberate",
+            "reverberate"
+          ],
+          [
+            "echo",
+            "echo"
+          ]
+        ],
+        "id": "ring-en-verb-k7lr1y2~",
+        "raw_glosses": [
+          "(intransitive) to resound, reverberate, echo."
+        ],
+        "tags": [
+          "intransitive"
+        ],
+        "examples": [
+          {
+            "ref": "1919, Boris Sidis, The Source and Aim of Human Progress",
+            "text": "It is instructive for us to learn as well as to ponder on the fact that \"the very men who looked down with delight, when the sand of the arena reddened with human blood, made the arena ring with applause when Terence in his famous line: ‘Homo sum, Nihil humani alienum puto’ proclaimed the brotherhood of man.\"",
+            "type": "quotation"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To produce music with bells."
+        ],
+        "links": [
+          [
+            "music",
+            "music"
+          ]
+        ],
+        "id": "ring-en-verb-YAtSHIcW",
+        "raw_glosses": [
+          "(intransitive) To produce music with bells."
+        ],
+        "tags": [
+          "intransitive"
+        ]
+      },
+      {
+        "glosses": [
+          "To ring up (enter into a cash register or till)"
+        ],
+        "links": [
+          [
+            "ring up",
+            "ring up"
+          ]
+        ],
+        "id": "ring-en-verb-3omtxTRe",
+        "examples": [
+          {
+            "ref": "1983, T.C. Knudsen, John Hempstead, A Man's Guide to Women",
+            "text": "The checkout girl rang it into his total, and he paid the bill.",
+            "type": "quotation"
+          },
+          {
+            "ref": "1990, The New Zealand Law Reports - Volume 3, page 75",
+            "text": "On presentation of the item at the checkout the original price sticker was concealed from the checkout assistant and a sticker of $38.88 exhibited on the item. The checkout operator rang on the lesser sum, a mistake known to Dronjak. He was subsequently charged with theft.",
+            "type": "quotation"
+          },
+          {
+            "ref": "2011, Tracy E Whipple, A Friend's Last Gift, page 88",
+            "text": ". The new cashier rang something twice and had to call for the manager to fix the register.",
+            "type": "quotation"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To repeat often, loudly, or earnestly."
+        ],
+        "id": "ring-en-verb-wicLeZYu",
+        "raw_glosses": [
+          "(dated) To repeat often, loudly, or earnestly."
+        ],
+        "tags": [
+          "dated"
+        ]
+      }
+    ],
+    "sounds": [
+      {
+        "ipa": "/ɹɪŋ/"
+      },
+      {
+        "enpr": "rĭng"
+      },
+      {
+        "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c0/En-us-ring.ogg/En-us-ring.ogg.mp3",
+        "tags": [
+          "US"
+        ],
+        "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/En-us-ring.ogg",
+        "audio": "en-us-ring.ogg",
+        "text": "Audio (US)"
+      },
+      {
+        "rhymes": "-ɪŋ"
+      },
+      {
+        "homophone": "wring"
+      }
+    ]
+  },
+  {
+    "word": "ring",
+    "pos": "noun",
+    "lang_code": "en",
+    "lang": "English",
+    "etymology_number": 3,
+    "etymology_templates": [
+      {
+        "name": "str left",
+        "expansion": "d"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "German"
+      },
+      {
+        "name": "str left",
+        "expansion": "d"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "German"
+      },
+      {
+        "name": "str left",
+        "expansion": "d"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "German"
+      },
+      {
+        "name": "str left",
+        "expansion": "e"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "English"
+      },
+      {
+        "name": "str left",
+        "expansion": "d"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "German"
+      },
+      {
+        "name": "str left",
+        "expansion": "d"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "German"
+      },
+      {
+        "name": "der-lite/lang",
+        "expansion": "German"
+      },
+      {
+        "name": "str left",
+        "expansion": "d"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "German"
+      },
+      {
+        "name": "str left",
+        "expansion": "Z"
+      },
+      {
+        "name": "str left",
+        "expansion": "d"
+      },
+      {
+        "name": "langname-lite",
+        "expansion": "German"
+      },
+      {
+        "name": "str left",
+        "expansion": "Z"
+      },
+      {
+        "name": "m-lite",
+        "expansion": "Zahlring (“number(s) ring”)"
+      },
+      {
+        "name": "der-lite",
+        "expansion": "German Zahlring (“number(s) ring”)"
+      }
+    ],
+    "etymology_text": "From a shortening of German Zahlring (“number(s) ring”) (coined by German mathematician David Hilbert in 1892). Apparently first used in English in 1930, E. T. Bell, “Rings whose elements are ideals,” Bulletin of the American Mathematical Society.",
+    "wikipedia": [
+      "Bulletin of the American Mathematical Society",
+      "David Hilbert",
+      "Eric Temple Bell",
+      "German language"
+    ],
+    "forms": [
+      {
+        "form": "rings",
+        "tags": [
+          "plural"
+        ]
+      }
+    ],
+    "senses": [
+      {
+        "glosses": [
+          "An algebraic structure which consists of a set with two binary operations: an additive operation and a multiplicative operation, such that the set is an abelian group under the additive operation, a monoid under the multiplicative operation, and such that the multiplicative operation is distributive with respect to the additive operation."
+        ],
+        "links": [
+          [
+            "algebra",
+            "algebra"
+          ],
+          [
+            "algebraic structure",
+            "algebraic structure"
+          ],
+          [
+            "set",
+            "set"
+          ],
+          [
+            "binary operation",
+            "binary operation"
+          ],
+          [
+            "additive operation",
+            "additive operation"
+          ],
+          [
+            "multiplicative operation",
+            "multiplicative operation"
+          ],
+          [
+            "abelian group",
+            "abelian group"
+          ],
+          [
+            "monoid",
+            "monoid"
+          ],
+          [
+            "distributive",
+            "distributive"
+          ]
+        ],
+        "id": "ring-en-noun-KcX2pDp5",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Algebra",
+            "kind": "topical",
+            "name": "Algebra",
+            "parents": [
+              "Mathematics",
+              "Formal sciences",
+              "Sciences",
+              "All topics",
+              "Fundamental"
+            ]
+          }
+        ],
+        "topics": [
+          "algebra",
+          "mathematics",
+          "sciences"
+        ],
+        "raw_glosses": [
+          "(algebra) An algebraic structure which consists of a set with two binary operations: an additive operation and a multiplicative operation, such that the set is an abelian group under the additive operation, a monoid under the multiplicative operation, and such that the multiplicative operation is distributive with respect to the additive operation."
+        ],
+        "examples": [
+          {
+            "text": "The set of integers, ℤ, is the prototypical ring.",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "An algebraic structure as above, but only required to be a semigroup under the multiplicative operation, that is, there need not be a multiplicative identity element."
+        ],
+        "links": [
+          [
+            "algebra",
+            "algebra"
+          ],
+          [
+            "semigroup",
+            "semigroup"
+          ],
+          [
+            "multiplicative operation",
+            "multiplicative operation"
+          ],
+          [
+            "identity element",
+            "identity element"
+          ]
+        ],
+        "id": "ring-en-noun-a68U8CsF",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Algebra",
+            "kind": "topical",
+            "name": "Algebra",
+            "parents": [
+              "Mathematics",
+              "Formal sciences",
+              "Sciences",
+              "All topics",
+              "Fundamental"
+            ]
+          }
+        ],
+        "topics": [
+          "algebra",
+          "mathematics",
+          "sciences"
+        ],
+        "raw_glosses": [
+          "(algebra) An algebraic structure as above, but only required to be a semigroup under the multiplicative operation, that is, there need not be a multiplicative identity element."
+        ],
+        "examples": [
+          {
+            "text": "The definition of ring without unity allows, for instance, the set 2ℤ of even integers to be a ring.",
+            "type": "example"
+          }
+        ]
+      }
+    ],
+    "sounds": [
+      {
+        "ipa": "/ɹɪŋ/"
+      },
+      {
+        "enpr": "rĭng"
+      },
+      {
+        "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c0/En-us-ring.ogg/En-us-ring.ogg.mp3",
+        "tags": [
+          "US"
+        ],
+        "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/En-us-ring.ogg",
+        "audio": "en-us-ring.ogg",
+        "text": "Audio (US)"
+      },
+      {
+        "rhymes": "-ɪŋ"
+      },
+      {
+        "homophone": "wring"
+      }
+    ]
+  },
+  {
+    "word": "ring",
+    "pos": "noun",
+    "lang_code": "en",
+    "lang": "English",
+    "etymology_number": 4,
+    "etymology_text": "",
+    "wikipedia": [
+      "Ring of sets"
+    ],
+    "forms": [
+      {
+        "form": "rings",
+        "tags": [
+          "plural"
+        ]
+      }
+    ],
+    "senses": [
+      {
+        "glosses": [
+          "A family of sets that is closed under finite unions and differences."
+        ],
+        "links": [
+          [
+            "mathematical analysis",
+            "mathematical analysis"
+          ],
+          [
+            "measure theory",
+            "measure theory"
+          ]
+        ],
+        "id": "ring-en-noun-XQ1G9Z64",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Mathematical analysis",
+            "kind": "topical",
+            "name": "Mathematical analysis",
+            "parents": [
+              "Mathematics",
+              "Formal sciences",
+              "Sciences",
+              "All topics",
+              "Fundamental"
+            ]
+          },
+          {
+            "langcode": "en",
+            "orig": "en:Measure theory",
+            "kind": "topical",
+            "name": "Measure theory",
+            "parents": [
+              "Mathematics",
+              "Formal sciences",
+              "Sciences",
+              "All topics",
+              "Fundamental"
+            ]
+          }
+        ],
+        "topics": [
+          "mathematical-analysis",
+          "mathematics",
+          "measure-theory",
+          "sciences"
+        ],
+        "raw_glosses": [
+          "(mathematical analysis, measure theory) A family of sets that is closed under finite unions and differences."
+        ]
+      }
+    ],
+    "sounds": [
+      {
+        "ipa": "/ɹɪŋ/"
+      },
+      {
+        "enpr": "rĭng"
+      },
+      {
+        "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c0/En-us-ring.ogg/En-us-ring.ogg.mp3",
+        "tags": [
+          "US"
+        ],
+        "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/En-us-ring.ogg",
+        "audio": "en-us-ring.ogg",
+        "text": "Audio (US)"
+      },
+      {
+        "rhymes": "-ɪŋ"
+      },
+      {
+        "homophone": "wring"
+      }
+    ]
+  }
+]

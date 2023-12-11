@@ -23,7 +23,7 @@ async fn search_words(data: web::Data<AppState>, info: web::Query<Info>) -> impl
     let duration = start.elapsed();
     println!("Time elapsed in expensive_function() is: {:?}", duration);
     let result = /*web::Json(*/serde_json::to_string(&words).unwrap();
-    println!("{:?}", &result);
+    println!("{}", &result);
     return result;
 }
 
@@ -37,7 +37,7 @@ async  fn  random_word(data: web::Data<AppState>) -> impl Responder {
     let duration = start.elapsed();
     println!("Time elapsed in expensive_function() is: {:?}", duration);
 
-    web::Json(serde_json::to_string(&word).unwrap())
+    serde_json::to_string(&word).unwrap()
 }
 
 #[derive(Deserialize)]
@@ -51,6 +51,7 @@ struct AppState {
 }
 
 pub async fn launch_server() -> std::io::Result<()> {
+    start_parsing().await;
     HttpServer::new(move || {
 
         let dictionary_repo = Arc::new(Mutex::new(DieselDictionaryRepository::new("postgres://admin:admin@localhost:5433/words")));

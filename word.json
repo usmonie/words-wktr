@@ -1,0 +1,5176 @@
+[
+  {
+    "word": "water",
+    "pos": "noun",
+    "lang_code": "en",
+    "lang": "English",
+    "etymology_number": 1,
+    "etymology_templates": [
+      {
+        "args": {
+          "2": "ine-pro",
+          "3": "*wed-",
+          "1": "en"
+        },
+        "name": "root",
+        "expansion": ""
+      },
+      {
+        "args": {
+          "2": "enm",
+          "1": "en",
+          "3": "water"
+        },
+        "name": "inh",
+        "expansion": "Middle English water"
+      },
+      {
+        "args": {
+          "5": "water",
+          "3": "wæter",
+          "4": "",
+          "1": "en",
+          "2": "ang"
+        },
+        "name": "inh",
+        "expansion": "Old English wæter (“water”)"
+      },
+      {
+        "args": {
+          "1": "en",
+          "2": "gmw-pro",
+          "3": "*watar"
+        },
+        "name": "inh",
+        "expansion": "Proto-West Germanic *watar"
+      },
+      {
+        "args": {
+          "1": "en",
+          "5": "water",
+          "2": "gem-pro",
+          "4": "",
+          "3": "*watōr"
+        },
+        "name": "inh",
+        "expansion": "Proto-Germanic *watōr (“water”)"
+      },
+      {
+        "args": {
+          "2": "ine-pro",
+          "4": "",
+          "1": "en",
+          "3": "*wódr̥",
+          "5": "water"
+        },
+        "name": "inh",
+        "expansion": "Proto-Indo-European *wódr̥ (“water”)"
+      },
+      {
+        "args": {
+          "1": "frr",
+          "2": "weeter",
+          "4": "water",
+          "3": ""
+        },
+        "name": "cog",
+        "expansion": "North Frisian weeter (“water”)"
+      },
+      {
+        "args": {
+          "1": "stq",
+          "3": "",
+          "4": "water",
+          "2": "Woater"
+        },
+        "name": "cog",
+        "expansion": "Saterland Frisian Woater (“water”)"
+      },
+      {
+        "args": {
+          "1": "fy",
+          "3": "",
+          "2": "wetter",
+          "4": "water"
+        },
+        "name": "cog",
+        "expansion": "West Frisian wetter (“water”)"
+      },
+      {
+        "args": {
+          "2": "water",
+          "1": "nl",
+          "4": "water",
+          "3": ""
+        },
+        "name": "cog",
+        "expansion": "Dutch water (“water”)"
+      },
+      {
+        "args": {
+          "3": "",
+          "1": "nds",
+          "2": "Water",
+          "4": "water"
+        },
+        "name": "cog",
+        "expansion": "Low German Water (“water”)"
+      },
+      {
+        "args": {
+          "1": "de",
+          "2": "Wasser"
+        },
+        "name": "cog",
+        "expansion": "German Wasser"
+      },
+      {
+        "args": {
+          "2": "vatn",
+          "1": "non"
+        },
+        "name": "cog",
+        "expansion": "Old Norse vatn"
+      },
+      {
+        "args": {
+          "2": "vatten",
+          "1": "sv",
+          "4": "water",
+          "3": ""
+        },
+        "name": "cog",
+        "expansion": "Swedish vatten (“water”)"
+      },
+      {
+        "args": {
+          "4": "water",
+          "1": "da",
+          "3": "",
+          "2": "vand"
+        },
+        "name": "cog",
+        "expansion": "Danish vand (“water”)"
+      },
+      {
+        "args": {
+          "1": "nb",
+          "4": "water",
+          "2": "vann",
+          "3": ""
+        },
+        "name": "cog",
+        "expansion": "Norwegian Bokmål vann (“water”)"
+      },
+      {
+        "args": {
+          "2": "-",
+          "1": "nn"
+        },
+        "name": "cog",
+        "expansion": "Norwegian Nynorsk"
+      },
+      {
+        "args": {
+          "4": "water",
+          "1": "is",
+          "2": "vatn",
+          "3": ""
+        },
+        "name": "cog",
+        "expansion": "Icelandic vatn (“water”)"
+      },
+      {
+        "args": {
+          "4": "otters",
+          "2": "coin fodorne",
+          "1": "sga",
+          "3": "",
+          "lit": "water-dogs"
+        },
+        "name": "cog",
+        "expansion": "Old Irish coin fodorne (“otters”, literally “water-dogs”)"
+      },
+      {
+        "args": {
+          "2": "unda",
+          "3": "",
+          "4": "wave",
+          "1": "la"
+        },
+        "name": "cog",
+        "expansion": "Latin unda (“wave”)"
+      },
+      {
+        "args": {
+          "3": "",
+          "1": "lt",
+          "2": "vanduõ",
+          "4": "water"
+        },
+        "name": "cog",
+        "expansion": "Lithuanian vanduõ (“water”)"
+      },
+      {
+        "args": {
+          "4": "water",
+          "1": "ru",
+          "2": "вода́",
+          "3": ""
+        },
+        "name": "cog",
+        "expansion": "Russian вода́ (vodá, “water”)"
+      },
+      {
+        "args": {
+          "2": "ujë",
+          "3": "",
+          "1": "sq",
+          "4": "water"
+        },
+        "name": "cog",
+        "expansion": "Albanian ujë (“water”)"
+      },
+      {
+        "args": {
+          "1": "grc",
+          "2": "ὕδωρ",
+          "3": "",
+          "4": "water"
+        },
+        "name": "cog",
+        "expansion": "Ancient Greek ὕδωρ (húdōr, “water”)"
+      },
+      {
+        "args": {
+          "1": "hy",
+          "3": "",
+          "4": "river",
+          "2": "գետ"
+        },
+        "name": "cog",
+        "expansion": "Armenian գետ (get, “river”)"
+      },
+      {
+        "args": {
+          "tr": "udán",
+          "2": "उदन्",
+          "3": "",
+          "4": "wave, water",
+          "sc": "Deva",
+          "1": "sa"
+        },
+        "name": "cog",
+        "expansion": "Sanskrit उदन् (udán, “wave, water”)"
+      },
+      {
+        "args": {
+          "sc": "Xsux",
+          "1": "hit",
+          "2": "𒉿𒀀𒋻",
+          "tr": "wa-a-tar"
+        },
+        "name": "cog",
+        "expansion": "Hittite 𒉿𒀀𒋻 (wa-a-tar)"
+      }
+    ],
+    "etymology_text": "From Middle English water, from Old English wæter (“water”), from Proto-West Germanic *watar, from Proto-Germanic *watōr (“water”), from Proto-Indo-European *wódr̥ (“water”).\ncognates\nCognate with cf, North Frisian weeter (“water”), Saterland Frisian Woater (“water”), West Frisian wetter (“water”), Dutch water (“water”), Low German Water (“water”), German Wasser, Old Norse vatn (Swedish vatten (“water”), Danish vand (“water”), Norwegian Bokmål vann (“water”), Norwegian Nynorsk and Icelandic vatn (“water”), Old Irish coin fodorne (“otters”, literally “water-dogs”), Latin unda (“wave”), Lithuanian vanduõ (“water”), Russian вода́ (vodá, “water”), Albanian ujë (“water”), Ancient Greek ὕδωρ (húdōr, “water”), Armenian գետ (get, “river”), Sanskrit उदन् (udán, “wave, water”), Hittite 𒉿𒀀𒋻 (wa-a-tar).",
+    "hyphenation": [
+      "wa‧ter"
+    ],
+    "forms": [
+      {
+        "form": "waters",
+        "tags": [
+          "plural"
+        ]
+      }
+    ],
+    "senses": [
+      {
+        "senseid": [
+          "en:Q283"
+        ],
+        "glosses": [
+          "A substance (of molecular formula H₂O) found at room temperature and pressure as a clear liquid; it is present naturally as rain, and found in rivers, lakes and seas; its solid form is ice and its gaseous form is steam.",
+          "The liquid form of this substance: liquid H₂O."
+        ],
+        "hypernyms": [
+          {
+            "sense": "liquid H2O",
+            "word": "liquid"
+          },
+          {
+            "sense": "liquid H2O",
+            "word": "fluid"
+          }
+        ],
+        "links": [
+          [
+            "liquid",
+            "liquid"
+          ],
+          [
+            "rain",
+            "rain"
+          ],
+          [
+            "river",
+            "river"
+          ],
+          [
+            "lake",
+            "lake"
+          ],
+          [
+            "sea",
+            "sea"
+          ],
+          [
+            "ice",
+            "ice"
+          ],
+          [
+            "steam",
+            "steam"
+          ]
+        ],
+        "id": "water-en-noun-en:Q283",
+        "raw_glosses": [
+          "(uncountable) A substance (of molecular formula H₂O) found at room temperature and pressure as a clear liquid; it is present naturally as rain, and found in rivers, lakes and seas; its solid form is ice and its gaseous form is steam.",
+          "(uncountable, in particular) The liquid form of this substance: liquid H₂O."
+        ],
+        "tags": [
+          "in particular",
+          "uncountable"
+        ],
+        "examples": [
+          {
+            "text": "May I have a glass of water?",
+            "type": "example"
+          },
+          {
+            "text": "Your plants need more water.",
+            "type": "example"
+          },
+          {
+            "ref": "1835, Sir John Ross, Sir James Clark Ross, Narrative of a Second Voyage in Search of a North-west Passage …, Volume 1, pages 284–5",
+            "text": "Towards the following morning, the thermometer fell to 5°; and at daylight, there was not an atom of water to be seen in any direction.",
+            "type": "quotation"
+          },
+          {
+            "ref": "2002, Arthur T. Hubbard, Encyclopedia of Surface and Colloid Science, page 4895",
+            "text": "A water drop placed on the surface of ice can either spread or form a lens depending on the properties of the three phases involved in wetting, i.e., on the properties of the ice, water, and gas phases.",
+            "type": "quotation"
+          },
+          {
+            "ref": "2013-05-11, “The climate of Tibet: Pole-land”, in The Economist, volume 407, number 8835, page 80",
+            "text": "Of all the transitions brought about on the Earth’s surface by temperature change, the melting of ice into water is the starkest. It is binary. And for the land beneath, the air above and the life around, it changes everything.",
+            "type": "quotation"
+          }
+        ],
+        "hyponyms": [
+          {
+            "sense": "liquid H2O",
+            "word": "drinkwater"
+          },
+          {
+            "sense": "liquid H2O",
+            "word": "freshwater"
+          },
+          {
+            "sense": "liquid H2O",
+            "word": "meltwater"
+          },
+          {
+            "sense": "liquid H2O",
+            "word": "mineral water"
+          },
+          {
+            "sense": "liquid H2O",
+            "word": "hard water"
+          },
+          {
+            "sense": "liquid H2O",
+            "word": "soft water"
+          }
+        ],
+        "wikidata": [
+          "Q283"
+        ]
+      },
+      {
+        "senseid": [
+          "en:Q283"
+        ],
+        "glosses": [
+          "A substance (of molecular formula H₂O) found at room temperature and pressure as a clear liquid; it is present naturally as rain, and found in rivers, lakes and seas; its solid form is ice and its gaseous form is steam.",
+          "A serving of liquid water."
+        ],
+        "links": [
+          [
+            "liquid",
+            "liquid"
+          ],
+          [
+            "rain",
+            "rain"
+          ],
+          [
+            "river",
+            "river"
+          ],
+          [
+            "lake",
+            "lake"
+          ],
+          [
+            "sea",
+            "sea"
+          ],
+          [
+            "ice",
+            "ice"
+          ],
+          [
+            "steam",
+            "steam"
+          ],
+          [
+            "serving",
+            "serving"
+          ]
+        ],
+        "id": "water-en-noun-en:Q2831",
+        "raw_glosses": [
+          "(uncountable) A substance (of molecular formula H₂O) found at room temperature and pressure as a clear liquid; it is present naturally as rain, and found in rivers, lakes and seas; its solid form is ice and its gaseous form is steam.",
+          "(countable) A serving of liquid water."
+        ],
+        "tags": [
+          "countable"
+        ],
+        "examples": [
+          {
+            "ref": "2006, Lori Foster, Erin McCarthy, Amy Garvey, Bad Boys of Summer, page 91",
+            "text": "Joe bustled back and offered her a glass of wine but she shook her head. “Just a water, please.”",
+            "type": "quotation"
+          }
+        ],
+        "wikidata": [
+          "Q283"
+        ]
+      },
+      {
+        "senseid": [
+          "en:Q283"
+        ],
+        "glosses": [
+          "A substance (of molecular formula H₂O) found at room temperature and pressure as a clear liquid; it is present naturally as rain, and found in rivers, lakes and seas; its solid form is ice and its gaseous form is steam."
+        ],
+        "links": [
+          [
+            "liquid",
+            "liquid"
+          ],
+          [
+            "rain",
+            "rain"
+          ],
+          [
+            "river",
+            "river"
+          ],
+          [
+            "lake",
+            "lake"
+          ],
+          [
+            "sea",
+            "sea"
+          ],
+          [
+            "ice",
+            "ice"
+          ],
+          [
+            "steam",
+            "steam"
+          ]
+        ],
+        "id": "water-en-noun-en:Q2831",
+        "raw_glosses": [
+          "(uncountable) A substance (of molecular formula H₂O) found at room temperature and pressure as a clear liquid; it is present naturally as rain, and found in rivers, lakes and seas; its solid form is ice and its gaseous form is steam."
+        ],
+        "tags": [
+          "uncountable"
+        ],
+        "examples": [
+          {
+            "text": "By the action of electricity, the water was resolved into its two parts, oxygen and hydrogen.",
+            "type": "example"
+          },
+          {
+            "ref": "2013 September-October, Katie L. Burke, “In the News”, in American Scientist",
+            "text": "Oxygen levels on Earth skyrocketed 2.4 billion years ago, when cyanobacteria evolved photosynthesis: the ability to convert water and carbon dioxide into carbohydrates and waste oxygen using solar energy.",
+            "type": "quotation"
+          }
+        ],
+        "wikidata": [
+          "Q283"
+        ]
+      },
+      {
+        "glosses": [
+          "The aforementioned liquid, considered one of the Classical elements or basic elements of alchemy."
+        ],
+        "hypernyms": [
+          {
+            "sense": "basic elements",
+            "word": "element"
+          }
+        ],
+        "links": [
+          [
+            "alchemy",
+            "alchemy"
+          ],
+          [
+            "philosophy",
+            "philosophy"
+          ]
+        ],
+        "id": "water-en-noun-gUDjaBrk",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Alchemy",
+            "kind": "topical",
+            "name": "Alchemy",
+            "parents": [
+              "Forteana",
+              "Pseudoscience",
+              "Sciences",
+              "All topics",
+              "Fundamental"
+            ]
+          },
+          {
+            "langcode": "en",
+            "orig": "en:Philosophy",
+            "kind": "topical",
+            "name": "Philosophy",
+            "parents": [
+              "All topics",
+              "Fundamental"
+            ]
+          }
+        ],
+        "topics": [
+          "alchemy",
+          "human-sciences",
+          "philosophy",
+          "pseudoscience",
+          "sciences"
+        ],
+        "raw_glosses": [
+          "(alchemy, philosophy) The aforementioned liquid, considered one of the Classical elements or basic elements of alchemy."
+        ],
+        "tags": [
+          "countable",
+          "uncountable"
+        ],
+        "examples": [
+          {
+            "text": "And God said, Let the waters under the heaven be gathered together unto one place, and let the dry land appear: and it was so.",
+            "type": "example"
+          },
+          {
+            "text": "He showed me the river of living water, sparkling like crystal, flowing from the throne of God.",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "Water in a body; an area of open water."
+        ],
+        "id": "water-en-noun-LelyWteI",
+        "raw_glosses": [
+          "(uncountable or in the plural) Water in a body; an area of open water."
+        ],
+        "tags": [
+          "in-plural",
+          "uncountable"
+        ],
+        "examples": [
+          {
+            "ref": "1913, Joseph C. Lincoln, chapter 1, in Mr. Pratt's Patients",
+            "text": "'Twas early June, the new grass was flourishing everywheres, the posies in the yard—peonies and such—in full bloom, the sun was shining, and the water of the bay was blue, with light green streaks where the shoal showed.",
+            "type": "quotation"
+          },
+          {
+            "ref": "2019, VOA Learning English (public domain)",
+            "text": "The president expressed hope that creating rain over waters between the countries would help reduce pollution.\nAudio (US) (file)"
+          },
+          {
+            "text": "The boat was found within the territorial waters.",
+            "type": "example"
+          },
+          {
+            "text": "These seals are a common sight in the coastal waters of Chile.",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "A body of water, almost always a river."
+        ],
+        "links": [
+          [
+            "poetic",
+            "poetic"
+          ]
+        ],
+        "id": "water-en-noun-Y4A4piB5",
+        "raw_glosses": [
+          "(poetic, archaic or dialectal) A body of water, almost always a river."
+        ],
+        "tags": [
+          "archaic",
+          "countable",
+          "dialectal",
+          "poetic",
+          "uncountable"
+        ],
+        "examples": [
+          {
+            "ref": "1865, William Allingham, editor, The Ballad Book: a selection of the choicest British ballads, William and May Margaret, or the Water of Clyde",
+            "text": "But ere he came to Clyde's water, fu' loud the wind did blaw.",
+            "type": "quotation"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "A combination of water and other substance(s).",
+          "Mineral water."
+        ],
+        "id": "water-en-noun-NztPANfV",
+        "raw_glosses": [
+          "A combination of water and other substance(s).",
+          "(sometimes countable) Mineral water."
+        ],
+        "tags": [
+          "countable",
+          "sometimes"
+        ],
+        "examples": [
+          {
+            "text": "Perrier is the most popular water in this restaurant.",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "A combination of water and other substance(s).",
+          "Spa water."
+        ],
+        "links": [
+          [
+            "Spa",
+            "spa"
+          ]
+        ],
+        "id": "water-en-noun-L0A1VbD9",
+        "raw_glosses": [
+          "A combination of water and other substance(s).",
+          "(countable, often in the plural) Spa water."
+        ],
+        "tags": [
+          "countable",
+          "in-plural",
+          "often"
+        ],
+        "examples": [
+          {
+            "text": "Many people visit Bath to take the waters.",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "A combination of water and other substance(s).",
+          "A solution in water of a gaseous or readily volatile substance."
+        ],
+        "links": [
+          [
+            "pharmacy",
+            "pharmacy"
+          ],
+          [
+            "solution",
+            "solution"
+          ],
+          [
+            "gaseous",
+            "gaseous"
+          ],
+          [
+            "volatile",
+            "volatile"
+          ],
+          [
+            "substance",
+            "substance"
+          ]
+        ],
+        "id": "water-en-noun-B67vo-N6",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Pharmacy",
+            "kind": "topical",
+            "name": "Pharmacy",
+            "parents": [
+              "Medicine",
+              "Pharmacology",
+              "Biology",
+              "Sciences",
+              "Biochemistry",
+              "All topics",
+              "Chemistry",
+              "Fundamental"
+            ]
+          }
+        ],
+        "raw_glosses": [
+          "A combination of water and other substance(s).",
+          "(pharmacy) A solution in water of a gaseous or readily volatile substance."
+        ],
+        "tags": [
+          "countable",
+          "uncountable"
+        ],
+        "examples": [
+          {
+            "text": "ammonia water",
+            "type": "example"
+          }
+        ],
+        "qualifier": "pharmacy"
+      },
+      {
+        "glosses": [
+          "A combination of water and other substance(s).",
+          "Urine."
+        ],
+        "hypernyms": [
+          {
+            "sense": "urine",
+            "word": "body fluid"
+          },
+          {
+            "sense": "urine",
+            "word": "bodily fluid"
+          },
+          {
+            "sense": "urine",
+            "word": "biofluid"
+          }
+        ],
+        "links": [
+          [
+            "Urine",
+            "urine"
+          ]
+        ],
+        "id": "water-en-noun-09E801T1",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Water",
+            "kind": "topical",
+            "name": "Water",
+            "parents": [
+              "Liquids",
+              "Matter",
+              "Chemistry",
+              "Nature",
+              "Sciences",
+              "All topics",
+              "Fundamental"
+            ]
+          }
+        ],
+        "tags": [
+          "countable",
+          "uncountable"
+        ],
+        "examples": [
+          {
+            "ref": "1999, George R.R. Martin, A Clash of Kings, Bantam, published 2011, page 458",
+            "text": "Ser Dunaver's squire Jodge could not hold his water when he slept.",
+            "type": "quotation"
+          }
+        ]
+      },
+      {
+        "senseid": [
+          "en:amniotic fluid"
+        ],
+        "glosses": [
+          "A combination of water and other substance(s).",
+          "Amniotic fluid or the amniotic sac containing it. (Used only in the plural in the UK but often also in the singular in North America.)"
+        ],
+        "links": [
+          [
+            "Amniotic fluid",
+            "amniotic fluid"
+          ],
+          [
+            "amniotic sac",
+            "amniotic sac"
+          ]
+        ],
+        "id": "water-en-noun-en:amniotic_fluid",
+        "synonyms": [
+          {
+            "word": "bag of waters"
+          }
+        ],
+        "tags": [
+          "countable",
+          "uncountable"
+        ],
+        "examples": [
+          {
+            "text": "Before the child is born, the pregnant woman’s water breaks. (North America)",
+            "type": "example"
+          },
+          {
+            "text": "Before your child is born, your water(s) will break. (North America)",
+            "type": "example"
+          },
+          {
+            "text": "Before the child is born, the pregnant woman’s waters break. (UK)",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "A combination of water and other substance(s).",
+          "Fluids in the body, especially when causing swelling."
+        ],
+        "links": [
+          [
+            "medicine",
+            "medicine"
+          ],
+          [
+            "swelling",
+            "swelling"
+          ]
+        ],
+        "id": "water-en-noun-Z~S~J830",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Medicine",
+            "kind": "topical",
+            "name": "Medicine",
+            "parents": [
+              "Biology",
+              "Sciences",
+              "All topics",
+              "Fundamental"
+            ]
+          }
+        ],
+        "topics": [
+          "medicine",
+          "sciences"
+        ],
+        "raw_glosses": [
+          "A combination of water and other substance(s).",
+          "(colloquial, medicine) Fluids in the body, especially when causing swelling."
+        ],
+        "tags": [
+          "colloquial",
+          "countable",
+          "uncountable"
+        ],
+        "examples": [
+          {
+            "text": "He suffers from water on the knee.",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "A state of affairs; conditions; usually with an adjective indicating an adverse condition."
+        ],
+        "links": [
+          [
+            "singular",
+            "singular"
+          ]
+        ],
+        "id": "water-en-noun-RPd0aonp",
+        "raw_glosses": [
+          "(figuratively, in the plural or in the singular) A state of affairs; conditions; usually with an adjective indicating an adverse condition."
+        ],
+        "tags": [
+          "countable",
+          "figuratively",
+          "in-plural",
+          "singular",
+          "uncountable"
+        ],
+        "examples": [
+          {
+            "text": "The rough waters of change will bring about the calm after the storm.",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "A person's intuition."
+        ],
+        "links": [
+          [
+            "intuition",
+            "intuition"
+          ]
+        ],
+        "id": "water-en-noun-JyVA~wpf",
+        "synonyms": [
+          {
+            "word": "bones"
+          }
+        ],
+        "raw_glosses": [
+          "(colloquial, figuratively) A person's intuition."
+        ],
+        "tags": [
+          "colloquial",
+          "countable",
+          "figuratively",
+          "uncountable"
+        ],
+        "examples": [
+          {
+            "text": "I know he'll succeed. I feel it in my waters.",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "Excess valuation of securities."
+        ],
+        "links": [
+          [
+            "finance",
+            "finance#Noun"
+          ]
+        ],
+        "id": "water-en-noun-pCVzuEHT",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Finance",
+            "kind": "topical",
+            "name": "Finance",
+            "parents": [
+              "Business",
+              "Economics",
+              "Society",
+              "Social sciences",
+              "All topics",
+              "Sciences",
+              "Fundamental"
+            ]
+          }
+        ],
+        "topics": [
+          "business",
+          "finance"
+        ],
+        "raw_glosses": [
+          "(uncountable, dated, finance) Excess valuation of securities."
+        ],
+        "tags": [
+          "dated",
+          "uncountable"
+        ],
+        "examples": [
+          {
+            "ref": "August 2, 1902, “Too Much Water to Suit Cummins”, in The Atlanta Constitution",
+            "text": "Iowa Governor Will Fight Rock Island Reorganization. He Says That Under the New Plan Too Much Water Is Put Into the Stock—Believes Plan Is Out of Harmony with Iowa Laws.",
+            "type": "quotation"
+          },
+          {
+            "ref": "April 11, 1920, “Says Stock 'Water' Didn't Affect Fare”, in New York Times",
+            "text": "the outstanding stock and bond obligations of the company were reduced from $34,000,000 to $24,000,000 by squeezing out the water.",
+            "type": "quotation"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "The limpidity and lustre of a precious stone, especially a diamond."
+        ],
+        "links": [
+          [
+            "limpidity",
+            "limpidity"
+          ],
+          [
+            "lustre",
+            "lustre"
+          ],
+          [
+            "diamond",
+            "diamond"
+          ]
+        ],
+        "id": "water-en-noun-PDi4YOGN",
+        "tags": [
+          "countable",
+          "uncountable"
+        ],
+        "examples": [
+          {
+            "text": "a diamond of the first water is perfectly pure and transparent",
+            "type": "example"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "A wavy, lustrous pattern or decoration such as is imparted to linen, silk, metals, etc."
+        ],
+        "links": [
+          [
+            "wavy",
+            "wavy"
+          ],
+          [
+            "lustrous",
+            "lustrous"
+          ],
+          [
+            "linen",
+            "linen"
+          ],
+          [
+            "silk",
+            "silk"
+          ],
+          [
+            "metal",
+            "metal"
+          ]
+        ],
+        "id": "water-en-noun-WiQf1o91",
+        "tags": [
+          "countable",
+          "uncountable"
+        ]
+      }
+    ],
+    "descendants": [
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "2": "6@Chin",
+              "bor": "1",
+              "1": "ase"
+            },
+            "name": "desc",
+            "expansion": "→ American Sign Language: 6@Chin"
+          }
+        ],
+        "text": "→ American Sign Language: 6@Chin"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "2": "wata",
+              "1": "aig"
+            },
+            "name": "desc",
+            "expansion": "Antigua and Barbuda Creole English: wata"
+          }
+        ],
+        "text": "Antigua and Barbuda Creole English: wata"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "1": "djk",
+              "2": "wataa"
+            },
+            "name": "desc",
+            "expansion": "Aukan: wataa"
+          }
+        ],
+        "text": "Aukan: wataa"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "2": "waata",
+              "1": "bzj"
+            },
+            "name": "desc",
+            "expansion": "Belizean Creole: waata"
+          }
+        ],
+        "text": "Belizean Creole: waata"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "1": "bi",
+              "2": "wota"
+            },
+            "name": "desc",
+            "expansion": "Bislama: wota"
+          }
+        ],
+        "text": "Bislama: wota"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "1": "wes",
+              "2": "wata"
+            },
+            "name": "desc",
+            "expansion": "Cameroon Pidgin: wata"
+          }
+        ],
+        "text": "Cameroon Pidgin: wata"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "2": "vàter",
+              "1": "ca",
+              "bor": "1"
+            },
+            "name": "desc",
+            "expansion": "→ Catalan: vàter"
+          }
+        ],
+        "text": "→ Catalan: vàter"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "1": "gcl",
+              "2": "wata"
+            },
+            "name": "desc",
+            "expansion": "Grenadian Creole English: wata"
+          }
+        ],
+        "text": "Grenadian Creole English: wata"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "1": "gul",
+              "2": "wata"
+            },
+            "name": "desc",
+            "expansion": "Gullah: wata"
+          }
+        ],
+        "text": "Gullah: wata"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "1": "icr",
+              "2": "waata"
+            },
+            "name": "desc",
+            "expansion": "Islander Creole English: waata"
+          }
+        ],
+        "text": "Islander Creole English: waata"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "1": "jam",
+              "2": "wata"
+            },
+            "name": "desc",
+            "expansion": "Jamaican Creole: wata"
+          }
+        ],
+        "text": "Jamaican Creole: wata"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "2": "wata",
+              "1": "kri"
+            },
+            "name": "desc",
+            "expansion": "Krio: wata"
+          }
+        ],
+        "text": "Krio: wata"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "1": "rop",
+              "2": "woda"
+            },
+            "name": "desc",
+            "expansion": "Kriol: woda"
+          }
+        ],
+        "text": "Kriol: woda"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "2": "wáta",
+              "1": "bzk"
+            },
+            "name": "desc",
+            "expansion": "Nicaraguan Creole: wáta"
+          }
+        ],
+        "text": "Nicaraguan Creole: wáta"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "2": "wàtá",
+              "1": "fpe"
+            },
+            "name": "desc",
+            "expansion": "Pichinglis: wàtá"
+          }
+        ],
+        "text": "Pichinglis: wàtá"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "2": "wata",
+              "1": "pis"
+            },
+            "name": "desc",
+            "expansion": "Pijin: wata"
+          }
+        ],
+        "text": "Pijin: wata"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "1": "pih",
+              "2": "worta"
+            },
+            "name": "desc",
+            "expansion": "Pitcairn-Norfolk: worta"
+          }
+        ],
+        "text": "Pitcairn-Norfolk: worta"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "2": "wáta",
+              "1": "srm"
+            },
+            "name": "desc",
+            "expansion": "Saramaccan: wáta"
+          }
+        ],
+        "text": "Saramaccan: wáta"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "2": "váter",
+              "bor": "1",
+              "1": "es"
+            },
+            "name": "desc",
+            "expansion": "→ Spanish: váter"
+          }
+        ],
+        "text": "→ Spanish: váter"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "2": "watra",
+              "1": "srn"
+            },
+            "name": "desc",
+            "expansion": "Sranan Tongo: watra"
+          }
+        ],
+        "text": "Sranan Tongo: watra"
+      },
+      {
+        "depth": 1,
+        "templates": [
+          {
+            "args": {
+              "1": "tpi",
+              "2": "wara"
+            },
+            "name": "desc",
+            "expansion": "Tok Pisin: wara"
+          }
+        ],
+        "text": "Tok Pisin: wara"
+      }
+    ],
+    "sounds": [
+      {
+        "tags": [
+          "Received-Pronunciation"
+        ],
+        "ipa": "/ˈwɔːtə/"
+      },
+      {
+        "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/1a/En-uk-water.ogg/En-uk-water.ogg.mp3",
+        "tags": [
+          "UK"
+        ],
+        "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/En-uk-water.ogg",
+        "audio": "En-uk-water.ogg",
+        "text": "Audio (UK)"
+      },
+      {
+        "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/19/LL-Q1860_%28eng%29-Back_ache-water.wav/LL-Q1860_%28eng%29-Back_ache-water.wav.mp3",
+        "tags": [
+          "UK"
+        ],
+        "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/19/LL-Q1860_%28eng%29-Back_ache-water.wav/LL-Q1860_%28eng%29-Back_ache-water.wav.ogg",
+        "audio": "LL-Q1860 (eng)-Back ache-water.wav",
+        "text": "Audio (UK)"
+      },
+      {
+        "tags": [
+          "England",
+          "Estuary-English"
+        ],
+        "ipa": "[ˈwoːʔɐ]"
+      },
+      {
+        "tags": [
+          "England",
+          "Estuary-English"
+        ],
+        "ipa": "[ˈwoːʔə]"
+      },
+      {
+        "tags": [
+          "Cockney",
+          "England"
+        ],
+        "ipa": "[ˈwoʊʔə]"
+      },
+      {
+        "tags": [
+          "Cockney",
+          "England"
+        ],
+        "ipa": "[ˈwɔoɾɐ]"
+      },
+      {
+        "note": "Northern English, dated, obsolete elsewhere",
+        "ipa": "/ˈwætəɹ/"
+      },
+      {
+        "note": "Northern English, dated, obsolete elsewhere",
+        "ipa": "[ˈwatə]"
+      },
+      {
+        "note": "Northern English, dated, obsolete elsewhere",
+        "ipa": "[ˈwaɾɚ]"
+      },
+      {
+        "tags": [
+          "Scotland"
+        ],
+        "ipa": "/ˈwɔtər/"
+      },
+      {
+        "tags": [
+          "Scotland"
+        ],
+        "ipa": "[ˈwɔtər]"
+      },
+      {
+        "tags": [
+          "dialectal"
+        ],
+        "ipa": "/ˈwɒtə/"
+      },
+      {
+        "tags": [
+          "dialectal"
+        ],
+        "ipa": "/ˈwɒtəɹ/"
+      },
+      {
+        "tags": [
+          "General-American"
+        ],
+        "ipa": "/ˈwɔtəɹ/"
+      },
+      {
+        "tags": [
+          "General-American"
+        ],
+        "ipa": "[ˈwɔɾɚ]"
+      },
+      {
+        "enpr": "wôtər",
+        "tags": [
+          "General-American"
+        ]
+      },
+      {
+        "tags": [
+          "Canada",
+          "US",
+          "cot-caught-merger"
+        ],
+        "ipa": "/ˈwɑtəɹ/"
+      },
+      {
+        "tags": [
+          "Canada",
+          "US",
+          "cot-caught-merger"
+        ],
+        "ipa": "[ˈwɑɾɚ]"
+      },
+      {
+        "enpr": "wŏtər",
+        "tags": [
+          "Canada",
+          "US",
+          "cot-caught-merger"
+        ]
+      },
+      {
+        "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/bd/En-us-water.ogg/En-us-water.ogg.mp3",
+        "tags": [
+          "US",
+          "cot-caught-merger"
+        ],
+        "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/En-us-water.ogg",
+        "audio": "en-us-water.ogg",
+        "text": "Audio (US cot-caught merged)"
+      },
+      {
+        "tags": [
+          "New-York-City"
+        ],
+        "ipa": "[ˈwɔəɾə]"
+      },
+      {
+        "tags": [
+          "Philadelphia"
+        ],
+        "ipa": "/ˈwʊtəɹ/"
+      },
+      {
+        "tags": [
+          "Philadelphia"
+        ],
+        "ipa": "[ˈwʊɾɚ]"
+      },
+      {
+        "tags": [
+          "Pennsylvania",
+          "Western"
+        ],
+        "ipa": "/ˈwɔɹtəɹ/"
+      },
+      {
+        "tags": [
+          "Pennsylvania",
+          "Western"
+        ],
+        "ipa": "[ˈwɔɹɾɚ]"
+      },
+      {
+        "tags": [
+          "General-Australian",
+          "New-Zealand"
+        ],
+        "ipa": "/ˈwoːtə/"
+      },
+      {
+        "tags": [
+          "General-Australian",
+          "New-Zealand"
+        ],
+        "ipa": "[ˈwoːɾə]"
+      },
+      {
+        "tags": [
+          "Ireland"
+        ],
+        "ipa": "/ˈwɔːtəɹ/"
+      },
+      {
+        "tags": [
+          "Ireland"
+        ],
+        "ipa": "[ˈwɒːθ̠ɚ]"
+      },
+      {
+        "tags": [
+          "Indian-English"
+        ],
+        "ipa": "[ˈwɔʈə(r)]"
+      },
+      {
+        "tags": [
+          "Indian-English"
+        ],
+        "ipa": "[ˈʋɔʈə(r)]"
+      },
+      {
+        "tags": [
+          "English",
+          "Tamil"
+        ],
+        "ipa": "[ˈʋaːʈər(ɯ)]"
+      },
+      {
+        "tags": [
+          "English",
+          "Tamil"
+        ],
+        "ipa": "[ˈwaːʈər(ɯ)]"
+      },
+      {
+        "tags": [
+          "General-South-African"
+        ],
+        "ipa": "[ˈwoːtə]"
+      },
+      {
+        "rhymes": "-ɔːtə(ɹ)"
+      }
+    ],
+    "antonyms": [
+      {
+        "sense": "liquid H2O",
+        "word": "ice"
+      },
+      {
+        "sense": "liquid H2O",
+        "word": "steam"
+      },
+      {
+        "sense": "liquid H2O",
+        "word": "water vapor"
+      },
+      {
+        "sense": "liquid H2O",
+        "word": "water vapour"
+      },
+      {
+        "sense": "basic elements",
+        "word": "earth"
+      },
+      {
+        "sense": "basic elements",
+        "word": "air"
+      },
+      {
+        "sense": "basic elements",
+        "word": "wind"
+      },
+      {
+        "sense": "basic elements",
+        "word": "fire"
+      },
+      {
+        "sense": "basic elements",
+        "word": "wood"
+      },
+      {
+        "sense": "basic elements",
+        "word": "metal"
+      },
+      {
+        "sense": "basic elements",
+        "word": "void"
+      },
+      {
+        "sense": "basic elements",
+        "word": "ether"
+      }
+    ],
+    "hypernyms": [
+      {
+        "sense": "chemical having the formula H2O",
+        "word": "chemical"
+      },
+      {
+        "sense": "chemical having the formula H2O",
+        "word": "substance"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "beverage"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "liquid"
+      }
+    ],
+    "derived": [
+      {
+        "word": "above water"
+      },
+      {
+        "word": "Allan Water"
+      },
+      {
+        "word": "American water spaniel"
+      },
+      {
+        "word": "ammonia water"
+      },
+      {
+        "word": "antiwater"
+      },
+      {
+        "word": "artesian water"
+      },
+      {
+        "word": "Ashford-in-the-Water"
+      },
+      {
+        "word": "backwater"
+      },
+      {
+        "word": "back water"
+      },
+      {
+        "word": "back-water"
+      },
+      {
+        "word": "barley water"
+      },
+      {
+        "word": "barley-water"
+      },
+      {
+        "word": "bathwater"
+      },
+      {
+        "word": "bilgewater"
+      },
+      {
+        "word": "black water"
+      },
+      {
+        "word": "blackwater"
+      },
+      {
+        "word": "black-water rafting"
+      },
+      {
+        "word": "blood in the water"
+      },
+      {
+        "word": "blood is thicker than water"
+      },
+      {
+        "word": "blow out of the water"
+      },
+      {
+        "word": "blue water"
+      },
+      {
+        "word": "bluewater"
+      },
+      {
+        "word": "blue-water"
+      },
+      {
+        "word": "body of water"
+      },
+      {
+        "word": "bongwater"
+      },
+      {
+        "word": "bottled water"
+      },
+      {
+        "word": "bound water"
+      },
+      {
+        "word": "Bourton-on-the-Water"
+      },
+      {
+        "word": "brackishwater"
+      },
+      {
+        "word": "branch water"
+      },
+      {
+        "word": "bread and water"
+      },
+      {
+        "word": "break water"
+      },
+      {
+        "word": "breakwater"
+      },
+      {
+        "word": "Cairn Water"
+      },
+      {
+        "word": "carbonated water"
+      },
+      {
+        "word": "Carron Water"
+      },
+      {
+        "word": "carry someone's water"
+      },
+      {
+        "word": "carry water for"
+      },
+      {
+        "word": "casual water"
+      },
+      {
+        "word": "catchwater"
+      },
+      {
+        "word": "chlorine water"
+      },
+      {
+        "word": "coastal waters"
+      },
+      {
+        "word": "cold-water"
+      },
+      {
+        "word": "cold water"
+      },
+      {
+        "word": "come hell"
+      },
+      {
+        "word": "high water"
+      },
+      {
+        "word": "creekwater"
+      },
+      {
+        "word": "cutwater"
+      },
+      {
+        "word": "dead in the water"
+      },
+      {
+        "word": "dead water"
+      },
+      {
+        "word": "deep water"
+      },
+      {
+        "word": "Deep Water"
+      },
+      {
+        "word": "deep-water"
+      },
+      {
+        "word": "deepwater"
+      },
+      {
+        "word": "Deepwater"
+      },
+      {
+        "word": "Derwentwater"
+      },
+      {
+        "word": "Derwent Water"
+      },
+      {
+        "word": "dew water"
+      },
+      {
+        "word": "dewwater"
+      },
+      {
+        "word": "dillwater"
+      },
+      {
+        "word": "dishwater"
+      },
+      {
+        "word": "distilled water"
+      },
+      {
+        "word": "ditchwater"
+      },
+      {
+        "word": "domestic hot water"
+      },
+      {
+        "word": "doubly labeled water"
+      },
+      {
+        "word": "Douglas Water"
+      },
+      {
+        "word": "drinking water"
+      },
+      {
+        "word": "Edgewater"
+      },
+      {
+        "word": "Ettrick Water"
+      },
+      {
+        "word": "European water vole"
+      },
+      {
+        "word": "Eye Water"
+      },
+      {
+        "word": "eyewater"
+      },
+      {
+        "word": "fairwater"
+      },
+      {
+        "word": "feedwater"
+      },
+      {
+        "word": "feed water"
+      },
+      {
+        "word": "firewater"
+      },
+      {
+        "word": "first water"
+      },
+      {
+        "word": "fish out of water"
+      },
+      {
+        "word": "flatwater"
+      },
+      {
+        "word": "floodwater"
+      },
+      {
+        "word": "flood water"
+      },
+      {
+        "word": "flower water"
+      },
+      {
+        "word": "formation water"
+      },
+      {
+        "word": "fossil water"
+      },
+      {
+        "word": "fountain water"
+      },
+      {
+        "word": "fountainwater"
+      },
+      {
+        "word": "free water"
+      },
+      {
+        "word": "fresh water"
+      },
+      {
+        "word": "freshwater"
+      },
+      {
+        "word": "fresh-water"
+      },
+      {
+        "word": "Gala Water"
+      },
+      {
+        "word": "giant water bug"
+      },
+      {
+        "word": "Glaisnock Water"
+      },
+      {
+        "word": "glass water"
+      },
+      {
+        "word": "gray water"
+      },
+      {
+        "word": "grey water"
+      },
+      {
+        "word": "graywater"
+      },
+      {
+        "word": "greywater"
+      },
+      {
+        "word": "green water"
+      },
+      {
+        "word": "gripe water"
+      },
+      {
+        "word": "ground water"
+      },
+      {
+        "word": "groundwater"
+      },
+      {
+        "word": "gypwater"
+      },
+      {
+        "word": "hard water"
+      },
+      {
+        "word": "headwater"
+      },
+      {
+        "word": "heavy water"
+      },
+      {
+        "word": "hexagonal water"
+      },
+      {
+        "word": "holy water"
+      },
+      {
+        "word": "hot water heater"
+      },
+      {
+        "word": "hell"
+      },
+      {
+        "word": "high-water"
+      },
+      {
+        "word": "highwater"
+      },
+      {
+        "word": "high-water mark"
+      },
+      {
+        "word": "hold one's water"
+      },
+      {
+        "word": "hold water"
+      },
+      {
+        "word": "hot water"
+      },
+      {
+        "word": "hot water bottle"
+      },
+      {
+        "word": "ice water"
+      },
+      {
+        "word": "international waters"
+      },
+      {
+        "word": "Irish water spaniel"
+      },
+      {
+        "word": "Javelle water"
+      },
+      {
+        "word": "jerk water"
+      },
+      {
+        "word": "jerk-water"
+      },
+      {
+        "word": "jerkwater"
+      },
+      {
+        "word": "juvenile water"
+      },
+      {
+        "word": "keep one's head above water"
+      },
+      {
+        "word": "lakewater"
+      },
+      {
+        "word": "large-headed water snake"
+      },
+      {
+        "word": "laurel water"
+      },
+      {
+        "word": "lavender water"
+      },
+      {
+        "word": "Liddel Water"
+      },
+      {
+        "word": "light water"
+      },
+      {
+        "word": "like water"
+      },
+      {
+        "word": "like a duck takes to water"
+      },
+      {
+        "word": "like water off a duck's back"
+      },
+      {
+        "word": "lime water"
+      },
+      {
+        "word": "limewater"
+      },
+      {
+        "word": "lithia water"
+      },
+      {
+        "word": "long drink of water"
+      },
+      {
+        "word": "low water"
+      },
+      {
+        "word": "Lunan Water"
+      },
+      {
+        "word": "make water"
+      },
+      {
+        "word": "meltwater"
+      },
+      {
+        "word": "meteoric water"
+      },
+      {
+        "word": "midwater"
+      },
+      {
+        "word": "milk-and-water"
+      },
+      {
+        "word": "mineral water"
+      },
+      {
+        "word": "mop water"
+      },
+      {
+        "word": "mopwater"
+      },
+      {
+        "word": "mud water"
+      },
+      {
+        "word": "mudwater"
+      },
+      {
+        "word": "napha water"
+      },
+      {
+        "word": "nonwater"
+      },
+      {
+        "word": "not have both oars in the water"
+      },
+      {
+        "word": "oceanwater"
+      },
+      {
+        "word": "open water"
+      },
+      {
+        "word": "pass water"
+      },
+      {
+        "word": "personal water craft"
+      },
+      {
+        "word": "piss water"
+      },
+      {
+        "word": "pisswater"
+      },
+      {
+        "word": "polywater"
+      },
+      {
+        "word": "pomewater"
+      },
+      {
+        "word": "pondwater"
+      },
+      {
+        "word": "poolwater"
+      },
+      {
+        "word": "pour oil on troubled waters"
+      },
+      {
+        "word": "porewater"
+      },
+      {
+        "word": "pore water pressure"
+      },
+      {
+        "word": "Portuguese Water Dog"
+      },
+      {
+        "word": "precipitable water"
+      },
+      {
+        "word": "process hot water"
+      },
+      {
+        "word": "produced water"
+      },
+      {
+        "word": "quarry water"
+      },
+      {
+        "word": "quinine water"
+      },
+      {
+        "word": "rainwater"
+      },
+      {
+        "word": "red water"
+      },
+      {
+        "word": "redwater"
+      },
+      {
+        "word": "reticulated water"
+      },
+      {
+        "word": "rice water"
+      },
+      {
+        "word": "river water"
+      },
+      {
+        "word": "rose water"
+      },
+      {
+        "word": "rosewater"
+      },
+      {
+        "word": "running water"
+      },
+      {
+        "word": "salt water"
+      },
+      {
+        "word": "sea water"
+      },
+      {
+        "word": "seawater"
+      },
+      {
+        "word": "seltzer water"
+      },
+      {
+        "word": "semi-heavy water"
+      },
+      {
+        "word": "semiheavy water"
+      },
+      {
+        "word": "semiwater"
+      },
+      {
+        "word": "shearwater"
+      },
+      {
+        "word": "sheerwater"
+      },
+      {
+        "word": "sinkwater"
+      },
+      {
+        "word": "slack water"
+      },
+      {
+        "word": "slickwater"
+      },
+      {
+        "word": "smell blood in the water"
+      },
+      {
+        "word": "soda water"
+      },
+      {
+        "word": "soft water"
+      },
+      {
+        "word": "softwater"
+      },
+      {
+        "word": "Southampton Water"
+      },
+      {
+        "word": "sparkling water"
+      },
+      {
+        "word": "spa water"
+      },
+      {
+        "word": "spring water"
+      },
+      {
+        "word": "spring-water"
+      },
+      {
+        "word": "springwater"
+      },
+      {
+        "word": "spurnwater"
+      },
+      {
+        "word": "still water"
+      },
+      {
+        "word": "still water runs deep"
+      },
+      {
+        "word": "stormwater"
+      },
+      {
+        "word": "streamwater"
+      },
+      {
+        "word": "strong-water"
+      },
+      {
+        "word": "sugarwater"
+      },
+      {
+        "word": "sugar water"
+      },
+      {
+        "word": "super-heavy water"
+      },
+      {
+        "word": "surface water"
+      },
+      {
+        "word": "surfeit water"
+      },
+      {
+        "word": "sweetwater"
+      },
+      {
+        "word": "sweet water"
+      },
+      {
+        "word": "tailwater"
+      },
+      {
+        "word": "take on water"
+      },
+      {
+        "word": "tall drink of water"
+      },
+      {
+        "word": "tap water"
+      },
+      {
+        "word": "territorial waters"
+      },
+      {
+        "word": "test the waters"
+      },
+      {
+        "word": "test the water"
+      },
+      {
+        "word": "throw cold water on"
+      },
+      {
+        "word": "tidewater"
+      },
+      {
+        "word": "tobacco water"
+      },
+      {
+        "word": "toilet water"
+      },
+      {
+        "word": "tonic water"
+      },
+      {
+        "word": "topwater"
+      },
+      {
+        "word": "tread water"
+      },
+      {
+        "word": "tritiated water"
+      },
+      {
+        "word": "uncharted water"
+      },
+      {
+        "word": "under water"
+      },
+      {
+        "word": "Vichy water"
+      },
+      {
+        "word": "Vienna Standard Mean Ocean Water"
+      },
+      {
+        "word": "Virginia Water"
+      },
+      {
+        "word": "walk on water"
+      },
+      {
+        "word": "waste water"
+      },
+      {
+        "word": "wastewater"
+      },
+      {
+        "word": "water's edge"
+      },
+      {
+        "word": "water aerobics"
+      },
+      {
+        "word": "waterage"
+      },
+      {
+        "word": "water bag"
+      },
+      {
+        "word": "water bailiff"
+      },
+      {
+        "word": "water balance"
+      },
+      {
+        "word": "water ballet"
+      },
+      {
+        "word": "water balloon"
+      },
+      {
+        "word": "water-based"
+      },
+      {
+        "word": "waterbased"
+      },
+      {
+        "word": "water bath"
+      },
+      {
+        "word": "water bead"
+      },
+      {
+        "word": "water bear"
+      },
+      {
+        "word": "Water Bearer"
+      },
+      {
+        "word": "water bed"
+      },
+      {
+        "word": "water-bed"
+      },
+      {
+        "word": "waterbed"
+      },
+      {
+        "word": "water beetle"
+      },
+      {
+        "word": "waterbike"
+      },
+      {
+        "word": "waterbird"
+      },
+      {
+        "word": "water birth"
+      },
+      {
+        "word": "water biscuit"
+      },
+      {
+        "word": "water blister"
+      },
+      {
+        "word": "water-blob"
+      },
+      {
+        "word": "water bloom"
+      },
+      {
+        "word": "waterboard"
+      },
+      {
+        "word": "water boatman"
+      },
+      {
+        "word": "water boiler"
+      },
+      {
+        "word": "waterboiler"
+      },
+      {
+        "word": "waterbok"
+      },
+      {
+        "word": "waterbomb"
+      },
+      {
+        "word": "water bomber"
+      },
+      {
+        "word": "waterborne"
+      },
+      {
+        "word": "water bottle"
+      },
+      {
+        "word": "waterbottle"
+      },
+      {
+        "word": "water boy"
+      },
+      {
+        "word": "waterboy"
+      },
+      {
+        "word": "water break"
+      },
+      {
+        "word": "waterbuck"
+      },
+      {
+        "word": "water buffalo"
+      },
+      {
+        "word": "water bug"
+      },
+      {
+        "word": "waterbug"
+      },
+      {
+        "word": "water bus"
+      },
+      {
+        "word": "waterbus"
+      },
+      {
+        "word": "water butt"
+      },
+      {
+        "word": "water can"
+      },
+      {
+        "word": "water cannon"
+      },
+      {
+        "word": "water carriage"
+      },
+      {
+        "word": "water cavy"
+      },
+      {
+        "word": "water chestnut"
+      },
+      {
+        "word": "water chicken"
+      },
+      {
+        "word": "watercise"
+      },
+      {
+        "word": "water clock"
+      },
+      {
+        "word": "waterclock"
+      },
+      {
+        "word": "water closet"
+      },
+      {
+        "word": "watercoaster"
+      },
+      {
+        "word": "watercock"
+      },
+      {
+        "word": "watercolour"
+      },
+      {
+        "word": "watercolor"
+      },
+      {
+        "word": "water column"
+      },
+      {
+        "word": "water content"
+      },
+      {
+        "word": "water-cooled"
+      },
+      {
+        "word": "water cooler"
+      },
+      {
+        "word": "watercooler"
+      },
+      {
+        "word": "watercourse"
+      },
+      {
+        "word": "watercraft"
+      },
+      {
+        "word": "watercress"
+      },
+      {
+        "word": "water crow"
+      },
+      {
+        "word": "water cure"
+      },
+      {
+        "word": "water cycle"
+      },
+      {
+        "word": "water devil"
+      },
+      {
+        "word": "water diviner"
+      },
+      {
+        "word": "water doctor"
+      },
+      {
+        "word": "water dog"
+      },
+      {
+        "word": "waterdrop"
+      },
+      {
+        "word": "water dropwort"
+      },
+      {
+        "word": "water dumping"
+      },
+      {
+        "word": "water elephant"
+      },
+      {
+        "word": "water engine"
+      },
+      {
+        "word": "water equivalent"
+      },
+      {
+        "word": "waterfall"
+      },
+      {
+        "word": "water feature"
+      },
+      {
+        "word": "water fight"
+      },
+      {
+        "word": "waterfight"
+      },
+      {
+        "word": "water flag"
+      },
+      {
+        "word": "water flea"
+      },
+      {
+        "word": "waterflood"
+      },
+      {
+        "word": "water for injection"
+      },
+      {
+        "word": "water fountain"
+      },
+      {
+        "word": "water fowl"
+      },
+      {
+        "word": "waterfowl"
+      },
+      {
+        "word": "waterfowler"
+      },
+      {
+        "word": "waterfowling"
+      },
+      {
+        "word": "water frame"
+      },
+      {
+        "word": "waterfree"
+      },
+      {
+        "word": "water-free"
+      },
+      {
+        "word": "waterfront"
+      },
+      {
+        "word": "waterful"
+      },
+      {
+        "word": "water gap"
+      },
+      {
+        "word": "water garden"
+      },
+      {
+        "word": "water gas"
+      },
+      {
+        "word": "water gate"
+      },
+      {
+        "word": "watergate"
+      },
+      {
+        "word": "water gauge"
+      },
+      {
+        "word": "water glass"
+      },
+      {
+        "word": "water gruel"
+      },
+      {
+        "word": "water gun"
+      },
+      {
+        "word": "water hammer"
+      },
+      {
+        "word": "water hardness"
+      },
+      {
+        "word": "water haul"
+      },
+      {
+        "word": "water heater"
+      },
+      {
+        "word": "water hemlock"
+      },
+      {
+        "word": "water hen"
+      },
+      {
+        "word": "waterhen"
+      },
+      {
+        "word": "waterhole"
+      },
+      {
+        "word": "water-hole"
+      },
+      {
+        "word": "water hole"
+      },
+      {
+        "word": "water horse"
+      },
+      {
+        "word": "waterhorse"
+      },
+      {
+        "word": "water horsetail"
+      },
+      {
+        "word": "water hyacinth"
+      },
+      {
+        "word": "water ice"
+      },
+      {
+        "word": "water injection"
+      },
+      {
+        "word": "water intoxication"
+      },
+      {
+        "word": "waterish"
+      },
+      {
+        "word": "water jacket"
+      },
+      {
+        "word": "water joint"
+      },
+      {
+        "word": "waterjug"
+      },
+      {
+        "word": "water jump"
+      },
+      {
+        "word": "waterkeeper"
+      },
+      {
+        "word": "water key"
+      },
+      {
+        "word": "water knot"
+      },
+      {
+        "word": "water landing"
+      },
+      {
+        "word": "water law"
+      },
+      {
+        "word": "waterleaf"
+      },
+      {
+        "word": "waterless"
+      },
+      {
+        "word": "water lettuce"
+      },
+      {
+        "word": "water-lettuce"
+      },
+      {
+        "word": "water level"
+      },
+      {
+        "word": "waterlike"
+      },
+      {
+        "word": "water lily"
+      },
+      {
+        "word": "waterlily"
+      },
+      {
+        "word": "water line"
+      },
+      {
+        "word": "waterline"
+      },
+      {
+        "word": "water-line model"
+      },
+      {
+        "word": "water locust"
+      },
+      {
+        "word": "waterlog"
+      },
+      {
+        "word": "waterlogged"
+      },
+      {
+        "word": "waterly"
+      },
+      {
+        "word": "water main"
+      },
+      {
+        "word": "watermaker"
+      },
+      {
+        "word": "waterman"
+      },
+      {
+        "word": "watermanship"
+      },
+      {
+        "word": "watermark"
+      },
+      {
+        "word": "watermaster"
+      },
+      {
+        "word": "water-meadow"
+      },
+      {
+        "word": "water meadow"
+      },
+      {
+        "word": "water memory"
+      },
+      {
+        "word": "water meter"
+      },
+      {
+        "word": "watermelon"
+      },
+      {
+        "word": "water milfoil"
+      },
+      {
+        "word": "watermilfoil"
+      },
+      {
+        "word": "water mill"
+      },
+      {
+        "word": "watermill"
+      },
+      {
+        "word": "water mint"
+      },
+      {
+        "word": "water mocassin"
+      },
+      {
+        "alt": "Oomycetes",
+        "word": "water mold"
+      },
+      {
+        "word": "water monitor"
+      },
+      {
+        "word": "water mouse"
+      },
+      {
+        "word": "waterness"
+      },
+      {
+        "word": "water oak"
+      },
+      {
+        "word": "water of crystallisation"
+      },
+      {
+        "word": "water of crystallization"
+      },
+      {
+        "word": "water of hydration"
+      },
+      {
+        "word": "water on the brain"
+      },
+      {
+        "word": "water on the knee"
+      },
+      {
+        "word": "water opossum"
+      },
+      {
+        "word": "water organ"
+      },
+      {
+        "word": "Water Orton"
+      },
+      {
+        "word": "water ouzel"
+      },
+      {
+        "word": "water over the dam"
+      },
+      {
+        "word": "water park"
+      },
+      {
+        "word": "waterpark"
+      },
+      {
+        "word": "water parting"
+      },
+      {
+        "word": "water pepper"
+      },
+      {
+        "word": "water-permeable"
+      },
+      {
+        "word": "water pick"
+      },
+      {
+        "word": "water pig"
+      },
+      {
+        "word": "water pill"
+      },
+      {
+        "word": "water pillar"
+      },
+      {
+        "word": "water pimpernel"
+      },
+      {
+        "word": "water pipe"
+      },
+      {
+        "word": "waterpipe"
+      },
+      {
+        "word": "water pipit"
+      },
+      {
+        "word": "water pistol"
+      },
+      {
+        "word": "waterplane"
+      },
+      {
+        "word": "water plantain"
+      },
+      {
+        "word": "water plate"
+      },
+      {
+        "word": "waterplay"
+      },
+      {
+        "word": "water poisoning"
+      },
+      {
+        "word": "water police"
+      },
+      {
+        "word": "water pollution"
+      },
+      {
+        "word": "water polo"
+      },
+      {
+        "word": "waterpot"
+      },
+      {
+        "word": "water potential"
+      },
+      {
+        "word": "water power"
+      },
+      {
+        "word": "waterpower"
+      },
+      {
+        "word": "water pox"
+      },
+      {
+        "word": "water privilege"
+      },
+      {
+        "word": "waterproof"
+      },
+      {
+        "word": "waterproofed"
+      },
+      {
+        "word": "waterquake"
+      },
+      {
+        "word": "water rail"
+      },
+      {
+        "word": "water rat"
+      },
+      {
+        "word": "water-repellent"
+      },
+      {
+        "word": "water-resistant"
+      },
+      {
+        "word": "water right"
+      },
+      {
+        "word": "water rocket"
+      },
+      {
+        "word": "Waters"
+      },
+      {
+        "word": "water sapphire"
+      },
+      {
+        "word": "waterscape"
+      },
+      {
+        "word": "water scorpion"
+      },
+      {
+        "word": "watershed"
+      },
+      {
+        "word": "water-shed"
+      },
+      {
+        "word": "watersheep"
+      },
+      {
+        "word": "water shield"
+      },
+      {
+        "word": "watershoot"
+      },
+      {
+        "word": "water shrew"
+      },
+      {
+        "word": "waterside"
+      },
+      {
+        "word": "water sign"
+      },
+      {
+        "word": "water ski"
+      },
+      {
+        "word": "water-ski"
+      },
+      {
+        "word": "waterski"
+      },
+      {
+        "word": "water-skier"
+      },
+      {
+        "word": "water skiing"
+      },
+      {
+        "word": "water-skiing"
+      },
+      {
+        "word": "waterskiing"
+      },
+      {
+        "word": "waterskin"
+      },
+      {
+        "word": "water-slickened"
+      },
+      {
+        "word": "waterslide"
+      },
+      {
+        "word": "water slide"
+      },
+      {
+        "word": "water snake"
+      },
+      {
+        "word": "water-soak"
+      },
+      {
+        "word": "watersoaked"
+      },
+      {
+        "word": "water softener"
+      },
+      {
+        "word": "water softening"
+      },
+      {
+        "word": "water-soluble"
+      },
+      {
+        "word": "water souchy"
+      },
+      {
+        "word": "water spaniel"
+      },
+      {
+        "word": "water speedwell"
+      },
+      {
+        "word": "water spider"
+      },
+      {
+        "word": "water spinach"
+      },
+      {
+        "word": "water sport"
+      },
+      {
+        "word": "watersport"
+      },
+      {
+        "word": "water spot"
+      },
+      {
+        "word": "waterspout"
+      },
+      {
+        "word": "water sprout"
+      },
+      {
+        "word": "waterstained"
+      },
+      {
+        "word": "water stop"
+      },
+      {
+        "word": "Water Stratford"
+      },
+      {
+        "word": "water strider"
+      },
+      {
+        "word": "waterstuff"
+      },
+      {
+        "word": "water supply"
+      },
+      {
+        "word": "water table"
+      },
+      {
+        "word": "water tap"
+      },
+      {
+        "word": "water taxi"
+      },
+      {
+        "word": "waterthrush"
+      },
+      {
+        "word": "water tick"
+      },
+      {
+        "word": "watertight"
+      },
+      {
+        "word": "water to my mill"
+      },
+      {
+        "word": "water tower"
+      },
+      {
+        "word": "Watertown"
+      },
+      {
+        "word": "water trough"
+      },
+      {
+        "word": "water tunnel"
+      },
+      {
+        "word": "water turbine"
+      },
+      {
+        "word": "water turkey"
+      },
+      {
+        "word": "water under the bridge"
+      },
+      {
+        "word": "Water Valley"
+      },
+      {
+        "word": "water vapor"
+      },
+      {
+        "word": "water-vapor"
+      },
+      {
+        "word": "water vapor pressure"
+      },
+      {
+        "word": "water vapour"
+      },
+      {
+        "word": "water-vascular system"
+      },
+      {
+        "word": "Waterville"
+      },
+      {
+        "word": "water vole"
+      },
+      {
+        "word": "water wagon"
+      },
+      {
+        "word": "waterward"
+      },
+      {
+        "word": "waterway"
+      },
+      {
+        "word": "waterweed"
+      },
+      {
+        "word": "water wheel"
+      },
+      {
+        "word": "waterwheel"
+      },
+      {
+        "word": "water white"
+      },
+      {
+        "word": "water willow"
+      },
+      {
+        "word": "water wings"
+      },
+      {
+        "word": "water witch"
+      },
+      {
+        "word": "water witcher"
+      },
+      {
+        "word": "water witching"
+      },
+      {
+        "word": "waterworks"
+      },
+      {
+        "word": "water works"
+      },
+      {
+        "word": "waterworn"
+      },
+      {
+        "word": "waterwort"
+      },
+      {
+        "word": "watery"
+      },
+      {
+        "word": "water year"
+      },
+      {
+        "word": "waterzooi"
+      },
+      {
+        "word": "white water"
+      },
+      {
+        "word": "whitewater"
+      },
+      {
+        "word": "you can lead a horse to water but you can't make him drink"
+      },
+      {
+        "word": "you never miss the water till the well runs dry"
+      },
+      {
+        "word": "Ziegler's Water Rat"
+      },
+      {
+        "word": "ziment water"
+      },
+      {
+        "word": "above-water"
+      },
+      {
+        "word": "angel water"
+      },
+      {
+        "word": "anomalous water"
+      },
+      {
+        "word": "Apollinaris water"
+      },
+      {
+        "word": "Australian water dragon"
+      },
+      {
+        "word": "Barbados water"
+      },
+      {
+        "word": "bath water"
+      },
+      {
+        "word": "between wind and water"
+      },
+      {
+        "word": "black-backed water tyrant"
+      },
+      {
+        "word": "blow something out of the water"
+      },
+      {
+        "word": "blue-water navy"
+      },
+      {
+        "word": "bore water"
+      },
+      {
+        "word": "bromine water"
+      },
+      {
+        "word": "brown-water navy"
+      },
+      {
+        "word": "bubble water"
+      },
+      {
+        "word": "burn the water"
+      },
+      {
+        "word": "cast someone's water"
+      },
+      {
+        "word": "cat's water"
+      },
+      {
+        "word": "cedar water"
+      },
+      {
+        "word": "Chinese water chestnut"
+      },
+      {
+        "word": "Chinese water torture"
+      },
+      {
+        "word": "chum in the water"
+      },
+      {
+        "word": "Cincinnati water maze"
+      },
+      {
+        "word": "city water"
+      },
+      {
+        "word": "clary water"
+      },
+      {
+        "word": "clear blue water"
+      },
+      {
+        "word": "coconut water"
+      },
+      {
+        "word": "cold water flat"
+      },
+      {
+        "word": "cold-water flat"
+      },
+      {
+        "word": "Cologne water"
+      },
+      {
+        "word": "couldn't pour water out of a boot"
+      },
+      {
+        "word": "couldn't pour water out of a boot with the instructions on the heel"
+      },
+      {
+        "word": "court holy water"
+      },
+      {
+        "word": "creeping water bug"
+      },
+      {
+        "word": "dead as ditch-water"
+      },
+      {
+        "word": "deep-water solo"
+      },
+      {
+        "word": "deuterated water"
+      },
+      {
+        "word": "diamond-water paradox"
+      },
+      {
+        "word": "dill water"
+      },
+      {
+        "word": "dip one's toe in the water"
+      },
+      {
+        "word": "dripping water hollows a stone"
+      },
+      {
+        "word": "eastern water dragon"
+      },
+      {
+        "word": "Egyptian water-lily"
+      },
+      {
+        "word": "every miller draws water to his own mill"
+      },
+      {
+        "word": "feel in one's water"
+      },
+      {
+        "word": "feeling in one's water"
+      },
+      {
+        "word": "fish-out-of-water"
+      },
+      {
+        "word": "fizzy water"
+      },
+      {
+        "word": "flat water"
+      },
+      {
+        "word": "Florida water"
+      },
+      {
+        "word": "fragrant water lily"
+      },
+      {
+        "word": "functional water"
+      },
+      {
+        "word": "gangly drink of water"
+      },
+      {
+        "word": "gas water"
+      },
+      {
+        "word": "get the dirty water off one's chest"
+      },
+      {
+        "word": "Gippsland water dragon"
+      },
+      {
+        "word": "go through fire and water"
+      },
+      {
+        "word": "green-water navy"
+      },
+      {
+        "word": "gum water"
+      },
+      {
+        "word": "happy as a clam at high water"
+      },
+      {
+        "word": "heavy-water"
+      },
+      {
+        "word": "hewers of wood and drawers of water"
+      },
+      {
+        "word": "hold one's head above water"
+      },
+      {
+        "word": "holy water sprinkler"
+      },
+      {
+        "word": "holy-water sprinkle"
+      },
+      {
+        "word": "hot water bag"
+      },
+      {
+        "word": "hot water bottle rash"
+      },
+      {
+        "word": "hot water can"
+      },
+      {
+        "word": "Hungary water"
+      },
+      {
+        "word": "Hunza water"
+      },
+      {
+        "word": "Jack-in-the-water"
+      },
+      {
+        "word": "Javel water"
+      },
+      {
+        "word": "keep one's head above the water"
+      },
+      {
+        "word": "Lancashire over the water"
+      },
+      {
+        "word": "light-water"
+      },
+      {
+        "word": "like a duck to water"
+      },
+      {
+        "word": "line drawn in water"
+      },
+      {
+        "word": "line drawn on water"
+      },
+      {
+        "word": "liquid water"
+      },
+      {
+        "word": "load water line"
+      },
+      {
+        "word": "long-toed water beetle"
+      },
+      {
+        "word": "low-water mark"
+      },
+      {
+        "word": "make foul water"
+      },
+      {
+        "word": "mannish water"
+      },
+      {
+        "word": "micellar water"
+      },
+      {
+        "word": "Morris water maze"
+      },
+      {
+        "word": "northern water dragon"
+      },
+      {
+        "word": "oil and water"
+      },
+      {
+        "word": "oil and water don't mix"
+      },
+      {
+        "word": "omum water"
+      },
+      {
+        "word": "peach water"
+      },
+      {
+        "word": "phossy water"
+      },
+      {
+        "word": "pink water"
+      },
+      {
+        "word": "plague water"
+      },
+      {
+        "word": "plain water"
+      },
+      {
+        "word": "plantain water"
+      },
+      {
+        "word": "potash water"
+      },
+      {
+        "word": "pour cold water on"
+      },
+      {
+        "word": "pressurized water reactor"
+      },
+      {
+        "word": "puppy water"
+      },
+      {
+        "word": "push water uphill"
+      },
+      {
+        "word": "put one's toe in the water"
+      },
+      {
+        "word": "quarter water"
+      },
+      {
+        "word": "quick water"
+      },
+      {
+        "word": "quicksilver water"
+      },
+      {
+        "word": "rain water"
+      },
+      {
+        "word": "raw water"
+      },
+      {
+        "word": "river-water"
+      },
+      {
+        "word": "rock water"
+      },
+      {
+        "word": "Sapele water"
+      },
+      {
+        "word": "scrawny drink of water"
+      },
+      {
+        "word": "six-water grog"
+      },
+      {
+        "word": "skinny drink of water"
+      },
+      {
+        "word": "slack-water"
+      },
+      {
+        "word": "spend money like water"
+      },
+      {
+        "word": "spunk-water"
+      },
+      {
+        "word": "storm in a glass of water"
+      },
+      {
+        "word": "strong water"
+      },
+      {
+        "word": "stump-water"
+      },
+      {
+        "word": "super heavy water"
+      },
+      {
+        "word": "superheavy water"
+      },
+      {
+        "word": "swamp water"
+      },
+      {
+        "word": "table water"
+      },
+      {
+        "word": "take in water"
+      },
+      {
+        "word": "take to something like a duck to water"
+      },
+      {
+        "word": "take water"
+      },
+      {
+        "word": "tar water"
+      },
+      {
+        "word": "territorial water"
+      },
+      {
+        "word": "the mill cannot grind with water that is past"
+      },
+      {
+        "word": "there must be something in the water"
+      },
+      {
+        "word": "thin as a yard of pump water"
+      },
+      {
+        "word": "throw out the baby with the bath water"
+      },
+      {
+        "word": "throw the baby out with the bath water"
+      },
+      {
+        "word": "Titicaca water frog"
+      },
+      {
+        "word": "toast water"
+      },
+      {
+        "word": "tomato water"
+      },
+      {
+        "word": "too much water drowned the miller"
+      },
+      {
+        "word": "treacle water"
+      },
+      {
+        "word": "unholy water"
+      },
+      {
+        "word": "unspoken water"
+      },
+      {
+        "word": "velvet water bug"
+      },
+      {
+        "word": "water absorption"
+      },
+      {
+        "word": "water adder"
+      },
+      {
+        "word": "water allergy"
+      },
+      {
+        "word": "water bailage"
+      },
+      {
+        "word": "water bailie"
+      },
+      {
+        "word": "water bar"
+      },
+      {
+        "word": "water barometer"
+      },
+      {
+        "word": "water battery"
+      },
+      {
+        "word": "water bewitched"
+      },
+      {
+        "word": "water bicycle"
+      },
+      {
+        "word": "water bike"
+      },
+      {
+        "word": "water birch"
+      },
+      {
+        "word": "water birthing"
+      },
+      {
+        "word": "water block"
+      },
+      {
+        "word": "water boa"
+      },
+      {
+        "word": "water body"
+      },
+      {
+        "word": "water bomb"
+      },
+      {
+        "word": "water bottle flipping"
+      },
+      {
+        "word": "water bottler"
+      },
+      {
+        "word": "water box"
+      },
+      {
+        "word": "water brash"
+      },
+      {
+        "word": "water breaker"
+      },
+      {
+        "word": "water bridge"
+      },
+      {
+        "word": "water buffalo calf"
+      },
+      {
+        "word": "water cabbage"
+      },
+      {
+        "word": "water caltrop"
+      },
+      {
+        "word": "water carrier"
+      },
+      {
+        "word": "water cell"
+      },
+      {
+        "word": "water cement"
+      },
+      {
+        "word": "water cooler effect"
+      },
+      {
+        "word": "water core"
+      },
+      {
+        "word": "water couch"
+      },
+      {
+        "word": "water crane"
+      },
+      {
+        "word": "water deer"
+      },
+      {
+        "word": "water divining"
+      },
+      {
+        "word": "water dragon"
+      },
+      {
+        "word": "water drinker"
+      },
+      {
+        "word": "water drum"
+      },
+      {
+        "word": "water fear"
+      },
+      {
+        "word": "water fire"
+      },
+      {
+        "word": "water fitness"
+      },
+      {
+        "word": "water flow"
+      },
+      {
+        "word": "water fluoridation"
+      },
+      {
+        "word": "water footprint"
+      },
+      {
+        "word": "water gilding"
+      },
+      {
+        "word": "water gut"
+      },
+      {
+        "word": "water hog"
+      },
+      {
+        "word": "water hyssop"
+      },
+      {
+        "word": "water icing"
+      },
+      {
+        "word": "water is wet"
+      },
+      {
+        "word": "water jet"
+      },
+      {
+        "word": "water leader"
+      },
+      {
+        "word": "water lemon"
+      },
+      {
+        "word": "water lens"
+      },
+      {
+        "word": "water log"
+      },
+      {
+        "word": "water lot"
+      },
+      {
+        "word": "water mantle"
+      },
+      {
+        "word": "water maze"
+      },
+      {
+        "word": "water measurer"
+      },
+      {
+        "word": "water melon"
+      },
+      {
+        "word": "water mite"
+      },
+      {
+        "word": "water moccasin"
+      },
+      {
+        "word": "water mole"
+      },
+      {
+        "word": "water monkey"
+      },
+      {
+        "word": "water monster"
+      },
+      {
+        "word": "water motor"
+      },
+      {
+        "word": "water mower"
+      },
+      {
+        "word": "water net"
+      },
+      {
+        "word": "water nymph"
+      },
+      {
+        "word": "water of life"
+      },
+      {
+        "word": "water off a duck"
+      },
+      {
+        "word": "water off a duck's back"
+      },
+      {
+        "word": "water on the chest"
+      },
+      {
+        "word": "water organist"
+      },
+      {
+        "word": "water parade"
+      },
+      {
+        "word": "water parsnip"
+      },
+      {
+        "word": "water pocket"
+      },
+      {
+        "word": "water polo player"
+      },
+      {
+        "word": "water poppy"
+      },
+      {
+        "word": "water prince"
+      },
+      {
+        "word": "water pump pliers"
+      },
+      {
+        "word": "water purifier"
+      },
+      {
+        "word": "water python"
+      },
+      {
+        "word": "water ram"
+      },
+      {
+        "word": "water repellent"
+      },
+      {
+        "word": "water ribbons"
+      },
+      {
+        "word": "water rite"
+      },
+      {
+        "word": "water roux"
+      },
+      {
+        "word": "water sandwich"
+      },
+      {
+        "word": "water scavenger beetle"
+      },
+      {
+        "word": "water scooter"
+      },
+      {
+        "word": "water sickness"
+      },
+      {
+        "word": "water skipper"
+      },
+      {
+        "word": "water smoke"
+      },
+      {
+        "word": "water snail"
+      },
+      {
+        "word": "water soldier"
+      },
+      {
+        "word": "water spout"
+      },
+      {
+        "word": "water starwort"
+      },
+      {
+        "word": "water tank"
+      },
+      {
+        "word": "water telescope"
+      },
+      {
+        "word": "water tender"
+      },
+      {
+        "word": "water thermometer"
+      },
+      {
+        "word": "water thrush"
+      },
+      {
+        "word": "water to one's mill"
+      },
+      {
+        "word": "water toxemia"
+      },
+      {
+        "word": "water tree"
+      },
+      {
+        "word": "water twist"
+      },
+      {
+        "word": "water vascular system"
+      },
+      {
+        "word": "water violet"
+      },
+      {
+        "word": "water wing"
+      },
+      {
+        "word": "water wisteria"
+      },
+      {
+        "word": "water yam"
+      },
+      {
+        "word": "water-bag"
+      },
+      {
+        "word": "water-bath"
+      },
+      {
+        "word": "water-bellows"
+      },
+      {
+        "word": "water-borne"
+      },
+      {
+        "word": "water-breaker"
+      },
+      {
+        "word": "water-butt"
+      },
+      {
+        "word": "water-carrier"
+      },
+      {
+        "word": "water-cress"
+      },
+      {
+        "word": "water-cure"
+      },
+      {
+        "word": "water-dock"
+      },
+      {
+        "word": "water-fear"
+      },
+      {
+        "word": "water-gall"
+      },
+      {
+        "word": "water-gang"
+      },
+      {
+        "word": "water-hugging"
+      },
+      {
+        "word": "water-laid"
+      },
+      {
+        "word": "water-leech"
+      },
+      {
+        "word": "water-lily"
+      },
+      {
+        "word": "water-log"
+      },
+      {
+        "word": "water-loving"
+      },
+      {
+        "word": "water-parsnip"
+      },
+      {
+        "word": "water-plantain"
+      },
+      {
+        "word": "water-porridge"
+      },
+      {
+        "word": "water-salamander"
+      },
+      {
+        "word": "water-shield"
+      },
+      {
+        "word": "water-wheel"
+      },
+      {
+        "word": "water-worn"
+      },
+      {
+        "word": "weak as water"
+      },
+      {
+        "word": "white water lily"
+      },
+      {
+        "word": "white water rafting"
+      },
+      {
+        "word": "white-water rafting"
+      },
+      {
+        "word": "witch's water"
+      },
+      {
+        "word": "wood and water joey"
+      },
+      {
+        "word": "yellow-flowered water hyssop"
+      },
+      {
+        "word": "you don't miss the water till the well runs dry"
+      },
+      {
+        "word": "you never miss the water until the well runs dry"
+      },
+      {
+        "word": "Ziegler's water rat"
+      },
+      {
+        "word": "overwater"
+      },
+      {
+        "word": "underwater"
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "wahter"
+      },
+      {
+        "word": "wahtuh",
+        "tags": [
+          "pronunciation-spelling"
+        ]
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "water"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "Adam's ale",
+        "tags": [
+          "humorous",
+          "idiomatic"
+        ]
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "Adam's wine",
+        "tags": [
+          "Scotland"
+        ]
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "aqua"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "corporation pop",
+        "tags": [
+          "slang"
+        ]
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "dihydrogen monoxide (abbr. DHMO)",
+        "tags": [
+          "humorous"
+        ]
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "H₂O"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "hydric acid"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "hydrogen hydroxide"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "hydrogen oxide"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "hydrohydroxic acid"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "hydroxic acid"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "hydroxilic acid"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "hydroxylic acid"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "light water"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "oxidane",
+        "tags": [
+          "IUPAC"
+        ]
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "μ-oxido dihydrogen"
+      }
+    ],
+    "hyponyms": [
+      {
+        "sense": "chemical having the formula H2O",
+        "word": "heavy water"
+      },
+      {
+        "sense": "chemical having the formula H2O",
+        "word": "ice"
+      },
+      {
+        "sense": "chemical having the formula H2O",
+        "word": "steam"
+      },
+      {
+        "sense": "chemical having the formula H2O",
+        "word": "water vapor"
+      },
+      {
+        "sense": "chemical having the formula H2O",
+        "word": "water vapour"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "branch water"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "brine"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "distilled water"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "drinking water"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "fresh water"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "meltwater"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "mineral water"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "rainwater"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "salt water"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "sea water"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "sparkling water"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "spring water"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "sweet water"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "tap water"
+      }
+    ],
+    "holonyms": [
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "aquifer"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "body of water"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "brook"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "creek"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "estuary"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "lake"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "ocean"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "pond"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "pool"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "puddle"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "river"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "sea"
+      },
+      {
+        "sense": "a clear liquid that can be drunk",
+        "word": "stream"
+      }
+    ],
+    "meronyms": [
+      {
+        "sense": "chemical having the formula H2O",
+        "word": "hydrogen"
+      },
+      {
+        "sense": "chemical having the formula H2O",
+        "word": "oxygen"
+      }
+    ]
+  },
+  {
+    "word": "water",
+    "pos": "verb",
+    "lang_code": "en",
+    "lang": "English",
+    "etymology_number": 2,
+    "etymology_templates": [
+      {
+        "args": {
+          "1": "en",
+          "2": "enm",
+          "3": "wateren"
+        },
+        "name": "inh",
+        "expansion": "Middle English wateren"
+      },
+      {
+        "args": {
+          "2": "ang",
+          "1": "en",
+          "3": "wæterian"
+        },
+        "name": "inh",
+        "expansion": "Old English wæterian"
+      },
+      {
+        "args": {
+          "2": "gem-pro",
+          "3": "*watrōną",
+          "1": "en"
+        },
+        "name": "inh",
+        "expansion": "Proto-Germanic *watrōną"
+      },
+      {
+        "args": {
+          "1": "gem-pro",
+          "2": "*watrijaną"
+        },
+        "name": "m",
+        "expansion": "*watrijaną"
+      },
+      {
+        "args": {
+          "2": "gem-pro",
+          "3": "*watōr",
+          "1": "en",
+          "t": "water"
+        },
+        "name": "der",
+        "expansion": "Proto-Germanic *watōr (“water”)"
+      },
+      {
+        "args": {
+          "t": "water",
+          "2": "ine-pro",
+          "3": "*wódr̥",
+          "1": "en"
+        },
+        "name": "der",
+        "expansion": "Proto-Indo-European *wódr̥ (“water”)"
+      },
+      {
+        "args": {
+          "1": "sco",
+          "2": "watter",
+          "3": "",
+          "4": "water"
+        },
+        "name": "cog",
+        "expansion": "Scots watter (“water”)"
+      },
+      {
+        "args": {
+          "2": "woaterje",
+          "t": "to water",
+          "1": "stq"
+        },
+        "name": "cog",
+        "expansion": "Saterland Frisian woaterje (“to water”)"
+      },
+      {
+        "args": {
+          "1": "fy",
+          "2": "wetterje",
+          "t": "to water"
+        },
+        "name": "cog",
+        "expansion": "West Frisian wetterje (“to water”)"
+      },
+      {
+        "args": {
+          "2": "wateren",
+          "t": "to water",
+          "1": "nl"
+        },
+        "name": "cog",
+        "expansion": "Dutch wateren (“to water”)"
+      },
+      {
+        "args": {
+          "1": "nds-de",
+          "t": "to water",
+          "2": "watern"
+        },
+        "name": "cog",
+        "expansion": "German Low German watern (“to water”)"
+      },
+      {
+        "args": {
+          "2": "wässern",
+          "t": "to water",
+          "1": "de"
+        },
+        "name": "cog",
+        "expansion": "German wässern (“to water”)"
+      },
+      {
+        "args": {
+          "1": "da",
+          "t": "to water",
+          "2": "vande"
+        },
+        "name": "cog",
+        "expansion": "Danish vande (“to water”)"
+      },
+      {
+        "args": {
+          "2": "vattna",
+          "t": "to water",
+          "1": "sv"
+        },
+        "name": "cog",
+        "expansion": "Swedish vattna (“to water”)"
+      },
+      {
+        "args": {
+          "2": "vatna",
+          "t": "to water",
+          "1": "is"
+        },
+        "name": "cog",
+        "expansion": "Icelandic vatna (“to water”)"
+      }
+    ],
+    "etymology_text": "From Middle English wateren, from Old English wæterian, from Proto-Germanic *watrōną, *watrijaną, from Proto-Germanic *watōr (“water”), from Proto-Indo-European *wódr̥ (“water”).\ncognates\nCognate with Scots watter (“water”), Saterland Frisian woaterje (“to water”), West Frisian wetterje (“to water”), Dutch wateren (“to water”), German Low German watern (“to water”), German wässern (“to water”), Danish vande (“to water”), Swedish vattna (“to water”), Icelandic vatna (“to water”).",
+    "hyphenation": [
+      "wa‧ter"
+    ],
+    "forms": [
+      {
+        "form": "waters",
+        "tags": [
+          "present",
+          "singular",
+          "third-person"
+        ]
+      },
+      {
+        "form": "watering",
+        "tags": [
+          "participle",
+          "present"
+        ]
+      },
+      {
+        "form": "watered",
+        "tags": [
+          "participle",
+          "past"
+        ]
+      },
+      {
+        "form": "watered",
+        "tags": [
+          "past"
+        ]
+      }
+    ],
+    "senses": [
+      {
+        "glosses": [
+          "To pour water into the soil surrounding (plants)."
+        ],
+        "id": "water-en-verb-ujAbnvB8",
+        "raw_glosses": [
+          "(transitive) To pour water into the soil surrounding (plants)."
+        ],
+        "tags": [
+          "transitive"
+        ],
+        "examples": [
+          {
+            "ref": "1900, L. Frank Baum, chapter 24, in The Wonderful Wizard of Oz",
+            "text": "Aunt Em had just come out of the house to water the cabbages when she looked up and saw Dorothy running toward her.",
+            "type": "quotation"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To wet or supply with water; to moisten; to overflow with water; to irrigate."
+        ],
+        "links": [
+          [
+            "irrigate",
+            "irrigate"
+          ]
+        ],
+        "id": "water-en-verb-e4yEWwyO",
+        "raw_glosses": [
+          "(transitive) To wet or supply with water; to moisten; to overflow with water; to irrigate."
+        ],
+        "tags": [
+          "transitive"
+        ]
+      },
+      {
+        "senseid": [
+          "en:to provide with water"
+        ],
+        "glosses": [
+          "To provide (animals) with water for drinking."
+        ],
+        "links": [
+          [
+            "drink",
+            "drink"
+          ]
+        ],
+        "id": "water-en-verb-en:to_provide_with_water",
+        "raw_glosses": [
+          "(transitive) To provide (animals) with water for drinking."
+        ],
+        "tags": [
+          "transitive"
+        ],
+        "examples": [
+          {
+            "text": "I need to water the cattle."
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To get or take in water."
+        ],
+        "id": "water-en-verb-~Hseeb0n",
+        "raw_glosses": [
+          "(intransitive) To get or take in water."
+        ],
+        "tags": [
+          "intransitive"
+        ],
+        "examples": [
+          {
+            "text": "The ship put into port to water.",
+            "type": "example"
+          },
+          {
+            "ref": "1944 January and February, W. McGowan Gradon, “Forres as a Railway Centre”, in Railway Magazine, page 23",
+            "text": "After working the 1.30 p.m. through train from Forres to Aberdeen as far as Elgin, she returns tender first with a local passenger train and is then coaled and watered at Forres shed, and eventually works back to Perth on the 10.20 p.m. through freight.",
+            "type": "quotation"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To urinate onto."
+        ],
+        "links": [
+          [
+            "urinate",
+            "urinate"
+          ]
+        ],
+        "id": "water-en-verb-3Q3Cyv16",
+        "raw_glosses": [
+          "(transitive, colloquial) To urinate onto."
+        ],
+        "tags": [
+          "colloquial",
+          "transitive"
+        ],
+        "examples": [
+          {
+            "text": "Nature called, so I stepped into the woods and watered a tree."
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To dilute."
+        ],
+        "links": [
+          [
+            "dilute",
+            "dilute"
+          ]
+        ],
+        "id": "water-en-verb-NbgX6LC1",
+        "synonyms": [
+          {
+            "sense": "dilute",
+            "word": "water down"
+          }
+        ],
+        "raw_glosses": [
+          "(transitive) To dilute."
+        ],
+        "tags": [
+          "transitive"
+        ],
+        "examples": [
+          {
+            "text": "Can you water the whisky, please?"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To overvalue (securities), especially through deceptive accounting."
+        ],
+        "links": [
+          [
+            "finance",
+            "finance#Noun"
+          ]
+        ],
+        "id": "water-en-verb-x1PUH9Tz",
+        "categories": [
+          {
+            "langcode": "en",
+            "orig": "en:Finance",
+            "kind": "topical",
+            "name": "Finance",
+            "parents": [
+              "Business",
+              "Economics",
+              "Society",
+              "Social sciences",
+              "All topics",
+              "Sciences",
+              "Fundamental"
+            ]
+          }
+        ],
+        "topics": [
+          "business",
+          "finance"
+        ],
+        "raw_glosses": [
+          "(transitive, dated, finance) To overvalue (securities), especially through deceptive accounting."
+        ],
+        "tags": [
+          "dated",
+          "transitive"
+        ],
+        "examples": [
+          {
+            "ref": "April 10, 1930, “Calls Rail Holding Companies Threat”, in The Sun",
+            "text": "such agencies would make it possible for the railroads to water stock and evade the law subjecting security issues to public regulation",
+            "type": "quotation"
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To fill with or secrete water."
+        ],
+        "id": "water-en-verb-68duoyHY",
+        "raw_glosses": [
+          "(intransitive) To fill with or secrete water."
+        ],
+        "tags": [
+          "intransitive"
+        ],
+        "examples": [
+          {
+            "text": "Chopping onions makes my eyes water."
+          },
+          {
+            "text": "The smell of fried onions makes my mouth water."
+          }
+        ]
+      },
+      {
+        "glosses": [
+          "To wet and calender, as cloth, so as to impart to it a lustrous appearance in wavy lines; to diversify with wavelike lines."
+        ],
+        "links": [
+          [
+            "calender",
+            "calender"
+          ],
+          [
+            "lustrous",
+            "lustrous"
+          ],
+          [
+            "wavy",
+            "wavy"
+          ]
+        ],
+        "id": "water-en-verb-U-X1VXfJ",
+        "raw_glosses": [
+          "(transitive) To wet and calender, as cloth, so as to impart to it a lustrous appearance in wavy lines; to diversify with wavelike lines."
+        ],
+        "tags": [
+          "transitive"
+        ],
+        "examples": [
+          {
+            "text": "to water silk"
+          }
+        ]
+      }
+    ],
+    "sounds": [
+      {
+        "tags": [
+          "Received-Pronunciation"
+        ],
+        "ipa": "/ˈwɔːtə/"
+      },
+      {
+        "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/1a/En-uk-water.ogg/En-uk-water.ogg.mp3",
+        "tags": [
+          "UK"
+        ],
+        "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/En-uk-water.ogg",
+        "audio": "En-uk-water.ogg",
+        "text": "Audio (UK)"
+      },
+      {
+        "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/19/LL-Q1860_%28eng%29-Back_ache-water.wav/LL-Q1860_%28eng%29-Back_ache-water.wav.mp3",
+        "tags": [
+          "UK"
+        ],
+        "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/19/LL-Q1860_%28eng%29-Back_ache-water.wav/LL-Q1860_%28eng%29-Back_ache-water.wav.ogg",
+        "audio": "LL-Q1860 (eng)-Back ache-water.wav",
+        "text": "Audio (UK)"
+      },
+      {
+        "tags": [
+          "England",
+          "Estuary-English"
+        ],
+        "ipa": "[ˈwoːʔɐ]"
+      },
+      {
+        "tags": [
+          "England",
+          "Estuary-English"
+        ],
+        "ipa": "[ˈwoːʔə]"
+      },
+      {
+        "tags": [
+          "Cockney",
+          "England"
+        ],
+        "ipa": "[ˈwoʊʔə]"
+      },
+      {
+        "tags": [
+          "Cockney",
+          "England"
+        ],
+        "ipa": "[ˈwɔoɾɐ]"
+      },
+      {
+        "note": "Northern English, dated, obsolete elsewhere",
+        "ipa": "/ˈwætəɹ/"
+      },
+      {
+        "note": "Northern English, dated, obsolete elsewhere",
+        "ipa": "[ˈwatə]"
+      },
+      {
+        "note": "Northern English, dated, obsolete elsewhere",
+        "ipa": "[ˈwaɾɚ]"
+      },
+      {
+        "tags": [
+          "Scotland"
+        ],
+        "ipa": "/ˈwɔtər/"
+      },
+      {
+        "tags": [
+          "Scotland"
+        ],
+        "ipa": "[ˈwɔtər]"
+      },
+      {
+        "tags": [
+          "dialectal"
+        ],
+        "ipa": "/ˈwɒtə/"
+      },
+      {
+        "tags": [
+          "dialectal"
+        ],
+        "ipa": "/ˈwɒtəɹ/"
+      },
+      {
+        "tags": [
+          "General-American"
+        ],
+        "ipa": "/ˈwɔtəɹ/"
+      },
+      {
+        "tags": [
+          "General-American"
+        ],
+        "ipa": "[ˈwɔɾɚ]"
+      },
+      {
+        "enpr": "wôtər",
+        "tags": [
+          "General-American"
+        ]
+      },
+      {
+        "tags": [
+          "Canada",
+          "US",
+          "cot-caught-merger"
+        ],
+        "ipa": "/ˈwɑtəɹ/"
+      },
+      {
+        "tags": [
+          "Canada",
+          "US",
+          "cot-caught-merger"
+        ],
+        "ipa": "[ˈwɑɾɚ]"
+      },
+      {
+        "enpr": "wŏtər",
+        "tags": [
+          "Canada",
+          "US",
+          "cot-caught-merger"
+        ]
+      },
+      {
+        "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/bd/En-us-water.ogg/En-us-water.ogg.mp3",
+        "tags": [
+          "US",
+          "cot-caught-merger"
+        ],
+        "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/En-us-water.ogg",
+        "audio": "en-us-water.ogg",
+        "text": "Audio (US cot-caught merged)"
+      },
+      {
+        "tags": [
+          "New-York-City"
+        ],
+        "ipa": "[ˈwɔəɾə]"
+      },
+      {
+        "tags": [
+          "Philadelphia"
+        ],
+        "ipa": "/ˈwʊtəɹ/"
+      },
+      {
+        "tags": [
+          "Philadelphia"
+        ],
+        "ipa": "[ˈwʊɾɚ]"
+      },
+      {
+        "tags": [
+          "Pennsylvania",
+          "Western"
+        ],
+        "ipa": "/ˈwɔɹtəɹ/"
+      },
+      {
+        "tags": [
+          "Pennsylvania",
+          "Western"
+        ],
+        "ipa": "[ˈwɔɹɾɚ]"
+      },
+      {
+        "tags": [
+          "General-Australian",
+          "New-Zealand"
+        ],
+        "ipa": "/ˈwoːtə/"
+      },
+      {
+        "tags": [
+          "General-Australian",
+          "New-Zealand"
+        ],
+        "ipa": "[ˈwoːɾə]"
+      },
+      {
+        "tags": [
+          "Ireland"
+        ],
+        "ipa": "/ˈwɔːtəɹ/"
+      },
+      {
+        "tags": [
+          "Ireland"
+        ],
+        "ipa": "[ˈwɒːθ̠ɚ]"
+      },
+      {
+        "tags": [
+          "Indian-English"
+        ],
+        "ipa": "[ˈwɔʈə(r)]"
+      },
+      {
+        "tags": [
+          "Indian-English"
+        ],
+        "ipa": "[ˈʋɔʈə(r)]"
+      },
+      {
+        "tags": [
+          "English",
+          "Tamil"
+        ],
+        "ipa": "[ˈʋaːʈər(ɯ)]"
+      },
+      {
+        "tags": [
+          "English",
+          "Tamil"
+        ],
+        "ipa": "[ˈwaːʈər(ɯ)]"
+      },
+      {
+        "tags": [
+          "General-South-African"
+        ],
+        "ipa": "[ˈwoːtə]"
+      },
+      {
+        "rhymes": "-ɔːtə(ɹ)"
+      }
+    ],
+    "antonyms": [
+      {
+        "sense": "dilute",
+        "word": "refine"
+      }
+    ],
+    "derived": [
+      {
+        "word": "overwater"
+      },
+      {
+        "word": "underwater"
+      },
+      {
+        "word": "bewater"
+      },
+      {
+        "word": "dewater"
+      },
+      {
+        "word": "overwatered"
+      },
+      {
+        "word": "rewater"
+      },
+      {
+        "word": "rewatered"
+      },
+      {
+        "word": "underwatered"
+      },
+      {
+        "word": "unwater"
+      },
+      {
+        "word": "unwaterable"
+      },
+      {
+        "word": "unwatered"
+      },
+      {
+        "word": "waterable"
+      },
+      {
+        "word": "water down"
+      },
+      {
+        "word": "watered down"
+      },
+      {
+        "word": "waterer"
+      },
+      {
+        "word": "watering"
+      },
+      {
+        "word": "watering can"
+      },
+      {
+        "word": "watering hole"
+      },
+      {
+        "word": "watering place"
+      },
+      {
+        "word": "watering pot"
+      }
+    ]
+  }
+]
