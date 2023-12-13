@@ -251,7 +251,7 @@ pub struct NewSense {
     pub raw_glosses: Option<String>,
 }
 
-#[derive(Queryable, Serialize, Selectable, Associations, Debug, PartialEq)]
+#[derive(Queryable, Serialize, Identifiable, Selectable, Associations, Debug, PartialEq)]
 #[diesel(belongs_to(Sense))]
 pub struct Example {
     pub id: i32,

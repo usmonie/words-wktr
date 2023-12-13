@@ -10,7 +10,7 @@ use crate::data::dictionary_repository::DieselDictionaryRepository;
 use crate::domain::use_cases::RandomWord;
 
 #[get("/dictionary/search")]
-async fn search_words(data: web::Data<AppState>, info: web::Query<Info>) -> impl Responder {
+async fn search_words(data: web::Data<AppState>, info: web::Query<QueryParams>) -> impl Responder {
     let start = Instant::now();
     let search_words_use_case = &data.search_words;
 
@@ -22,8 +22,8 @@ async fn search_words(data: web::Data<AppState>, info: web::Query<Info>) -> impl
     };
     let duration = start.elapsed();
     println!("Time elapsed in expensive_function() is: {:?}", duration);
-    let result = /*web::Json(*/serde_json::to_string(&words).unwrap();
-    println!("{}", &result);
+    let result = web::Json(words);
+    println!("{:?}", &result);
     return result;
 }
 
@@ -37,12 +37,17 @@ async  fn  random_word(data: web::Data<AppState>) -> impl Responder {
     let duration = start.elapsed();
     println!("Time elapsed in expensive_function() is: {:?}", duration);
 
-    serde_json::to_string(&word).unwrap()
+    web::Json(vec![word])
 }
 
 #[derive(Deserialize)]
-pub struct Info {
+pub struct QueryParams {
     query: String,
+}
+
+#[derive(Deserialize)]
+pub struct RandomParams {
+    max_symbols: String,
 }
 
 struct AppState {
@@ -90,8 +95,8 @@ pub async fn launch_server() -> std::io::Result<()> {
  **/
 async fn start_parsing() {
     println!("parsing started");
-    let file_path = Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/wiktionary.json");
-    let dictionary_repo = DieselDictionaryRepository::new("postgres://admin:admin@localhost:5433/words");
+    let file_path = Path::new("/home/ubuntu/kaikki.org-dictionary-English.json.json");
+    let dictionary_repo = DieselDictionaryRepository::new("postgres://postgres:admin@localhost:5433/words");
     let mut importer = ImportJsonDictionary::new(dictionary_repo, file_path);
 
     match importer.execute().await {

@@ -158,7 +158,26 @@ impl DieselDictionaryRepository {
             .load(&mut conn)
             .unwrap();
 
+
         let senses = senses.into_iter().map(|sense| {
+
+            let examples: Vec<Example> = Example::belonging_to(&sense)
+                .select(Example::as_select())
+                .load(&mut conn)
+                .unwrap();
+
+            let examples: Vec<crate::domain::models::Example> = examples.into_iter().map(|example| {
+                return crate::domain::models::Example {
+                    note: example.note,
+                    example_ref: example.example_ref,
+                    roman: example.roman,
+                    english: example.english,
+                    text: example.text,
+                    example_type: example.example_type,
+                    ruby: vec![]
+                };
+            }).collect();
+
             crate::domain::models::Sense {
                 id: sense.sense_id,
                 qualifier: sense.qualifier,
@@ -194,7 +213,7 @@ impl DieselDictionaryRepository {
                 troponyms: vec![],
                 form_of: vec![],
                 tags: vec![],
-                examples: vec![],
+                examples: examples,
                 hyponyms: vec![],
                 wikidata: vec![],
             }
