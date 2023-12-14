@@ -59,7 +59,7 @@ pub async fn launch_server() -> std::io::Result<()> {
     // start_parsing().await;
     HttpServer::new(move || {
 
-        let dictionary_repo = Arc::new(Mutex::new(DieselDictionaryRepository::new("postgres://admin:admin@localhost:5433/words")));
+        let dictionary_repo = Arc::new(Mutex::new(DieselDictionaryRepository::new("postgres://postgres:admin@localhost:5432/words")));
         let app_state = web::Data::new(AppState {
             search_words: SearchWords::new(dictionary_repo.clone()),
             random_word: RandomWord::new(dictionary_repo.clone()),
