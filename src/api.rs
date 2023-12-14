@@ -56,7 +56,7 @@ struct AppState {
 }
 
 pub async fn launch_server() -> std::io::Result<()> {
-    start_parsing().await;
+    // start_parsing().await;
     HttpServer::new(move || {
 
         let dictionary_repo = Arc::new(Mutex::new(DieselDictionaryRepository::new("postgres://admin:admin@localhost:5433/words")));
