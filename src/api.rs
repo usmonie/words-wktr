@@ -95,7 +95,7 @@ pub async fn launch_server() -> std::io::Result<()> {
  **/
 async fn start_parsing() {
     println!("parsing started");
-    let file_path = Path::new("/home/ubuntu/kaikki.org-dictionary-English.json.json");
+    let file_path = Path::new("/home/ubuntu/kaikki.org-dictionary-English.json");
     let dictionary_repo = DieselDictionaryRepository::new("postgres://postgres:admin@localhost:5432/words");
     let mut importer = ImportJsonDictionary::new(dictionary_repo, file_path);
 
