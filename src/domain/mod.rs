@@ -16,7 +16,7 @@ pub mod use_cases {
         async fn bulk_insert(&mut self, items: Vec<Word>) -> Result<(), Error>;
         async fn find_exactly(&self, word: &str) -> Result<Option<Vec<Word>>, Error>;
         async fn find(&self, word: &str) -> Result<Option<Vec<Word>>, Error>;
-        async fn random_word(&self) -> Word;
+        async fn random_word(&self, max_symbols: u32) -> Word;
     }
 
     pub struct ImportJsonDictionary<'a, T: DictionaryRepository> {
@@ -113,10 +113,10 @@ pub mod use_cases {
             }
         }
 
-        pub async fn execute(&self) -> Word {
+        pub async fn execute(&self, max_symbols: u32) -> Word {
             let repository = self.repository.lock().await;
 
-            let exact_result = repository.random_word().await;
+            let exact_result = repository.random_word(max_symbols).await;
             return exact_result
         }
     }

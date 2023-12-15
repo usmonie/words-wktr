@@ -1095,12 +1095,16 @@ impl DictionaryRepository for DieselDictionaryRepository {
         return Ok(Some(results));
     }
 
-    async fn random_word(&self) -> crate::domain::models::Word {
+    async fn random_word(&self, max_symbols: u32) -> crate::domain::models::Word {
         let mut conn: PooledConnection<ConnectionManager<PgConnection>> = self.pool.get().unwrap();
-
-        let count: i64 = crate::schema::words::dsl::words.count().first(&mut conn).unwrap();
+        let count: i64 = 1259153;
         let offset = rand::random::<u64>() % count as u64;
-        let word_db = crate::schema::words::dsl::words.offset(offset as i64).first(&mut conn).unwrap();
+
+        let mut word_db: Word = crate::schema::words::dsl::words.offset(offset as i64).first(&mut conn).unwrap();
+
+        while word_db.word.len() > max_symbols {
+            word_db = crate::schema::words::dsl::words.offset(offset as i64).first(&mut conn).unwrap();
+        }
 
         return Self::collect_word(&self.pool, word_db);
     }

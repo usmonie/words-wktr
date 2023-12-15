@@ -28,11 +28,11 @@ async fn search_words(data: web::Data<AppState>, info: web::Query<QueryParams>) 
 }
 
 #[get("/dictionary/random_word")]
-async  fn  random_word(data: web::Data<AppState>) -> impl Responder {
+async  fn  random_word(data: web::Data<AppState>, info: web::Query<RandomParams>) -> impl Responder {
     let start = Instant::now();
     let random_word_use_case = &data.random_word;
 
-    let word = random_word_use_case.execute().await;
+    let word = random_word_use_case.execute(info.max_symbols).await;
 
     let duration = start.elapsed();
     println!("Time elapsed in expensive_function() is: {:?}", duration);
@@ -47,7 +47,7 @@ pub struct QueryParams {
 
 #[derive(Deserialize)]
 pub struct RandomParams {
-    max_symbols: String,
+    max_symbols: u32,
 }
 
 struct AppState {
