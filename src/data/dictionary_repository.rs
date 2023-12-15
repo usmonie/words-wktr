@@ -1102,7 +1102,7 @@ impl DictionaryRepository for DieselDictionaryRepository {
 
         let mut word_db: Word = crate::schema::words::dsl::words.offset(offset as i64).first(&mut conn).unwrap();
 
-        while word_db.word.len() > max_symbols as usize {
+        while word_db.word.len() < 5 || word_db.word.len() > max_symbols as usize {
             word_db = crate::schema::words::dsl::words.offset(offset as i64).first(&mut conn).unwrap();
         }
 
