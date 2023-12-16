@@ -19,16 +19,16 @@ impl DieselDictionaryRepository {
     fn map_words(pool: &Pool<ConnectionManager<PgConnection>>, words_db: Vec<Word>) -> Vec<crate::domain::models::Word> {
         let mut results: Vec<crate::domain::models::Word> = Vec::new();
         for word_db in words_db {
-            let word_dm: crate::domain::models::Word = Self::collect_word(pool, word_db);
+            let word_dm: crate::domain::models::Word = Self::collect_word(pool, &word_db);
             results.push(word_dm);
         }
         results
     }
 
-    fn collect_word(pool: &Pool<ConnectionManager<PgConnection>>, word_db: Word) -> crate::domain::models::Word {
+    fn collect_word(pool: &Pool<ConnectionManager<PgConnection>>, word_db: &Word) -> crate::domain::models::Word {
         let mut conn: PooledConnection<ConnectionManager<PgConnection>> = pool.get().unwrap();
 
-        let templates = Template::belonging_to(&word_db)
+        let templates = Template::belonging_to(word_db)
             .load::<Template>(&mut conn)
             .unwrap_or_default();
         let templates: Vec<crate::domain::models::Template> = templates.into_iter().map(|template| {
@@ -45,7 +45,7 @@ impl DieselDictionaryRepository {
         }).collect();
 
         let translations_links = crate::schema::translations_words_link::dsl::translations_words_link::table()
-            .filter(crate::schema::translations_words_link::word_id.eq(&word_db.id()))
+            .filter(crate::schema::translations_words_link::word_id.eq(word_db.id()))
             .load::<TranslationWordLink>(&mut conn)
             .unwrap_or_default();
         let translations_links = translations_links.into_iter().map(|relation| {
@@ -73,7 +73,7 @@ impl DieselDictionaryRepository {
         //     }
         // }).collect();
 
-        let sounds = Sound::belonging_to(&word_db)
+        let sounds = Sound::belonging_to(word_db)
             .load::<Sound>(&mut conn)
             .unwrap_or_default();
         let sounds = sounds.into_iter().map(|sound| {
@@ -115,7 +115,7 @@ impl DieselDictionaryRepository {
         }).collect();
 
         let categories_links = crate::schema::wordcategorieslink::dsl::wordcategorieslink::table()
-            .filter(crate::schema::wordcategorieslink::word_id.eq(&word_db.id()))
+            .filter(crate::schema::wordcategorieslink::word_id.eq(word_db.id()))
             .load::<WordCategoriesLink>(&mut conn)
             .unwrap_or_default();
         let categories_links = categories_links.into_iter().map(|relation| {
@@ -137,14 +137,14 @@ impl DieselDictionaryRepository {
             }
         }).collect();
 
-        let wikipedia = Wikipedia::belonging_to(&word_db)
+        let wikipedia = Wikipedia::belonging_to(word_db)
             .load::<Wikipedia>(&mut conn)
             .unwrap_or_default();
         let wikipedia: Vec<String> = wikipedia.into_iter().map(|wiki| {
             wiki.wikipedia_link
         }).collect();
 
-        // let hyphenations: Vec<Hyphenation> = Hyphenation::belonging_to(&word_db)
+        // let hyphenations: Vec<Hyphenation> = Hyphenation::belonging_to(word_db)
         //     .select(Hyphenation::as_select())
         //     .load(&mut conn)
         //     .unwrap();
@@ -153,14 +153,13 @@ impl DieselDictionaryRepository {
         //     hyphenation.hyphenation
         // }).collect();
 
-        let senses: Vec<Sense> = Sense::belonging_to(&word_db)
+        let senses: Vec<Sense> = Sense::belonging_to(word_db)
             .select(Sense::as_select())
             .load(&mut conn)
             .unwrap();
 
 
         let senses = senses.into_iter().map(|sense| {
-
             let examples: Vec<Example> = Example::belonging_to(&sense)
                 .select(Example::as_select())
                 .load(&mut conn)
@@ -174,7 +173,7 @@ impl DieselDictionaryRepository {
                     english: example.english,
                     text: example.text,
                     example_type: example.example_type,
-                    ruby: vec![]
+                    ruby: vec![],
                 };
             }).collect();
 
@@ -221,13 +220,13 @@ impl DieselDictionaryRepository {
 
         // let forms = Form::belonging
         return crate::domain::models::Word {
-            word: word_db.word,
-            pos: word_db.pos,
-            lang_code: word_db.lang_code,
-            lang: word_db.lang,
+            word: word_db.word.clone(),
+            pos: word_db.pos.clone(),
+            lang_code: word_db.lang_code.clone(),
+            lang: word_db.lang.clone(),
             etymology_number: word_db.etymology_number,
             etymology_templates: templates,
-            etymology_text: word_db.etymology_text,
+            etymology_text: word_db.etymology_text.clone(),
             inflection_templates: vec![],
             translations: vec![],
             categories,
@@ -1102,10 +1101,14 @@ impl DictionaryRepository for DieselDictionaryRepository {
 
         let mut word_db: Word = crate::schema::words::dsl::words.offset(offset as i64).first(&mut conn).unwrap();
 
-        while word_db.word.len() < 5 || word_db.word.len() > max_symbols as usize {
-            word_db = crate::schema::words::dsl::words.offset(offset as i64).first(&mut conn).unwrap();
+        let mut word_domain: crate::domain::models::Word = Self::collect_word(&self.pool, &word_db);
+        while word_db.word.len() < 5 || word_db.word.len() > max_symbols as usize || word_domain.senses.len() < 2 {
+            let word_db_temp = crate::schema::words::dsl::words.offset(offset as i64).first(&mut conn).unwrap();
+
+            word_domain = Self::collect_word(&self.pool, &word_db_temp);
+            word_db = word_db_temp;
         }
 
-        return Self::collect_word(&self.pool, word_db);
+        return word_domain;
     }
 }
