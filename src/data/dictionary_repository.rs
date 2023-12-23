@@ -9,6 +9,7 @@ use crate::data::db::models::*;
 use crate::domain::models::{Category, Relation};
 use crate::schema::words::word;
 use std::iter::Iterator;
+use reqwest::Client;
 use crate::schema::translations::id;
 
 pub struct DieselDictionaryRepository {
@@ -1073,7 +1074,7 @@ impl DictionaryRepository for DieselDictionaryRepository {
         let mut conn: PooledConnection<ConnectionManager<PgConnection>> = self.pool.get().unwrap();
 
         let words_db = crate::schema::words::dsl::words::table()
-            .filter(word.eq(query))
+            .filter(word.ilike(query))
             .load::<Word>(&mut conn)
             .expect("Error loading words");
 
@@ -1095,6 +1096,24 @@ impl DictionaryRepository for DieselDictionaryRepository {
     }
 
     async fn random_word(&self, max_symbols: u32) -> crate::domain::models::Word {
+        let client = Client::new();
+
+        let url = "https://ru.wiktionary.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D1%81%D0%BB%D0%B0%D0%B2%D0%B0%D1%8C/%D0%9D%D0%B5%D0%B7%D0%B8%D1%82%D0%B0";
+        let resp = client.get(url).send().await.unwrap();
+
+        if resp.status().is_success() {
+            let body = resp.text().await.unwrap();
+
+            let word_title = body
+                .split("<b>")
+                .nth(1)
+                .unwrap()
+                .split("</b>")
+                .nth(0)
+                .unwrap();
+
+            println!("Слово дня: {}", word_title);
+        }
         let mut conn: PooledConnection<ConnectionManager<PgConnection>> = self.pool.get().unwrap();
         let count: i64 = 1259153;
         let offset = rand::random::<u64>() % count as u64;
