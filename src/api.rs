@@ -5,7 +5,7 @@ use actix_web::{App, error, get, HttpResponse, HttpServer, Responder, web};
 use serde::Deserialize;
 use tokio::sync::Mutex;
 
-use crate::{domain::use_cases::{ImportJsonDictionary, SearchWords}};
+use crate::domain::use_cases::{ImportJsonDictionary, SearchWords};
 use crate::data::dictionary_repository::DieselDictionaryRepository;
 use crate::domain::use_cases::RandomWord;
 
@@ -28,7 +28,7 @@ async fn search_words(data: web::Data<AppState>, info: web::Query<QueryParams>) 
 }
 
 #[get("/dictionary/random_word")]
-async  fn  random_word(data: web::Data<AppState>, info: web::Query<RandomParams>) -> impl Responder {
+async fn random_word(data: web::Data<AppState>, info: web::Query<RandomParams>) -> impl Responder {
     let start = Instant::now();
     let random_word_use_case = &data.random_word;
 
@@ -59,7 +59,7 @@ pub async fn launch_server() -> std::io::Result<()> {
     // start_parsing().await;
     HttpServer::new(move || {
 
-        let dictionary_repo = Arc::new(Mutex::new(DieselDictionaryRepository::new("postgres://postgres:admin@localhost:5433/words")));
+        let dictionary_repo = Arc::new(Mutex::new(DieselDictionaryRepository::new("postgres://postgres:admin@localhost:5432/words")));
         let app_state = web::Data::new(AppState {
             search_words: SearchWords::new(dictionary_repo.clone()),
             random_word: RandomWord::new(dictionary_repo.clone()),
