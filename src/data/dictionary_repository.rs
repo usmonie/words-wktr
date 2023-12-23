@@ -1074,7 +1074,7 @@ impl DictionaryRepository for DieselDictionaryRepository {
         let mut conn: PooledConnection<ConnectionManager<PgConnection>> = self.pool.get().unwrap();
 
         let words_db = crate::schema::words::dsl::words::table()
-            .filter(word.like(query))
+            .filter(word.ilike(query))
             .load::<Word>(&mut conn)
             .expect("Error loading words");
 
