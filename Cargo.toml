@@ -3,8 +3,6 @@ name = "words-wktr"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
 actix-web = "4.4.0"
 actix-rt = "2.9.0"
@@ -22,10 +20,6 @@ http-body-util = "0.1"
 hyper-util = { version = "0.1", features = ["full"] }
 regex = "1.10.2"
 
-
-has_fields = { path = "./has_fields/has_fields"}
 rand = "0.8.5"
 mime = { version = "0.3.17", features = [] }
-
-[dev-dependencies]
-diesel_cli = { version = "2.1.1", features = ["postgres"] }
+url = "2.5.0"
