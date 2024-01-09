@@ -74,7 +74,7 @@ pub async fn launch_server() -> std::io::Result<()> {
                 // only accept text/plain content type
                 .content_type(|mime| mime == mime::TEXT_PLAIN)
                 // use custom error handler
-                .error_handler(|err, req| {
+                .error_handler(|err, _req| {
                     error::InternalError::from_response(err, HttpResponse::Conflict().into()).into()
                 });
 

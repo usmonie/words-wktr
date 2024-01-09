@@ -25,7 +25,7 @@ impl<'a, T: DictionaryRepository> ImportWordsDictionary<'a, T> {
         let repo = Arc::clone(&self.repository);
 
         let repo = repo.lock().await;
-        let mut count_empty_translations = 0;
+        let count_empty_translations = 0;
         let mut russian_doesnt = 0;
         for line in reader.lines() {
             let word = line.unwrap();

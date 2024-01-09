@@ -4,7 +4,7 @@ use std::sync::Arc;
 use bson::doc;
 use futures::lock::Mutex;
 use futures::TryStreamExt;
-use mongodb::{Client, Cursor, Database, IndexModel};
+use mongodb::{Client, Cursor, Database};
 use mongodb::options::ClientOptions;
 use crate::domain::models::Word;
 
