@@ -12,7 +12,7 @@ pub async fn store_words(mongo: Database, words: Vec<Word>) {
 }
 
 pub async fn store() {
-    let file = File::open("/Users/usmanakhmedov/Downloads/kaikki.org-dictionary-English.json")
+    let file = File::open("/home/ubuntu/kaikki.org-dictionary-English.json")
         .expect("Failed to open a file.");
     let reader = BufReader::new(file);
 
