@@ -36,7 +36,7 @@ pub async fn store() {
             println!("INSERT START");
 
             count += items.len();
-            store_words(database, std::mem::take(&mut items)).await;
+            // store_words(database, std::mem::take(&mut items)).await;
             println!("INSERTED {}", count);
             items.clear()
         }
@@ -45,7 +45,7 @@ pub async fn store() {
 
     if !items.is_empty() {
         count += items.len();
-        store_words(client.database("words"), std::mem::take(&mut items)).await;
+        // store_words(client.database("words"), std::mem::take(&mut items)).await;
         println!("INSERTED {}", count);
         items.clear()
     }
