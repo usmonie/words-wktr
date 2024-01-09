@@ -1,6 +1,10 @@
 use std::fs::File;
 use std::io::BufReader;
-use mongodb::{Client, Database};
+use actix_web::web;
+use bson::doc;
+use diesel::QueryDsl;
+use futures::TryStreamExt;
+use mongodb::{Client, Cursor, Database};
 use mongodb::options::{ClientOptions, ResolverConfig};
 use crate::domain::models::Word;
 
@@ -35,4 +39,27 @@ pub async fn store() {
             items.clear()
         }
     }
+}
+
+pub async fn find() {
+    let options = ClientOptions::parse("mongodb://localhost:27017").await.unwrap();
+    let client = Client::with_options(options).unwrap();
+
+    let mut words: Cursor<Word> = client.database("words")
+        .collection("words")
+        .find(
+            doc! {
+             "word": "word"
+            },
+            None
+        )
+        .await
+        .expect("");
+    
+    let mut items = vec![];
+    while let Some(word) = words.try_next().await.expect("") {
+        items.push(word)
+    }
+
+    println!("found word: {:?}", web::Json(&items));
 }

@@ -1,15 +1,14 @@
-use std::{path::Path, thread, time::Instant};
+use std::{path::Path, time::Instant};
 use std::sync::Arc;
 
 use actix_web::{App, error, get, HttpResponse, HttpServer, Responder, web};
 use futures::future::join_all;
-use rayon::join;
 use serde::Deserialize;
-use tokio::join;
 use tokio::sync::Mutex;
 
 use crate::domain::use_cases::{SearchWords};
 use crate::data::dictionary_repository::DieselDictionaryRepository;
+use crate::data::mongo_dictionary_repository::MongoDictionaryRepository;
 use crate::domain::import_dictionary::ImportJsonDictionary;
 use crate::domain::import_words::ImportWordsDictionary;
 use crate::domain::use_cases::RandomWord;
@@ -57,37 +56,39 @@ pub struct RandomParams {
 }
 
 struct AppState {
-    search_words: SearchWords<DieselDictionaryRepository>,
-    random_word: RandomWord<DieselDictionaryRepository>,
+    search_words: SearchWords<MongoDictionaryRepository>,
+    random_word: RandomWord<MongoDictionaryRepository>,
 }
 
 pub async fn launch_server() -> std::io::Result<()> {
-    // start_parsing().await;
     // find_words().await;
     println!("launch server");
-    HttpServer::new(move || {
-        let dictionary_repo = Arc::new(Mutex::new(DieselDictionaryRepository::new("postgres://postgres:admin@localhost:5433/word")));
-        let app_state = web::Data::new(AppState {
-            search_words: SearchWords::new(dictionary_repo.clone()),
-            random_word: RandomWord::new(dictionary_repo.clone()),
-        });
-
-        let json_cfg = web::JsonConfig::default()
-            // limit request payload size
-            .limit(4096)
-            // only accept text/plain content type
-            .content_type(|mime| mime == mime::TEXT_PLAIN)
-            // use custom error handler
-            .error_handler(|err, req| {
-                error::InternalError::from_response(err, HttpResponse::Conflict().into()).into()
+    let dictionary = Arc::new(Mutex::new(MongoDictionaryRepository::new("mongodb://localhost:27017").await));
+    HttpServer::new(
+        move || {
+            let dictionary_repo = dictionary.clone();
+            let app_state = web::Data::new(AppState {
+                search_words: SearchWords::new(dictionary_repo.clone()),
+                random_word: RandomWord::new(dictionary_repo.clone()),
             });
 
-        App::new()
-            .app_data(app_state.clone())
-            .app_data(json_cfg)
-            .service(search_words)
-            .service(random_word)
-    })
+            let json_cfg = web::JsonConfig::default()
+                // limit request payload size
+                .limit(4096)
+                // only accept text/plain content type
+                .content_type(|mime| mime == mime::TEXT_PLAIN)
+                // use custom error handler
+                .error_handler(|err, req| {
+                    error::InternalError::from_response(err, HttpResponse::Conflict().into()).into()
+                });
+
+            App::new()
+                .app_data(app_state.clone())
+                .app_data(json_cfg)
+                .service(search_words)
+                .service(random_word)
+        }
+    )
         .bind("127.0.0.1:8000")?
         .run()
         .await
@@ -173,7 +174,7 @@ async fn start_parsing() {
 async fn find_words() {
     println!("find words started");
     let file_path = Path::new("/Users/usmanakhmedov/Downloads/Oxford 5000.txt");
-    let dictionary_repo = DieselDictionaryRepository::new("postgres://postgres:admin@localhost:5433/word");
+    let dictionary_repo = MongoDictionaryRepository::new("mongodb://localhost:27017").await;
     let mut importer = ImportWordsDictionary::new(dictionary_repo, file_path);
 
     match importer.execute().await {

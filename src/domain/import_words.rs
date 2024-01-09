@@ -24,23 +24,29 @@ impl<'a, T: DictionaryRepository> ImportWordsDictionary<'a, T> {
 
         let repo = Arc::clone(&self.repository);
 
-        let mut repo = repo.lock().await;
+        let repo = repo.lock().await;
         let mut count_empty_translations = 0;
         let mut russian_doesnt = 0;
         for line in reader.lines() {
             let word = line.unwrap();
 
-            // Вызовите функцию для слова
             let words = repo.find_exactly(&word).await.unwrap().unwrap();
 
             let mut has_translation = false;
+            let mut current_word: &str = "";
             for word in &words {
-                if !has_translation {
+                if current_word != word.word || !has_translation {
                     has_translation = word.translations.iter().position(|t| t.code == Some("ru".to_string())).is_some();
                 }
+
+                if !has_translation {
+                    russian_doesnt += 1;
+                }
+                current_word = &word.word;
+
                 // if word.translations.len() == 0 {
                 //     count_empty_translations += 1;
-                    russian_doesnt += 1;
+                //     russian_doesnt += 1;
                 //     println!("translations is empty for {}, count of word exist: {}", word.word, &words.len())
                 // } else {
                 //     if word.translations.iter().position(|t| t.code == Some("ru".to_string())).is_none() {
