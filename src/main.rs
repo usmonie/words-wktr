@@ -9,7 +9,7 @@ use crate::mongodb::{index, store};
 #[actix_web::main]
 async fn main() -> io::Result<()> {
     store().await;
-    index().await;
+    // index().await;
 
     let _ = api::launch_server().await;
 
