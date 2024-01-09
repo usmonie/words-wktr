@@ -2,10 +2,9 @@ use std::fs::File;
 use std::io::BufReader;
 use actix_web::web;
 use bson::doc;
-use diesel::QueryDsl;
 use futures::TryStreamExt;
 use mongodb::{Client, Cursor, Database};
-use mongodb::options::{ClientOptions, ResolverConfig};
+use mongodb::options::{ClientOptions,};
 use crate::domain::models::Word;
 
 pub async fn store_words(mongo: Database, words: Vec<Word>) {
@@ -13,7 +12,7 @@ pub async fn store_words(mongo: Database, words: Vec<Word>) {
 }
 
 pub async fn store() {
-    let file = File::open("/Users/usmanakhmedov/Downloads/kaikki.org-dictionary-English.json")
+    let file = File::open("/home/ubuntu/kaikki.org-dictionary-English.json")
         .expect("Failed to open a file.");
     let reader = BufReader::new(file);
 
