@@ -1,5 +1,4 @@
 mod data;
-mod schema;
 mod domain;
 mod api;
 mod mongodb;
