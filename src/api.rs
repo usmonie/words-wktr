@@ -2,14 +2,11 @@ use std::{path::Path, time::Instant};
 use std::sync::Arc;
 
 use actix_web::{App, error, get, HttpResponse, HttpServer, Responder, web};
-use futures::future::join_all;
 use serde::Deserialize;
 use tokio::sync::Mutex;
 
 use crate::domain::use_cases::{SearchWords};
-use crate::data::dictionary_repository::DieselDictionaryRepository;
 use crate::data::mongo_dictionary_repository::MongoDictionaryRepository;
-use crate::domain::import_dictionary::ImportJsonDictionary;
 use crate::domain::import_words::ImportWordsDictionary;
 use crate::domain::use_cases::RandomWord;
 
@@ -97,74 +94,74 @@ pub async fn launch_server() -> std::io::Result<()> {
     Ok(())
 }
 
-/**
- *
- * Parsing wiktionary json
- *
- **/
-async fn start_parsing() {
-    println!("parsing started");
-    let file_paths = vec![
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.aa"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ab"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ac"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ad"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ae"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.af"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ag"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ah"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ai"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.aj"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ak"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.al"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.am"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.an"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ao"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ap"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.aq"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ar"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.as"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.at"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.au"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.av"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.aw"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ax"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ay"),
-        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.az"),
-    ];
-
-    // for file_path in file_paths {
-    //     thread::spawn(move || async move {
-    //          tokio::spawn(async move {
-    //             println!("path {:?}", &file_path);
-    //             let dictionary_repo = DieselDictionaryRepository::new("postgres://postgres:admin@localhost:5433/word");
-    //             let mut importer = ImportJsonDictionary::new(dictionary_repo, file_path);
-    //
-    //             match importer.execute().await {
-    //                 Ok(_) => println!("Successfully parsed the JSON file."),
-    //                 Err(e) => eprintln!("Error {:?}", e),
-    //             }
-    //         }).await
-    //     });
-    // }
-    let join_handles = file_paths
-        .into_iter()
-        .map(|file_path| {
-            tokio::spawn(async move {
-                println!("path {:?}", &file_path);
-                let dictionary_repo = DieselDictionaryRepository::new("postgres://postgres:admin@localhost:5433/word");
-                let mut importer = ImportJsonDictionary::new(dictionary_repo, file_path);
-
-                match importer.execute().await {
-                    Ok(_) => println!("Successfully parsed the JSON file."),
-                    Err(e) => eprintln!("Error {:?}", e),
-                }
-            })
-        })
-        .collect::<Vec<_>>();
-
-    join_all(join_handles).await;
-}
+// /**
+//  *
+//  * Parsing wiktionary json
+//  *
+//  **/
+// async fn start_parsing() {
+//     println!("parsing started");
+//     let file_paths = vec![
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.aa"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ab"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ac"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ad"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ae"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.af"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ag"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ah"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ai"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.aj"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ak"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.al"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.am"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.an"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ao"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ap"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.aq"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ar"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.as"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.at"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.au"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.av"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.aw"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ax"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ay"),
+//         Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.az"),
+//     ];
+//
+//     // for file_path in file_paths {
+//     //     thread::spawn(move || async move {
+//     //          tokio::spawn(async move {
+//     //             println!("path {:?}", &file_path);
+//     //             let dictionary_repo = DieselDictionaryRepository::new("postgres://postgres:admin@localhost:5433/word");
+//     //             let mut importer = ImportJsonDictionary::new(dictionary_repo, file_path);
+//     //
+//     //             match importer.execute().await {
+//     //                 Ok(_) => println!("Successfully parsed the JSON file."),
+//     //                 Err(e) => eprintln!("Error {:?}", e),
+//     //             }
+//     //         }).await
+//     //     });
+//     // }
+//     let join_handles = file_paths
+//         .into_iter()
+//         .map(|file_path| {
+//             tokio::spawn(async move {
+//                 println!("path {:?}", &file_path);
+//                 let dictionary_repo = DieselDictionaryRepository::new("postgres://postgres:admin@localhost:5433/word");
+//                 let mut importer = ImportJsonDictionary::new(dictionary_repo, file_path);
+//
+//                 match importer.execute().await {
+//                     Ok(_) => println!("Successfully parsed the JSON file."),
+//                     Err(e) => eprintln!("Error {:?}", e),
+//                 }
+//             })
+//         })
+//         .collect::<Vec<_>>();
+//
+//     join_all(join_handles).await;
+// }
 
 /**
  *
