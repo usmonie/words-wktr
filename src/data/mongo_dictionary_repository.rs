@@ -71,7 +71,6 @@ impl DictionaryRepository for MongoDictionaryRepository {
         let collection: Collection<Word> = database.collection("words");
         println!("{}", collection.count_documents(doc! {}, None).await.unwrap());
         // Query MongoDB for a random word with length less than or equal to the specified maximum symbols
-        let reg = format!("^.{{{}, {}}}$", 5, max_symbols);
         let pipeline = vec![
             doc! {
                 "$match": {
