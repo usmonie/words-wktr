@@ -16,7 +16,7 @@ pub async fn store() {
         .expect("Failed to open a file.");
     let reader = BufReader::new(file);
 
-    let mut items: Vec<Word> = Vec::with_capacity(20_000);
+    let mut items: Vec<Word> = Vec::with_capacity(1_000);
 
     let deserializer = serde_json::Deserializer::from_reader(reader).into_iter::<Word>();
 
@@ -32,7 +32,7 @@ pub async fn store() {
 
         items.push(entry);
 
-        if items.len() > 20_000 {
+        if items.len() > 1_000 {
             println!("INSERT START");
 
             count += items.len();
