@@ -3,7 +3,7 @@ use std::io::BufReader;
 use actix_web::web;
 use bson::doc;
 use futures::TryStreamExt;
-use mongodb::{Client, Cursor, Database};
+use mongodb::{Client, Collection, Cursor, Database, IndexModel};
 use mongodb::options::{ClientOptions,};
 use crate::domain::models::Word;
 
@@ -61,4 +61,16 @@ pub async fn find() {
     }
 
     println!("found word: {:?}", web::Json(&items));
+}
+
+pub async fn index() {
+
+    let options = ClientOptions::parse("mongodb://localhost:27017").await.unwrap();
+    let client = Client::with_options(options).unwrap();
+
+    let database = client.database("words");
+    let collection: Collection<Word> = database.collection("words");
+
+    let index = IndexModel::builder().keys(doc! { "word": 1 }).build();
+    collection.create_index(index, None).await.unwrap();
 }

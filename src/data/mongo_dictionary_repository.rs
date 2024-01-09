@@ -4,8 +4,9 @@ use std::sync::Arc;
 use bson::doc;
 use futures::lock::Mutex;
 use futures::TryStreamExt;
-use mongodb::{Client, Cursor, Database};
+use mongodb::{Client, Cursor, Database, IndexModel};
 use mongodb::options::ClientOptions;
+use crate::domain::models::Word;
 
 pub struct MongoDictionaryRepository {
     database: Arc<Mutex<Database>>,
@@ -37,6 +38,7 @@ impl DictionaryRepository for MongoDictionaryRepository {
         let database = self.database.clone();
         let database = database.lock().await;
 
+
         let mut words: Cursor<crate::domain::models::Word> = database
             .collection("words")
             .find(doc! { "word": word }, None)
@@ -51,25 +53,29 @@ impl DictionaryRepository for MongoDictionaryRepository {
         return Ok(Some(items));
     }
 
-    async fn find(&self, word: &str) -> Result<Option<Vec<crate::domain::models::Word>>, Error> {
+    async fn find(&self, word: &str) -> Result<Option<Vec<Word>>, Error> {
         let database = self.database.clone();
         let database = database.lock().await;
+        let filter = doc! {"word": {"$regex": format!("^{}.*", word)}};
+        let cursor = database
+            .collection("words").find(filter, None).await.unwrap();
+        let result: Vec<Word> = cursor.try_collect().await.unwrap();
 
-        let mut words: Cursor<crate::domain::models::Word> = database
-            .collection("words")
-            .find(doc! { "word": word }, None)
-            .await
-            .expect("");
-
-        let mut items: Vec<crate::domain::models::Word> = vec![];
-        while let Some(word_result) = words.try_next().await.expect("") {
-            items.push(word_result)
-        }
-
-        return Ok(Some(items));
+        return Ok(Some(result));
     }
 
-    async fn random_word(&self, max_symbols: u32) -> crate::domain::models::Word {
-        todo!()
+    async fn random_word(&self, max_symbols: u32) -> Word {
+        let database = self.database.clone();
+        let database = database.lock().await;
+        let collection = database.collection("words");
+        println!("{}", collection.count_documents(doc! {}, None).await.unwrap());
+        // Query MongoDB for a random word with length less than or equal to the specified maximum symbols
+        let filter = doc! {"$where": format!("this.word.length <= {}", max_symbols)};
+        let cursor = collection.find(filter, None).await.unwrap();
+        let result: Vec<Word> = cursor.try_collect().await.unwrap();
+
+        // Return a random word if there are matching words, otherwise return None
+        let random_index = rand::random::<usize>() % result.len();
+        result[random_index].clone()
     }
 }

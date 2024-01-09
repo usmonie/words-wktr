@@ -5,12 +5,12 @@ mod api;
 mod mongodb;
 
 use std::io;
-use crate::mongodb::{find, store};
+use crate::mongodb::{index};
 
 #[actix_web::main]
 async fn main() -> io::Result<()> {
-    // find().await;
-    store().await;
+    index().await;
+
     let _ = api::launch_server().await;
 
     Ok(())

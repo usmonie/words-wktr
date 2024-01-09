@@ -24,7 +24,6 @@ async fn search_words(data: web::Data<AppState>, info: web::Query<QueryParams>) 
     let duration = start.elapsed();
     println!("Time elapsed in expensive_function() is: {:?}", duration);
     let result = web::Json(words);
-    println!("{:?}", &result);
     return result;
 }
 
@@ -90,7 +89,6 @@ pub async fn launch_server() -> std::io::Result<()> {
         .run()
         .await
         .expect("Error starting server");
-    println!("start server");
     Ok(())
 }
 
