@@ -5,17 +5,6 @@ use crate::schema::*;
 use diesel::prelude::*;
 use serde::Serialize;
 
-#[derive(Queryable, Serialize, Selectable, Identifiable, Debug, PartialEq)]
-pub struct Word {
-    pub id: i32,
-    pub word: String,
-    pub pos: String,
-    pub lang_code: String,
-    pub lang: String,
-    pub etymology_number: Option<i32>,
-    pub etymology_text: Option<String>,
-}
-
 #[derive(Insertable)]
 #[table_name = "words"]
 pub struct NewWord {
@@ -25,20 +14,6 @@ pub struct NewWord {
     pub lang: String,
     pub etymology_number: Option<i32>,
     pub etymology_text: Option<String>,
-}
-
-#[derive(Queryable, Serialize, Debug, PartialEq)]
-// #[table_name = "related"]
-pub struct Related {
-    pub id: i32,
-    pub roman: Option<String>,
-    pub alt: Option<String>,
-    pub english: Option<String>,
-    pub sense: Option<String>,
-    pub word: Option<String>,
-    pub taxonomic: Option<String>,
-    pub qualifier: Option<String>,
-    pub extra: Option<String>,
 }
 
 #[derive(Insertable)]
@@ -54,16 +29,6 @@ pub struct NewRelated {
     pub extra: Option<String>,
 }
 
-#[derive(Queryable, Serialize, Selectable, Associations, Identifiable,  Debug, PartialEq)]
-#[diesel(belongs_to(Word))]
-pub struct Template {
-    pub id: i32,
-    pub word_id: i32,
-    pub args: Option<String>,
-    pub name: Option<String>,
-    pub expansion: Option<String>,
-}
-
 #[derive(Insertable)]
 #[table_name = "templates"]
 pub struct NewTemplate {
@@ -71,20 +36,6 @@ pub struct NewTemplate {
     pub args: String,
     pub name: Option<String>,
     pub expansion: Option<String>,
-}
-
-#[derive(Queryable, Serialize, Selectable, Identifiable, Debug, PartialEq)]
-pub struct Translation {
-    pub id: i32,
-    pub note: Option<String>,
-    pub code: Option<String>,
-    pub roman: Option<String>,
-    pub alt: Option<String>,
-    pub english: Option<String>,
-    pub sense: Option<String>,
-    pub lang: Option<String>,
-    pub word: Option<String>,
-    pub taxonomic: Option<String>,
 }
 
 #[derive(Insertable)]
@@ -101,24 +52,13 @@ pub struct NewTranslation {
     pub taxonomic: Option<String>,
 }
 
-#[derive(Queryable, Serialize, Selectable, Associations, Identifiable, Debug, PartialEq)]
-#[diesel(belongs_to(Word))]
-pub struct Sound {
-    pub id: i32,
+
+#[derive(Insertable)]
+#[diesel(primary_key(translation_id, word_id))]
+#[diesel(table_name=crate::schema::translations_words_link)]
+pub struct NewTranslationsWordsLink {
+    pub translation_id: i32,
     pub word_id: i32,
-    pub mp3_url: Option<String>,
-    pub note: Option<String>,
-    pub rhymes: Option<String>,
-    pub other: Option<String>,
-    pub enpr: Option<String>,
-    pub audio_ipa: Option<String>,
-    pub ogg_url: Option<String>,
-    pub form: Option<String>,
-    pub ipa: Option<String>,
-    pub audio: Option<String>,
-    pub text: Option<String>,
-    pub homophone: Option<String>,
-    pub zh_pron: Option<String>,
 }
 
 #[derive(Insertable)]
@@ -140,15 +80,6 @@ pub struct NewSound {
     pub zh_pron: Option<String>,
 }
 
-#[derive(Queryable, Serialize, Selectable, Debug, PartialEq)]
-pub struct Categorie {
-    pub id: i32,
-    pub langcode: Option<String>,
-    pub orig: Option<String>,
-    pub kind: Option<String>,
-    pub name: Option<String>,
-}
-
 #[derive(Insertable, AsChangeset)]
 #[table_name = "categories"]
 pub struct NewCategorie {
@@ -156,17 +87,6 @@ pub struct NewCategorie {
     pub orig: Option<String>,
     pub kind: Option<String>,
     pub name: Option<String>,
-}
-
-#[derive(Queryable, Serialize, Selectable, Associations, Debug, PartialEq)]
-#[diesel(belongs_to(Word))]
-pub struct Form {
-    pub id: i32,
-    pub word_id: i32,
-    pub form: Option<String>,
-    pub head_nr: Option<i32>,
-    pub roman: Option<String>,
-    pub ipa: Option<String>,
 }
 
 #[derive(Insertable)]
@@ -179,29 +99,11 @@ pub struct NewForm {
     pub ipa: Option<String>,
 }
 
-#[derive(Queryable, Serialize, Selectable, Associations, Identifiable, Debug, PartialEq)]
-#[diesel(belongs_to(Word))]
-#[table_name = "wikipedia"]
-pub struct Wikipedia {
-    pub id: i32,
-    pub word_id: i32,
-    pub wikipedia_link: String,
-}
-
 #[derive(Insertable)]
 #[table_name = "wikipedia"]
 pub struct NewWikipedia {
     pub word_id: i32,
     pub wikipedia_link: String,
-}
-
-#[derive(Queryable, Serialize, Selectable, Associations, Debug, PartialEq)]
-#[diesel(belongs_to(Word))]
-#[table_name = "wikidata"]
-pub struct Wikidata {
-    pub id: i32,
-    pub word_id: i32,
-    pub wikidata_link: String,
 }
 
 #[derive(Insertable)]
@@ -211,32 +113,11 @@ pub struct NewWikidata {
     pub wikidata_link: String,
 }
 
-#[derive(Queryable, Serialize, Selectable, Associations, Identifiable, Debug, PartialEq)]
-#[diesel(belongs_to(Word))]
-pub struct Hyphenation {
-    pub id: i32,
-    pub word_id: i32,
-    pub hyphenation: String,
-}
-
 #[derive(Insertable)]
 #[table_name = "hyphenations"]
 pub struct NewHyphenation {
     pub word_id: i32,
     pub hyphenation: String,
-}
-
-#[derive(Queryable, Serialize, Identifiable, Selectable, Associations, Debug, PartialEq)]
-#[diesel(belongs_to(Word))]
-pub struct Sense {
-    pub id: i32,
-    pub word_id: i32,
-    pub sense_id: Option<String>,
-    pub head_nr: Option<i32>,
-    pub taxonomic: Option<String>,
-    pub qualifier: Option<String>,
-    pub glosses: Option<String>,
-    pub raw_glosses: Option<String>,
 }
 
 #[derive(Insertable)]
@@ -251,19 +132,6 @@ pub struct NewSense {
     pub raw_glosses: Option<String>,
 }
 
-#[derive(Queryable, Serialize, Identifiable, Selectable, Associations, Debug, PartialEq)]
-#[diesel(belongs_to(Sense))]
-pub struct Example {
-    pub id: i32,
-    pub sense_id: i32,
-    pub note: Option<String>,
-    pub example_ref: Option<String>,
-    pub roman: Option<String>,
-    pub english: Option<String>,
-    pub text: Option<String>,
-    pub example_type: Option<String>,
-}
-
 #[derive(Insertable)]
 #[table_name = "examples"]
 pub struct NewExample {
@@ -276,31 +144,12 @@ pub struct NewExample {
     pub example_type: Option<String>,
 }
 
-#[derive(Queryable, Serialize, Selectable, Associations, Debug, PartialEq)]
-#[table_name = "instance"]
-#[diesel(belongs_to(Word))]
-pub struct Instance {
-    pub id: i32,
-    pub word_id: i32,
-    pub sense: Option<String>,
-    pub word: Option<String>,
-}
-
 #[derive(Insertable)]
 #[table_name = "instance"]
 pub struct NewInstance {
     pub word_id: i32,
     pub sense: Option<String>,
     pub word: Option<String>,
-}
-
-#[derive(Queryable, Serialize, Selectable, Associations, Debug, PartialEq)]
-#[diesel(belongs_to(Word))]
-pub struct Descendant {
-    pub id: i32,
-    pub word_id: i32,
-    pub depth: Option<i32>,
-    pub text: Option<String>,
 }
 
 #[derive(Insertable)]
@@ -326,34 +175,34 @@ pub struct NewDescendants {
 //     pub related_id: i32,
 //     pub links: String,
 // }
-
-
+//
+//
 #[derive(Queryable, Serialize, Selectable, Insertable, Debug, PartialEq)]
 #[table_name = "rubies"]
 pub struct Ruby {
     pub ruby: String,
 }
-
-#[derive(Queryable, Serialize, Selectable, Insertable, Debug, PartialEq)]
-pub struct Link {
-    pub link: String,
-}
-
-#[derive(Queryable, Insertable, Serialize, Selectable, Debug, PartialEq)]
-#[table_name = "tags"]
-pub struct Tag {
-    pub tag: String,
-}
-
-#[derive(Queryable, Serialize, Selectable, Insertable, Debug, PartialEq)]
-#[table_name = "topics"]
-pub struct Topic {
-    pub topic: String,
-}
-
-#[derive(Queryable, Serialize, Selectable, Insertable, Debug, PartialEq)]
-#[table_name = "urls"]
-pub struct Url {
-    pub url: String,
-}
-
+//
+//#[derive(Queryable, Serialize, Selectable, Insertable, Debug, PartialEq)]
+//pub struct Link {
+//    pub link: String,
+//}
+//
+//#[derive(Queryable, Insertable, Serialize, Selectable, Debug, PartialEq)]
+//#[table_name = "tags"]
+//pub struct Tag {
+//    pub tag: String,
+//}
+//
+//#[derive(Queryable, Serialize, Selectable, Insertable, Debug, PartialEq)]
+//#[table_name = "topics"]
+//pub struct Topic {
+//    pub topic: String,
+//}
+//
+//#[derive(Queryable, Serialize, Selectable, Insertable, Debug, PartialEq)]
+//#[table_name = "urls"]
+//pub struct Url {
+//    pub url: String,
+//}
+//

@@ -2,6 +2,7 @@ use diesel::{Insertable, Selectable};
 use diesel::Queryable;
 use crate::schema::*;
 use diesel::prelude::*;
+use crate::data::db::db_models::*;
 use crate::data::db::models::*;
 
 #[derive(Queryable, Associations, Debug, PartialEq, Insertable, AsChangeset)]
@@ -73,6 +74,7 @@ pub struct TranslationTagLink {
 // #[diesel(belongs_to(Translation))]
 #[diesel(belongs_to(Word))]
 pub struct TranslationWordLink {
+    pub id: i32,
     pub translation_id: i32,
     pub word_id: i32,
 }
@@ -116,7 +118,7 @@ pub struct SoundTopicLink {
     pub topic: String,
 }
 
-#[derive(Queryable, Associations, Debug, PartialEq, Insertable, AsChangeset)]
+#[derive(Queryable, Associations, Selectable, Debug, PartialEq, Insertable, AsChangeset)]
 #[table_name = "sound_tags"]
 #[diesel(belongs_to(Sound))]
 pub struct SoundTagLink {
@@ -299,7 +301,7 @@ pub struct NewSenseHyponymsLink {
 #[derive(Queryable, Associations, Debug, PartialEq, Insertable, AsChangeset)]
 #[table_name = "wordcategorieslink"]
 #[diesel(belongs_to(Word))]
-#[diesel(belongs_to(Categorie, foreign_key = category_id))]
+#[diesel(belongs_to(Category, foreign_key = category_id))]
 pub struct WordCategoriesLink {
     pub word_id: i32,
     pub category_id: i32,
@@ -308,7 +310,7 @@ pub struct WordCategoriesLink {
 #[derive(Queryable, Associations, Debug, PartialEq, Insertable, AsChangeset)]
 #[table_name = "sensecategorieslink"]
 #[diesel(belongs_to(Sense))]
-#[diesel(belongs_to(Categorie, foreign_key = category_id))]
+#[diesel(belongs_to(Category, foreign_key = category_id))]
 pub struct NewSenseCategoriesLink {
     pub sense_id: i32,
     pub category_id: i32,

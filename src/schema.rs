@@ -21,6 +21,7 @@ diesel::table! {
 
 diesel::table! {
     descendants_tags (descendant_id, tag) {
+        id -> Int4,
         descendant_id -> Int4,
         tag -> Text,
     }
@@ -28,6 +29,7 @@ diesel::table! {
 
 diesel::table! {
     descendants_templates (descendant_id, template_id) {
+        id -> Int4,
         descendant_id -> Int4,
         template_id -> Int4,
     }
@@ -35,6 +37,7 @@ diesel::table! {
 
 diesel::table! {
     example_ruby (example_id, ruby) {
+        id -> Int4,
         example_id -> Int4,
         ruby -> Text,
     }
@@ -66,6 +69,7 @@ diesel::table! {
 
 diesel::table! {
     forms_ruby (forms_id, ruby) {
+        id -> Int4,
         forms_id -> Int4,
         ruby -> Text,
     }
@@ -73,6 +77,7 @@ diesel::table! {
 
 diesel::table! {
     forms_tags (forms_id, tag) {
+        id -> Int4,
         forms_id -> Int4,
         tag -> Text,
     }
@@ -106,6 +111,7 @@ diesel::table! {
 
 diesel::table! {
     instance_tags (instance_id, tag) {
+        id -> Int4,
         instance_id -> Int4,
         tag -> Text,
     }
@@ -113,6 +119,7 @@ diesel::table! {
 
 diesel::table! {
     instance_topics (instance_id, topic) {
+        id -> Int4,
         instance_id -> Int4,
         topic -> Text,
     }
@@ -140,6 +147,7 @@ diesel::table! {
 
 diesel::table! {
     related_ruby (related_id, ruby) {
+        id -> Int4,
         related_id -> Int4,
         ruby -> Text,
     }
@@ -147,6 +155,7 @@ diesel::table! {
 
 diesel::table! {
     related_tags (related_id, tag) {
+        id -> Int4,
         related_id -> Int4,
         tag -> Text,
     }
@@ -154,6 +163,7 @@ diesel::table! {
 
 diesel::table! {
     related_topics (related_id, topic) {
+        id -> Int4,
         related_id -> Int4,
         topic -> Text,
     }
@@ -161,6 +171,7 @@ diesel::table! {
 
 diesel::table! {
     related_urls (related_id, url) {
+        id -> Int4,
         related_id -> Int4,
         url -> Text,
     }
@@ -174,6 +185,7 @@ diesel::table! {
 
 diesel::table! {
     sense_links (sense_id, link) {
+        id -> Int4,
         sense_id -> Int4,
         link -> Text,
     }
@@ -181,6 +193,7 @@ diesel::table! {
 
 diesel::table! {
     sense_tags (sense_id, tag) {
+        id -> Int4,
         sense_id -> Int4,
         tag -> Text,
     }
@@ -188,6 +201,7 @@ diesel::table! {
 
 diesel::table! {
     sense_topics (sense_id, topic) {
+        id -> Int4,
         sense_id -> Int4,
         topic -> Text,
     }
@@ -195,6 +209,7 @@ diesel::table! {
 
 diesel::table! {
     senseabbreviationslink (sense_id, related_id) {
+        id -> Int4,
         sense_id -> Int4,
         related_id -> Int4,
     }
@@ -202,6 +217,7 @@ diesel::table! {
 
 diesel::table! {
     sensealtoflink (sense_id, related_id) {
+        id -> Int4,
         sense_id -> Int4,
         related_id -> Int4,
     }
@@ -209,6 +225,7 @@ diesel::table! {
 
 diesel::table! {
     senseantonymslink (sense_id, related_id) {
+        id -> Int4,
         sense_id -> Int4,
         related_id -> Int4,
     }
@@ -216,6 +233,7 @@ diesel::table! {
 
 diesel::table! {
     sensecategorieslink (sense_id, category_id) {
+        id -> Int4,
         sense_id -> Int4,
         category_id -> Int4,
     }
@@ -223,6 +241,7 @@ diesel::table! {
 
 diesel::table! {
     sensecompoundoflink (sense_id, related_id) {
+        id -> Int4,
         sense_id -> Int4,
         related_id -> Int4,
     }
@@ -230,6 +249,7 @@ diesel::table! {
 
 diesel::table! {
     sensecoordinatetermslink (sense_id, related_id) {
+        id -> Int4,
         sense_id -> Int4,
         related_id -> Int4,
     }
@@ -237,6 +257,7 @@ diesel::table! {
 
 diesel::table! {
     sensederivedlink (sense_id, related_id) {
+        id -> Int4,
         sense_id -> Int4,
         related_id -> Int4,
     }
@@ -244,6 +265,7 @@ diesel::table! {
 
 diesel::table! {
     senseformoflink (sense_id, related_id) {
+        id -> Int4,
         sense_id -> Int4,
         related_id -> Int4,
     }
@@ -251,6 +273,7 @@ diesel::table! {
 
 diesel::table! {
     senseholonymslink (sense_id, related_id) {
+        id -> Int4,
         sense_id -> Int4,
         related_id -> Int4,
     }
@@ -258,6 +281,7 @@ diesel::table! {
 
 diesel::table! {
     sensehypernymslink (sense_id, related_id) {
+        id -> Int4,
         sense_id -> Int4,
         related_id -> Int4,
     }
@@ -265,6 +289,7 @@ diesel::table! {
 
 diesel::table! {
     sensehyponymslink (sense_id, related_id) {
+        id -> Int4,
         sense_id -> Int4,
         related_id -> Int4,
     }
@@ -272,6 +297,7 @@ diesel::table! {
 
 diesel::table! {
     sensemeronymslink (sense_id, related_id) {
+        id -> Int4,
         sense_id -> Int4,
         related_id -> Int4,
     }
@@ -279,6 +305,7 @@ diesel::table! {
 
 diesel::table! {
     senseproverbslink (sense_id, related_id) {
+        id -> Int4,
         sense_id -> Int4,
         related_id -> Int4,
     }
@@ -286,6 +313,7 @@ diesel::table! {
 
 diesel::table! {
     senserelatedlink (sense_id, related_id) {
+        id -> Int4,
         sense_id -> Int4,
         related_id -> Int4,
     }
@@ -306,6 +334,7 @@ diesel::table! {
 
 diesel::table! {
     sensesynonymlink (sense_id, related_id) {
+        id -> Int4,
         sense_id -> Int4,
         related_id -> Int4,
     }
@@ -313,6 +342,7 @@ diesel::table! {
 
 diesel::table! {
     sensetroponymslink (sense_id, related_id) {
+        id -> Int4,
         sense_id -> Int4,
         related_id -> Int4,
     }
@@ -320,6 +350,7 @@ diesel::table! {
 
 diesel::table! {
     sound_tags (sound_id, tag) {
+        id -> Int4,
         sound_id -> Int4,
         tag -> Text,
     }
@@ -327,6 +358,7 @@ diesel::table! {
 
 diesel::table! {
     sound_topics (sound_id, topic) {
+        id -> Int4,
         sound_id -> Int4,
         topic -> Text,
     }
@@ -376,6 +408,7 @@ diesel::table! {
 
 diesel::table! {
     translation_tags (translation_id, tag) {
+        id -> Int4,
         translation_id -> Int4,
         tag -> Text,
     }
@@ -383,6 +416,7 @@ diesel::table! {
 
 diesel::table! {
     translation_topics (translation_id, topic) {
+        id -> Int4,
         translation_id -> Int4,
         topic -> Text,
     }
@@ -405,6 +439,7 @@ diesel::table! {
 
 diesel::table! {
     translations_words_link (translation_id, word_id) {
+        id -> Int4,
         translation_id -> Int4,
         word_id -> Int4,
     }
@@ -434,6 +469,7 @@ diesel::table! {
 
 diesel::table! {
     wordabbreviationslink (word_id, related_id) {
+        id -> Int4,
         word_id -> Int4,
         related_id -> Int4,
     }
@@ -441,6 +477,7 @@ diesel::table! {
 
 diesel::table! {
     wordaltoflink (word_id, related_id) {
+        id -> Int4,
         word_id -> Int4,
         related_id -> Int4,
     }
@@ -448,6 +485,7 @@ diesel::table! {
 
 diesel::table! {
     wordantonymslink (word_id, related_id) {
+        id -> Int4,
         word_id -> Int4,
         related_id -> Int4,
     }
@@ -455,6 +493,7 @@ diesel::table! {
 
 diesel::table! {
     wordcategorieslink (word_id, category_id) {
+        id -> Int4,
         word_id -> Int4,
         category_id -> Int4,
     }
@@ -462,6 +501,7 @@ diesel::table! {
 
 diesel::table! {
     wordcompoundoflink (word_id, related_id) {
+        id -> Int4,
         word_id -> Int4,
         related_id -> Int4,
     }
@@ -469,6 +509,7 @@ diesel::table! {
 
 diesel::table! {
     wordcoordinatetermslink (word_id, related_id) {
+        id -> Int4,
         word_id -> Int4,
         related_id -> Int4,
     }
@@ -476,6 +517,7 @@ diesel::table! {
 
 diesel::table! {
     wordderivedlink (word_id, related_id) {
+        id -> Int4,
         word_id -> Int4,
         related_id -> Int4,
     }
@@ -483,6 +525,7 @@ diesel::table! {
 
 diesel::table! {
     wordformoflink (word_id, related_id) {
+        id -> Int4,
         word_id -> Int4,
         related_id -> Int4,
     }
@@ -490,6 +533,7 @@ diesel::table! {
 
 diesel::table! {
     wordholonymslink (word_id, related_id) {
+        id -> Int4,
         word_id -> Int4,
         related_id -> Int4,
     }
@@ -497,6 +541,7 @@ diesel::table! {
 
 diesel::table! {
     wordhypernymslink (word_id, related_id) {
+        id -> Int4,
         word_id -> Int4,
         related_id -> Int4,
     }
@@ -504,6 +549,7 @@ diesel::table! {
 
 diesel::table! {
     wordhyponymslink (word_id, related_id) {
+        id -> Int4,
         word_id -> Int4,
         related_id -> Int4,
     }
@@ -511,6 +557,7 @@ diesel::table! {
 
 diesel::table! {
     wordmeronymslink (word_id, related_id) {
+        id -> Int4,
         word_id -> Int4,
         related_id -> Int4,
     }
@@ -518,6 +565,7 @@ diesel::table! {
 
 diesel::table! {
     wordproverbslink (word_id, related_id) {
+        id -> Int4,
         word_id -> Int4,
         related_id -> Int4,
     }
@@ -525,6 +573,7 @@ diesel::table! {
 
 diesel::table! {
     wordrelatedlink (word_id, related_id) {
+        id -> Int4,
         word_id -> Int4,
         related_id -> Int4,
     }
@@ -544,6 +593,7 @@ diesel::table! {
 
 diesel::table! {
     wordsynonymlink (word_id, related_id) {
+        id -> Int4,
         word_id -> Int4,
         related_id -> Int4,
     }
@@ -551,6 +601,7 @@ diesel::table! {
 
 diesel::table! {
     wordtroponymslink (word_id, related_id) {
+        id -> Int4,
         word_id -> Int4,
         related_id -> Int4,
     }

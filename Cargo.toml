@@ -8,6 +8,7 @@ actix-web = "4.4.0"
 actix-rt = "2.9.0"
 async-trait = "0.1.74"
 futures = {version = "0.3.29"}
+rayon = "1.5.0"
 reqwest = { version = "0.11", features = ["json"] }
 tokio = { version = "1", features = ["full", "net"] }
 diesel = { version = "2.1.4", features = ["postgres", "r2d2", "chrono"] } # обновлено
@@ -19,6 +20,9 @@ hyper = { version = "1", features = ["full"] }
 http-body-util = "0.1"
 hyper-util = { version = "0.1", features = ["full"] }
 regex = "1.10.2"
+
+bson = "2.8.1"
+mongodb = "2.1"
 
 rand = "0.8.5"
 mime = { version = "0.3.17", features = [] }

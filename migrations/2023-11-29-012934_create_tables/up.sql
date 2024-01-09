@@ -192,6 +192,7 @@ CREATE TABLE Examples
 
 CREATE TABLE WordFormOfLink
 (
+    id           SERIAL,
     word_id    INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
@@ -201,6 +202,7 @@ CREATE TABLE WordFormOfLink
 
 CREATE TABLE WordAltOfLink
 (
+    id           SERIAL,
     word_id    INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
@@ -210,6 +212,7 @@ CREATE TABLE WordAltOfLink
 
 CREATE TABLE WordCategoriesLink
 (
+    id           SERIAL,
     word_id     INT NOT NULL,
     category_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
@@ -219,6 +222,7 @@ CREATE TABLE WordCategoriesLink
 
 CREATE TABLE WordSynonymLink
 (
+    id           SERIAL,
     word_id    INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
@@ -228,6 +232,7 @@ CREATE TABLE WordSynonymLink
 
 CREATE TABLE WordRelatedLink
 (
+    id           SERIAL,
     word_id    INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
@@ -237,6 +242,7 @@ CREATE TABLE WordRelatedLink
 
 CREATE TABLE WordDerivedLink
 (
+    id           SERIAL,
     word_id    INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
@@ -246,6 +252,7 @@ CREATE TABLE WordDerivedLink
 
 CREATE TABLE WordAntonymsLink
 (
+    id           SERIAL,
     word_id    INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
@@ -255,6 +262,7 @@ CREATE TABLE WordAntonymsLink
 
 CREATE TABLE WordHypernymsLink
 (
+    id           SERIAL,
     word_id    INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
@@ -264,6 +272,7 @@ CREATE TABLE WordHypernymsLink
 
 CREATE TABLE WordTroponymsLink
 (
+    id           SERIAL,
     word_id    INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
@@ -273,6 +282,7 @@ CREATE TABLE WordTroponymsLink
 
 CREATE TABLE WordHyponymsLink
 (
+    id           SERIAL,
     word_id    INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
@@ -282,6 +292,7 @@ CREATE TABLE WordHyponymsLink
 
 CREATE TABLE WordMeronymsLink
 (
+    id           SERIAL,
     word_id    INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
@@ -291,6 +302,7 @@ CREATE TABLE WordMeronymsLink
 
 CREATE TABLE WordHolonymsLink
 (
+    id           SERIAL,
     word_id    INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
@@ -300,6 +312,7 @@ CREATE TABLE WordHolonymsLink
 
 CREATE TABLE WordCoordinateTermsLink
 (
+    id           SERIAL,
     word_id    INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
@@ -309,6 +322,7 @@ CREATE TABLE WordCoordinateTermsLink
 
 CREATE TABLE WordProverbsLink
 (
+    id           SERIAL,
     word_id    INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
@@ -318,6 +332,7 @@ CREATE TABLE WordProverbsLink
 
 CREATE TABLE WordCompoundOfLink
 (
+    id           SERIAL,
     word_id    INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
@@ -327,6 +342,7 @@ CREATE TABLE WordCompoundOfLink
 
 CREATE TABLE SenseAltOfLink
 (
+    id           SERIAL,
     sense_id   INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
@@ -336,6 +352,7 @@ CREATE TABLE SenseAltOfLink
 
 CREATE TABLE SenseSynonymLink
 (
+    id           SERIAL,
     sense_id   INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
@@ -345,6 +362,7 @@ CREATE TABLE SenseSynonymLink
 
 CREATE TABLE SenseRelatedLink
 (
+    id           SERIAL,
     sense_id   INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
@@ -354,6 +372,7 @@ CREATE TABLE SenseRelatedLink
 
 CREATE TABLE SenseDerivedLink
 (
+    id           SERIAL,
     sense_id   INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
@@ -363,6 +382,7 @@ CREATE TABLE SenseDerivedLink
 
 CREATE TABLE SenseAntonymsLink
 (
+    id           SERIAL,
     sense_id   INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
@@ -372,6 +392,7 @@ CREATE TABLE SenseAntonymsLink
 
 CREATE TABLE SenseHypernymsLink
 (
+    id           SERIAL,
     sense_id   INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
@@ -381,6 +402,7 @@ CREATE TABLE SenseHypernymsLink
 
 CREATE TABLE SenseTroponymsLink
 (
+    id           SERIAL,
     sense_id   INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
@@ -390,6 +412,7 @@ CREATE TABLE SenseTroponymsLink
 
 CREATE TABLE SenseFormOfLink
 (
+    id           SERIAL,
     sense_id   INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
@@ -399,6 +422,7 @@ CREATE TABLE SenseFormOfLink
 
 CREATE TABLE SenseHyponymsLink
 (
+    id           SERIAL,
     sense_id   INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
@@ -408,6 +432,7 @@ CREATE TABLE SenseHyponymsLink
 
 CREATE TABLE SenseMeronymsLink
 (
+    id           SERIAL,
     sense_id   INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
@@ -417,6 +442,7 @@ CREATE TABLE SenseMeronymsLink
 
 CREATE TABLE SenseHolonymsLink
 (
+    id           SERIAL,
     sense_id   INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
@@ -426,6 +452,7 @@ CREATE TABLE SenseHolonymsLink
 
 CREATE TABLE SenseCoordinateTermsLink
 (
+    id           SERIAL,
     sense_id   INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
@@ -435,6 +462,7 @@ CREATE TABLE SenseCoordinateTermsLink
 
 CREATE TABLE SenseProverbsLink
 (
+    id           SERIAL,
     sense_id   INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
@@ -444,6 +472,7 @@ CREATE TABLE SenseProverbsLink
 
 CREATE TABLE SenseCompoundOfLink
 (
+    id           SERIAL,
     sense_id   INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
@@ -453,6 +482,7 @@ CREATE TABLE SenseCompoundOfLink
 
 CREATE TABLE SenseCategoriesLink
 (
+    id           SERIAL,
     sense_id    INT NOT NULL,
     category_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
@@ -542,6 +572,7 @@ CREATE INDEX idx_sense_compound_of_link_compound_of_id ON SenseCompoundofLink (r
 
 CREATE TABLE WordAbbreviationsLink
 (
+    id           SERIAL,
     word_id    INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (word_id) REFERENCES Words (id),
@@ -554,6 +585,7 @@ CREATE INDEX idx_word_abbreviations_link_abbreviations_id ON WordAbbreviationsLi
 
 CREATE TABLE SenseAbbreviationsLink
 (
+    id           SERIAL,
     sense_id   INT NOT NULL,
     related_id INT NOT NULL,
     FOREIGN KEY (sense_id) REFERENCES Senses (id),
@@ -567,6 +599,7 @@ CREATE INDEX idx_sense_abbreviations_link_abbreviations_id ON SenseAbbreviations
 -- Создание таблиц связей many-to-many
 CREATE TABLE related_tags
 (
+    id           SERIAL,
     related_id INT,
     tag        TEXT,
     PRIMARY KEY (related_id, tag),
@@ -576,6 +609,7 @@ CREATE TABLE related_tags
 
 CREATE TABLE related_urls
 (
+    id           SERIAL,
     related_id INT,
     url        TEXT,
     PRIMARY KEY (related_id, url),
@@ -585,6 +619,7 @@ CREATE TABLE related_urls
 
 CREATE TABLE related_topics
 (
+    id           SERIAL,
     related_id INT,
     topic      TEXT,
     PRIMARY KEY (related_id, topic),
@@ -594,6 +629,7 @@ CREATE TABLE related_topics
 
 CREATE TABLE related_ruby
 (
+    id           SERIAL,
     related_id INT,
     ruby       TEXT,
     PRIMARY KEY (related_id, ruby),
@@ -603,6 +639,7 @@ CREATE TABLE related_ruby
 
 CREATE TABLE forms_tags
 (
+    id           SERIAL,
     forms_id INT,
     tag      TEXT,
     PRIMARY KEY (forms_id, tag),
@@ -612,6 +649,7 @@ CREATE TABLE forms_tags
 
 CREATE TABLE forms_ruby
 (
+    id           SERIAL,
     forms_id INT,
     ruby     TEXT,
     PRIMARY KEY (forms_id, ruby),
@@ -621,6 +659,7 @@ CREATE TABLE forms_ruby
 
 CREATE TABLE translation_tags
 (
+    id           SERIAL,
     translation_id INT,
     tag            TEXT,
     PRIMARY KEY (translation_id, tag),
@@ -630,6 +669,7 @@ CREATE TABLE translation_tags
 
 CREATE TABLE translation_topics
 (
+    id           SERIAL,
     translation_id INT,
     topic          TEXT,
     PRIMARY KEY (translation_id, topic),
@@ -649,6 +689,7 @@ CREATE INDEX idx_related_topics_topic ON related_topics (topic);
 
 CREATE TABLE instance_tags
 (
+    id           SERIAL,
     instance_id INT NOT NULL,
     tag         TEXT,
     PRIMARY KEY (instance_id, tag),
@@ -658,6 +699,7 @@ CREATE TABLE instance_tags
 
 CREATE TABLE instance_topics
 (
+    id           SERIAL,
     instance_id INT NOT NULL,
     topic       TEXT NOT NULL,
     PRIMARY KEY (instance_id, topic),
@@ -667,6 +709,7 @@ CREATE TABLE instance_topics
 
 CREATE TABLE sound_tags
 (
+    id           SERIAL,
     sound_id INT NOT NULL,
     tag      TEXT NOT NULL,
     PRIMARY KEY (sound_id, tag),
@@ -676,6 +719,7 @@ CREATE TABLE sound_tags
 
 CREATE TABLE sound_topics
 (
+    id           SERIAL,
     sound_id INT NOT NULL,
     topic    TEXT NOT NULL,
     PRIMARY KEY (sound_id, topic),
@@ -685,6 +729,7 @@ CREATE TABLE sound_topics
 
 CREATE TABLE example_ruby
 (
+    id           SERIAL,
     example_id INT NOT NULL,
     ruby       TEXT NOT NULL,
     PRIMARY KEY (example_id, ruby),
@@ -694,6 +739,7 @@ CREATE TABLE example_ruby
 
 CREATE TABLE descendants_tags
 (
+    id           SERIAL,
     descendant_id INT NOT NULL,
     tag           TEXT NOT NULL,
     PRIMARY KEY (descendant_id, tag),
@@ -703,6 +749,7 @@ CREATE TABLE descendants_tags
 
 CREATE TABLE descendants_templates
 (
+    id           SERIAL,
     descendant_id INT NOT NULL,
     template_id   INT NOT NULL,
     PRIMARY KEY (descendant_id, template_id),
@@ -721,6 +768,7 @@ CREATE TABLE descendants_templates
 
 CREATE TABLE sense_tags
 (
+    id           SERIAL,
     sense_id INT NOT NULL,
     tag      TEXT NOT NULL,
     PRIMARY KEY (sense_id, tag),
@@ -730,6 +778,7 @@ CREATE TABLE sense_tags
 
 CREATE TABLE sense_topics
 (
+    id           SERIAL,
     sense_id INT NOT NULL,
     topic    TEXT NOT NULL,
     PRIMARY KEY (sense_id, topic),
@@ -739,6 +788,7 @@ CREATE TABLE sense_topics
 
 CREATE TABLE sense_links
 (
+    id           SERIAL,
     sense_id INT NOT NULL,
     link     TEXT NOT NULL,
     PRIMARY KEY (sense_id, link),
@@ -760,6 +810,7 @@ CREATE INDEX idx_sound_topics_topic ON sound_topics (topic);
 
 CREATE TABLE translations_words_link
 (
+    id           SERIAL,
     translation_id INTEGER NOT NULL,
     word_id INTEGER NOT NULL,
     PRIMARY KEY (translation_id, word_id),

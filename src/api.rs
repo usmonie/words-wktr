@@ -1,12 +1,17 @@
-use std::{path::Path, time::Instant};
+use std::{path::Path, thread, time::Instant};
 use std::sync::Arc;
 
 use actix_web::{App, error, get, HttpResponse, HttpServer, Responder, web};
+use futures::future::join_all;
+use rayon::join;
 use serde::Deserialize;
+use tokio::join;
 use tokio::sync::Mutex;
 
-use crate::domain::use_cases::{ImportJsonDictionary, SearchWords};
+use crate::domain::use_cases::{SearchWords};
 use crate::data::dictionary_repository::DieselDictionaryRepository;
+use crate::domain::import_dictionary::ImportJsonDictionary;
+use crate::domain::import_words::ImportWordsDictionary;
 use crate::domain::use_cases::RandomWord;
 
 #[get("/dictionary/search")]
@@ -29,6 +34,7 @@ async fn search_words(data: web::Data<AppState>, info: web::Query<QueryParams>) 
 
 #[get("/dictionary/random_word")]
 async fn random_word(data: web::Data<AppState>, info: web::Query<RandomParams>) -> impl Responder {
+    println!("random_word");
     let start = Instant::now();
     let random_word_use_case = &data.random_word;
 
@@ -57,9 +63,10 @@ struct AppState {
 
 pub async fn launch_server() -> std::io::Result<()> {
     // start_parsing().await;
+    // find_words().await;
+    println!("launch server");
     HttpServer::new(move || {
-
-        let dictionary_repo = Arc::new(Mutex::new(DieselDictionaryRepository::new("postgres://postgres:admin@localhost:5432/words")));
+        let dictionary_repo = Arc::new(Mutex::new(DieselDictionaryRepository::new("postgres://postgres:admin@localhost:5433/word")));
         let app_state = web::Data::new(AppState {
             search_words: SearchWords::new(dictionary_repo.clone()),
             random_word: RandomWord::new(dictionary_repo.clone()),
@@ -85,6 +92,7 @@ pub async fn launch_server() -> std::io::Result<()> {
         .run()
         .await
         .expect("Error starting server");
+    println!("start server");
     Ok(())
 }
 
@@ -95,12 +103,81 @@ pub async fn launch_server() -> std::io::Result<()> {
  **/
 async fn start_parsing() {
     println!("parsing started");
-    let file_path = Path::new("/home/ubuntu/kaikki.org-dictionary-English.json");
-    let dictionary_repo = DieselDictionaryRepository::new("postgres://postgres:admin@localhost:5432/words");
-    let mut importer = ImportJsonDictionary::new(dictionary_repo, file_path);
+    let file_paths = vec![
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.aa"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ab"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ac"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ad"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ae"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.af"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ag"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ah"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ai"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.aj"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ak"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.al"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.am"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.an"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ao"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ap"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.aq"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ar"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.as"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.at"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.au"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.av"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.aw"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ax"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.ay"),
+        Path::new("/Users/usmanakhmedov/IdeaProjects/words-wktr/file.az"),
+    ];
+
+    // for file_path in file_paths {
+    //     thread::spawn(move || async move {
+    //          tokio::spawn(async move {
+    //             println!("path {:?}", &file_path);
+    //             let dictionary_repo = DieselDictionaryRepository::new("postgres://postgres:admin@localhost:5433/word");
+    //             let mut importer = ImportJsonDictionary::new(dictionary_repo, file_path);
+    //
+    //             match importer.execute().await {
+    //                 Ok(_) => println!("Successfully parsed the JSON file."),
+    //                 Err(e) => eprintln!("Error {:?}", e),
+    //             }
+    //         }).await
+    //     });
+    // }
+    let join_handles = file_paths
+        .into_iter()
+        .map(|file_path| {
+            tokio::spawn(async move {
+                println!("path {:?}", &file_path);
+                let dictionary_repo = DieselDictionaryRepository::new("postgres://postgres:admin@localhost:5433/word");
+                let mut importer = ImportJsonDictionary::new(dictionary_repo, file_path);
+
+                match importer.execute().await {
+                    Ok(_) => println!("Successfully parsed the JSON file."),
+                    Err(e) => eprintln!("Error {:?}", e),
+                }
+            })
+        })
+        .collect::<Vec<_>>();
+
+    join_all(join_handles).await;
+}
+
+/**
+ *
+ * Parsing wiktionary json
+ *
+ **/
+async fn find_words() {
+    println!("find words started");
+    let file_path = Path::new("/Users/usmanakhmedov/Downloads/Oxford 5000.txt");
+    let dictionary_repo = DieselDictionaryRepository::new("postgres://postgres:admin@localhost:5433/word");
+    let mut importer = ImportWordsDictionary::new(dictionary_repo, file_path);
 
     match importer.execute().await {
-        Ok(_) => println!("Successfully parsed the JSON file."),
+        Ok(_) => println!("Successfully parsed the TXT file."),
         Err(e) => eprintln!("Error {:?}", e),
     }
 }
