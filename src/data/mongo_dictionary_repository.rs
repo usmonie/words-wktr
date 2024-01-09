@@ -3,8 +3,8 @@ use crate::domain::Error;
 use std::sync::Arc;
 use bson::doc;
 use futures::lock::Mutex;
-use futures::TryStreamExt;
-use mongodb::{Client, Cursor, Database};
+use futures::{StreamExt, TryStreamExt};
+use mongodb::{Client, Collection, Cursor, Database};
 use mongodb::options::ClientOptions;
 use crate::domain::models::Word;
 
@@ -34,7 +34,7 @@ impl DictionaryRepository for MongoDictionaryRepository {
         Ok(())
     }
 
-    async fn find_exactly(&self, word: &str) -> Result<Option<Vec<crate::domain::models::Word>>, Error> {
+    async fn find_exactly(&self, word: &str) -> Result<Option<Vec<Word>>, Error> {
         let database = self.database.clone();
         let database = database.lock().await;
 
@@ -68,15 +68,32 @@ impl DictionaryRepository for MongoDictionaryRepository {
     async fn random_word(&self, max_symbols: u32) -> Word {
         let database = self.database.clone();
         let database = database.lock().await;
-        let collection = database.collection("words");
+        let collection: Collection<Word> = database.collection("words");
         println!("{}", collection.count_documents(doc! {}, None).await.unwrap());
         // Query MongoDB for a random word with length less than or equal to the specified maximum symbols
-        let filter = doc! {"$where": format!("this.word.length <= {}", max_symbols)};
-        let cursor = collection.find(filter, None).await.unwrap();
-        let result: Vec<Word> = cursor.try_collect().await.unwrap();
+        let reg = format!("^.{{{}, {}}}$", 5, max_symbols);
+        let pipeline = vec![
+            doc! {
+                "$match": {
+                  "$expr": {
+                    "$and": [
+                      { "$gt": [{ "$strLenCP": "$word" }, 5] },  // Filter by word size greater than 5
+                      { "$lt": [{ "$strLenCP": "$word" }, max_symbols] },  // Filter by word size less than max_symbols
+                      { "$gt": [{ "$size": "$senses" }, 2] }  // Filter by senses_array size greater than 2
+                    ]
+                  }
+                },
+            },
+            doc! {
+                "$sample": {
+                    "size": 1
+                }
+            },
+        ];
 
-        // Return a random word if there are matching words, otherwise return None
-        let random_index = rand::random::<usize>() % result.len();
-        result[random_index].clone()
+        let mut cursor = collection.aggregate(pipeline, None).await.unwrap();
+        let result = cursor.try_next().await.unwrap().unwrap();
+        let word: Word = bson::from_document(result).unwrap();
+        return word;
     }
 }
