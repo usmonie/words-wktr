@@ -1,3 +1,5 @@
+#![allow(unused_mut)]
+
 use crate::domain::use_cases::DictionaryRepository;
 use crate::domain::Error;
 use std::sync::Arc;
@@ -39,19 +41,14 @@ impl DictionaryRepository for MongoDictionaryRepository {
         let database = database.lock().await;
 
         let collection = database.collection("words");
-        println!("{}", collection.count_documents(doc! {}, None).await.unwrap());
-
-        let mut words: Cursor<Word> = collection
+        let cursor: Cursor<Word> = collection
             .find(doc! { "word": word }, None)
             .await
             .expect("");
 
-        let mut items: Vec<Word> = vec![];
-        while let Some(word_result) = words.try_next().await.expect("") {
-            items.push(word_result)
-        }
+        let result: Vec<Word> = cursor.try_collect().await.unwrap();
 
-        return Ok(Some(items));
+        return Ok(Some(result));
     }
 
     async fn find(&self, word: &str) -> Result<Option<Vec<Word>>, Error> {
@@ -69,7 +66,6 @@ impl DictionaryRepository for MongoDictionaryRepository {
         let database = self.database.clone();
         let database = database.lock().await;
         let collection: Collection<Word> = database.collection("words");
-        println!("{}", collection.count_documents(doc! {}, None).await.unwrap());
         // Query MongoDB for a random word with length less than or equal to the specified maximum symbols
         let pipeline = vec![
             doc! {
