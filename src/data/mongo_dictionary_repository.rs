@@ -38,14 +38,15 @@ impl DictionaryRepository for MongoDictionaryRepository {
         let database = self.database.clone();
         let database = database.lock().await;
 
+        let collection = database.collection("words");
+        println!("{}", collection.count_documents(doc! {}, None).await.unwrap());
 
-        let mut words: Cursor<crate::domain::models::Word> = database
-            .collection("words")
+        let mut words: Cursor<Word> = collection
             .find(doc! { "word": word }, None)
             .await
             .expect("");
 
-        let mut items: Vec<crate::domain::models::Word> = vec![];
+        let mut items: Vec<Word> = vec![];
         while let Some(word_result) = words.try_next().await.expect("") {
             items.push(word_result)
         }
