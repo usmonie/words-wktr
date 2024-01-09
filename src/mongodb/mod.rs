@@ -12,11 +12,11 @@ pub async fn store_words(mongo: Database, words: Vec<Word>) {
 }
 
 pub async fn store() {
-    let file = File::open("/home/ubuntu/kaikki.org-dictionary-English.json")
+    let file = File::open("/Users/usmanakhmedov/Downloads/kaikki.org-dictionary-English.json")
         .expect("Failed to open a file.");
     let reader = BufReader::new(file);
 
-    let mut items: Vec<Word> = Vec::with_capacity(10_000);
+    let mut items: Vec<Word> = Vec::with_capacity(100_000);
 
     let deserializer = serde_json::Deserializer::from_reader(reader).into_iter::<Word>();
 
@@ -24,19 +24,30 @@ pub async fn store() {
     let options = ClientOptions::parse("mongodb://localhost:27017").await.unwrap();
     let client = Client::with_options(options).unwrap();
 
+    let database = client.database("words");
+    database.drop(None).await.unwrap();
     for entry in deserializer {
+        let database = database.clone();
         let entry = entry.expect("Invalid JSON");
 
         items.push(entry);
 
-        if items.len() > 50_000 {
+        if items.len() > 100_000 {
             println!("INSERT START");
 
             count += items.len();
-            store_words(client.database("words"), std::mem::take(&mut items)).await;
+            store_words(database, std::mem::take(&mut items)).await;
             println!("INSERTED {}", count);
             items.clear()
         }
+    }
+
+
+    if !items.is_empty() {
+        count += items.len();
+        store_words(client.database("words"), std::mem::take(&mut items)).await;
+        println!("INSERTED {}", count);
+        items.clear()
     }
 }
 
