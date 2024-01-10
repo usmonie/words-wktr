@@ -3,11 +3,9 @@
 use crate::domain::use_cases::DictionaryRepository;
 use crate::domain::Error;
 use std::sync::Arc;
-use std::time::Instant;
-use actix_web::web::BufMut;
 use bson::doc;
 use futures::lock::Mutex;
-use futures::{StreamExt, TryStreamExt};
+use futures::{TryStreamExt};
 use mongodb::{Client, Collection, Cursor, Database};
 use mongodb::options::ClientOptions;
 use crate::domain::models::Word;
