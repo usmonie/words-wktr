@@ -3,6 +3,8 @@
 use crate::domain::use_cases::DictionaryRepository;
 use crate::domain::Error;
 use std::sync::Arc;
+use std::time::Instant;
+use actix_web::web::BufMut;
 use bson::doc;
 use futures::lock::Mutex;
 use futures::{StreamExt, TryStreamExt};
@@ -63,11 +65,18 @@ impl DictionaryRepository for MongoDictionaryRepository {
     }
 
     async fn random_word(&self, max_symbols: u32) -> Word {
+        let start = Instant::now();
+
         let database = self.database.clone();
         let database = database.lock().await;
         let collection: Collection<Word> = database.collection("words");
         // Query MongoDB for a random word with length less than or equal to the specified maximum symbols
         let pipeline = vec![
+            doc! {
+                "$sample": {
+                    "size": 1300
+                },
+            },
             doc! {
                 "$match": {
                   "$expr": {
@@ -77,18 +86,19 @@ impl DictionaryRepository for MongoDictionaryRepository {
                       { "$gt": [{ "$size": "$senses" }, 2] }  // Filter by senses_array size greater than 2
                     ]
                   }
-                },
-            },
-            doc! {
-                "$sample": {
-                    "size": 1
                 }
             },
         ];
 
         let mut cursor = collection.aggregate(pipeline, None).await.unwrap();
         let result = cursor.try_next().await.unwrap().unwrap();
+
+        let duration = start.elapsed();
+        println!("Time elapsed in expensive_function() is: {:?}", duration);
         let word: Word = bson::from_document(result).unwrap();
+
+        let duration = start.elapsed();
+        println!("End Time elapsed in expensive_function() is: {:?}", duration);
         return word;
     }
 }
