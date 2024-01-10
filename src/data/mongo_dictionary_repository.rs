@@ -65,8 +65,6 @@ impl DictionaryRepository for MongoDictionaryRepository {
     }
 
     async fn random_word(&self, max_symbols: u32) -> Word {
-        let start = Instant::now();
-
         let database = self.database.clone();
         let database = database.lock().await;
         let collection: Collection<Word> = database.collection("words");
@@ -93,12 +91,7 @@ impl DictionaryRepository for MongoDictionaryRepository {
         let mut cursor = collection.aggregate(pipeline, None).await.unwrap();
         let result = cursor.try_next().await.unwrap().unwrap();
 
-        let duration = start.elapsed();
-        println!("Time elapsed in expensive_function() is: {:?}", duration);
         let word: Word = bson::from_document(result).unwrap();
-
-        let duration = start.elapsed();
-        println!("End Time elapsed in expensive_function() is: {:?}", duration);
         return word;
     }
 }
