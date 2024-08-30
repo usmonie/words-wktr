@@ -8,8 +8,8 @@
     "etymology_templates": [
       {
         "args": {
+          "3": "*gÊ°edÊ°-",
           "2": "ine-pro",
-          "3": "*gʰedʰ-",
           "1": "en"
         },
         "name": "root",
@@ -26,61 +26,61 @@
       },
       {
         "args": {
-          "1": "en",
           "2": "ang",
-          "3": "gōd"
-        },
-        "name": "inh",
-        "expansion": "Old English gōd"
-      },
-      {
-        "args": {
-          "3": "*gōd",
-          "2": "gmw-pro",
+          "3": "gÅd",
           "1": "en"
         },
         "name": "inh",
-        "expansion": "Proto-West Germanic *gōd"
-      },
-      {
-        "args": {
-          "2": "gem-pro",
-          "3": "*gōdaz",
-          "1": "en"
-        },
-        "name": "inh",
-        "expansion": "Proto-Germanic *gōdaz"
+        "expansion": "Old English gÅd"
       },
       {
         "args": {
           "1": "en",
-          "2": "ine-pro",
-          "5": "to unite, be associated, suit",
+          "2": "gmw-pro",
+          "3": "*gÅd"
+        },
+        "name": "inh",
+        "expansion": "Proto-West Germanic *gÅd"
+      },
+      {
+        "args": {
+          "3": "*gÅdaz",
+          "1": "en",
+          "2": "gem-pro"
+        },
+        "name": "inh",
+        "expansion": "Proto-Germanic *gÅdaz"
+      },
+      {
+        "args": {
+          "1": "en",
           "4": "",
-          "3": "*gʰedʰ-"
+          "2": "ine-pro",
+          "3": "*gÊ°edÊ°-",
+          "5": "to unite, be associated, suit"
         },
         "name": "der",
-        "expansion": "Proto-Indo-European *gʰedʰ- (“to unite, be associated, suit”)"
-      },
-      {
-        "args": {
-          "1": "ru",
-          "2": "го́дный",
-          "4": "fit, well-suited, good for; (coll.) good",
-          "3": ""
-        },
-        "name": "cog",
-        "expansion": "Russian го́дный (gódnyj, “fit, well-suited, good for; (coll.) good”)"
+        "expansion": "Proto-Indo-European *gÊ°edÊ°- (â€œto unite, be associated, suitâ€)"
       },
       {
         "args": {
           "3": "",
           "1": "ru",
-          "2": "год",
+          "4": "fit, well-suited, good for; (coll.) good",
+          "2": "Ð³Ð¾ÌÐ´Ð½Ñ‹Ð¹"
+        },
+        "name": "cog",
+        "expansion": "Russian Ð³Ð¾ÌÐ´Ð½Ñ‹Ð¹ (gÃ³dnyj, â€œfit, well-suited, good for; (coll.) goodâ€)"
+      },
+      {
+        "args": {
+          "3": "",
+          "2": "Ð³Ð¾Ð´",
+          "1": "ru",
           "4": ""
         },
         "name": "m",
-        "expansion": "год (god)"
+        "expansion": "Ð³Ð¾Ð´ (god)"
       },
       {
         "args": {
@@ -92,16 +92,16 @@
       },
       {
         "args": {
-          "2": "together",
-          "1": "en"
+          "1": "en",
+          "2": "together"
         },
         "name": "m",
         "expansion": "together"
       },
       {
         "args": {
-          "1": "en",
-          "2": "god"
+          "2": "god",
+          "1": "en"
         },
         "name": "m",
         "expansion": "god"
@@ -116,8 +116,8 @@
       },
       {
         "args": {
-          "1": "enm",
-          "2": "bon"
+          "2": "bon",
+          "1": "enm"
         },
         "name": "ncog",
         "expansion": "Middle English bon"
@@ -140,33 +140,33 @@
       },
       {
         "args": {
-          "1": "enm",
+          "2": "boun",
           "t": "good",
-          "2": "boun"
+          "1": "enm"
         },
         "name": "m",
-        "expansion": "boun (“good”)"
+        "expansion": "boun (â€œgoodâ€)"
       },
       {
         "args": {
-          "2": "bon",
           "t": "good",
-          "1": "fro"
+          "1": "fro",
+          "2": "bon"
         },
         "name": "ncog",
-        "expansion": "Old French bon (“good”)"
+        "expansion": "Old French bon (â€œgoodâ€)"
       },
       {
         "args": {
-          "1": "la",
-          "2": "bōnus",
-          "t": "good"
+          "t": "good",
+          "2": "bonus",
+          "1": "la"
         },
         "name": "ncog",
-        "expansion": "Latin bōnus (“good”)"
+        "expansion": "Latin bonus (â€œgoodâ€)"
       }
     ],
-    "etymology_text": "From Middle English good, from Old English gōd, from Proto-West Germanic *gōd, from Proto-Germanic *gōdaz, from Proto-Indo-European *gʰedʰ- (“to unite, be associated, suit”). Cognate with Russian го́дный (gódnyj, “fit, well-suited, good for; (coll.) good”), год (god), \"year\", via \"suitable time\". Related to gather and together, but not to god/God. Eclipsed non-native Middle English bon, bone, boon, boun (“good”) borrowed from Old French bon (“good”), from Latin bōnus (“good”).",
+    "etymology_text": "From Middle English good, from Old English gÅd, from Proto-West Germanic *gÅd, from Proto-Germanic *gÅdaz, from Proto-Indo-European *gÊ°edÊ°- (â€œto unite, be associated, suitâ€). Cognate with Russian Ð³Ð¾ÌÐ´Ð½Ñ‹Ð¹ (gÃ³dnyj, â€œfit, well-suited, good for; (coll.) goodâ€), Ð³Ð¾Ð´ (god), \"year\", via \"suitable time\". Related to gather and together, but not to god/God. Eclipsed non-native Middle English bon, bone, boon, boun (â€œgoodâ€) borrowed from Old French bon (â€œgoodâ€), from Latin bonus (â€œgoodâ€).",
     "forms": [
       {
         "form": "better",
@@ -189,10 +189,10 @@
         "translations": [
           {
             "code": "ady",
-            "roman": "šʷʼu",
+            "roman": "Å¡Ê·Ê¼u",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Adyghe",
-            "word": "шӏу"
+            "word": "ÑˆÓÑƒ"
           },
           {
             "code": "af",
@@ -204,14 +204,14 @@
             "code": "sq",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Albanian",
-            "word": "mirë"
+            "word": "mirÃ«"
           },
           {
             "code": "avd",
             "roman": "vader",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Alviri-Vidari",
-            "word": "ودر",
+            "word": "ÙˆØ¯Ø±",
             "tags": [
               "Vidari"
             ]
@@ -236,38 +236,45 @@
           },
           {
             "code": "am",
-            "roman": "ṭəru",
+            "roman": "á¹­É™ru",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Amharic",
-            "word": "ጥሩ"
+            "word": "áŒ¥áˆ©"
           },
           {
             "code": "ar",
-            "roman": "ḥasan",
+            "roman": "á¸¥asan",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Arabic",
-            "word": "حَسَن"
+            "word": "Ø­ÙŽØ³ÙŽÙ†"
           },
           {
             "code": "ar",
             "roman": "jayyid",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Arabic",
-            "word": "جَيِّد"
+            "word": "Ø¬ÙŽÙŠÙÙ‘Ø¯"
           },
           {
             "code": "ar",
-            "roman": "ṭayyib",
+            "roman": "á¹­ayyib",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Arabic",
-            "word": "طَيِّب"
+            "word": "Ø·ÙŽÙŠÙÙ‘Ø¨"
+          },
+          {
+            "code": "ar",
+            "roman": "á¹£Äliá¸¥",
+            "sense": "acting in the interest of good; ethical good intentions",
+            "lang": "Arabic",
+            "word": "ØµÙŽØ§Ù„ÙØ­"
           },
           {
             "code": "ar",
             "roman": "kwayyes",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Arabic",
-            "word": "كويس",
+            "word": "ÙƒÙˆÙŠØ³",
             "tags": [
               "Egyptian-Arabic"
             ]
@@ -277,27 +284,27 @@
             "roman": "mazyan",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Arabic",
-            "word": "مزِيان",
+            "word": "Ù…Ø²ÙÙŠØ§Ù†",
             "tags": [
               "Moroccan-Arabic"
             ]
           },
           {
             "code": "ar",
-            "roman": "mliḥ",
+            "roman": "mliá¸¥",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Arabic",
-            "word": "ملِيح",
+            "word": "Ù…Ù„ÙÙŠØ­",
             "tags": [
               "Moroccan-Arabic"
             ]
           },
           {
             "code": "ar",
-            "roman": "mnīḥ",
+            "roman": "mnÄ«á¸¥",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Arabic",
-            "word": "منيح",
+            "word": "Ù…Ù†ÙŠØ­",
             "tags": [
               "North-Levantine-Arabic"
             ]
@@ -307,7 +314,7 @@
             "roman": "tayyeb",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Arabic",
-            "word": "طَيِّب",
+            "word": "Ø·ÙŽÙŠÙÙ‘Ø¨",
             "tags": [
               "South-Levantine-Arabic"
             ]
@@ -317,54 +324,54 @@
             "roman": "kwayyes",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Arabic",
-            "word": "كويس",
+            "word": "ÙƒÙˆÙŠØ³",
             "tags": [
               "South-Levantine-Arabic"
             ]
           },
           {
             "code": "ar",
-            "roman": "mnīḥ",
+            "roman": "mnÄ«á¸¥",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Arabic",
-            "word": "منيح",
+            "word": "Ù…Ù†ÙŠØ­",
             "tags": [
               "South-Levantine-Arabic"
             ]
           },
           {
             "code": "aeb",
-            "roman": "bāhi",
+            "roman": "bÄhi",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Tunisian Arabic",
-            "word": "باهي"
+            "word": "Ø¨Ø§Ù‡ÙŠ"
           },
           {
             "code": "arc",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Aramaic",
-            "word": "טבא"
+            "word": "×˜×‘×"
           },
           {
             "code": "agj",
-            "roman": "ṭeru",
+            "roman": "á¹­eru",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Argobba",
-            "word": "ጥሩ"
+            "word": "áŒ¥áˆ©"
           },
           {
             "code": "hy",
             "roman": "lav",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Armenian",
-            "word": "լավ"
+            "word": "Õ¬Õ¡Õ¾"
           },
           {
             "code": "hy",
             "roman": "bari",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Armenian",
-            "word": "բարի"
+            "word": "Õ¢Õ¡Ö€Õ«"
           },
           {
             "code": "rup",
@@ -379,7 +386,7 @@
             "code": "rup",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Aromanian",
-            "word": "bunã",
+            "word": "bunÃ£",
             "tags": [
               "feminine"
             ]
@@ -389,7 +396,7 @@
             "roman": "bhal",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Assamese",
-            "word": "ভাল"
+            "word": "à¦­à¦¾à¦²"
           },
           {
             "code": "ast",
@@ -401,7 +408,7 @@
             "code": "az",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Azerbaijani",
-            "word": "yaxşı"
+            "word": "yaxÅŸÄ±"
           },
           {
             "code": "az",
@@ -413,35 +420,35 @@
             "code": "az",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Azerbaijani",
-            "word": "xoş"
+            "word": "xoÅŸ"
           },
           {
             "code": "ba",
-            "roman": "yaqşı",
+            "roman": "yaqÅŸÄ±",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Bashkir",
-            "word": "яҡшы"
+            "word": "ÑÒ¡ÑˆÑ‹"
           },
           {
             "code": "be",
-            "roman": "dóbry",
+            "roman": "dÃ³bry",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Belarusian",
-            "word": "до́бры"
+            "word": "Ð´Ð¾ÌÐ±Ñ€Ñ‹"
           },
           {
             "code": "bn",
             "roman": "bhal",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Bengali",
-            "word": "ভাল"
+            "word": "à¦­à¦¾à¦²"
           },
           {
             "code": "bn",
             "roman": "nek",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Bengali",
-            "word": "নেক"
+            "word": "à¦¨à§‡à¦•"
           },
           {
             "code": "bcl",
@@ -451,24 +458,24 @@
           },
           {
             "code": "bg",
-            "roman": "dobǎ́r",
+            "roman": "dobÇŽÌr",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Bulgarian",
-            "word": "добъ́р"
+            "word": "Ð´Ð¾Ð±ÑŠÌÑ€"
           },
           {
             "code": "my",
             "roman": "kaung:",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Burmese",
-            "word": "ကောင်း"
+            "word": "á€€á€±á€¬á€„á€ºá€¸"
           },
           {
             "code": "bua",
             "roman": "hajn",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Buryat",
-            "word": "һайн"
+            "word": "Ò»Ð°Ð¹Ð½"
           },
           {
             "code": "ca",
@@ -505,7 +512,7 @@
             "roman": "dika",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Chechen",
-            "word": "дика"
+            "word": "Ð´Ð¸ÐºÐ°"
           },
           {
             "code": "cic",
@@ -518,38 +525,38 @@
             "roman": "ho",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Chinese",
-            "word": "хо",
+            "word": "Ñ…Ð¾",
             "tags": [
               "Dungan"
             ]
           },
           {
             "code": "zh",
-            "roman": "hǎo",
+            "roman": "hÇŽo",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Chinese Mandarin",
-            "word": "好"
+            "word": "å¥½"
           },
           {
             "code": "zh",
-            "roman": "liáng",
+            "roman": "liÃ¡ng",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Chinese Mandarin",
-            "word": "良"
+            "word": "è‰¯"
           },
           {
-            "ce": "cdo",
+            "code": "cdo",
             "roman": "ho",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Min Dong Chinese",
-            "word": "好"
+            "word": "å¥½"
           },
           {
             "code": "cop",
             "roman": "agathos",
-            "sense": "acting in theinterest of good; ethical good intentions",
+            "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Coptic",
-            "word": "ⲁⲅⲁⲑⲟⲥ",
+            "word": "â²â²…â²â²‘â²Ÿâ²¥",
             "tags": [
               "Bohairic",
               "Sahidic"
@@ -559,7 +566,7 @@
             "code": "cs",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Czech",
-            "word": "dobrý"
+            "word": "dobrÃ½"
           },
           {
             "code": "dlm",
@@ -611,7 +618,7 @@
           },
           {
             "code": "egy",
-            "roman": "mꜣꜥ",
+            "roman": "mêœ£êœ¥",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Egyptian",
             "word": "mA-mAa:a:Y1"
@@ -621,6 +628,20 @@
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Erromintxela",
             "word": "latxo"
+          },
+          {
+            "code": "myv",
+            "roman": "paro",
+            "sense": "acting in the interest of good; ethical good intentions",
+            "lang": "Erzya",
+            "word": "Ð¿Ð°Ñ€Ð¾"
+          },
+          {
+            "code": "myv",
+            "roman": "vadÅ•a",
+            "sense": "acting in the interest of good; ethical good intentions",
+            "lang": "Erzya",
+            "word": "Ð²Ð°Ð´Ñ€Ñ"
           },
           {
             "code": "eo",
@@ -639,7 +660,7 @@
             "roman": "aja",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Evenki",
-            "word": "ая"
+            "word": "Ð°Ñ"
           },
           {
             "code": "xfa",
@@ -651,18 +672,18 @@
             "code": "fo",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Faroese",
-            "word": "góður"
+            "word": "gÃ³Ã°ur"
           },
           {
             "code": "fi",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Finnish",
-            "word": "hyvä"
+            "word": "hyvÃ¤"
           },
           {
             "code": "frp",
             "sense": "acting in the interest of good; ethical good intentions",
-            "lang": "Franco-Provençal",
+            "lang": "Franco-ProvenÃ§al",
             "word": "bon"
           },
           {
@@ -709,10 +730,10 @@
           },
           {
             "code": "ka",
-            "roman": "ḳargi",
+            "roman": "á¸³argi",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Georgian",
-            "word": "კარგი"
+            "word": "áƒ™áƒáƒ áƒ’áƒ˜"
           },
           {
             "code": "de",
@@ -722,55 +743,55 @@
           },
           {
             "code": "got",
-            "roman": "gōþs",
+            "roman": "gÅÃ¾s",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Gothic",
-            "word": "𐌲𐍉𐌸𐍃"
+            "word": "ðŒ²ð‰ðŒ¸ðƒ"
           },
           {
             "code": "got",
-            "roman": "þiuþeigs",
+            "roman": "Ã¾iuÃ¾eigs",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Gothic",
-            "word": "𐌸𐌹𐌿𐌸𐌴𐌹𐌲𐍃"
+            "word": "ðŒ¸ðŒ¹ðŒ¿ðŒ¸ðŒ´ðŒ¹ðŒ²ðƒ"
           },
           {
             "code": "el",
-            "roman": "kalós",
+            "roman": "kalÃ³s",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Greek",
-            "word": "καλός"
+            "word": "ÎºÎ±Î»ÏŒÏ‚"
           },
           {
             "code": "el",
-            "roman": "agathós",
+            "roman": "agathÃ³s",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Greek",
-            "word": "αγαθός"
+            "word": "Î±Î³Î±Î¸ÏŒÏ‚"
           },
           {
             "code": "grc",
-            "roman": "agathós",
+            "roman": "agathÃ³s",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Ancient Greek",
-            "word": "ἀγαθός"
+            "word": "á¼€Î³Î±Î¸ÏŒÏ‚"
           },
           {
             "code": "grc",
-            "roman": "esthlós",
+            "roman": "esthlÃ³s",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Ancient Greek",
-            "word": "ἐσθλός",
+            "word": "á¼ÏƒÎ¸Î»ÏŒÏ‚",
             "tags": [
               "Epic"
             ]
           },
           {
             "code": "gu",
-            "roman": "sārũ",
+            "roman": "sÄrÅ©",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Gujarati",
-            "word": "સારું"
+            "word": "àª¸àª¾àª°à«àª‚"
           },
           {
             "code": "ht",
@@ -783,7 +804,7 @@
             "roman": "tov",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Hebrew",
-            "word": "טוֹב"
+            "word": "×˜×•Ö¹×‘"
           },
           {
             "code": "mba",
@@ -799,52 +820,52 @@
           },
           {
             "code": "hi",
-            "roman": "acchā",
+            "roman": "acchÄ",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Hindi",
-            "word": "अच्छा"
+            "word": "à¤…à¤šà¥à¤›à¤¾"
           },
           {
             "code": "hi",
-            "roman": "bhalā",
+            "roman": "bhalÄ",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Hindi",
-            "word": "भला"
+            "word": "à¤­à¤²à¤¾"
           },
           {
             "code": "hi",
             "roman": "uttam",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Hindi",
-            "word": "उत्तम"
+            "word": "à¤‰à¤¤à¥à¤¤à¤®"
           },
           {
             "code": "hi",
             "roman": "nek",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Hindi",
-            "word": "नेक"
+            "word": "à¤¨à¥‡à¤•"
           },
           {
             "code": "hi",
-            "roman": "khūb",
+            "roman": "khÅ«b",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Hindi",
-            "word": "खूब"
+            "word": "à¤–à¥‚à¤¬"
           },
           {
             "code": "hi",
-            "roman": "xūb",
+            "roman": "xÅ«b",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Hindi",
-            "word": "ख़ूब"
+            "word": "à¤–à¤¼à¥‚à¤¬"
           },
           {
             "code": "hi",
-            "roman": "nīti",
+            "roman": "nÄ«ti",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Hindi",
-            "word": "नीति"
+            "word": "à¤¨à¥€à¤¤à¤¿"
           },
           {
             "code": "ho",
@@ -854,22 +875,22 @@
           },
           {
             "code": "hit",
-            "roman": "a-aš-šu-uš",
+            "roman": "a-aÅ¡-Å¡u-uÅ¡",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Hittite",
-            "word": "𒀀𒀸𒋗𒍑"
+            "word": "ð’€€ð’€¸ð’‹—ð’‘"
           },
           {
             "code": "hu",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Hungarian",
-            "word": "jó"
+            "word": "jÃ³"
           },
           {
             "code": "is",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Icelandic",
-            "word": "góður",
+            "word": "gÃ³Ã°ur",
             "tags": [
               "masculine"
             ]
@@ -878,7 +899,7 @@
             "code": "is",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Icelandic",
-            "word": "góð",
+            "word": "gÃ³Ã°",
             "tags": [
               "feminine"
             ]
@@ -920,14 +941,14 @@
             "code": "izh",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Ingrian",
-            "word": "hyvä"
+            "word": "hyvÃ¤"
           },
           {
             "code": "inh",
             "roman": "dika",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Ingush",
-            "word": "дика"
+            "word": "Ð´Ð¸ÐºÐ°"
           },
           {
             "code": "ill",
@@ -956,46 +977,46 @@
           {
             "code": "ja",
             "roman": "yoi",
-            "alt": "よい",
+            "alt": "ã‚ˆã„",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Japanese",
-            "word": "良い"
+            "word": "è‰¯ã„"
           },
           {
             "code": "ja",
             "roman": "ii",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Japanese",
-            "word": "いい"
+            "word": "ã„ã„"
           },
           {
             "code": "ja",
             "roman": "zen'i no",
-            "alt": "ぜんいの",
-            "sense": "acting in the interegood; ethical good intentions",
+            "alt": "ãœã‚“ã„ã®",
+            "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Japanese",
-            "word": "善意の"
+            "word": "å–„æ„ã®"
           },
           {
             "code": "kbd",
-            "roman": "fʼə",
+            "roman": "fÊ¼É™",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Kabardian",
-            "w": "фӏы"
+            "word": "Ñ„ÓÑ‹"
           },
           {
             "code": "xal",
-            "roman": "sän",
+            "roman": "sÃ¤n",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Kalmyk",
-            "word": "сән"
+            "word": "ÑÓ™Ð½"
           },
           {
             "code": "kn",
             "roman": "uttama",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Kannada",
-            "word": "ಉತ್ತಮ"
+            "word": "à²‰à²¤à³à²¤à²®"
           },
           {
             "code": "csb",
@@ -1008,14 +1029,14 @@
             "roman": "jaqsy",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Kazakh",
-            "word": "жақсы"
+            "word": "Ð¶Ð°Ò›ÑÑ‹"
           },
           {
             "code": "km",
-            "roman": "lʼɑɑ",
+            "roman": "lÊ¼É‘É‘",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Khmer",
-            "word": "ល្អ"
+            "word": "áž›áŸ’áž¢"
           },
           {
             "code": "ki",
@@ -1028,27 +1049,27 @@
             "roman": "jota",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Korean",
-            "word": "좋다"
+            "word": "ì¢‹ë‹¤"
           },
           {
             "code": "kum",
-            "roman": "yaxşı",
-            "sense": "acti in the interest of good; ethical good intentions",
+            "roman": "yaxÅŸÄ±",
+            "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Kumyk",
-            "word": "яхшы"
+            "word": "ÑÑ…ÑˆÑ‹"
           },
           {
             "code": "kmr",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Northern Kurdish",
-            "word": "baş"
+            "word": "baÅŸ"
           },
           {
             "code": "ky",
-            "roman": "jakşı",
+            "roman": "jakÅŸÄ±",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Kyrgyz",
-            "word": "жакшы"
+            "word": "Ð¶Ð°ÐºÑˆÑ‹"
           },
           {
             "code": "lld",
@@ -1058,10 +1079,10 @@
           },
           {
             "code": "lo",
-            "roman": "dī",
+            "roman": "dÄ«",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Lao",
-            "word": "ດີ"
+            "word": "àº”àºµ"
           },
           {
             "code": "ltg",
@@ -1097,20 +1118,20 @@
             "code": "liv",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Livonian",
-            "word": "jõvā"
+            "word": "jÃµvÄ"
           },
           {
             "code": "lmo",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Lombard",
-            "word": "bón"
+            "word": "bÃ³n"
           },
           {
             "code": "khb",
-            "roman": "ḋii",
+            "roman": "á¸‹ii",
             "sense": "acting in the interest of good; ethical good intentions",
-            "lang": "Lü",
-            "word": "ᦡᦲ"
+            "lang": "LÃ¼",
+            "word": "á¦¡á¦²"
           },
           {
             "code": "lb",
@@ -1123,7 +1144,7 @@
             "roman": "dobar",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Macedonian",
-            "word": "добар"
+            "word": "Ð´Ð¾Ð±Ð°Ñ€"
           },
           {
             "code": "mdh",
@@ -1139,10 +1160,10 @@
           },
           {
             "code": "ml",
-            "roman": "nallatŭ",
+            "roman": "nallatÅ­",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Malayalam",
-            "word": "നല്ലത്"
+            "word": "à´¨à´²àµà´²à´¤àµ"
           },
           {
             "code": "mt",
@@ -1155,7 +1176,7 @@
             "roman": "sain",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Manchu",
-            "word": "ᠰᠠᡳᠨ"
+            "word": "á °á  á¡³á ¨"
           },
           {
             "code": "mqy",
@@ -1177,45 +1198,45 @@
           },
           {
             "code": "mr",
-            "roman": "cāṅglā",
+            "roman": "cÄá¹…glÄ",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Marathi",
-            "word": "चांगला"
+            "word": "à¤šà¤¾à¤‚à¤—à¤²à¤¾"
           },
           {
             "code": "mr",
-            "roman": "cāṅglī",
+            "roman": "cÄá¹…glÄ«",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Marathi",
-            "word": "चांगली"
+            "word": "à¤šà¤¾à¤‚à¤—à¤²à¥€"
           },
           {
             "code": "mr",
-            "roman": "cāṅgle",
+            "roman": "cÄá¹…gle",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Marathi",
-            "word": "चांगले"
+            "word": "à¤šà¤¾à¤‚à¤—à¤²à¥‡"
           },
           {
             "code": "mr",
-            "roman": "bhalā",
+            "roman": "bhalÄ",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Marathi",
-            "word": "भला"
+            "word": "à¤­à¤²à¤¾"
           },
           {
             "code": "mr",
-            "roman": "bhalī",
+            "roman": "bhalÄ«",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Marathi",
-            "word": "भली"
+            "word": "à¤­à¤²à¥€"
           },
           {
             "code": "mr",
             "roman": "bhale",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Marathi",
-            "word": "भले"
+            "word": "à¤­à¤²à¥‡"
           },
           {
             "code": "mfe",
@@ -1228,39 +1249,46 @@
             "roman": "xar",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Mazanderani",
-            "word": "خار"
+            "word": "Ø®Ø§Ø±"
           },
           {
             "code": "gun",
             "sense": "acting in the interest of good; ethical good intentions",
-            "lang": "Mbyá Guaraní",
+            "lang": "MbyÃ¡ GuaranÃ­",
             "word": "ha'eve"
           },
           {
             "code": "gun",
             "sense": "acting in the interest of good; ethical good intentions",
-            "lang": "Mbyá Guaraní",
-            "word": "porã"
+            "lang": "MbyÃ¡ GuaranÃ­",
+            "word": "porÃ£"
           },
           {
             "code": "pal",
-            "alt": "nyk /⁠nēk⁠/",
+            "alt": "nyk /â nÄ“kâ /",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Middle Persian",
-            "word": "𐭭𐭩𐭪"
+            "word": "ð­­ð­©ð­ª"
           },
           {
             "code": "mhn",
             "sense": "acting in the interest of good; ethical good intentions",
-            "lang": "Mòcheno",
+            "lang": "MÃ²cheno",
             "word": "guat"
+          },
+          {
+            "code": "mdf",
+            "roman": "para",
+            "sense": "acting in the interest of good; ethical good intentions",
+            "lang": "Moksha",
+            "word": "Ð¿Ð°Ñ€Ð°"
           },
           {
             "code": "mn",
             "roman": "sajn",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Mongolian",
-            "word": "сайн"
+            "word": "ÑÐ°Ð¹Ð½"
           },
           {
             "code": "meu",
@@ -1270,21 +1298,22 @@
           },
           {
             "code": "gld",
+            "roman": "ulen",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Nanai",
-            "word": "улэн"
+            "word": "ÑƒÐ»ÑÐ½"
           },
           {
             "code": "nv",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Navajo",
-            "word": "yáʼátʼééh"
+            "word": "yÃ¡Ê¼Ã¡tÊ¼Ã©Ã©h"
           },
           {
             "code": "frr",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "North Frisian",
-            "word": "gödj"
+            "word": "gÃ¶dj"
           },
           {
             "code": "xnn",
@@ -1297,7 +1326,7 @@
             "roman": "di",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Northern Thai",
-            "word": "ᨯᩦ"
+            "word": "á¨¯á©¦"
           },
           {
             "code": "no",
@@ -1319,42 +1348,42 @@
           },
           {
             "code": "cu",
-            "roman": "dobrŭ",
+            "roman": "dobrÅ­",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Old Church Slavonic",
-            "word": "добръ"
+            "word": "Ð´Ð¾Ð±Ñ€ÑŠ"
           },
           {
             "code": "ofs",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Old Frisian",
-            "word": "gōd"
+            "word": "gÅd"
           },
           {
             "code": "kaw",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Old Javanese",
-            "word": "bĕcik"
+            "word": "bÄ•cik"
           },
           {
             "code": "non",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Old Norse",
-            "word": "góðr"
+            "word": "gÃ³Ã°r"
           },
           {
             "code": "otk",
-            "roman": "edgü",
+            "roman": "edgÃ¼",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Old Turkic",
-            "word": "𐰓𐰏𐰇"
+            "word": "ð°“ð°ð°‡"
           },
           {
             "code": "os",
             "roman": "xorz",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Ossetian",
-            "word": "хорз"
+            "word": "Ñ…Ð¾Ñ€Ð·"
           },
           {
             "code": "pap",
@@ -1364,24 +1393,24 @@
           },
           {
             "code": "ps",
-            "roman": "ẍë",
+            "roman": "áºÃ«",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Pashto",
-            "word": "ښه"
+            "word": "ÚšÙ‡"
           },
           {
             "code": "fa",
             "roman": "xub",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Persian",
-            "word": "خوب"
+            "word": "Ø®ÙˆØ¨"
           },
           {
             "code": "fa",
             "roman": "nik",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Persian",
-            "word": "نیک"
+            "word": "Ù†ÛŒÚ©"
           },
           {
             "code": "pis",
@@ -1409,10 +1438,10 @@
           },
           {
             "code": "pa",
-            "roman": "caṅgā",
+            "roman": "caá¹…gÄ",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Punjabi",
-            "word": "ਚੰਗਾ"
+            "word": "à¨šà©°à¨—à¨¾"
           },
           {
             "code": "qu",
@@ -1424,13 +1453,13 @@
             "code": "rgn",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Romagnol",
-            "word": "bôn"
+            "word": "bÃ´n"
           },
           {
             "code": "rom",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Romani",
-            "word": "laćho"
+            "word": "laÄ‡ho"
           },
           {
             "code": "ro",
@@ -1445,7 +1474,7 @@
             "code": "ro",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Romanian",
-            "word": "bună",
+            "word": "bunÄƒ",
             "tags": [
               "feminine"
             ]
@@ -1458,31 +1487,31 @@
           },
           {
             "code": "ru",
-            "roman": "xoróšij",
+            "roman": "xorÃ³Å¡ij",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Russian",
-            "word": "хоро́ший"
+            "word": "Ñ…Ð¾Ñ€Ð¾ÌÑˆÐ¸Ð¹"
           },
           {
             "code": "ru",
-            "roman": "dóbryj",
+            "roman": "dÃ³bryj",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Russian",
-            "word": "до́брый"
+            "word": "Ð´Ð¾ÌÐ±Ñ€Ñ‹Ð¹"
           },
           {
             "code": "sa",
-            "roman": "sādhu",
+            "roman": "sÄdhu",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Sanskrit",
-            "word": "साधु"
+            "word": "à¤¸à¤¾à¤§à¥"
           },
           {
             "code": "sa",
             "roman": "su-",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Sanskrit",
-            "word": "सु-"
+            "word": "à¤¸à¥-"
           },
           {
             "code": "sco",
@@ -1500,7 +1529,7 @@
             "code": "sh",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Serbo-Croatian",
-            "word": "до̏бар",
+            "word": "Ð´Ð¾ÌÐ±Ð°Ñ€",
             "tags": [
               "Cyrillic"
             ]
@@ -1509,17 +1538,17 @@
             "code": "sh",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Serbo-Croatian",
-            "word": "dȍbar",
+            "word": "dÈbar",
             "tags": [
               "Roman"
             ]
           },
           {
             "code": "shn",
-            "roman": "lǐi",
+            "roman": "lÇi",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Shan",
-            "word": "လီ"
+            "word": "á€œá€®"
           },
           {
             "code": "scn",
@@ -1529,22 +1558,22 @@
           },
           {
             "code": "si",
-            "roman": "hoⁿda",
+            "roman": "hoâ¿da",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Sinhalese",
-            "word": "හොඳ"
+            "word": "à·„à·œà¶³"
           },
           {
             "code": "sk",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Slovak",
-            "word": "dobrý"
+            "word": "dobrÃ½"
           },
           {
             "code": "sl",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Slovene",
-            "word": "dóber"
+            "word": "dÃ³ber"
           },
           {
             "code": "so",
@@ -1580,7 +1609,7 @@
             "code": "su",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Sundanese",
-            "word": "hadé"
+            "word": "hadÃ©"
           },
           {
             "code": "sw",
@@ -1620,10 +1649,10 @@
           },
           {
             "code": "syl",
-            "roman": "bála",
+            "roman": "bÃ¡la",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Sylheti",
-            "word": "ꠜꠣꠟꠣ"
+            "word": "ê œê £ê Ÿê £"
           },
           {
             "code": "tl",
@@ -1642,51 +1671,51 @@
             "roman": "xub",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Tajik",
-            "word": "хуб"
+            "word": "Ñ…ÑƒÐ±"
           },
           {
             "code": "tly",
-            "roman": "câk",
+            "roman": "cÃ¢k",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Talysh",
-            "word": "چاک",
+            "word": "Ú†Ø§Ú©",
             "tags": [
               "Asalemi"
             ]
           },
           {
             "code": "ta",
-            "roman": "naṉmai",
+            "roman": "naá¹‰mai",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Tamil",
-            "word": "நன்மை"
+            "word": "à®¨à®©à¯à®®à¯ˆ"
           },
           {
             "code": "roa-tar",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Tarantino",
-            "word": "bbuène"
+            "word": "bbuÃ¨ne"
           },
           {
             "code": "tt",
-            "roman": "yaxşı",
+            "roman": "yaxÅŸÄ±",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Tatar",
-            "word": "яхшы"
+            "word": "ÑÑ…ÑˆÑ‹"
           },
           {
             "code": "te",
-            "roman": "mañci",
+            "roman": "maÃ±ci",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Telugu",
-            "word": "మంచి"
+            "word": "à°®à°‚à°šà°¿"
           },
           {
             "code": "te",
-            "roman": "nīti",
+            "roman": "nÄ«ti",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Telugu",
-            "word": "నీతి"
+            "word": "à°¨à±€à°¤à°¿"
           },
           {
             "code": "tet",
@@ -1699,27 +1728,27 @@
             "roman": "dii",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Thai",
-            "word": "ดี"
+            "word": "à¸”à¸µ"
           },
           {
             "code": "th",
             "roman": "dii dii",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Thai",
-            "word": "ดี ๆ"
+            "word": "à¸”à¸µ à¹†"
           },
           {
             "code": "bo",
             "roman": "bzang",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Tibetan",
-            "word": "བཟང"
+            "word": "à½–à½Ÿà½„"
           },
           {
             "code": "til",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Tillamook",
-            "word": "də húcsənə"
+            "word": "dÉ™ hÃºcsÉ™nÉ™"
           },
           {
             "code": "tpi",
@@ -1743,7 +1772,7 @@
             "code": "tk",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Turkmen",
-            "word": "ýagşy"
+            "word": "Ã½agÅŸy"
           },
           {
             "code": "tzo",
@@ -1753,48 +1782,48 @@
           },
           {
             "code": "uga",
-            "roman": "ṭb",
+            "roman": "á¹­b",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Ugaritic",
-            "word": "𐎉𐎁"
+            "word": "ðŽ‰ðŽ"
           },
           {
             "code": "uk",
-            "roman": "dóbryj",
+            "roman": "dÃ³bryj",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Ukrainian",
-            "word": "до́брий"
+            "word": "Ð´Ð¾ÌÐ±Ñ€Ð¸Ð¹"
           },
           {
             "code": "uk",
-            "roman": "xoróšyj",
+            "roman": "xorÃ³Å¡yj",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Ukrainian",
-            "word": "хоро́ший"
+            "word": "Ñ…Ð¾Ñ€Ð¾ÌÑˆÐ¸Ð¹"
           },
           {
             "code": "uk",
-            "roman": "hárnyj",
+            "roman": "hÃ¡rnyj",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Ukrainian",
-            "word": "га́рний"
+            "word": "Ð³Ð°ÌÑ€Ð½Ð¸Ð¹"
           },
           {
             "code": "ur",
-            "roman": "acchā",
+            "roman": "acchÄ",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Urdu",
-            "word": "اچھا",
+            "word": "Ø§Ú†Ú¾Ø§",
             "tags": [
               "masculine"
             ]
           },
           {
             "code": "ur",
-            "roman": "bhalā",
+            "roman": "bhalÄ",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Urdu",
-            "word": "بهلا",
+            "word": "Ø¨Ù‡Ù„Ø§",
             "tags": [
               "masculine"
             ]
@@ -1804,7 +1833,7 @@
             "roman": "yaxshi",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Uyghur",
-            "word": "ياخشى"
+            "word": "ÙŠØ§Ø®Ø´Ù‰"
           },
           {
             "code": "uz",
@@ -1822,7 +1851,7 @@
             "code": "vi",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Vietnamese",
-            "word": "tốt"
+            "word": "tá»‘t"
           },
           {
             "code": "vi",
@@ -1834,19 +1863,19 @@
             "code": "vi",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Vietnamese",
-            "word": "tuyệt"
+            "word": "tuyá»‡t"
           },
           {
             "code": "wym",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Vilamovian",
-            "word": "güt"
+            "word": "gÃ¼t"
           },
           {
             "code": "vot",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Votic",
-            "word": "üvä"
+            "word": "Ã¼vÃ¤"
           },
           {
             "code": "wa",
@@ -1889,27 +1918,27 @@
             "roman": "xub",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Yagnobi",
-            "word": "хуб"
+            "word": "Ñ…ÑƒÐ±"
           },
           {
             "code": "sah",
-            "roman": "ücügey",
+            "roman": "Ã¼cÃ¼gey",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Yakut",
-            "word": "үчүгэй"
+            "word": "Ò¯Ñ‡Ò¯Ð³ÑÐ¹"
           },
           {
             "code": "yi",
             "roman": "gut",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Yiddish",
-            "word": "גוט"
+            "word": "×’×•×˜"
           },
           {
             "code": "zza",
             "sense": "acting in the interest of good; ethical good intentions",
             "lang": "Zazaki",
-            "word": "weş (diq)"
+            "word": "weÅŸ (diq)"
           },
           {
             "code": "zea",
@@ -1958,7 +1987,8 @@
             "type": "example"
           },
           {
-            "text": "1500?, Evil Tonguesː\nIf any man would begin his sins to reny, or any good people that frae vice deed rest ain. What so ever he were that to virtue would apply, But an ill tongue will all overthrow again."
+            "text": "c. 1525, The Example of Euyll Tongues, page a3 rectoË\nYf ony man wolde begynne his synnes to reny / Or ony good people that fro vyce dyde refrayne / What so euer he were that to vertue wolde applye / But an yll tonge wyll all ouer throwe agayne\nIf any man would begin to renounce his sins, / Or any good people who refrained from vice, / Whatsoever he who wished to apply himself to virtue might be, / Still an ill tongue would overthrow it all again.",
+            "type": "quotation"
           }
         ]
       },
@@ -1972,14 +2002,14 @@
             "roman": "lav",
             "sense": "of people, competent or talented",
             "lang": "Armenian",
-            "word": "լավ"
+            "word": "Õ¬Õ¡Õ¾"
           },
           {
             "code": "bg",
-            "roman": "dobǎ́r",
+            "roman": "dobÇŽÌr",
             "sense": "of people, competent or talented",
             "lang": "Bulgarian",
-            "word": "добъ́р"
+            "word": "Ð´Ð¾Ð±ÑŠÌÑ€"
           },
           {
             "code": "ca",
@@ -1991,26 +2021,26 @@
             "code": "zh",
             "sense": "of people, competent or talented",
             "lang": "Chinese Mandarin",
-            "word": "嫻熟"
+            "word": "å«»ç†Ÿ"
           },
           {
             "code": "zh",
-            "roman": "xiánshú",
+            "roman": "xiÃ¡nshÃº",
             "sense": "of people, competent or talented",
-            "lang": "Chinese Manrin",
-            "word": "娴熟"
+            "lang": "Chinese Mandarin",
+            "word": "å¨´ç†Ÿ"
           },
           {
             "code": "cs",
             "sense": "of people, competent or talented",
             "lang": "Czech",
-            "word": "dobrý"
+            "word": "dobrÃ½"
           },
           {
             "code": "da",
             "sense": "of people, competent or talented",
             "lang": "Danish",
-            "wd": "god"
+            "word": "god"
           },
           {
             "code": "da",
@@ -2028,7 +2058,7 @@
             "code": "fi",
             "sense": "of people, competent or talented",
             "lang": "Finnish",
-            "word": "hyvä"
+            "word": "hyvÃ¤"
           },
           {
             "code": "fr",
@@ -2056,37 +2086,37 @@
           },
           {
             "code": "he",
-            "roman": "tóv",
+            "roman": "tÃ³v",
             "sense": "of people, competent or talented",
             "lang": "Hebrew",
-            "word": "טוב"
+            "word": "×˜×•×‘"
           },
           {
             "code": "hi",
             "roman": "uttam",
             "sense": "of people, competent or talented",
             "lang": "Hindi",
-            "word": "उत्तम",
+            "word": "à¤‰à¤¤à¥à¤¤à¤®",
             "tags": [
               "masculine"
             ]
           },
           {
             "code": "hi",
-            "roman": "acchā",
+            "roman": "acchÄ",
             "sense": "of people, competent or talented",
             "lang": "Hindi",
-            "word": "अच्छा",
+            "word": "à¤…à¤šà¥à¤›à¤¾",
             "tags": [
               "masculine"
             ]
           },
           {
             "code": "hi",
-            "roman": "acchī",
+            "roman": "acchÄ«",
             "sense": "of people, competent or talented",
             "lang": "Hindi",
-            "word": "अच्छी",
+            "word": "à¤…à¤šà¥à¤›à¥€",
             "tags": [
               "feminine"
             ]
@@ -2096,7 +2126,7 @@
             "roman": "acche",
             "sense": "of people, competent or talented",
             "lang": "Hindi",
-            "word": "अच्छे",
+            "word": "à¤…à¤šà¥à¤›à¥‡",
             "tags": [
               "plural"
             ]
@@ -2122,32 +2152,33 @@
           {
             "code": "ja",
             "roman": "yoi",
-            "alt": "よい",
+            "alt": "ã‚ˆã„",
             "sense": "of people, competent or talented",
             "lang": "Japanese",
-            "word": "良い"
+            "word": "è‰¯ã„"
           },
           {
             "code": "ja",
             "roman": "ii",
             "sense": "of people, competent or talented",
             "lang": "Japanese",
-            "word": "いい"
+            "word": "ã„ã„"
           },
           {
             "code": "ja",
-            "roman": "jōzu-na",
-            "alt": "じょうずな",
+            "roman": "jÅzu-na",
+            "alt": "ã˜ã‚‡ã†ãšãª",
             "sense": "of people, competent or talented",
             "lang": "Japanese",
-            "word": "上手な"
+            "word": "ä¸Šæ‰‹ãª"
           },
           {
             "code": "ja",
             "roman": "umai",
-            "alt": "うまof people, competent or talented",
+            "alt": "ã†ã¾ã„",
+            "sense": "of people, competent or talented",
             "lang": "Japanese",
-            "word": "旨い"
+            "word": "æ—¨ã„"
           },
           {
             "code": "lv",
@@ -2159,7 +2190,7 @@
             ]
           },
           {
-            "cod": "no",
+            "code": "no",
             "sense": "of people, competent or talented",
             "lang": "Norwegian",
             "word": "god"
@@ -2172,10 +2203,10 @@
           },
           {
             "code": "ps",
-            "roman": "ẍë",
+            "roman": "áºÃ«",
             "sense": "of people, competent or talented",
             "lang": "Pashto",
-            "word": "ښه"
+            "word": "ÚšÙ‡"
           },
           {
             "code": "pl",
@@ -2203,32 +2234,32 @@
           },
           {
             "code": "ru",
-            "roman": "xoróšij",
+            "roman": "xorÃ³Å¡ij",
             "sense": "of people, competent or talented",
             "lang": "Russian",
-            "word": "хоро́ший"
+            "word": "Ñ…Ð¾Ñ€Ð¾ÌÑˆÐ¸Ð¹"
           },
           {
             "code": "ru",
-            "roman": "umélyj",
+            "roman": "umÃ©lyj",
             "sense": "of people, competent or talented",
             "lang": "Russian",
-            "word": "уме́лый"
+            "word": "ÑƒÐ¼ÐµÌÐ»Ñ‹Ð¹"
           },
           {
             "code": "ru",
-            "roman": "iskúsnyj",
+            "roman": "iskÃºsnyj",
             "sense": "of people, competent or talented",
             "lang": "Russian",
-            "word": "иску́сный"
+            "word": "Ð¸ÑÐºÑƒÌÑÐ½Ñ‹Ð¹"
           },
           {
             "code": "ru",
-            "roman": "lóvkij",
+            "roman": "lÃ³vkij",
             "english": "agile",
             "sense": "of people, competent or talented",
             "lang": "Russian",
-            "word": "ло́вкий"
+            "word": "Ð»Ð¾ÌÐ²ÐºÐ¸Ð¹"
           },
           {
             "code": "sco",
@@ -2327,7 +2358,7 @@
             "code": "su",
             "sense": "of people, competent or talented",
             "lang": "Sundanese",
-            "word": "hadé"
+            "word": "hadÃ©"
           },
           {
             "code": "sw",
@@ -2352,19 +2383,19 @@
             "roman": "curukutanamu",
             "sense": "of people, competent or talented",
             "lang": "Telugu",
-            "word": "చురుకుతనము"
+            "word": "à°šà±à°°à±à°•à±à°¤à°¨à°®à±"
           },
           {
             "code": "vi",
             "sense": "of people, competent or talented",
             "lang": "Vietnamese",
-            "word": "giỏi"
+            "word": "giá»i"
           },
           {
             "code": "vi",
             "sense": "of people, competent or talented",
             "lang": "Vietnamese",
-            "word": "khá"
+            "word": "khÃ¡"
           },
           {
             "code": "cy",
@@ -2408,7 +2439,7 @@
             "type": "quotation"
           },
           {
-            "ref": "1922, Michael Arlen, “3/19/2”, in “Piracy”: A Romantic Chronicle of These Days",
+            "ref": "1922, Michael Arlen, â€œ3/19/2â€, in â€œPiracyâ€: A Romantic Chronicle of These Days",
             "text": "Ivor had acquired more than a mile of fishing rights with the house ; he was not at all a good fisherman, but one must do something ; one generally, however, banged a ball with a squash-racket against a wall.",
             "type": "quotation"
           },
@@ -2464,7 +2495,7 @@
             "code": "de",
             "sense": "well-behaved",
             "lang": "German",
-            "word": "gehörig"
+            "word": "gehÃ¶rig"
           },
           {
             "code": "tr",
@@ -2535,15 +2566,15 @@
         ],
         "examples": [
           {
-            "text": "Would you like a glass of water? — I'm good.",
+            "text": "Would you like a glass of water? â€” I'm good.",
             "type": "example"
           },
           {
-            "text": "[Are] you good? — Yeah, I'm fine.",
+            "text": "[Are] you good? â€” Yeah, I'm fine.",
             "type": "example"
           },
           {
-            "text": "Gimme another beer! — I think you're good.",
+            "text": "Gimme another beer! â€” I think you're good.",
             "type": "example"
           }
         ]
@@ -2620,24 +2651,24 @@
           },
           {
             "code": "ar",
-            "roman": "ḥasan",
+            "roman": "á¸¥asan",
             "sense": "useful for a particular purpose",
             "lang": "Arabic",
-            "word": "حَسَن"
+            "word": "Ø­ÙŽØ³ÙŽÙ†"
           },
           {
             "code": "ar",
             "roman": "jayyid",
             "sense": "useful for a particular purpose",
             "lang": "Arabic",
-            "word": "جَيِّد"
+            "word": "Ø¬ÙŽÙŠÙÙ‘Ø¯"
           },
           {
             "code": "hy",
             "roman": "lav",
             "sense": "useful for a particular purpose",
             "lang": "Armenian",
-            "word": "լավ"
+            "word": "Õ¬Õ¡Õ¾"
           },
           {
             "code": "rup",
@@ -2647,17 +2678,17 @@
           },
           {
             "code": "bg",
-            "roman": "dobǎ́r",
+            "roman": "dobÇŽÌr",
             "sense": "useful for a particular purpose",
             "lang": "Bulgarian",
-            "word": "добъ́р"
+            "word": "Ð´Ð¾Ð±ÑŠÌÑ€"
           },
           {
             "code": "bg",
-            "roman": "dobrokáčestven",
+            "roman": "dobrokÃ¡Äestven",
             "sense": "useful for a particular purpose",
             "lang": "Bulgarian",
-            "word": "доброка́чествен"
+            "word": "Ð´Ð¾Ð±Ñ€Ð¾ÐºÐ°ÌÑ‡ÐµÑÑ‚Ð²ÐµÐ½"
           },
           {
             "code": "ca",
@@ -2676,20 +2707,20 @@
             "roman": "osda",
             "sense": "useful for a particular purpose",
             "lang": "Cherokee",
-            "word": "ᎣᏍᏓ"
+            "word": "áŽ£áá“"
           },
           {
             "code": "zh",
-            "roman": "hǎo",
+            "roman": "hÇŽo",
             "sense": "useful for a particular purpose",
             "lang": "Chinese Mandarin",
-            "word": "好"
+            "word": "å¥½"
           },
           {
             "code": "cs",
             "sense": "useful for a particular purpose",
             "lang": "Czech",
-            "word": "dobrý"
+            "word": "dobrÃ½"
           },
           {
             "code": "da",
@@ -2719,13 +2750,13 @@
             "code": "ext",
             "sense": "useful for a particular purpose",
             "lang": "Extremaduran",
-            "word": "güenu"
+            "word": "gÃ¼enu"
           },
           {
             "code": "fi",
             "sense": "useful for a particular purpose",
             "lang": "Finnish",
-            "word": "hyvä"
+            "word": "hyvÃ¤"
           },
           {
             "code": "fr",
@@ -2753,10 +2784,10 @@
           },
           {
             "code": "ka",
-            "roman": "ḳargi",
+            "roman": "á¸³argi",
             "sense": "useful for a particular purpose",
             "lang": "Georgian",
-            "word": "კარგი"
+            "word": "áƒ™áƒáƒ áƒ’áƒ˜"
           },
           {
             "code": "de",
@@ -2766,38 +2797,38 @@
           },
           {
             "code": "got",
-            "roman": "gōþs",
+            "roman": "gÅÃ¾s",
             "sense": "useful for a particular purpose",
             "lang": "Gothic",
-            "word": "𐌲𐍉𐌸𐍃"
+            "word": "ðŒ²ð‰ðŒ¸ðƒ"
           },
           {
             "code": "got",
-            "roman": "þiuþeigs",
+            "roman": "Ã¾iuÃ¾eigs",
             "sense": "useful for a particular purpose",
             "lang": "Gothic",
-            "word": "𐌸𐌹𐌿𐌸𐌴𐌹𐌲𐍃"
+            "word": "ðŒ¸ðŒ¹ðŒ¿ðŒ¸ðŒ´ðŒ¹ðŒ²ðƒ"
           },
           {
             "code": "el",
-            "roman": "kalós",
+            "roman": "kalÃ³s",
             "sense": "useful for a particular purpose",
             "lang": "Greek",
-            "word": "καλός"
+            "word": "ÎºÎ±Î»ÏŒÏ‚"
           },
           {
             "code": "grc",
-            "roman": "agathós",
+            "roman": "agathÃ³s",
             "sense": "useful for a particular purpose",
             "lang": "Ancient Greek",
-            "word": "ἀγαθός"
+            "word": "á¼€Î³Î±Î¸ÏŒÏ‚"
           },
           {
             "code": "grc",
-            "roman": "esthlós",
+            "roman": "esthlÃ³s",
             "sense": "useful for a particular purpose",
             "lang": "Ancient Greek",
-            "word": "ἐσθλός",
+            "word": "á¼ÏƒÎ¸Î»ÏŒÏ‚",
             "tags": [
               "Epic"
             ]
@@ -2810,37 +2841,37 @@
           },
           {
             "code": "he",
-            "roman": "tóv",
+            "roman": "tÃ³v",
             "sense": "useful for a particular purpose",
             "lang": "Hebrew",
-            "word": "טוב"
+            "word": "×˜×•×‘"
           },
           {
             "code": "hi",
             "roman": "uttam",
             "sense": "useful for a particular purpose",
             "lang": "Hindi",
-            "word": "उत्तम",
+            "word": "à¤‰à¤¤à¥à¤¤à¤®",
             "tags": [
               "masculine"
             ]
           },
           {
             "code": "hi",
-            "roman": "acchā",
+            "roman": "acchÄ",
             "sense": "useful for a particular purpose",
             "lang": "Hindi",
-            "word": "अच्छा",
+            "word": "à¤…à¤šà¥à¤›à¤¾",
             "tags": [
               "masculine"
             ]
           },
           {
             "code": "hi",
-            "roman": "acchī",
+            "roman": "acchÄ«",
             "sense": "useful for a particular purpose",
             "lang": "Hindi",
-            "word": "अच्छी",
+            "word": "à¤…à¤šà¥à¤›à¥€",
             "tags": [
               "feminine"
             ]
@@ -2850,7 +2881,7 @@
             "roman": "acche",
             "sense": "useful for a particular purpose",
             "lang": "Hindi",
-            "word": "अच्छे",
+            "word": "à¤…à¤šà¥à¤›à¥‡",
             "tags": [
               "plural"
             ]
@@ -2891,35 +2922,35 @@
           {
             "code": "ja",
             "roman": "yoi",
-            "alt": "よい",
+            "alt": "ã‚ˆã„",
             "sense": "useful for a particular purpose",
             "lang": "Japanese",
-            "word": "良い"
+            "word": "è‰¯ã„"
           },
           {
             "code": "ja",
             "roman": "ii",
             "sense": "useful for a particular purpose",
             "lang": "Japanese",
-            "word": "いい"
+            "word": "ã„ã„"
           },
           {
             "code": "km",
             "roman": "krup kroan",
-            "sense": "useful for a particulurpose",
+            "sense": "useful for a particular purpose",
             "lang": "Khmer",
-            "word": "គ្រប់គ្រាន់"
+            "word": "áž‚áŸ’ážšáž”áŸ‹áž‚áŸ’ážšáž¶áž“áŸ‹"
           },
           {
             "code": "ko",
             "roman": "jo'eun",
             "sense": "useful for a particular purpose",
             "lang": "Korean",
-            "word": "좋은"
+            "word": "ì¢‹ì€"
           },
           {
             "code": "lv",
-            "sense": "useful for particular purpose",
+            "sense": "useful for a particular purpose",
             "lang": "Latvian",
             "word": "labs",
             "tags": [
@@ -2934,16 +2965,16 @@
           },
           {
             "code": "okm",
-            "roman": "tyǒhón",
+            "roman": "tyÇ’hÃ³n",
             "sense": "useful for a particular purpose",
             "lang": "Middle Korean",
-            "word": "됴〯ᄒᆞᆫ〮"
+            "word": "ë´ã€¯á„’á†žá†«ã€®"
           },
           {
             "code": "nv",
             "sense": "useful for a particular purpose",
             "lang": "Navajo",
-            "word": "yátʼééh"
+            "word": "yÃ¡Ê¼Ã¡tÊ¼Ã©Ã©h"
           },
           {
             "code": "zdj",
@@ -2955,7 +2986,7 @@
             "code": "se",
             "sense": "useful for a particular purpose",
             "lang": "Northern Sami",
-            "word": "buorrẹ"
+            "word": "buorráº¹"
           },
           {
             "code": "no",
@@ -2977,31 +3008,31 @@
           },
           {
             "code": "cu",
-            "roman": "dobrŭ",
+            "roman": "dobrÅ­",
             "sense": "useful for a particular purpose",
             "lang": "Old Church Slavonic",
-            "word": "добръ"
+            "word": "Ð´Ð¾Ð±Ñ€ÑŠ"
           },
           {
             "code": "os",
             "roman": "xorz",
             "sense": "useful for a particular purpose",
             "lang": "Ossetian",
-            "word": "хорз"
+            "word": "Ñ…Ð¾Ñ€Ð·"
           },
           {
             "code": "ps",
-            "roman": "ẍë",
+            "roman": "áºÃ«",
             "sense": "useful for a particular purpose",
             "lang": "Pashto",
-            "word": "ښه"
+            "word": "ÚšÙ‡"
           },
           {
             "code": "fa",
             "roman": "xub",
             "sense": "useful for a particular purpose",
             "lang": "Persian",
-            "word": "خوب"
+            "word": "Ø®ÙˆØ¨"
           },
           {
             "code": "sje",
@@ -3053,17 +3084,17 @@
           },
           {
             "code": "ru",
-            "roman": "xoróšij",
+            "roman": "xorÃ³Å¡ij",
             "sense": "useful for a particular purpose",
             "lang": "Russian",
-            "word": "хоро́ший"
+            "word": "Ñ…Ð¾Ñ€Ð¾ÌÑˆÐ¸Ð¹"
           },
           {
             "code": "ru",
-            "roman": "neploxój",
+            "roman": "neploxÃ³j",
             "sense": "useful for a particular purpose",
             "lang": "Russian",
-            "word": "неплохо́й"
+            "word": "Ð½ÐµÐ¿Ð»Ð¾Ñ…Ð¾ÌÐ¹"
           },
           {
             "code": "sco",
@@ -3081,7 +3112,7 @@
             "code": "sh",
             "sense": "useful for a particular purpose",
             "lang": "Serbo-Croatian",
-            "word": "до̏бар",
+            "word": "Ð´Ð¾ÌÐ±Ð°Ñ€",
             "tags": [
               "Cyrillic"
             ]
@@ -3090,29 +3121,29 @@
             "code": "sh",
             "sense": "useful for a particular purpose",
             "lang": "Serbo-Croatian",
-            "word": "dȍbar",
+            "word": "dÈbar",
             "tags": [
               "Roman"
             ]
           },
           {
             "code": "si",
-            "roman": "hoⁿda",
+            "roman": "hoâ¿da",
             "sense": "useful for a particular purpose",
             "lang": "Sinhalese",
-            "word": "හොඳ"
+            "word": "à·„à·œà¶³"
           },
           {
             "code": "sms",
             "sense": "useful for a particular purpose",
             "lang": "Skolt Sami",
-            "word": "šiõǥǥ"
+            "word": "Å¡iÃµÇ¥Ç¥"
           },
           {
             "code": "sl",
             "sense": "useful for a particular purpose",
             "lang": "Slovene",
-            "word": "dóber"
+            "word": "dÃ³ber"
           },
           {
             "code": "dsb",
@@ -3149,41 +3180,41 @@
           },
           {
             "code": "syl",
-            "roman": "bála",
+            "roman": "bÃ¡la",
             "sense": "useful for a particular purpose",
             "lang": "Sylheti",
-            "word": "ꠜꠣꠟꠣ"
+            "word": "ê œê £ê Ÿê £"
           },
           {
             "code": "ta",
             "roman": "nalla",
             "sense": "useful for a particular purpose",
             "lang": "Tamil",
-            "word": "நல்ல"
+            "word": "à®¨à®²à¯à®²"
           },
           {
             "code": "te",
-            "roman": "mañcidi",
+            "roman": "maÃ±cidi",
             "sense": "useful for a particular purpose",
             "lang": "Telugu",
-            "word": "మంచిది"
+            "word": "à°®à°‚à°šà°¿à°¦à°¿"
           },
           {
             "code": "th",
             "roman": "doo dee",
             "sense": "useful for a particular purpose",
             "lang": "Thai",
-            "word": "ดูดี",
+            "word": "à¸”à¸¹à¸”à¸µ",
             "tags": [
               "informal"
             ]
           },
           {
             "code": "th",
-            "roman": "sŭay ngaam",
+            "roman": "sÅ­ay ngaam",
             "sense": "useful for a particular purpose",
             "lang": "Thai",
-            "word": "สวยงาม",
+            "word": "à¸ªà¸§à¸¢à¸‡à¸²à¸¡",
             "tags": [
               "formal"
             ]
@@ -3223,14 +3254,14 @@
             "roman": "dobryj",
             "sense": "useful for a particular purpose",
             "lang": "Ukrainian",
-            "word": "добрий"
+            "word": "Ð´Ð¾Ð±Ñ€Ð¸Ð¹"
           },
           {
             "code": "uk",
-            "roman": "xorošyj",
+            "roman": "xoroÅ¡yj",
             "sense": "useful for a particular purpose",
             "lang": "Ukrainian",
-            "word": "хороший"
+            "word": "Ñ…Ð¾Ñ€Ð¾ÑˆÐ¸Ð¹"
           },
           {
             "code": "vec",
@@ -3242,13 +3273,13 @@
             "code": "vi",
             "sense": "useful for a particular purpose",
             "lang": "Vietnamese",
-            "word": "tốt"
+            "word": "tá»‘t"
           },
           {
             "code": "wym",
             "sense": "useful for a particular purpose",
             "lang": "Vilamovian",
-            "word": "güt"
+            "word": "gÃ¼t"
           },
           {
             "code": "cy",
@@ -3258,10 +3289,10 @@
           },
           {
             "code": "sah",
-            "roman": "ücügey",
+            "roman": "Ã¼cÃ¼gey",
             "sense": "useful for a particular purpose",
             "lang": "Yakut",
-            "word": "үчүгэй"
+            "word": "Ò¯Ñ‡Ò¯Ð³ÑÐ¹"
           }
         ],
         "links": [
@@ -3280,15 +3311,15 @@
         ],
         "examples": [
           {
-            "text": "it’s a good watch;  the flashlight batteries are still good",
+            "text": "itâ€™s a good watch;â€ƒ the flashlight batteries are still good",
             "type": "example"
           },
           {
-            "text": "1526, Herballː\nAgainst cough and scarceness of breath caused of cold take the drink that it hath been sodden in with Liquorice[,] or that the powder hath been sodden in with dry figs[,] for the same the electuary called dyacalamentum is good[,] and it is made thus."
+            "text": "1526, HerballË\nAgainst cough and scarceness of breath caused of cold take the drink that it hath been sodden in with Liquorice[,] or that the powder hath been sodden in with dry figs[,] for the same the electuary called dyacalamentum is good[,] and it is made thus."
           },
           {
-            "ref": "2013 May-June, David Van Tassel, Lee DeHaan, “Wild Plants to the Rescue”, in American Scientist, volume 101, number 3",
-            "text": "Plant breeding is always a numbers game.[…]The wild species we use are rich in genetic variation,[…]. In addition, we are looking for rare alleles, so the more plants we try, the better. These rarities may be new mutations, or they can be existing ones that are neutral—or are even selected against—in a wild population. A good example is mutations that disrupt seed dispersal, leaving the seeds on the heads long after they are ripe.",
+            "ref": "2013 May-June, David Van Tassel, Lee DeHaan, â€œWild Plants to the Rescueâ€, in American Scientist, volume 101, number 3",
+            "text": "Plant breeding is always a numbers game.&#32;[â€¦]&#32;The wild species we use are rich in genetic variation,[â€¦]. In addition, we are looking for rare alleles, so the more plants we try, the better. These rarities may be new mutations, or they can be existing ones that are neutralâ€”or are even selected againstâ€”in a wild population. A good example is mutations that disrupt seed dispersal, leaving the seeds on the heads long after they are ripe.",
             "type": "quotation"
           }
         ]
@@ -3309,14 +3340,14 @@
             "roman": "lav",
             "sense": "effective",
             "lang": "Armenian",
-            "word": "լավ"
+            "word": "Õ¬Õ¡Õ¾"
           },
           {
             "code": "bn",
             "roman": "karjokor",
             "sense": "effective",
             "lang": "Bengali",
-            "word": "কার্যকর"
+            "word": "à¦•à¦¾à¦°à§à¦¯à¦•à¦°"
           },
           {
             "code": "ca",
@@ -3328,7 +3359,7 @@
             "code": "cs",
             "sense": "effective",
             "lang": "Czech",
-            "word": "dobrý"
+            "word": "dobrÃ½"
           },
           {
             "code": "da",
@@ -3346,7 +3377,7 @@
             "code": "fi",
             "sense": "effective",
             "lang": "Finnish",
-            "word": "hyvä"
+            "word": "hyvÃ¤"
           },
           {
             "code": "fr",
@@ -3382,28 +3413,28 @@
             "code": "he",
             "sense": "effective",
             "lang": "Hebrew",
-            "word": "יעיל"
+            "word": "×™×¢×™×œ"
           },
           {
             "code": "he",
-            "roman": "tóv",
+            "roman": "tÃ³v",
             "sense": "effective",
             "lang": "Hebrew",
-            "word": "טוב"
+            "word": "×˜×•×‘"
           },
           {
             "code": "hi",
-            "roman": "śaktivant",
+            "roman": "Å›aktivant",
             "sense": "effective",
             "lang": "Hindi",
-            "word": "शक्तिवंत"
+            "word": "à¤¶à¤•à¥à¤¤à¤¿à¤µà¤‚à¤¤"
           },
           {
             "code": "hi",
-            "roman": "karmākārī",
+            "roman": "karmÄkÄrÄ«",
             "sense": "effective",
             "lang": "Hindi",
-            "word": "कर्माकारी"
+            "word": "à¤•à¤°à¥à¤®à¤¾à¤•à¤¾à¤°à¥€"
           },
           {
             "code": "io",
@@ -3448,17 +3479,17 @@
             "code": "lv",
             "sense": "effective",
             "lang": "Latvian",
-            "word": "efektīvs",
+            "word": "efektÄ«vs",
             "tags": [
               "masculine"
             ]
           },
           {
             "code": "ps",
-            "roman": "ẍë",
+            "roman": "áºÃ«",
             "sense": "effective",
             "lang": "Pashto",
-            "word": "ښه"
+            "word": "ÚšÙ‡"
           },
           {
             "code": "pl",
@@ -3486,10 +3517,10 @@
           },
           {
             "code": "ru",
-            "roman": "xoróšij",
+            "roman": "xorÃ³Å¡ij",
             "sense": "effective",
             "lang": "Russian",
-            "word": "хоро́ший"
+            "word": "Ñ…Ð¾Ñ€Ð¾ÌÑˆÐ¸Ð¹"
           },
           {
             "code": "sco",
@@ -3519,7 +3550,7 @@
             "code": "sl",
             "sense": "effective",
             "lang": "Slovene",
-            "word": "dóber"
+            "word": "dÃ³ber"
           },
           {
             "code": "dsb",
@@ -3568,10 +3599,10 @@
           },
           {
             "code": "te",
-            "roman": "śaktivantamu",
+            "roman": "Å›aktivantamu",
             "sense": "effective",
             "lang": "Telugu",
-            "word": "శక్తివంతము"
+            "word": "à°¶à°•à±à°¤à°¿à°µà°‚à°¤à°®à±"
           },
           {
             "code": "tpi",
@@ -3583,7 +3614,7 @@
             "code": "vi",
             "sense": "effective",
             "lang": "Vietnamese",
-            "word": "khá"
+            "word": "khÃ¡"
           },
           {
             "code": "cy",
@@ -3649,7 +3680,7 @@
             "roman": "lav",
             "sense": "of food, having a particularly pleasant taste",
             "lang": "Armenian",
-            "word": "լավ"
+            "word": "Õ¬Õ¡Õ¾"
           },
           {
             "code": "br",
@@ -3665,16 +3696,16 @@
           },
           {
             "code": "zh",
-            "roman": "hǎochī",
+            "roman": "hÇŽochÄ«",
             "sense": "of food, having a particularly pleasant taste",
             "lang": "Chinese Mandarin",
-            "word": "好吃"
+            "word": "å¥½åƒ"
           },
           {
             "code": "cs",
             "sense": "of food, having a particularly pleasant taste",
             "lang": "Czech",
-            "word": "dobrý"
+            "word": "dobrÃ½"
           },
           {
             "code": "da",
@@ -3704,7 +3735,7 @@
             "code": "fi",
             "sense": "of food, having a particularly pleasant taste",
             "lang": "Finnish",
-            "word": "hyvä"
+            "word": "hyvÃ¤"
           },
           {
             "code": "fr",
@@ -3729,24 +3760,24 @@
           },
           {
             "code": "he",
-            "roman": "ta'ím",
+            "roman": "ta'Ã­m",
             "sense": "of food, having a particularly pleasant taste",
             "lang": "Hebrew",
-            "word": "טעים"
+            "word": "×˜×¢×™×"
           },
           {
             "code": "he",
-            "roman": "tóv",
+            "roman": "tÃ³v",
             "sense": "of food, having a particularly pleasant taste",
             "lang": "Hebrew",
-            "word": "טוב"
+            "word": "×˜×•×‘"
           },
           {
             "code": "hi",
             "roman": "pasand",
             "sense": "of food, having a particularly pleasant taste",
             "lang": "Hindi",
-            "word": "पसंद"
+            "word": "à¤ªà¤¸à¤‚à¤¦"
           },
           {
             "code": "io",
@@ -3774,18 +3805,18 @@
             "roman": "oishii",
             "sense": "of food, having a particularly pleasant taste",
             "lang": "Japanese",
-            "word": "美味しい"
+            "word": "ç¾Žå‘³ã—ã„"
           },
           {
             "code": "ja",
             "roman": "umai",
             "sense": "of food, having a particularly pleasant taste",
             "lang": "Japanese",
-            "word": "美味い"
+            "word": "ç¾Žå‘³ã„"
           },
           {
             "code": "lv",
-            "sense": "of food, having a particularly nt taste",
+            "sense": "of food, having a particularly pleasant taste",
             "lang": "Latvian",
             "word": "gards",
             "tags": [
@@ -3812,10 +3843,10 @@
           },
           {
             "code": "ps",
-            "roman": "ẍë",
+            "roman": "áºÃ«",
             "sense": "of food, having a particularly pleasant taste",
             "lang": "Pashto",
-            "word": "ښه"
+            "word": "ÚšÙ‡"
           },
           {
             "code": "pl",
@@ -3837,10 +3868,10 @@
           },
           {
             "code": "ru",
-            "roman": "xoróšij",
+            "roman": "xorÃ³Å¡ij",
             "sense": "of food, having a particularly pleasant taste",
             "lang": "Russian",
-            "word": "хоро́ший"
+            "word": "Ñ…Ð¾Ñ€Ð¾ÌÑˆÐ¸Ð¹"
           },
           {
             "code": "sco",
@@ -3870,7 +3901,7 @@
             "code": "sl",
             "sense": "of food, having a particularly pleasant taste",
             "lang": "Slovene",
-            "word": "dóber"
+            "word": "dÃ³ber"
           },
           {
             "code": "dsb",
@@ -3922,14 +3953,14 @@
             "roman": "pasandu",
             "sense": "of food, having a particularly pleasant taste",
             "lang": "Telugu",
-            "word": "పసందు"
+            "word": "à°ªà°¸à°‚à°¦à±"
           },
           {
             "code": "uk",
-            "roman": "dóbryj",
+            "roman": "dÃ³bryj",
             "sense": "of food, having a particularly pleasant taste",
             "lang": "Ukrainian",
-            "word": "до́брий"
+            "word": "Ð´Ð¾ÌÐ±Ñ€Ð¸Ð¹"
           },
           {
             "code": "vi",
@@ -3969,14 +4000,6 @@
           {
             "text": "The food was very good.",
             "type": "example"
-          },
-          {
-            "ref": "c. 1430 (reprinted 1888), Thomas Austin, ed., Two Fifteenth-century Cookery-books. Harleian ms. 279 (ab. 1430), & Harl. ms. 4016 (ab. 1450), with Extracts from Ashmole ms. 1429, Laud ms. 553, & Douce ms. 55 [Early English Text Society, Original Series; 91], London: N. Trübner & Co. for the Early English Text Society, volume I, OCLC 374760, page 11",
-            "text": "Soupes dorye. — Take gode almaunde mylke […] caste þher-to Safroun an Salt […]"
-          },
-          {
-            "ref": "1962 (quoting 1381 text), Hans Kurath & Sherman M. Kuhn, eds., Middle English Dictionary, Ann Arbor, Mich.: University of Michigan Press, ISBN 978-0-472-01044-8, page 1242",
-            "text": "dorrẹ̅, dōrī adj. & n. […] cook. glazed with a yellow substance; pome(s ~, sopes ~. […] 1381 Pegge Cook. Recipes page 114: For to make Soupys dorry. Nym onyons […] Nym wyn […] toste wyte bred and do yt in dischis, and god Almande mylk."
           }
         ],
         "qualifier": "properties and qualities"
@@ -4024,28 +4047,28 @@
             "roman": "lav",
             "sense": "of food, edible; not stale or rotten",
             "lang": "Armenian",
-            "word": "լավ"
+            "word": "Õ¬Õ¡Õ¾"
           },
           {
             "code": "bn",
             "roman": "taja",
             "sense": "of food, edible; not stale or rotten",
             "lang": "Bengali",
-            "word": "তাজা"
+            "word": "à¦¤à¦¾à¦œà¦¾"
           },
           {
             "code": "bg",
-            "roman": "dobǎ́r",
+            "roman": "dobÇŽÌr",
             "sense": "of food, edible; not stale or rotten",
             "lang": "Bulgarian",
-            "word": "добъ́р"
+            "word": "Ð´Ð¾Ð±ÑŠÌÑ€"
           },
           {
             "code": "bg",
-            "roman": "góden",
+            "roman": "gÃ³den",
             "sense": "of food, edible; not stale or rotten",
             "lang": "Bulgarian",
-            "word": "го́ден"
+            "word": "Ð³Ð¾ÌÐ´ÐµÐ½"
           },
           {
             "code": "ca",
@@ -4057,7 +4080,7 @@
             "code": "cs",
             "sense": "of food, edible; not stale or rotten",
             "lang": "Czech",
-            "word": "dobrý"
+            "word": "dobrÃ½"
           },
           {
             "code": "da",
@@ -4087,7 +4110,7 @@
             "code": "fi",
             "sense": "of food, edible; not stale or rotten",
             "lang": "Finnish",
-            "word": "hyvä"
+            "word": "hyvÃ¤"
           },
           {
             "code": "gl",
@@ -4100,10 +4123,10 @@
           },
           {
             "code": "ka",
-            "roman": "ḳargi",
+            "roman": "á¸³argi",
             "sense": "of food, edible; not stale or rotten",
             "lang": "Georgian",
-            "word": "კარგი"
+            "word": "áƒ™áƒáƒ áƒ’áƒ˜"
           },
           {
             "code": "de",
@@ -4115,28 +4138,28 @@
             "code": "he",
             "sense": "of food, edible; not stale or rotten",
             "lang": "Hebrew",
-            "word": "אכיל"
+            "word": "××›×™×œ"
           },
           {
             "code": "he",
-            "roman": "tóv",
+            "roman": "tÃ³v",
             "sense": "of food, edible; not stale or rotten",
             "lang": "Hebrew",
-            "word": "טוב"
+            "word": "×˜×•×‘"
           },
           {
             "code": "hi",
-            "roman": "tāzā",
+            "roman": "tÄzÄ",
             "sense": "of food, edible; not stale or rotten",
             "lang": "Hindi",
-            "word": "ताज़ा"
+            "word": "à¤¤à¤¾à¤œà¤¼à¤¾"
           },
           {
             "code": "hi",
-            "roman": "tājā",
+            "roman": "tÄjÄ",
             "sense": "of food, edible; not stale or rotten",
             "lang": "Hindi",
-            "word": "ताजा"
+            "word": "à¤¤à¤¾à¤œà¤¾"
           },
           {
             "code": "io",
@@ -4164,11 +4187,11 @@
           },
           {
             "code": "ja",
-            "roman": "daijōbuna",
-            "alt": "だいじょうぶな",
-            "se": "of food, edible; not stale or rotten",
+            "roman": "daijÅbuna",
+            "alt": "ã ã„ã˜ã‚‡ã†ã¶ãª",
+            "sense": "of food, edible; not stale or rotten",
             "lang": "Japanese",
-            "word": "大丈夫な"
+            "word": "å¤§ä¸ˆå¤«ãª"
           },
           {
             "code": "lv",
@@ -4176,7 +4199,7 @@
             "lang": "Latvian",
             "word": "labs",
             "tags": [
-              "mascu"
+              "masculine"
             ]
           },
           {
@@ -4199,10 +4222,10 @@
           },
           {
             "code": "ps",
-            "roman": "ẍë",
+            "roman": "áºÃ«",
             "sense": "of food, edible; not stale or rotten",
             "lang": "Pashto",
-            "word": "ښه"
+            "word": "ÚšÙ‡"
           },
           {
             "code": "pdt",
@@ -4224,10 +4247,10 @@
           },
           {
             "code": "ru",
-            "roman": "xoróšij",
+            "roman": "xorÃ³Å¡ij",
             "sense": "of food, edible; not stale or rotten",
             "lang": "Russian",
-            "word": "хоро́ший"
+            "word": "Ñ…Ð¾Ñ€Ð¾ÌÑˆÐ¸Ð¹"
           },
           {
             "code": "sco",
@@ -4288,10 +4311,10 @@
           },
           {
             "code": "te",
-            "roman": "tājā",
+            "roman": "tÄjÄ",
             "sense": "of food, edible; not stale or rotten",
             "lang": "Telugu",
-            "word": "తాజా"
+            "word": "à°¤à°¾à°œà°¾"
           },
           {
             "code": "cy",
@@ -4385,7 +4408,33 @@
           {
             "text": "This theory still holds good even if much higher temperatures are assumed.",
             "type": "example"
+          },
+          {
+            "ref": "1966, K. Rothfels, Margaret Freeman, â€œThe salivary gland chromosomes of three North American species of Twinnia (Diptera: Simuliidae)â€, in Canadian Journal of Zoology, volume 44, number 5, â†’DOI",
+            "text": "Twinnia biclavata differs from T. nova by inversion IS-1 and a nucleolar shift. Both are good species.",
+            "type": "quotation"
           }
+        ],
+        "qualifier": "properties and qualities"
+      },
+      {
+        "glosses": [
+          "Right, proper, as it should be."
+        ],
+        "links": [
+          [
+            "Right",
+            "right"
+          ],
+          [
+            "proper",
+            "proper"
+          ]
+        ],
+        "id": "good-en-adj-tEJLpEbp",
+        "raw_glosses": [
+          "(properties and qualities)",
+          "Right, proper, as it should be."
         ],
         "qualifier": "properties and qualities"
       },
@@ -4405,14 +4454,14 @@
             "roman": "lav",
             "sense": "healthful",
             "lang": "Armenian",
-            "word": "լավ"
+            "word": "Õ¬Õ¡Õ¾"
           },
           {
             "code": "bn",
-            "roman": "śastthokor",
+            "roman": "Å›astthokor",
             "sense": "healthful",
             "lang": "Bengali",
-            "word": "স্বাস্থ্যকর"
+            "word": "à¦¸à§à¦¬à¦¾à¦¸à§à¦¥à§à¦¯à¦•à¦°"
           },
           {
             "code": "ca",
@@ -4424,7 +4473,7 @@
             "code": "cs",
             "sense": "healthful",
             "lang": "Czech",
-            "word": "dobrý"
+            "word": "dobrÃ½"
           },
           {
             "code": "da",
@@ -4442,7 +4491,7 @@
             "code": "fi",
             "sense": "healthful",
             "lang": "Finnish",
-            "word": "hyvä"
+            "word": "hyvÃ¤"
           },
           {
             "code": "fi",
@@ -4482,44 +4531,44 @@
           },
           {
             "code": "he",
-            "roman": "barí",
+            "roman": "barÃ­",
             "sense": "healthful",
             "lang": "Hebrew",
-            "word": "בריא"
+            "word": "×‘×¨×™×"
           },
           {
             "code": "he",
-            "roman": "tóv",
+            "roman": "tÃ³v",
             "sense": "healthful",
             "lang": "Hebrew",
-            "word": "טוב"
+            "word": "×˜×•×‘"
           },
           {
             "code": "hi",
             "roman": "uttam",
             "sense": "healthful",
             "lang": "Hindi",
-            "word": "उत्तम",
+            "word": "à¤‰à¤¤à¥à¤¤à¤®",
             "tags": [
               "masculine"
             ]
           },
           {
             "code": "hi",
-            "roman": "acchā",
+            "roman": "acchÄ",
             "sense": "healthful",
             "lang": "Hindi",
-            "word": "अच्छा",
+            "word": "à¤…à¤šà¥à¤›à¤¾",
             "tags": [
               "masculine"
             ]
           },
           {
             "code": "hi",
-            "roman": "acchī",
+            "roman": "acchÄ«",
             "sense": "healthful",
             "lang": "Hindi",
-            "word": "अच्छी",
+            "word": "à¤…à¤šà¥à¤›à¥€",
             "tags": [
               "feminine"
             ]
@@ -4529,7 +4578,7 @@
             "roman": "acche",
             "sense": "healthful",
             "lang": "Hindi",
-            "word": "अच्छे",
+            "word": "à¤…à¤šà¥à¤›à¥‡",
             "tags": [
               "plural"
             ]
@@ -4565,7 +4614,7 @@
             "code": "lv",
             "sense": "healthful",
             "lang": "Latvian",
-            "word": "vērtīgs",
+            "word": "vÄ“rtÄ«gs",
             "tags": [
               "masculine"
             ]
@@ -4574,7 +4623,7 @@
             "code": "lv",
             "sense": "healthful",
             "lang": "Latvian",
-            "word": "veselīgs",
+            "word": "veselÄ«gs",
             "tags": [
               "masculine"
             ]
@@ -4596,7 +4645,7 @@
             "roman": "xar",
             "sense": "healthful",
             "lang": "Mazanderani",
-            "word": "خار"
+            "word": "Ø®Ø§Ø±"
           },
           {
             "code": "no",
@@ -4606,10 +4655,10 @@
           },
           {
             "code": "ps",
-            "roman": "ẍë",
+            "roman": "áºÃ«",
             "sense": "healthful",
             "lang": "Pashto",
-            "word": "ښه"
+            "word": "ÚšÙ‡"
           },
           {
             "code": "pl",
@@ -4625,10 +4674,10 @@
           },
           {
             "code": "ru",
-            "roman": "xoróšij",
+            "roman": "xorÃ³Å¡ij",
             "sense": "healthful",
             "lang": "Russian",
-            "word": "хоро́ший"
+            "word": "Ñ…Ð¾Ñ€Ð¾ÌÑˆÐ¸Ð¹"
           },
           {
             "code": "sco",
@@ -4664,7 +4713,7 @@
             "code": "sl",
             "sense": "healthful",
             "lang": "Slovene",
-            "word": "dóber"
+            "word": "dÃ³ber"
           },
           {
             "code": "dsb",
@@ -4707,10 +4756,10 @@
           },
           {
             "code": "te",
-            "roman": "ārōgyakaramaina",
+            "roman": "ÄrÅgyakaramaina",
             "sense": "healthful",
             "lang": "Telugu",
-            "word": "ఆరోగ్యకరమైన"
+            "word": "à°†à°°à±‹à°—à±à°¯à°•à°°à°®à±ˆà°¨"
           },
           {
             "code": "cy",
@@ -4774,14 +4823,14 @@
             "roman": "lav",
             "sense": "pleasant; enjoyable",
             "lang": "Armenian",
-            "word": "լավ"
+            "word": "Õ¬Õ¡Õ¾"
           },
           {
             "code": "bg",
-            "roman": "húbav",
+            "roman": "hÃºbav",
             "sense": "pleasant; enjoyable",
             "lang": "Bulgarian",
-            "word": "ху́бав"
+            "word": "Ñ…ÑƒÌÐ±Ð°Ð²"
           },
           {
             "code": "ca",
@@ -4793,7 +4842,7 @@
             "code": "cs",
             "sense": "pleasant; enjoyable",
             "lang": "Czech",
-            "word": "dobrý"
+            "word": "dobrÃ½"
           },
           {
             "code": "da",
@@ -4872,7 +4921,7 @@
             "code": "de",
             "sense": "pleasant; enjoyable",
             "lang": "German",
-            "word": "schön"
+            "word": "schÃ¶n"
           },
           {
             "code": "de",
@@ -4882,58 +4931,58 @@
           },
           {
             "code": "got",
-            "roman": "gōþs",
+            "roman": "gÅÃ¾s",
             "sense": "pleasant; enjoyable",
             "lang": "Gothic",
-            "word": "𐌲𐍉𐌸𐍃"
+            "word": "ðŒ²ð‰ðŒ¸ðƒ"
           },
           {
             "code": "el",
-            "roman": "kalós",
+            "roman": "kalÃ³s",
             "sense": "pleasant; enjoyable",
             "lang": "Greek",
-            "word": "καλός"
+            "word": "ÎºÎ±Î»ÏŒÏ‚"
           },
           {
             "code": "he",
-            "roman": "mehané",
+            "roman": "mehanÃ©",
             "sense": "pleasant; enjoyable",
             "lang": "Hebrew",
-            "word": "מהנה"
+            "word": "×ž×”× ×”"
           },
           {
             "code": "he",
-            "roman": "tóv",
+            "roman": "tÃ³v",
             "sense": "pleasant; enjoyable",
             "lang": "Hebrew",
-            "word": "טוב"
+            "word": "×˜×•×‘"
           },
           {
             "code": "hi",
             "roman": "uttam",
             "sense": "pleasant; enjoyable",
             "lang": "Hindi",
-            "word": "उत्तम",
+            "word": "à¤‰à¤¤à¥à¤¤à¤®",
             "tags": [
               "masculine"
             ]
           },
           {
             "code": "hi",
-            "roman": "acchā",
+            "roman": "acchÄ",
             "sense": "pleasant; enjoyable",
             "lang": "Hindi",
-            "word": "अच्छा",
+            "word": "à¤…à¤šà¥à¤›à¤¾",
             "tags": [
               "masculine"
             ]
           },
           {
             "code": "hi",
-            "roman": "acchī",
+            "roman": "acchÄ«",
             "sense": "pleasant; enjoyable",
             "lang": "Hindi",
-            "word": "अच्छी",
+            "word": "à¤…à¤šà¥à¤›à¥€",
             "tags": [
               "feminine"
             ]
@@ -4943,7 +4992,7 @@
             "roman": "acche",
             "sense": "pleasant; enjoyable",
             "lang": "Hindi",
-            "word": "अच्छे",
+            "word": "à¤…à¤šà¥à¤›à¥‡",
             "tags": [
               "plural"
             ]
@@ -4978,22 +5027,22 @@
           {
             "code": "ja",
             "roman": "yoi",
-            "alt": "よい",
-            "sense": "plsant; enjoyable",
+            "alt": "ã‚ˆã„",
+            "sense": "pleasant; enjoyable",
             "lang": "Japanese",
-            "word": "良い"
+            "word": "è‰¯ã„"
           },
           {
             "code": "ja",
             "roman": "ii",
             "sense": "pleasant; enjoyable",
             "lang": "Japanese",
-            "word": "いい"
+            "word": "ã„ã„"
           },
           {
             "code": "lv",
             "sense": "pleasant; enjoyable",
-            "ng": "Latvian",
+            "lang": "Latvian",
             "word": "labs",
             "tags": [
               "masculine"
@@ -5003,7 +5052,7 @@
             "code": "lv",
             "sense": "pleasant; enjoyable",
             "lang": "Latvian",
-            "word": "patīkams",
+            "word": "patÄ«kams",
             "tags": [
               "masculine"
             ]
@@ -5020,14 +5069,14 @@
           {
             "code": "mhn",
             "sense": "pleasant; enjoyable",
-            "lang": "Mòcheno",
+            "lang": "MÃ²cheno",
             "word": "guat"
           },
           {
             "code": "nv",
             "sense": "pleasant; enjoyable",
             "lang": "Navajo",
-            "word": "yáʼátʼééh"
+            "word": "yÃ¡Ê¼Ã¡tÊ¼Ã©Ã©h"
           },
           {
             "code": "no",
@@ -5043,10 +5092,10 @@
           },
           {
             "code": "ps",
-            "roman": "ẍë",
+            "roman": "áºÃ«",
             "sense": "pleasant; enjoyable",
             "lang": "Pashto",
-            "word": "ښه"
+            "word": "ÚšÙ‡"
           },
           {
             "code": "pl",
@@ -5074,10 +5123,10 @@
           },
           {
             "code": "ru",
-            "roman": "xoróšij",
+            "roman": "xorÃ³Å¡ij",
             "sense": "pleasant; enjoyable",
             "lang": "Russian",
-            "word": "хоро́ший"
+            "word": "Ñ…Ð¾Ñ€Ð¾ÌÑˆÐ¸Ð¹"
           },
           {
             "code": "sco",
@@ -5107,7 +5156,7 @@
             "code": "sh",
             "sense": "pleasant; enjoyable",
             "lang": "Serbo-Croatian",
-            "word": "čedno"
+            "word": "Äedno"
           },
           {
             "code": "sh",
@@ -5119,7 +5168,7 @@
             "code": "sl",
             "sense": "pleasant; enjoyable",
             "lang": "Slovene",
-            "word": "dóber"
+            "word": "dÃ³ber"
           },
           {
             "code": "so",
@@ -5146,7 +5195,7 @@
             "code": "su",
             "sense": "pleasant; enjoyable",
             "lang": "Sundanese",
-            "word": "saé"
+            "word": "saÃ©"
           },
           {
             "code": "sw",
@@ -5162,17 +5211,17 @@
           },
           {
             "code": "te",
-            "roman": "utsōhakaramu",
+            "roman": "utsÅhakaramu",
             "sense": "pleasant; enjoyable",
             "lang": "Telugu",
-            "word": "ఉత్సోహకరము"
+            "word": "à°‰à°¤à±à°¸à±‹à°¹à°•à°°à°®à±"
           },
           {
             "code": "bo",
             "roman": "yag po",
             "sense": "pleasant; enjoyable",
             "lang": "Tibetan",
-            "word": "ཡག་པོ"
+            "word": "à½¡à½‚à¼‹à½”à½¼"
           },
           {
             "code": "tr",
@@ -5428,21 +5477,21 @@
             "roman": "lav",
             "sense": "favourable",
             "lang": "Armenian",
-            "word": "լավ"
+            "word": "Õ¬Õ¡Õ¾"
           },
           {
             "code": "hy",
             "roman": "bari",
             "sense": "favourable",
             "lang": "Armenian",
-            "word": "բարի"
+            "word": "Õ¢Õ¡Ö€Õ«"
           },
           {
             "code": "bg",
-            "roman": "dobǎ́r",
+            "roman": "dobÇŽÌr",
             "sense": "favourable",
             "lang": "Bulgarian",
-            "word": "добъ́р"
+            "word": "Ð´Ð¾Ð±ÑŠÌÑ€"
           },
           {
             "code": "ca",
@@ -5454,7 +5503,7 @@
             "code": "cs",
             "sense": "favourable",
             "lang": "Czech",
-            "word": "dobrý"
+            "word": "dobrÃ½"
           },
           {
             "code": "da",
@@ -5472,7 +5521,7 @@
             "code": "fi",
             "sense": "favourable",
             "lang": "Finnish",
-            "word": "hyvä"
+            "word": "hyvÃ¤"
           },
           {
             "code": "fr",
@@ -5500,37 +5549,37 @@
           },
           {
             "code": "he",
-            "roman": "tóv",
+            "roman": "tÃ³v",
             "sense": "favourable",
             "lang": "Hebrew",
-            "word": "טוב"
+            "word": "×˜×•×‘"
           },
           {
             "code": "hi",
             "roman": "uttam",
             "sense": "favourable",
             "lang": "Hindi",
-            "word": "उत्तम",
+            "word": "à¤‰à¤¤à¥à¤¤à¤®",
             "tags": [
               "masculine"
             ]
           },
           {
             "code": "hi",
-            "roman": "acchā",
+            "roman": "acchÄ",
             "sense": "favourable",
             "lang": "Hindi",
-            "word": "अच्छा",
+            "word": "à¤…à¤šà¥à¤›à¤¾",
             "tags": [
               "masculine"
             ]
           },
           {
             "code": "hi",
-            "roman": "acchī",
+            "roman": "acchÄ«",
             "sense": "favourable",
             "lang": "Hindi",
-            "word": "अच्छी",
+            "word": "à¤…à¤šà¥à¤›à¥€",
             "tags": [
               "feminine"
             ]
@@ -5540,17 +5589,17 @@
             "roman": "acche",
             "sense": "favourable",
             "lang": "Hindi",
-            "word": "अच्छे",
+            "word": "à¤…à¤šà¥à¤›à¥‡",
             "tags": [
               "plural"
             ]
           },
           {
             "code": "hi",
-            "roman": "abhimān",
+            "roman": "abhimÄn",
             "sense": "favourable",
             "lang": "Hindi",
-            "word": "अभिमान"
+            "word": "à¤…à¤­à¤¿à¤®à¤¾à¤¨"
           },
           {
             "code": "io",
@@ -5567,17 +5616,17 @@
           {
             "code": "ja",
             "roman": "yoi",
-            "alt": "よい",
+            "alt": "ã‚ˆã„",
             "sense": "favourable",
             "lang": "Japanese",
-            "word": "良い"
+            "word": "è‰¯ã„"
           },
           {
             "code": "ja",
             "roman": "ii",
             "sense": "favourable",
             "lang": "Japanese",
-            "word": "いい"
+            "word": "ã„ã„"
           },
           {
             "code": "la",
@@ -5598,7 +5647,7 @@
             "code": "lv",
             "sense": "favourable",
             "lang": "Latvian",
-            "word": "labvēlīgs",
+            "word": "labvÄ“lÄ«gs",
             "tags": [
               "masculine"
             ]
@@ -5606,21 +5655,21 @@
           {
             "code": "mhn",
             "sense": "favourable",
-            "lang": "Mòcheno",
+            "lang": "MÃ²cheno",
             "word": "guat"
           },
           {
             "code": "nv",
             "sense": "favourable",
             "lang": "Navajo",
-            "word": "yáʼátʼééh"
+            "word": "yÃ¡Ê¼Ã¡tÊ¼Ã©Ã©h"
           },
           {
             "code": "ps",
-            "roman": "ẍë",
+            "roman": "áºÃ«",
             "sense": "favourable",
             "lang": "Pashto",
-            "word": "ښه"
+            "word": "ÚšÙ‡"
           },
           {
             "code": "pl",
@@ -5648,18 +5697,18 @@
           },
           {
             "code": "ru",
-            "roman": "xoróšij",
+            "roman": "xorÃ³Å¡ij",
             "sense": "favourable",
             "lang": "Russian",
-            "word": "хоро́ший"
+            "word": "Ñ…Ð¾Ñ€Ð¾ÌÑˆÐ¸Ð¹"
           },
           {
             "note": "of an omen",
             "code": "ru",
-            "roman": "dóbryj",
+            "roman": "dÃ³bryj",
             "sense": "favourable",
             "lang": "Russian",
-            "word": "до́брый"
+            "word": "Ð´Ð¾ÌÐ±Ñ€Ñ‹Ð¹"
           },
           {
             "code": "sco",
@@ -5689,7 +5738,7 @@
             "code": "sl",
             "sense": "favourable",
             "lang": "Slovene",
-            "word": "dóber"
+            "word": "dÃ³ber"
           },
           {
             "code": "dsb",
@@ -5716,7 +5765,7 @@
             "code": "su",
             "sense": "favourable",
             "lang": "Sundanese",
-            "word": "saé"
+            "word": "saÃ©"
           },
           {
             "code": "sw",
@@ -5750,10 +5799,10 @@
           },
           {
             "code": "te",
-            "roman": "abhimānamu",
+            "roman": "abhimÄnamu",
             "sense": "favourable",
             "lang": "Telugu",
-            "word": "అభిమానము"
+            "word": "à°…à°­à°¿à°®à°¾à°¨à°®à±"
           },
           {
             "code": "cy",
@@ -5775,7 +5824,7 @@
         ],
         "examples": [
           {
-            "text": "a good omen;  good weather",
+            "text": "a good omen;â€ƒ good weather",
             "type": "example"
           }
         ],
@@ -5814,14 +5863,14 @@
             "roman": "lav",
             "sense": "beneficial; worthwhile",
             "lang": "Armenian",
-            "word": "լավ"
+            "word": "Õ¬Õ¡Õ¾"
           },
           {
             "code": "bn",
             "roman": "upokari",
             "sense": "beneficial; worthwhile",
             "lang": "Bengali",
-            "word": "উপকারি"
+            "word": "à¦‰à¦ªà¦•à¦¾à¦°à¦¿"
           },
           {
             "code": "ca",
@@ -5833,7 +5882,7 @@
             "code": "cs",
             "sense": "beneficial; worthwhile",
             "lang": "Czech",
-            "word": "dobrý"
+            "word": "dobrÃ½"
           },
           {
             "code": "da",
@@ -5851,7 +5900,7 @@
             "code": "fi",
             "sense": "beneficial; worthwhile",
             "lang": "Finnish",
-            "word": "hyvä"
+            "word": "hyvÃ¤"
           },
           {
             "code": "fr",
@@ -5879,44 +5928,44 @@
           },
           {
             "code": "he",
-            "roman": "mutzlákh",
+            "roman": "mutzlÃ¡kh",
             "sense": "beneficial; worthwhile",
             "lang": "Hebrew",
-            "word": "מוצלח"
+            "word": "×ž×•×¦×œ×—"
           },
           {
             "code": "he",
-            "roman": "tóv",
+            "roman": "tÃ³v",
             "sense": "beneficial; worthwhile",
             "lang": "Hebrew",
-            "word": "טוב"
+            "word": "×˜×•×‘"
           },
           {
             "code": "hi",
             "roman": "uttam",
             "sense": "beneficial; worthwhile",
             "lang": "Hindi",
-            "word": "उत्तम",
+            "word": "à¤‰à¤¤à¥à¤¤à¤®",
             "tags": [
               "masculine"
             ]
           },
           {
             "code": "hi",
-            "roman": "acchā",
+            "roman": "acchÄ",
             "sense": "beneficial; worthwhile",
             "lang": "Hindi",
-            "word": "अच्छा",
+            "word": "à¤…à¤šà¥à¤›à¤¾",
             "tags": [
               "masculine"
             ]
           },
           {
             "code": "hi",
-            "roman": "acchī",
+            "roman": "acchÄ«",
             "sense": "beneficial; worthwhile",
             "lang": "Hindi",
-            "word": "अच्छी",
+            "word": "à¤…à¤šà¥à¤›à¥€",
             "tags": [
               "feminine"
             ]
@@ -5926,24 +5975,24 @@
             "roman": "acche",
             "sense": "beneficial; worthwhile",
             "lang": "Hindi",
-            "word": "अच्छे",
+            "word": "à¤…à¤šà¥à¤›à¥‡",
             "tags": [
               "plural"
             ]
           },
           {
             "code": "hi",
-            "roman": "upkārī",
+            "roman": "upkÄrÄ«",
             "sense": "beneficial; worthwhile",
             "lang": "Hindi",
-            "word": "उपकारी"
+            "word": "à¤‰à¤ªà¤•à¤¾à¤°à¥€"
           },
           {
             "code": "hi",
-            "roman": "upyogkār",
+            "roman": "upyogkÄr",
             "sense": "beneficial; worthwhile",
             "lang": "Hindi",
-            "word": "उपयोगकार"
+            "word": "à¤‰à¤ªà¤¯à¥‹à¤—à¤•à¤¾à¤°"
           },
           {
             "code": "io",
@@ -5970,17 +6019,17 @@
             "code": "lv",
             "sense": "beneficial; worthwhile",
             "lang": "Latvian",
-            "word": "vērtīgs",
+            "word": "vÄ“rtÄ«gs",
             "tags": [
               "masculine"
             ]
           },
           {
             "code": "ps",
-            "roman": "ẍë",
+            "roman": "áºÃ«",
             "sense": "beneficial; worthwhile",
             "lang": "Pashto",
-            "word": "ښه"
+            "word": "ÚšÙ‡"
           },
           {
             "code": "pl",
@@ -6008,10 +6057,10 @@
           },
           {
             "code": "ru",
-            "roman": "xoróšij",
+            "roman": "xorÃ³Å¡ij",
             "sense": "beneficial; worthwhile",
             "lang": "Russian",
-            "word": "хоро́ший"
+            "word": "Ñ…Ð¾Ñ€Ð¾ÌÑˆÐ¸Ð¹"
           },
           {
             "code": "sco",
@@ -6047,7 +6096,7 @@
             "code": "sl",
             "sense": "beneficial; worthwhile",
             "lang": "Slovene",
-            "word": "dóber"
+            "word": "dÃ³ber"
           },
           {
             "code": "dsb",
@@ -6090,10 +6139,10 @@
           },
           {
             "code": "te",
-            "roman": "upayōgakaramu",
+            "roman": "upayÅgakaramu",
             "sense": "beneficial; worthwhile",
             "lang": "Telugu",
-            "word": "ఉపయోగకరము"
+            "word": "à°‰à°ªà°¯à±‹à°—à°•à°°à°®à±"
           },
           {
             "code": "cy",
@@ -6133,13 +6182,6 @@
         "raw_glosses": [
           "(properties and qualities)",
           "Adequate; sufficient; not fallacious."
-        ],
-        "examples": [
-          {
-            "ref": "1966, K. Rothfels, Margaret Freeman, “The salivary gland chromosomes of three North American species of Twinnia (Diptera: Simuliidae)”, in Canadian Journal of Zoology, volume 44, number 5, →DOI",
-            "text": "Twinnia biclavata differs from T. nova by inversion IS-1 and a nucleolar shift. Both are good species.",
-            "type": "quotation"
-          }
         ],
         "qualifier": "properties and qualities"
       },
@@ -6271,7 +6313,7 @@
         ],
         "examples": [
           {
-            "text": "a good while longer;  a good number of seeds;  A good part of his day was spent shopping.  It will be a good while longer until he's done.  He's had a good amount of troubles, he has.",
+            "text": "a good while longer;â€ƒ a good number of seeds;â€ƒ A good part of his day was spent shopping.â€ƒ It will be a good while longer until he's done.â€ƒ He's had a good amount of troubles, he has.",
             "type": "example"
           }
         ]
@@ -6285,13 +6327,13 @@
             "code": "hu",
             "sense": "full; entire; at least",
             "lang": "Hungarian",
-            "word": "jó"
+            "word": "jÃ³"
           },
           {
             "code": "hu",
             "sense": "full; entire; at least",
             "lang": "Hungarian",
-            "word": "bő"
+            "word": "bÅ‘"
           },
           {
             "code": "pl",
@@ -6330,10 +6372,20 @@
         ],
         "examples": [
           {
-            "text": "This hill will take a good hour and a half to climb.  The car was a good ten miles away.",
+            "text": "This hill will take a good hour and a half to climb.â€ƒ The car was a good ten miles away.",
             "type": "example"
           }
         ]
+      }
+    ],
+    "head_templates": [
+      {
+        "args": {
+          "1": "better",
+          "sup": "best"
+        },
+        "name": "en-adj",
+        "expansion": "good (comparative better, superlative best)"
       }
     ],
     "sounds": [
@@ -6341,13 +6393,55 @@
         "tags": [
           "Received-Pronunciation"
         ],
-        "ipa": "/ɡʊd/"
+        "ipa": "/É¡ÊŠd/"
       },
       {
-        "enpr": "go͝od",
         "tags": [
-          "Received-Pronunciation"
-        ]
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "/É¡ÊŠd/"
+      },
+      {
+        "tags": [
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "[É¡ÊŠÌˆd]"
+      },
+      {
+        "tags": [
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "[É¡ÉªÌˆd]"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "/É¡ÊŠd/"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "[É¡ÊŠd]"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "[É¡ud]"
+      },
+      {
+        "tags": [
+          "African-American-Vernacular-English"
+        ],
+        "ipa": "/É¡ÊŠ(d)/"
+      },
+      {
+        "rhymes": "-ÊŠd"
       },
       {
         "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/69/En-uk-good.ogg/En-uk-good.ogg.mp3",
@@ -6359,51 +6453,6 @@
         "text": "Audio (RP)"
       },
       {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "/ɡʊd/"
-      },
-      {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "[ɡʊ̈d]"
-      },
-      {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "[ɡɪ̈d]"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "/ɡʊd/"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "[ɡʊd]"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "[ɡud]"
-      },
-      {
-        "enpr": "go͝od",
-        "tags": [
-          "General-Australian"
-        ]
-      },
-      {
         "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/28/En-us-good.ogg/En-us-good.ogg.mp3",
         "tags": [
           "US"
@@ -6413,19 +6462,16 @@
         "text": "Audio (US)"
       },
       {
-        "tags": [
-          "African-American-Vernacular-English"
-        ],
-        "ipa": "/ɡʊ(d)/"
-      },
-      {
-        "enpr": "go͝o(d)",
+        "enpr": "goÍod",
         "tags": [
           "African-American-Vernacular-English"
         ]
       },
       {
-        "rhymes": "-ʊd"
+        "enpr": "goÍo(d)",
+        "tags": [
+          "African-American-Vernacular-English"
+        ]
       }
     ],
     "antonyms": [
@@ -6550,6 +6596,12 @@
         "word": "better is the enemy of good"
       },
       {
+        "word": "capital good"
+      },
+      {
+        "word": "chaotic good"
+      },
+      {
         "word": "club good"
       },
       {
@@ -6566,6 +6618,9 @@
       },
       {
         "word": "consumer good"
+      },
+      {
+        "word": "deal a good hand"
       },
       {
         "word": "demerit good"
@@ -6637,6 +6692,9 @@
         "word": "ill"
       },
       {
+        "word": "for no good reason"
+      },
+      {
         "word": "for one's own good"
       },
       {
@@ -6655,7 +6713,16 @@
         "word": "give a good account of oneself"
       },
       {
+        "word": "give a good damn"
+      },
+      {
+        "word": "give a good goddamn"
+      },
+      {
         "word": "give as good as one gets"
+      },
+      {
+        "word": "go at a good clip"
       },
       {
         "word": "go gentle into that good night"
@@ -6680,6 +6747,9 @@
       },
       {
         "word": "good as one's word"
+      },
+      {
+        "word": "good-ass"
       },
       {
         "word": "good as wheat in the bin"
@@ -6715,13 +6785,13 @@
         "word": "good-by"
       },
       {
-        "word": "goodbye"
-      },
-      {
         "word": "good-bye"
       },
       {
         "word": "good bye"
+      },
+      {
+        "word": "goodbye"
       },
       {
         "word": "good-byer"
@@ -6730,7 +6800,31 @@
         "word": "good cess"
       },
       {
+        "word": "good cholesterol"
+      },
+      {
+        "word": "good coin"
+      },
+      {
+        "word": "good cop/bad cop"
+      },
+      {
+        "word": "good-cop/bad-cop"
+      },
+      {
+        "word": "good cop-bad cop"
+      },
+      {
         "word": "good cop bad cop"
+      },
+      {
+        "word": "good-cop-bad-cop"
+      },
+      {
+        "word": "good-cop bad-cop"
+      },
+      {
+        "word": "good copâ€“bad cop"
       },
       {
         "word": "good day"
@@ -6793,10 +6887,16 @@
         "word": "good form"
       },
       {
+        "word": "good-for-naught"
+      },
+      {
         "word": "good-for-nothing"
       },
       {
         "word": "good for nothing"
+      },
+      {
+        "word": "good-for-nothingness"
       },
       {
         "word": "good for someone"
@@ -6821,6 +6921,9 @@
       },
       {
         "word": "good golly"
+      },
+      {
+        "word": "good good"
       },
       {
         "word": "good-good"
@@ -6862,6 +6965,9 @@
         "word": "good house"
       },
       {
+        "word": "good-humor"
+      },
+      {
         "word": "good humor"
       },
       {
@@ -6875,6 +6981,9 @@
       },
       {
         "word": "good humour"
+      },
+      {
+        "word": "good-humour"
       },
       {
         "word": "good-humoured"
@@ -6931,10 +7040,10 @@
         "word": "good looker"
       },
       {
-        "word": "good-looking"
+        "word": "good looking"
       },
       {
-        "word": "good looking"
+        "word": "good-looking"
       },
       {
         "word": "good-lookingness"
@@ -6946,7 +7055,13 @@
         "word": "good Lord"
       },
       {
+        "word": "good loser"
+      },
+      {
         "word": "good luck"
+      },
+      {
+        "word": "good-luck bone"
       },
       {
         "word": "goodly"
@@ -7000,6 +7115,9 @@
         "word": "good news"
       },
       {
+        "word": "good-night"
+      },
+      {
         "word": "good night"
       },
       {
@@ -7007,6 +7125,9 @@
       },
       {
         "word": "good now"
+      },
+      {
+        "word": "good-o"
       },
       {
         "word": "good offices"
@@ -7031,6 +7152,9 @@
       },
       {
         "word": "good old days"
+      },
+      {
+        "word": "good old times"
       },
       {
         "word": "good ole"
@@ -7058,6 +7182,9 @@
       },
       {
         "word": "good riddance to bad rubbish"
+      },
+      {
+        "word": "good run"
       },
       {
         "word": "Good Samaritan"
@@ -7114,6 +7241,9 @@
         "word": "good thinking"
       },
       {
+        "word": "good tidings"
+      },
+      {
         "word": "good-time"
       },
       {
@@ -7126,10 +7256,10 @@
         "word": "good time Charley"
       },
       {
-        "word": "good time Charlie"
+        "word": "good-time Charlie"
       },
       {
-        "word": "good-time Charlie"
+        "word": "good time Charlie"
       },
       {
         "word": "good time girl"
@@ -7162,10 +7292,16 @@
         "word": "good voice to beg bacon"
       },
       {
+        "word": "good weather"
+      },
+      {
         "word": "goodwife"
       },
       {
         "word": "good will"
+      },
+      {
+        "word": "good-will"
       },
       {
         "word": "good willer"
@@ -7195,6 +7331,9 @@
         "word": "greater good"
       },
       {
+        "word": "have a good mind to"
+      },
+      {
         "word": "have a good one"
       },
       {
@@ -7213,7 +7352,13 @@
         "word": "I'm good"
       },
       {
+        "word": "impulse good"
+      },
+      {
         "word": "inferior good"
+      },
+      {
+        "word": "in good bread"
       },
       {
         "word": "in good conscience"
@@ -7229,6 +7374,9 @@
       },
       {
         "word": "in good part"
+      },
+      {
+        "word": "in good season"
       },
       {
         "word": "in good spirits"
@@ -7264,6 +7412,9 @@
         "word": "keep good hours"
       },
       {
+        "word": "last known good"
+      },
+      {
         "word": "let the door hit you where the good Lord split you"
       },
       {
@@ -7294,16 +7445,19 @@
         "word": "merit good"
       },
       {
+        "word": "much good may it do someone"
+      },
+      {
         "word": "nobody ever went broke underestimating the good taste of the American people"
       },
       {
         "word": "nobody ever went broke underestimating the good taste of the American public"
       },
       {
-        "word": "no good"
+        "word": "no-good"
       },
       {
-        "word": "no-good"
+        "word": "no good"
       },
       {
         "word": "no-good ass"
@@ -7483,10 +7637,10 @@
         "word": "walk good"
       },
       {
-        "word": "waste-good"
+        "word": "waste good"
       },
       {
-        "word": "waste good"
+        "word": "waste-good"
       },
       {
         "word": "well and good"
@@ -7534,6 +7688,9 @@
         "word": "your guess is as good as mine"
       },
       {
+        "word": "your money is no good here"
+      },
+      {
         "word": "a good many"
       }
     ],
@@ -7548,7 +7705,7 @@
         "word": "decent"
       },
       {
-        "word": "g’d",
+        "word": "gâ€™d",
         "tags": [
           "contraction",
           "poetic"
@@ -7571,18 +7728,18 @@
     "etymology_templates": [
       {
         "args": {
+          "1": "en",
           "2": "ine-pro",
-          "3": "*gʰedʰ-",
-          "1": "en"
+          "3": "*gÊ°edÊ°-"
         },
         "name": "root",
         "expansion": ""
       },
       {
         "args": {
+          "3": "good",
           "1": "en",
-          "2": "enm",
-          "3": "good"
+          "2": "enm"
         },
         "name": "inh",
         "expansion": "Middle English good"
@@ -7591,59 +7748,59 @@
         "args": {
           "2": "ang",
           "1": "en",
-          "3": "gōd"
+          "3": "gÅd"
         },
         "name": "inh",
-        "expansion": "Old English gōd"
+        "expansion": "Old English gÅd"
       },
       {
         "args": {
           "2": "gmw-pro",
-          "3": "*gōd",
-          "1": "en"
+          "1": "en",
+          "3": "*gÅd"
         },
         "name": "inh",
-        "expansion": "Proto-West Germanic *gōd"
+        "expansion": "Proto-West Germanic *gÅd"
       },
       {
         "args": {
-          "3": "*gōdaz",
           "1": "en",
+          "3": "*gÅdaz",
           "2": "gem-pro"
         },
         "name": "inh",
-        "expansion": "Proto-Germanic *gōdaz"
+        "expansion": "Proto-Germanic *gÅdaz"
       },
       {
         "args": {
-          "1": "en",
-          "2": "ine-pro",
-          "3": "*gʰedʰ-",
+          "4": "",
           "5": "to unite, be associated, suit",
-          "4": ""
+          "2": "ine-pro",
+          "1": "en",
+          "3": "*gÊ°edÊ°-"
         },
         "name": "der",
-        "expansion": "Proto-Indo-European *gʰedʰ- (“to unite, be associated, suit”)"
+        "expansion": "Proto-Indo-European *gÊ°edÊ°- (â€œto unite, be associated, suitâ€)"
       },
       {
         "args": {
-          "1": "ru",
+          "4": "fit, well-suited, good for; (coll.) good",
           "3": "",
-          "2": "го́дный",
-          "4": "fit, well-suited, good for; (coll.) good"
+          "1": "ru",
+          "2": "Ð³Ð¾ÌÐ´Ð½Ñ‹Ð¹"
         },
         "name": "cog",
-        "expansion": "Russian го́дный (gódnyj, “fit, well-suited, good for; (coll.) good”)"
+        "expansion": "Russian Ð³Ð¾ÌÐ´Ð½Ñ‹Ð¹ (gÃ³dnyj, â€œfit, well-suited, good for; (coll.) goodâ€)"
       },
       {
         "args": {
-          "1": "ru",
           "3": "",
           "4": "",
-          "2": "год"
+          "2": "Ð³Ð¾Ð´",
+          "1": "ru"
         },
         "name": "m",
-        "expansion": "год (god)"
+        "expansion": "Ð³Ð¾Ð´ (god)"
       },
       {
         "args": {
@@ -7655,24 +7812,24 @@
       },
       {
         "args": {
-          "2": "together",
-          "1": "en"
+          "1": "en",
+          "2": "together"
         },
         "name": "m",
         "expansion": "together"
       },
       {
         "args": {
-          "1": "en",
-          "2": "god"
+          "2": "god",
+          "1": "en"
         },
         "name": "m",
         "expansion": "god"
       },
       {
         "args": {
-          "1": "en",
-          "2": "God"
+          "2": "God",
+          "1": "en"
         },
         "name": "m",
         "expansion": "God"
@@ -7695,41 +7852,41 @@
       },
       {
         "args": {
-          "1": "enm",
-          "2": "boon"
+          "2": "boon",
+          "1": "enm"
         },
         "name": "m",
         "expansion": "boon"
       },
       {
         "args": {
-          "t": "good",
           "2": "boun",
-          "1": "enm"
+          "1": "enm",
+          "t": "good"
         },
         "name": "m",
-        "expansion": "boun (“good”)"
+        "expansion": "boun (â€œgoodâ€)"
       },
       {
         "args": {
           "1": "fro",
-          "2": "bon",
-          "t": "good"
+          "t": "good",
+          "2": "bon"
         },
         "name": "ncog",
-        "expansion": "Old French bon (“good”)"
+        "expansion": "Old French bon (â€œgoodâ€)"
       },
       {
         "args": {
-          "t": "good",
           "1": "la",
-          "2": "bōnus"
+          "2": "bonus",
+          "t": "good"
         },
         "name": "ncog",
-        "expansion": "Latin bōnus (“good”)"
+        "expansion": "Latin bonus (â€œgoodâ€)"
       }
     ],
-    "etymology_text": "From Middle English good, from Old English gōd, from Proto-West Germanic *gōd, from Proto-Germanic *gōdaz, from Proto-Indo-European *gʰedʰ- (“to unite, be associated, suit”). Cognate with Russian го́дный (gódnyj, “fit, well-suited, good for; (coll.) good”), год (god), \"year\", via \"suitable time\". Related to gather and together, but not to god/God. Eclipsed non-native Middle English bon, bone, boon, boun (“good”) borrowed from Old French bon (“good”), from Latin bōnus (“good”).",
+    "etymology_text": "From Middle English good, from Old English gÅd, from Proto-West Germanic *gÅd, from Proto-Germanic *gÅdaz, from Proto-Indo-European *gÊ°edÊ°- (â€œto unite, be associated, suitâ€). Cognate with Russian Ð³Ð¾ÌÐ´Ð½Ñ‹Ð¹ (gÃ³dnyj, â€œfit, well-suited, good for; (coll.) goodâ€), Ð³Ð¾Ð´ (god), \"year\", via \"suitable time\". Related to gather and together, but not to god/God. Eclipsed non-native Middle English bon, bone, boon, boun (â€œgoodâ€) borrowed from Old French bon (â€œgoodâ€), from Latin bonus (â€œgoodâ€).",
     "senses": [
       {
         "glosses": [
@@ -7738,10 +7895,10 @@
         "translations": [
           {
             "code": "ar",
-            "roman": "ḥasanan",
+            "roman": "á¸¥asanan",
             "sense": "exclamation of satisfaction",
             "lang": "Arabic",
-            "word": "حَسَنًا"
+            "word": "Ø­ÙŽØ³ÙŽÙ†Ù‹Ø§"
           },
           {
             "code": "ca",
@@ -7751,10 +7908,10 @@
           },
           {
             "code": "cmn",
-            "roman": "hǎo de",
+            "roman": "hÇŽo de",
             "sense": "exclamation of satisfaction",
             "lang": "Chinese Mandarin",
-            "word": "好的"
+            "word": "å¥½çš„"
           },
           {
             "code": "nl",
@@ -7763,10 +7920,10 @@
             "word": "goed"
           },
           {
-            "code": "i",
+            "code": "fi",
             "sense": "exclamation of satisfaction",
             "lang": "Finnish",
-            "word": "hyvä"
+            "word": "hyvÃ¤"
           },
           {
             "code": "fr",
@@ -7801,101 +7958,102 @@
         ]
       }
     ],
+    "head_templates": [
+      {
+        "args": {},
+        "name": "en-interj",
+        "expansion": "good"
+      }
+    ],
     "sounds": [
       {
         "tags": [
           "Received-Pronunciation"
         ],
-        "ipa": "/ɡʊd/"
+        "ipa": "/É¡ÊŠd/"
       },
       {
-        "enpr": "go͝od",
         "tags": [
-          "Received-Pronunciation"
-        ]
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "/É¡ÊŠd/"
       },
       {
-        "mp3_url": "https:upload.wikimedia.org/wikipedia/commons/transcoded/6/69/En-uk-good.ogg/En-uk-good.ogg.mp3",
+        "tags": [
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "[É¡ÊŠÌˆd]"
+      },
+      {
+        "tags": [
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "[É¡ÉªÌˆd]"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "/É¡ÊŠd/"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "[É¡ÊŠd]"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "[É¡ud]"
+      },
+      {
+        "tags": [
+          "African-American-Vernacular-English"
+        ],
+        "ipa": "/É¡ÊŠ(d)/"
+      },
+      {
+        "rhymes": "-ÊŠd"
+      },
+      {
+        "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/69/En-uk-good.ogg/En-uk-good.ogg.mp3",
         "tags": [
           "Received-Pronunciation"
         ],
-        "ogg_url": "https:upload.wikimedia.org/wikipedia/commons/6/69/En-uk-good.ogg",
+        "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/En-uk-good.ogg",
         "audio": "En-uk-good.ogg",
         "text": "Audio (RP)"
       },
       {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "/ɡʊd/"
-      },
-      {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "[ɡʊ̈d]"
-      },
-      {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "[ɡɪ̈d]"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "/ɡʊd/"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "[ɡʊd]"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "[ɡud]"
-      },
-      {
-        "enpr": "go͝od",
-        "tags": [
-          "General-Australian"
-        ]
-      },
-      {
-        "mp3_url": "https:upload.wikimedia.org/wikipedia/commons/transcoded/2/28/En-us-good.ogg/En-us-good.ogg.mp3",
+        "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/28/En-us-good.ogg/En-us-good.ogg.mp3",
         "tags": [
           "US"
         ],
-        "ogg_url": "https:upload.wikimedia.org/wikipedia/commons/2/28/En-us-good.ogg",
+        "ogg_url": "https://upload.wikimedia.org/wikipedia/commons/2/28/En-us-good.ogg",
         "audio": "En-us-good.ogg",
         "text": "Audio (US)"
       },
       {
-        "tags": [
-          "African-American-Vernacular-English"
-        ],
-        "ipa": "/ɡʊ(d)/"
-      },
-      {
-        "enpr": "go͝o(d)",
+        "enpr": "goÍod",
         "tags": [
           "African-American-Vernacular-English"
         ]
       },
       {
-        "rhymes": "-ʊd"
+        "enpr": "goÍo(d)",
+        "tags": [
+          "African-American-Vernacular-English"
+        ]
       }
     ],
     "synonyms": [
       {
-        "word": "g’d",
+        "word": "gâ€™d",
         "tags": [
           "contraction",
           "poetic"
@@ -7919,61 +8077,61 @@
       {
         "args": {
           "5": "good, well",
-          "4": "",
-          "pos": "adverb",
+          "2": "enm",
           "3": "goode",
+          "4": "",
           "1": "en",
-          "2": "enm"
+          "pos": "adverb"
         },
         "name": "inh",
-        "expansion": "Middle English goode (“good, well”, adverb)"
+        "expansion": "Middle English goode (â€œgood, wellâ€, adverb)"
       },
       {
         "args": {
-          "pos": "adverb",
-          "2": "goed",
-          "4": "good, well",
           "3": "",
-          "1": "nl"
+          "1": "nl",
+          "2": "goed",
+          "pos": "adverb",
+          "4": "good, well"
         },
         "name": "cog",
-        "expansion": "Dutch goed (“good, well”, adverb)"
+        "expansion": "Dutch goed (â€œgood, wellâ€, adverb)"
       },
       {
         "args": {
           "1": "de",
           "3": "",
-          "2": "gut",
           "pos": "adverb",
+          "2": "gut",
           "4": "good, well"
         },
         "name": "cog",
-        "expansion": "German gut (“good, well”, adverb)"
+        "expansion": "German gut (â€œgood, wellâ€, adverb)"
       },
       {
         "args": {
           "1": "da",
-          "4": "good, well",
-          "pos": "adverb",
           "2": "godt",
+          "pos": "adverb",
+          "4": "good, well",
           "3": ""
         },
         "name": "cog",
-        "expansion": "Danish godt (“good, well”, adverb)"
+        "expansion": "Danish godt (â€œgood, wellâ€, adverb)"
       },
       {
         "args": {
-          "1": "sv",
+          "pos": "adverb",
           "2": "godt",
-          "3": "",
+          "1": "sv",
           "4": "good, well",
-          "pos": "adverb"
+          "3": ""
         },
         "name": "cog",
-        "expansion": "Swedish godt (“good, well”, adverb)"
+        "expansion": "Swedish godt (â€œgood, wellâ€, adverb)"
       }
     ],
-    "etymology_text": "From Middle English goode (“good, well”, adverb), from the adjective. Compare Dutch goed (“good, well”, adverb), German gut (“good, well”, adverb), Danish godt (“good, well”, adverb), Swedish godt (“good, well”, adverb), all from the adjective.",
+    "etymology_text": "From Middle English goode (â€œgood, wellâ€, adverb), from the adjective. Compare Dutch goed (â€œgood, wellâ€, adverb), German gut (â€œgood, wellâ€, adverb), Danish godt (â€œgood, wellâ€, adverb), Swedish godt (â€œgood, wellâ€, adverb), all from the adjective.",
     "forms": [
       {
         "form": "better",
@@ -8027,7 +8185,7 @@
             "type": "quotation"
           },
           {
-            "ref": "1972, Harry Chapin (lyrics and music), “A Better Place to Be”, in Sniper and Other Love Songs",
+            "ref": "1972, Harry Chapin (lyrics and music), â€œA Better Place to Beâ€, in Sniper and Other Love Songs",
             "text": "She said, \"I don't want to bother you / Consider it's understood / I know I'm not no beauty queen / But I sure can listen good.\"",
             "type": "quotation"
           },
@@ -8037,8 +8195,8 @@
             "type": "quotation"
           },
           {
-            "ref": "2007 April 19, Jimmy Wales, “Jimmy Wales on the User-Generated Generation”, Fresh Air, WHYY, Pennsylvania https://web.archive.org/web/20070423020137/http://www.npr.org/templates/story/story.php?storyId=9683874",
-            "text": "The one thing that we can't do...is throw out the baby with the bathwater.... We know our process works pretty darn good and, uh, it’s really sparked this amazing phenomenon of this...high-quality website."
+            "ref": "2007 April 19, Jimmy Wales, â€œJimmy Wales on the User-Generated Generationâ€, Fresh Air, WHYY, Pennsylvania https://web.archive.org/web/20070423020137/http://www.npr.org/templates/story/story.php?storyId=9683874",
+            "text": "The one thing that we can't do...is throw out the baby with the bathwater.... We know our process works pretty darn good and, uh, itâ€™s really sparked this amazing phenomenon of this...high-quality website."
           },
           {
             "ref": "2010, Monte Dwyer, Red in the Centre: Through a Crooked Lens, Monyer Pty Ltd, page 14",
@@ -8046,11 +8204,21 @@
             "type": "quotation"
           },
           {
-            "ref": "2012, BioWare, Mass Effect 3 (Science Fiction), Redwood City: Electronic Arts, →OCLC, PC, scene: Citadel (Priority: Earth)",
+            "ref": "2012, BioWare, Mass Effect 3 (Science Fiction), Redwood City: Electronic Arts, â†’OCLC, PC, scene: Citadel (Priority: Earth)",
             "text": "Admiral Anderson: You did good, child. You did good. I'm proud of you.",
             "type": "quotation"
           }
         ]
+      }
+    ],
+    "head_templates": [
+      {
+        "args": {
+          "sup": "best",
+          "1": "better"
+        },
+        "name": "en-adv",
+        "expansion": "good (comparative better, superlative best)"
       }
     ],
     "sounds": [
@@ -8058,13 +8226,55 @@
         "tags": [
           "Received-Pronunciation"
         ],
-        "ipa": "/ɡʊd/"
+        "ipa": "/É¡ÊŠd/"
       },
       {
-        "enpr": "go͝od",
         "tags": [
-          "Received-Pronunciation"
-        ]
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "/É¡ÊŠd/"
+      },
+      {
+        "tags": [
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "[É¡ÊŠÌˆd]"
+      },
+      {
+        "tags": [
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "[É¡ÉªÌˆd]"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "/É¡ÊŠd/"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "[É¡ÊŠd]"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "[É¡ud]"
+      },
+      {
+        "tags": [
+          "African-American-Vernacular-English"
+        ],
+        "ipa": "/É¡ÊŠ(d)/"
+      },
+      {
+        "rhymes": "-ÊŠd"
       },
       {
         "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/69/En-uk-good.ogg/En-uk-good.ogg.mp3",
@@ -8076,51 +8286,6 @@
         "text": "Audio (RP)"
       },
       {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "/ɡʊd/"
-      },
-      {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "[ɡʊ̈d]"
-      },
-      {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "[ɡɪ̈d]"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "/ɡʊd/"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "[ɡʊd]"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "[ɡud]"
-      },
-      {
-        "enpr": "go͝od",
-        "tags": [
-          "General-Australian"
-        ]
-      },
-      {
         "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/28/En-us-good.ogg/En-us-good.ogg.mp3",
         "tags": [
           "US"
@@ -8130,19 +8295,16 @@
         "text": "Audio (US)"
       },
       {
-        "tags": [
-          "African-American-Vernacular-English"
-        ],
-        "ipa": "/ɡʊ(d)/"
-      },
-      {
-        "enpr": "go͝o(d)",
+        "enpr": "goÍod",
         "tags": [
           "African-American-Vernacular-English"
         ]
       },
       {
-        "rhymes": "-ʊd"
+        "enpr": "goÍo(d)",
+        "tags": [
+          "African-American-Vernacular-English"
+        ]
       }
     ],
     "derived": [
@@ -8169,65 +8331,65 @@
       },
       {
         "args": {
-          "2": "god",
-          "1": "enm"
+          "1": "enm",
+          "2": "god"
         },
         "name": "m",
         "expansion": "god"
       },
       {
         "args": {
-          "2": "ang",
           "4": "",
-          "5": "a good thing, advantage, benefit, gift; good, goodness, welfare; virtue, ability, doughtiness; goods, property, wealth",
-          "3": "gōd",
-          "1": "en"
+          "3": "gÅd",
+          "1": "en",
+          "2": "ang",
+          "5": "a good thing, advantage, benefit, gift; good, goodness, welfare; virtue, ability, doughtiness; goods, property, wealth"
         },
         "name": "inh",
-        "expansion": "Old English gōd (“a good thing, advantage, benefit, gift; good, goodness, welfare; virtue, ability, doughtiness; goods, property, wealth”)"
+        "expansion": "Old English gÅd (â€œa good thing, advantage, benefit, gift; good, goodness, welfare; virtue, ability, doughtiness; goods, property, wealthâ€)"
       },
       {
         "args": {
+          "5": "goods, belongings",
           "1": "en",
           "2": "gem-pro",
-          "3": "*gōdą",
-          "4": "",
-          "5": "goods, belongings"
+          "3": "*gÅdÄ…",
+          "4": ""
         },
         "name": "inh",
-        "expansion": "Proto-Germanic *gōdą (“goods, belongings”)"
+        "expansion": "Proto-Germanic *gÅdÄ… (â€œgoods, belongingsâ€)"
       },
       {
         "args": {
+          "2": "ine-pro",
           "1": "en",
-          "3": "*gʰedʰ-",
-          "2": "ine-pro"
+          "3": "*gÊ°edÊ°-"
         },
         "name": "der",
-        "expansion": "Proto-Indo-European *gʰedʰ-"
+        "expansion": "Proto-Indo-European *gÊ°edÊ°-"
       },
       {
         "args": {
-          "2": "*gʰodʰ-",
+          "4": "to unite, be associated, suit",
+          "2": "*gÊ°odÊ°-",
           "3": "",
-          "1": "ine-pro",
-          "4": "to unite, be associated, suit"
+          "1": "ine-pro"
         },
         "name": "m",
-        "expansion": "*gʰodʰ- (“to unite, be associated, suit”)"
+        "expansion": "*gÊ°odÊ°- (â€œto unite, be associated, suitâ€)"
       },
       {
         "args": {
           "2": "Gut",
           "3": "",
-          "1": "de",
-          "4": "item of merchandise; estate; property"
+          "4": "item of merchandise; estate; property",
+          "1": "de"
         },
         "name": "cog",
-        "expansion": "German Gut (“item of merchandise; estate; property”)"
+        "expansion": "German Gut (â€œitem of merchandise; estate; propertyâ€)"
       }
     ],
-    "etymology_text": "From Middle English good, god, from Old English gōd (“a good thing, advantage, benefit, gift; good, goodness, welfare; virtue, ability, doughtiness; goods, property, wealth”), from Proto-Germanic *gōdą (“goods, belongings”), from Proto-Indo-European *gʰedʰ-, *gʰodʰ- (“to unite, be associated, suit”). Compare German Gut (“item of merchandise; estate; property”).",
+    "etymology_text": "From Middle English good, god, from Old English gÅd (â€œa good thing, advantage, benefit, gift; good, goodness, welfare; virtue, ability, doughtiness; goods, property, wealthâ€), from Proto-Germanic *gÅdÄ… (â€œgoods, belongingsâ€), from Proto-Indo-European *gÊ°edÊ°-, *gÊ°odÊ°- (â€œto unite, be associated, suitâ€). Compare German Gut (â€œitem of merchandise; estate; propertyâ€).",
     "forms": [
       {
         "form": "goods",
@@ -8244,20 +8406,20 @@
         "translations": [
           {
             "code": "ar",
-            "roman": "ḵayr",
+            "roman": "á¸µayr",
             "sense": "the forces of good",
             "lang": "Arabic",
-            "word": "خَيْر",
+            "word": "Ø®ÙŽÙŠÙ’Ø±",
             "tags": [
               "masculine"
             ]
           },
           {
             "code": "ar",
-            "roman": "fāʔida",
+            "roman": "fÄÊ”ida",
             "sense": "the forces of good",
             "lang": "Arabic",
-            "word": "فَائِدَة",
+            "word": "ÙÙŽØ§Ø¦ÙØ¯ÙŽØ©",
             "tags": [
               "feminine"
             ]
@@ -8267,14 +8429,14 @@
             "roman": "bari",
             "sense": "the forces of good",
             "lang": "Armenian",
-            "word": "բարի"
+            "word": "Õ¢Õ¡Ö€Õ«"
           },
           {
             "code": "be",
-            "roman": "dabró",
+            "roman": "dabrÃ³",
             "sense": "the forces of good",
             "lang": "Belarusian",
-            "word": "дабро́",
+            "word": "Ð´Ð°Ð±Ñ€Ð¾Ì",
             "tags": [
               "neuter"
             ]
@@ -8284,7 +8446,7 @@
             "roman": "dobro",
             "sense": "the forces of good",
             "lang": "Bulgarian",
-            "word": "добро",
+            "word": "Ð´Ð¾Ð±Ñ€Ð¾",
             "tags": [
               "neuter"
             ]
@@ -8309,10 +8471,10 @@
           },
           {
             "code": "cmn",
-            "roman": "shàn",
+            "roman": "shÃ n",
             "sense": "the forces of good",
             "lang": "Chinese Mandarin",
-            "word": "善"
+            "word": "å–„"
           },
           {
             "code": "cho",
@@ -8351,7 +8513,7 @@
             "code": "fi",
             "sense": "the forces of good",
             "lang": "Finnish",
-            "word": "hyvä"
+            "word": "hyvÃ¤"
           },
           {
             "code": "fr",
@@ -8373,10 +8535,10 @@
           },
           {
             "code": "el",
-            "roman": "kalós",
+            "roman": "kalÃ³s",
             "sense": "the forces of good",
             "lang": "Greek",
-            "word": "καλός",
+            "word": "ÎºÎ±Î»ÏŒÏ‚",
             "tags": [
               "masculine"
             ]
@@ -8386,28 +8548,28 @@
             "roman": "tuv",
             "sense": "the forces of good",
             "lang": "Hebrew",
-            "word": "טוב"
+            "word": "×˜×•×‘"
           },
           {
             "code": "he",
             "roman": "tov",
             "sense": "the forces of good",
             "lang": "Hebrew",
-            "word": "טוב"
+            "word": "×˜×•×‘"
           },
           {
             "code": "he",
             "roman": "tovah",
             "sense": "the forces of good",
             "lang": "Hebrew",
-            "word": "טובה"
+            "word": "×˜×•×‘×”"
           },
           {
             "code": "hi",
-            "roman": "nekī",
+            "roman": "nekÄ«",
             "sense": "the forces of good",
             "lang": "Hindi",
-            "word": "नेकी",
+            "word": "à¤¨à¥‡à¤•à¥€",
             "tags": [
               "feminine"
             ]
@@ -8417,7 +8579,7 @@
             "roman": "khair",
             "sense": "the forces of good",
             "lang": "Hindi",
-            "word": "खैर",
+            "word": "à¤–à¥ˆà¤°",
             "tags": [
               "feminine"
             ]
@@ -8427,7 +8589,7 @@
             "roman": "xair",
             "sense": "the forces of good",
             "lang": "Hindi",
-            "word": "ख़ैर",
+            "word": "à¤–à¤¼à¥ˆà¤°",
             "tags": [
               "feminine"
             ]
@@ -8436,7 +8598,7 @@
             "code": "hu",
             "sense": "the forces of good",
             "lang": "Hungarian",
-            "word": "jó"
+            "word": "jÃ³"
           },
           {
             "code": "id",
@@ -8462,17 +8624,17 @@
           {
             "code": "ja",
             "roman": "zen",
-            "alt": "ぜん",
+            "alt": "ãœã‚“",
             "sense": "the forces of good",
             "lang": "Japanese",
-            "word": "善"
+            "word": "å–„"
           },
           {
             "code": "ko",
-            "roman": "akham",
+            "roman": "chakham",
             "sense": "the forces of good",
             "lang": "Korean",
-            "word": "착함"
+            "word": "ì°©í•¨"
           },
           {
             "code": "la",
@@ -8485,7 +8647,7 @@
           },
           {
             "code": "la",
-            "sense": "t forces of good",
+            "sense": "the forces of good",
             "lang": "Latin",
             "word": "bona",
             "tags": [
@@ -8507,7 +8669,7 @@
             "roman": "dobro",
             "sense": "the forces of good",
             "lang": "Macedonian",
-            "word": "добро",
+            "word": "Ð´Ð¾Ð±Ñ€Ð¾",
             "tags": [
               "neuter"
             ]
@@ -8516,21 +8678,21 @@
             "code": "lus",
             "sense": "the forces of good",
             "lang": "Mizo",
-            "word": "ţha"
+            "word": "Å£ha"
           },
           {
             "code": "fa",
             "roman": "xeyr",
             "sense": "the forces of good",
             "lang": "Persian",
-            "word": "خیر"
+            "word": "Ø®ÛŒØ±"
           },
           {
             "code": "fa",
             "roman": "niki",
             "sense": "the forces of good",
             "lang": "Persian",
-            "word": "نیکی"
+            "word": "Ù†ÛŒÚ©ÛŒ"
           },
           {
             "code": "pl",
@@ -8546,7 +8708,7 @@
             "english": "kindness",
             "sense": "the forces of good",
             "lang": "Polish",
-            "word": "dobroć",
+            "word": "dobroÄ‡",
             "tags": [
               "feminine"
             ]
@@ -8577,10 +8739,10 @@
           },
           {
             "code": "ru",
-            "roman": "dobró",
+            "roman": "dobrÃ³",
             "sense": "the forces of good",
             "lang": "Russian",
-            "word": "добро́",
+            "word": "Ð´Ð¾Ð±Ñ€Ð¾Ì",
             "tags": [
               "neuter"
             ]
@@ -8604,7 +8766,7 @@
             "code": "sh",
             "sense": "the forces of good",
             "lang": "Serbo-Croatian",
-            "word": "добро",
+            "word": "Ð´Ð¾Ð±Ñ€Ð¾",
             "tags": [
               "Cyrillic",
               "neuter"
@@ -8633,7 +8795,7 @@
             "code": "sl",
             "sense": "the forces of good",
             "lang": "Slovene",
-            "word": "dôbro",
+            "word": "dÃ´bro",
             "tags": [
               "neuter"
             ]
@@ -8680,14 +8842,14 @@
             "roman": "khwaam-dee",
             "sense": "the forces of good",
             "lang": "Thai",
-            "word": "ความดี"
+            "word": "à¸„à¸§à¸²à¸¡à¸”à¸µ"
           },
           {
             "code": "th",
-            "roman": "thām-mā",
+            "roman": "thÄm-mÄ",
             "sense": "the forces of good",
             "lang": "Thai",
-            "word": "ธรรม"
+            "word": "à¸˜à¸£à¸£à¸¡"
           },
           {
             "code": "tr",
@@ -8697,17 +8859,17 @@
           },
           {
             "code": "uga",
-            "roman": "ṭb",
+            "roman": "á¹­b",
             "sense": "the forces of good",
             "lang": "Ugaritic",
-            "word": "𐎉𐎁"
+            "word": "ðŽ‰ðŽ"
           },
           {
             "code": "uk",
-            "roman": "dobró",
+            "roman": "dobrÃ³",
             "sense": "the forces of good",
             "lang": "Ukrainian",
-            "word": "добро́",
+            "word": "Ð´Ð¾Ð±Ñ€Ð¾Ì",
             "tags": [
               "neuter"
             ]
@@ -8783,17 +8945,17 @@
             "roman": "polza",
             "sense": "good result",
             "lang": "Bulgarian",
-            "word": "полза",
+            "word": "Ð¿Ð¾Ð»Ð·Ð°",
             "tags": [
               "feminine"
             ]
           },
           {
             "code": "bg",
-            "roman": "pečalba",
+            "roman": "peÄalba",
             "sense": "good result",
             "lang": "Bulgarian",
-            "word": "печалба",
+            "word": "Ð¿ÐµÑ‡Ð°Ð»Ð±Ð°",
             "tags": [
               "feminine"
             ]
@@ -8829,24 +8991,24 @@
             "code": "fi",
             "sense": "good result",
             "lang": "Finnish",
-            "word": "hyvä"
+            "word": "hyvÃ¤"
           },
           {
             "code": "got",
-            "roman": "þiuþ",
+            "roman": "Ã¾iuÃ¾",
             "sense": "good result",
             "lang": "Gothic",
-            "word": "𐌸𐌹𐌿𐌸",
+            "word": "ðŒ¸ðŒ¹ðŒ¿ðŒ¸",
             "tags": [
               "neuter"
             ]
           },
           {
             "code": "el",
-            "roman": "kalós",
+            "roman": "kalÃ³s",
             "sense": "good result",
             "lang": "Greek",
-            "word": "καλός",
+            "word": "ÎºÎ±Î»ÏŒÏ‚",
             "tags": [
               "masculine"
             ]
@@ -8871,7 +9033,7 @@
             "roman": "tolk",
             "sense": "good result",
             "lang": "Russian",
-            "word": "толк",
+            "word": "Ñ‚Ð¾Ð»Ðº",
             "tags": [
               "masculine"
             ]
@@ -8881,7 +9043,7 @@
             "roman": "prok",
             "sense": "good result",
             "lang": "Russian",
-            "word": "прок",
+            "word": "Ð¿Ñ€Ð¾Ðº",
             "tags": [
               "masculine"
             ]
@@ -8923,7 +9085,7 @@
             "code": "sl",
             "sense": "good result",
             "lang": "Slovene",
-            "word": "dôbro",
+            "word": "dÃ´bro",
             "tags": [
               "neuter"
             ]
@@ -8981,7 +9143,7 @@
           },
           {
             "ref": "1788, John Jay, The Federalist Papers, number 64",
-            "text": "[…]the government must be a weak one indeed, if it should forget that the good of the whole can only be promoted by advancing the good of each of the parts or members which compose the whole.",
+            "text": "&#32;[â€¦]&#32;the government must be a weak one indeed, if it should forget that the good of the whole can only be promoted by advancing the good of each of the parts or members which compose the whole.",
             "type": "quotation"
           }
         ]
@@ -8996,10 +9158,10 @@
         "translations": [
           {
             "code": "ar",
-            "roman": "silʕa",
+            "roman": "silÊ•a",
             "sense": "item of merchandise",
             "lang": "Arabic",
-            "word": "سِلْعَة",
+            "word": "Ø³ÙÙ„Ù’Ø¹ÙŽØ©",
             "tags": [
               "feminine"
             ]
@@ -9009,7 +9171,7 @@
             "roman": "stoka",
             "sense": "item of merchandise",
             "lang": "Bulgarian",
-            "word": "стока",
+            "word": "ÑÑ‚Ð¾ÐºÐ°",
             "tags": [
               "feminine",
               "plural"
@@ -9019,7 +9181,7 @@
             "code": "ca",
             "sense": "item of merchandise",
             "lang": "Catalan",
-            "word": "bé",
+            "word": "bÃ©",
             "tags": [
               "masculine"
             ]
@@ -9138,18 +9300,69 @@
         ]
       }
     ],
+    "head_templates": [
+      {
+        "args": {
+          "1": "~"
+        },
+        "name": "en-noun",
+        "expansion": "good (countable and uncountable, plural goods)"
+      }
+    ],
     "sounds": [
       {
         "tags": [
           "Received-Pronunciation"
         ],
-        "ipa": "/ɡʊd/"
+        "ipa": "/É¡ÊŠd/"
       },
       {
-        "enpr": "go͝od",
         "tags": [
-          "Received-Pronunciation"
-        ]
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "/É¡ÊŠd/"
+      },
+      {
+        "tags": [
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "[É¡ÊŠÌˆd]"
+      },
+      {
+        "tags": [
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "[É¡ÉªÌˆd]"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "/É¡ÊŠd/"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "[É¡ÊŠd]"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "[É¡ud]"
+      },
+      {
+        "tags": [
+          "African-American-Vernacular-English"
+        ],
+        "ipa": "/É¡ÊŠ(d)/"
+      },
+      {
+        "rhymes": "-ÊŠd"
       },
       {
         "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/69/En-uk-good.ogg/En-uk-good.ogg.mp3",
@@ -9161,51 +9374,6 @@
         "text": "Audio (RP)"
       },
       {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "/ɡʊd/"
-      },
-      {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "[ɡʊ̈d]"
-      },
-      {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "[ɡɪ̈d]"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "/ɡʊd/"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "[ɡʊd]"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "[ɡud]"
-      },
-      {
-        "enpr": "go͝od",
-        "tags": [
-          "General-Australian"
-        ]
-      },
-      {
         "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/28/En-us-good.ogg/En-us-good.ogg.mp3",
         "tags": [
           "US"
@@ -9215,19 +9383,16 @@
         "text": "Audio (US)"
       },
       {
-        "tags": [
-          "African-American-Vernacular-English"
-        ],
-        "ipa": "/ɡʊ(d)/"
-      },
-      {
-        "enpr": "go͝o(d)",
+        "enpr": "goÍod",
         "tags": [
           "African-American-Vernacular-English"
         ]
       },
       {
-        "rhymes": "-ʊd"
+        "enpr": "goÍo(d)",
+        "tags": [
+          "African-American-Vernacular-English"
+        ]
       }
     ]
   },
@@ -9240,8 +9405,8 @@
     "etymology_templates": [
       {
         "args": {
-          "1": "en",
           "3": "goden",
+          "1": "en",
           "2": "enm"
         },
         "name": "inh",
@@ -9257,39 +9422,39 @@
       },
       {
         "args": {
-          "1": "en",
-          "2": "ang",
           "4": "",
-          "3": "gōdian",
-          "5": "to improve, get better; make better; endow, enrich"
+          "1": "en",
+          "3": "gÅdian",
+          "5": "to improve, get better; make better; endow, enrich",
+          "2": "ang"
         },
         "name": "inh",
-        "expansion": "Old English gōdian (“to improve, get better; make better; endow, enrich”)"
+        "expansion": "Old English gÅdian (â€œto improve, get better; make better; endow, enrichâ€)"
       },
       {
         "args": {
           "4": "",
-          "3": "*gōdōn",
           "5": "to make better, improve",
           "1": "en",
+          "3": "*gÅdÅn",
           "2": "gmw-pro"
         },
         "name": "inh",
-        "expansion": "Proto-West Germanic *gōdōn (“to make better, improve”)"
+        "expansion": "Proto-West Germanic *gÅdÅn (â€œto make better, improveâ€)"
       },
       {
         "args": {
           "4": "",
+          "5": "good, favourable",
+          "3": "*gÅdaz",
           "2": "gem-pro",
-          "1": "en",
-          "3": "*gōdaz",
-          "5": "good, favourable"
+          "1": "en"
         },
         "name": "inh",
-        "expansion": "Proto-Germanic *gōdaz (“good, favourable”)"
+        "expansion": "Proto-Germanic *gÅdaz (â€œgood, favourableâ€)"
       }
     ],
-    "etymology_text": "From Middle English goden, godien, from Old English gōdian (“to improve, get better; make better; endow, enrich”), from Proto-West Germanic *gōdōn (“to make better, improve”), from Proto-Germanic *gōdaz (“good, favourable”).",
+    "etymology_text": "From Middle English goden, godien, from Old English gÅdian (â€œto improve, get better; make better; endow, enrichâ€), from Proto-West Germanic *gÅdÅn (â€œto make better, improveâ€), from Proto-Germanic *gÅdaz (â€œgood, favourableâ€).",
     "forms": [
       {
         "form": "goods",
@@ -9485,18 +9650,67 @@
         ]
       }
     ],
+    "head_templates": [
+      {
+        "args": {},
+        "name": "en-verb",
+        "expansion": "good (third-person singular simple present goods, present participle gooding, simple past and past participle gooded)"
+      }
+    ],
     "sounds": [
       {
         "tags": [
           "Received-Pronunciation"
         ],
-        "ipa": "/ɡʊd/"
+        "ipa": "/É¡ÊŠd/"
       },
       {
-        "enpr": "go͝od",
         "tags": [
-          "Received-Pronunciation"
-        ]
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "/É¡ÊŠd/"
+      },
+      {
+        "tags": [
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "[É¡ÊŠÌˆd]"
+      },
+      {
+        "tags": [
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "[É¡ÉªÌˆd]"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "/É¡ÊŠd/"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "[É¡ÊŠd]"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "[É¡ud]"
+      },
+      {
+        "tags": [
+          "African-American-Vernacular-English"
+        ],
+        "ipa": "/É¡ÊŠ(d)/"
+      },
+      {
+        "rhymes": "-ÊŠd"
       },
       {
         "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/69/En-uk-good.ogg/En-uk-good.ogg.mp3",
@@ -9508,51 +9722,6 @@
         "text": "Audio (RP)"
       },
       {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "/ɡʊd/"
-      },
-      {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "[ɡʊ̈d]"
-      },
-      {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "[ɡɪ̈d]"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "/ɡʊd/"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "[ɡʊd]"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "[ɡud]"
-      },
-      {
-        "enpr": "go͝od",
-        "tags": [
-          "General-Australian"
-        ]
-      },
-      {
         "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/28/En-us-good.ogg/En-us-good.ogg.mp3",
         "tags": [
           "US"
@@ -9562,19 +9731,16 @@
         "text": "Audio (US)"
       },
       {
-        "tags": [
-          "African-American-Vernacular-English"
-        ],
-        "ipa": "/ɡʊ(d)/"
-      },
-      {
-        "enpr": "go͝o(d)",
+        "enpr": "goÍod",
         "tags": [
           "African-American-Vernacular-English"
         ]
       },
       {
-        "rhymes": "-ʊd"
+        "enpr": "goÍo(d)",
+        "tags": [
+          "African-American-Vernacular-English"
+        ]
       }
     ],
     "derived": [
@@ -9592,17 +9758,17 @@
     "etymology_templates": [
       {
         "args": {
+          "1": "en",
           "3": "*goden",
-          "2": "enm",
-          "1": "en"
+          "2": "enm"
         },
         "name": "inh",
         "expansion": "Middle English *goden"
       },
       {
         "args": {
-          "1": "en",
           "2": "gmq",
+          "1": "en",
           "3": "-"
         },
         "name": "der",
@@ -9610,26 +9776,26 @@
       },
       {
         "args": {
-          "4": "to fatten, fertilise, battle",
           "1": "sv",
           "3": "",
-          "2": "göda"
+          "4": "to fatten, fertilise, battle",
+          "2": "gÃ¶da"
         },
         "name": "cog",
-        "expansion": "Swedish göda (“to fatten, fertilise, battle”)"
+        "expansion": "Swedish gÃ¶da (â€œto fatten, fertilise, battleâ€)"
       },
       {
         "args": {
           "4": "to fertilise, battle",
-          "2": "gøde",
-          "3": "",
-          "1": "da"
+          "2": "gÃ¸de",
+          "1": "da",
+          "3": ""
         },
         "name": "cog",
-        "expansion": "Danish gøde (“to fertilise, battle”)"
+        "expansion": "Danish gÃ¸de (â€œto fertilise, battleâ€)"
       }
     ],
-    "etymology_text": "From English dialectal, from Middle English *goden, of North Germanic origin, related to Swedish göda (“to fatten, fertilise, battle”), Danish gøde (“to fertilise, battle”), ultimately from the adjective. See above.",
+    "etymology_text": "From English dialectal, from Middle English *goden, of North Germanic origin, related to Swedish gÃ¶da (â€œto fatten, fertilise, battleâ€), Danish gÃ¸de (â€œto fertilise, battleâ€), ultimately from the adjective. See above.",
     "forms": [
       {
         "form": "goods",
@@ -9714,18 +9880,67 @@
         ]
       }
     ],
+    "head_templates": [
+      {
+        "args": {},
+        "name": "en-verb",
+        "expansion": "good (third-person singular simple present goods, present participle gooding, simple past and past participle gooded)"
+      }
+    ],
     "sounds": [
       {
         "tags": [
           "Received-Pronunciation"
         ],
-        "ipa": "/ɡʊd/"
+        "ipa": "/É¡ÊŠd/"
       },
       {
-        "enpr": "go͝od",
         "tags": [
-          "Received-Pronunciation"
-        ]
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "/É¡ÊŠd/"
+      },
+      {
+        "tags": [
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "[É¡ÊŠÌˆd]"
+      },
+      {
+        "tags": [
+          "General-American",
+          "New-Zealand"
+        ],
+        "ipa": "[É¡ÉªÌˆd]"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "/É¡ÊŠd/"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "[É¡ÊŠd]"
+      },
+      {
+        "tags": [
+          "General-Australian"
+        ],
+        "ipa": "[É¡ud]"
+      },
+      {
+        "tags": [
+          "African-American-Vernacular-English"
+        ],
+        "ipa": "/É¡ÊŠ(d)/"
+      },
+      {
+        "rhymes": "-ÊŠd"
       },
       {
         "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/69/En-uk-good.ogg/En-uk-good.ogg.mp3",
@@ -9737,51 +9952,6 @@
         "text": "Audio (RP)"
       },
       {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "/ɡʊd/"
-      },
-      {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "[ɡʊ̈d]"
-      },
-      {
-        "tags": [
-          "General-American",
-          "New-Zealand"
-        ],
-        "ipa": "[ɡɪ̈d]"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "/ɡʊd/"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "[ɡʊd]"
-      },
-      {
-        "tags": [
-          "General-Australian"
-        ],
-        "ipa": "[ɡud]"
-      },
-      {
-        "enpr": "go͝od",
-        "tags": [
-          "General-Australian"
-        ]
-      },
-      {
         "mp3_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/28/En-us-good.ogg/En-us-good.ogg.mp3",
         "tags": [
           "US"
@@ -9791,21 +9961,17 @@
         "text": "Audio (US)"
       },
       {
-        "tags": [
-          "African-American-Vernacular-English"
-        ],
-        "ipa": "/ɡʊ(d)/"
-      },
-      {
-        "enpr": "go͝o(d)",
+        "enpr": "goÍod",
         "tags": [
           "African-American-Vernacular-English"
         ]
       },
       {
-        "rhymes": "-ʊd"
+        "enpr": "goÍo(d)",
+        "tags": [
+          "African-American-Vernacular-English"
+        ]
       }
     ]
   }
 ]
-

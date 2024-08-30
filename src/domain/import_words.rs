@@ -4,7 +4,7 @@ use std::path::Path;
 use std::sync::Arc;
 use tokio::sync::Mutex;
 use crate::domain::Error;
-use crate::domain::use_cases::{DictionaryRepository};
+use crate::domain::use_cases::DictionaryRepository;
 
 pub struct ImportWordsDictionary<'a, T: DictionaryRepository> {
     repository: Arc<Mutex<T>>,
@@ -34,13 +34,14 @@ impl<'a, T: DictionaryRepository> ImportWordsDictionary<'a, T> {
 
             let mut has_translation = false;
             let mut current_word: &str = "";
-            for word in &words {
-                if current_word != word.word || !has_translation {
-                    has_translation = word.translations.iter().position(|t| t.code == Some("ru".to_string())).is_some();
-                }
 
-                if !has_translation {
+            for word in &words {
+                if current_word.eq(word.word.as_str()) || !has_translation {
                     russian_doesnt += 1;
+                    has_translation = word.translations.clone().into_iter()
+                    .find(|translation|
+                        translation.lang.clone().is_some_and(|t| t.eq("Russian"))
+                    ).is_some();
                 }
                 current_word = &word.word;
 
@@ -55,9 +56,9 @@ impl<'a, T: DictionaryRepository> ImportWordsDictionary<'a, T> {
                 //     }
                 // }
             }
-            if !has_translation {
-                println!("{}", word)
-            }
+//            if !has_translation {
+//                println!("{}", word)
+//            }
         }
 
         println!("empty: {}, russian doesnt exist: {}", count_empty_translations, russian_doesnt);

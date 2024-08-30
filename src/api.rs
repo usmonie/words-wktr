@@ -57,7 +57,7 @@ struct AppState {
 }
 
 pub async fn launch_server() -> std::io::Result<()> {
-    // find_words().await;
+     find_words().await;
     println!("launch server");
     let dictionary = Arc::new(Mutex::new(MongoDictionaryRepository::new("mongodb://localhost:27017").await));
     HttpServer::new(
